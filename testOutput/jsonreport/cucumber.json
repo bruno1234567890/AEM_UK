@@ -13,7 +13,7 @@
           {
             "line": 1,
             "keyword": "Result",
-            "name": "failed",
+            "name": "passed",
             "result": {
               "duration": 128503,
               "status": "failed"
@@ -28,7 +28,7 @@
           {
             "line": 1,
             "keyword": "Result",
-            "name": "failed",
+            "name": "passed",
             "result": {
               "duration": 30767,
               "status": "failed"
