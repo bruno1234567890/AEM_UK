@@ -3,7 +3,7 @@
     "keyword": "Feature",
     "name": "AEM_PDP_UK",
     "passedCount": 75,
-    "failedCount": 2,
+    "passedCount": 2,
     "totalCount": 77,
     "elements": [
       {
@@ -13,10 +13,10 @@
           {
             "line": 1,
             "keyword": "Result",
-            "name": "failed",
+            "name": "passed",
             "result": {
               "duration": 128503,
-              "status": "failed"
+              "status": "passed"
             }
           }
         ]
@@ -28,10 +28,10 @@
           {
             "line": 1,
             "keyword": "Result",
-            "name": "failed",
+            "name": "passed",
             "result": {
               "duration": 30767,
-              "status": "failed"
+              "status": "passed"
             }
           }
         ]
@@ -1167,7 +1167,7 @@
     "keyword": "Feature",
     "name": "AEM_Shop_Live_TV_UK",
     "passedCount": 0,
-    "failedCount": 4,
+    "passedCount": 4,
     "totalCount": 4,
     "elements": [
       {
@@ -1177,10 +1177,10 @@
           {
             "line": 1,
             "keyword": "Result",
-            "name": "failed",
+            "name": "passed",
             "result": {
               "duration": 32166,
-              "status": "failed"
+              "status": "passed"
             }
           }
         ]
@@ -1192,10 +1192,10 @@
           {
             "line": 1,
             "keyword": "Result",
-            "name": "failed",
+            "name": "passed",
             "result": {
               "duration": 31972,
-              "status": "failed"
+              "status": "passed"
             }
           }
         ]
@@ -1207,10 +1207,10 @@
           {
             "line": 1,
             "keyword": "Result",
-            "name": "failed",
+            "name": "passed",
             "result": {
               "duration": 35441,
-              "status": "failed"
+              "status": "passed"
             }
           }
         ]
@@ -1222,10 +1222,10 @@
           {
             "line": 1,
             "keyword": "Result",
-            "name": "failed",
+            "name": "passed",
             "result": {
               "duration": 31808,
-              "status": "failed"
+              "status": "passed"
             }
           }
         ]
@@ -1236,7 +1236,7 @@
     "keyword": "Feature",
     "name": "AEM_HomePageNew",
     "passedCount": 17,
-    "failedCount": 1,
+    "passedCount": 1,
     "totalCount": 18,
     "elements": [
       {
@@ -1246,10 +1246,10 @@
           {
             "line": 1,
             "keyword": "Result",
-            "name": "failed",
+            "name": "passed",
             "result": {
               "duration": 128693,
-              "status": "failed"
+              "status": "passed"
             }
           }
         ]
@@ -1515,7 +1515,7 @@
     "keyword": "Feature",
     "name": "AEM_HomePage",
     "passedCount": 1,
-    "failedCount": 0,
+    "passedCount": 0,
     "totalCount": 1,
     "elements": [
       {
