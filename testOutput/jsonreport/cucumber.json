@@ -1,0 +1,1538 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "AEM_PDP_UK",
+    "passedCount": 75,
+    "failedCount": 2,
+    "totalCount": 77,
+    "elements": [
+      {
+        "keyword": "Tasecase",
+        "name": "PD_AEM_Shipping_and_Handling_Multi_Quantity_UK_only_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "failed",
+            "result": {
+              "duration": 128503,
+              "status": "failed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_AutoDelivery_VerifyADPlan_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "failed",
+            "result": {
+              "duration": 30767,
+              "status": "failed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_SizeColorOptions_Hover_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 37287,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_CancelAnswerAQuestionBeforePreview_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 55908,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_Video_Mute\u0026Unmute_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 53011,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_QuantitySelectorUX_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 23929,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_QuantitySelector_Stepper_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 28195,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_InventoryWaitlist_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 73694,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_Sold_Out_PDP_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 22958,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_InventoryATS_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 69197,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_BuyMoreSaveMore_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 35228,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_SizeColorOptions_ProductOptions_Color_Only_Option_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 31267,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_SizeColorOptions_ErrorHandling_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 186958,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_SeparateBrandAndShortDescription_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 25483,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_SizeColorOptions_ProductOptions_Size_Only_Option_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 25735,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_SizeColorOptions_SelectClick_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 88244,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_SizeColorOptions_Swatch Not Available_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 20568,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_SpeedBuyButton_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 58428,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "PD_AEM_Adjust_Font_Size_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 21896,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "PD_AEM_Advanced_Order_Shipping_Date_UK_\u0026_DE_Only_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 33249,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "PD_AEM_Reviews_Title_\u0026_Snapshot_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 20013,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "PD_AEM_Shipping_and_Handling_Shipping_Standard_UK_only_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 20103,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "PD_AEM_Star_Rating_\u0026_Number_of_Reviews_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 33375,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "PD_AEM_Tooltip_Rule_for_Appearing_and_Disappearing_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 38673,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "PD_AEM_Tweet_Button_Does_Not_Display_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 23701,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "PD_AEM_YAH_You_ Are_Here_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 19133,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_PDFs_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 21623,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_Item_On_Air_UK_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 28387,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_Preselect_Last_Remaining_Color_Size_Options_All_Geos_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 79825,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_AddToCart_IOA_FromHP_ColorSize_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 30163,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_AddToCart_IOA_FromHP_NoColorSize_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 21204,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_AskAQuestion_ExistingAccount_Submit_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 63937,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_PoliciesAndGuidelines_ClickAndVerify_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 23253,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_AskAQuestionButtonInFooter_Submit_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 114777,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_AskAQuestionButtonInMiddle_Edit_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 118033,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_BeTheFirstToAskQuestion_NewAccount_Cancel_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 93823,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_BeTheFirstToAskQuestion_NewAccount_Edit_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 115149,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_CancelAnswerAQuestionAfterPreview_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 68937,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_ClickAnswerAQuestionBeforeSignIn_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 31897,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_EditAnswerToTheQuestion_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 96015,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_LikeAnswer_NewAccount_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 59186,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_NoLikeAnswer_ExistingAccount_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 29375,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_ReportInappropriateAnswer_Cancel_ViewAllQ\u0026A_NoAuthorization_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 51662,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_ReportInappropriateAnswer_ViewAllQ\u0026A_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 58315,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_ReportInappropriateQuestion_Cancel_ViewAllQ\u0026A_NoAuthorization_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 53472,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_ReportInappropriateQuestion_ViewAllQ\u0026A_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 55469,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Q\u0026A_SubmitAnswerToTheQuestion_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 130551,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Reviews_LikeReview_NoVoted_NewAccount_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 56229,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Reviews_NoLikeReview_Voted_ExistingAccount_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 41345,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Reviews_PageNavigation_Bottom_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 33718,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Reviews_PageNavigation_Top_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 32944,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Reviews_SortSelector_Top_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 93218,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Reviews_WriteAReview_ItemwithoutReview_Verify_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 49914,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Reviews_WriteAReview_ItemWithReview_Cancel_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 88179,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Reviews_WriteAReview_ItemWithReview_Edit_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 106247,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Reviews_WriteAReview_ItemWithReview_Submit_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 91157,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_BV_Reviews_WriteAReview_ItemWithReview_VerifySubmittedreview_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 43138,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_ClickWriteAReviewButton_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 34945,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_FacebookLink_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 38381,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_ItemNumChangeByOnAirChannel_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 28503,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_ProductImage_ZoomIn\u0026ZoomOut_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 19013,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_RatedProduct_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 19945,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_RelatedCarousel_ClickItem_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 33438,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_RelatedCarousel_VerifyUI_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 31824,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_SB_ClickPinterestIcon_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 26528,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_SB_Email_Verify_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 28836,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_SpeedBuy_IOA_FromHP_ColorSize_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 36376,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_SpeedBuy_IOA_FromHP_NoColorSize_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 27540,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_Video_AutoPlay\u0026UnAutoPlay_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 26243,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_Video_BackToVideo_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 29740,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_Video_Fullscreen\u0026UnFullScreen_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 36191,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_Video_PlayBonusVideo_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 27378,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_LongDesc_AboutAccordion_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 21211,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_Video_Play\u0026Pause_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 33469,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_LongDesc_ExpertTips_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 21387,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_Video_NoOnAirPresentation_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 20219,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_PDP_LongDesc_ExpertTipShampoo_CollapsedDefault_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 20937,
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "AEM_Shop_Live_TV_UK",
+    "passedCount": 0,
+    "failedCount": 4,
+    "totalCount": 4,
+    "elements": [
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_SLTV_BuyBox_Shop_Now_AddToCart_All_Geos_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "failed",
+            "result": {
+              "duration": 32166,
+              "status": "failed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_SLTV_BuyBox_Shop_Now_Speedbuy_All_Geos_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "failed",
+            "result": {
+              "duration": 31972,
+              "status": "failed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_SLTV_IROA_Carousel_UK\u0026DE_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "failed",
+            "result": {
+              "duration": 35441,
+              "status": "failed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_SLTV_Via_IROA_BuyBox_Elements_All_Geos_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "failed",
+            "result": {
+              "duration": 31808,
+              "status": "failed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "AEM_HomePageNew",
+    "passedCount": 17,
+    "failedCount": 1,
+    "totalCount": 18,
+    "elements": [
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_StaticImage_ComponentsAreClickable_FrontEnd_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "failed",
+            "result": {
+              "duration": 128693,
+              "status": "failed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_IROA_ComponentsAreClickable_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 29580,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_OnAir_AddToCart_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 29796,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_OnAir_LinksToOnAirItem_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 14691,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_OnAir_SpeedBuy_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 26574,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_OnAir_ChannelSwitch_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 26001,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_TSV_LinksToTSVItem_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 15928,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_FeatureBrandModule_ComponentsAreClickable_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 18731,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_ProductGridModule_ComponentsAreClickable_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 21935,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_ImageGridModule_ComponentsAreClickable_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 23030,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_ProductCarouselModule_ComponentsAreClickable_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 27696,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_LifestyleCarouselModule_ComponentsAreClickable_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 46890,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_ProductGalleryModule_ComponentsAreClickable_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 40214,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_ShopByCategoryModule_ComponentsAreClickable_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 19446,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_StaticContentModule_ComponentsAreClickable_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 28668,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_120HoursOfDeals_ContentPage_ComponentsAreClickable_FrontEnd_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 47840,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_ContainerStrip_ComponentsAreClickable_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 51001,
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_Story_PublishedPage_FrontEnd_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 34442,
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "AEM_HomePage",
+    "passedCount": 1,
+    "failedCount": 0,
+    "totalCount": 1,
+    "elements": [
+      {
+        "keyword": "Tasecase",
+        "name": "AEM_StaticImage_ComponentsAreClickable_FrontEnd_uk_chrome",
+        "steps": [
+          {
+            "line": 1,
+            "keyword": "Result",
+            "name": "passed",
+            "result": {
+              "duration": 8663,
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

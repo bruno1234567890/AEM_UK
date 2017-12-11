@@ -1,0 +1,90 @@
+2017-12-10 21:59:19.655 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:59:20.562 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:59:20.563 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-10 21:59:23.865 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:59:25.280 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:59:25.464 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:26.018 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:59:26.080 [INFO] : [TestNG-method=runTestCase-1] Verify that user can be navigated to PDP after click each image
+ Test module "ProductGallery_Clickable"
+2017-12-10 21:59:26.080 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:26.650 [INFO] : [TestNG-method=runTestCase-1] Click "Shop those offers"
+ Running action Click on productGalleryShopBtn [{xpath=//*[@data-module-type='PRODUCT_GALLERY']//a[contains(text(), 'Shop')]}]
+2017-12-10 21:59:28.982 [INFO] : [TestNG-method=runTestCase-1] Wait until category page display
+ Running action WaitUntilObjectExist on productListHeader [{xpath=//*[@class="active"]/h1}, {xpath=//*[@id="divPageTitle"]//h1}]
+2017-12-10 21:59:29.549 [INFO] : [TestNG-method=runTestCase-1] Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class="active"]/h1}, {xpath=//*[@id="divPageTitle"]//h1}] with data {storeas=category}
+2017-12-10 21:59:30.081 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:59:31.428 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:32.049 [INFO] : [TestNG-method=runTestCase-1] Click 1st image of "Product Gallery Module"
+ Running action Click on productGalleryImg [{xpath=(//*[@data-module-type='PRODUCT_GALLERY']//div[contains(@class,'galleryItem')]//div[contains(@class,'productImg')])[<index>]}] with data {index=1}
+2017-12-10 21:59:35.403 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:59:35.565 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:59:35.719 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:59:36.895 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:37.613 [INFO] : [TestNG-method=runTestCase-1] Click 2nd image of "Product Gallery Module"
+ Running action Click on productGalleryImg [{xpath=(//*[@data-module-type='PRODUCT_GALLERY']//div[contains(@class,'galleryItem')]//div[contains(@class,'productImg')])[<index>]}] with data {index=2}
+2017-12-10 21:59:40.013 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:59:40.350 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:59:40.503 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:59:41.512 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:42.116 [INFO] : [TestNG-method=runTestCase-1] Verify Product Gallery Module header exist
+ Running action VerifyExist on productGalleryHeader [{xpath=//*[@data-module-type='PRODUCT_GALLERY']//h2}]
+2017-12-10 21:59:42.324 [INFO] : [TestNG-method=runTestCase-1] Click 3rd image of "Product Gallery Module"
+ Running action Click on productGalleryImg [{xpath=(//*[@data-module-type='PRODUCT_GALLERY']//div[contains(@class,'galleryItem')]//div[contains(@class,'productImg')])[<index>]}] with data {index=3}
+2017-12-10 21:59:44.665 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:59:44.864 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:59:44.984 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:59:45.928 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:46.715 [INFO] : [TestNG-method=runTestCase-1] Click 4th image of "Product Gallery Module"
+ Running action Click on productGalleryImg [{xpath=(//*[@data-module-type='PRODUCT_GALLERY']//div[contains(@class,'galleryItem')]//div[contains(@class,'productImg')])[<index>]}] with data {index=4}
+2017-12-10 21:59:48.881 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:59:49.024 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:59:49.249 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:59:50.165 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:50.796 [INFO] : [TestNG-method=runTestCase-1] Click 5th image of "Product Gallery Module"
+ Running action Click on productGalleryImg [{xpath=(//*[@data-module-type='PRODUCT_GALLERY']//div[contains(@class,'galleryItem')]//div[contains(@class,'productImg')])[<index>]}] with data {index=5}
+2017-12-10 21:59:52.675 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:59:52.797 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:59:52.928 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:59:53.937 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:54.590 [INFO] : [TestNG-method=runTestCase-1] Click 6th image of "Product Gallery Module"
+ Running action Click on productGalleryImg [{xpath=(//*[@data-module-type='PRODUCT_GALLERY']//div[contains(@class,'galleryItem')]//div[contains(@class,'productImg')])[<index>]}] with data {index=6}
+2017-12-10 21:59:57.307 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:59:57.441 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:59:57.560 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:59:58.470 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:59.169 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 33 sec
+2017-12-10 21:59:59.480 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Pass_AEM_ProductGalleryModule_ComponentsAreClickable_uk_chrome.html

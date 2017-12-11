@@ -1,0 +1,40 @@
+2017-12-10 21:46:45.165 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:46:46.269 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:46:46.269 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-10 21:46:49.587 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:46:51.487 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:46:51.734 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:46:52.448 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-10 21:46:52.448 [INFO] : [TestNG-method=runTestCase-1] Verify user can be navigated to PLP correctly after click each image
+ Test module "FeatureBrand_Clickable"
+2017-12-10 21:46:52.448 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:46:52.986 [INFO] : [TestNG-method=runTestCase-1] Verify Feature Brand Module header exist
+ Running action VerifyExist on featureBrandHeader [{xpath=//*[@data-module-type='FEATURED_BRANDS']//h2}]
+2017-12-10 21:46:53.148 [INFO] : [TestNG-method=runTestCase-1] Click 1st image of "Feature Brand Module"
+ Running action Click on featureBrandImg [{xpath=(//div[@data-component-type='FEATURED_BRAND_ITEM']//div[@class='productImg']//img)['<index>']}] with data {index=1}
+2017-12-10 21:47:06.570 [INFO] : [TestNG-method=runTestCase-1] Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+2017-12-10 21:47:08.302 [INFO] : [TestNG-method=runTestCase-1] Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class="active"]/h1}, {xpath=//*[@id="divPageTitle"]//h1}] with data {storeas=category}
+2017-12-10 21:47:09.149 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:47:10.848 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:47:11.642 [INFO] : [TestNG-method=runTestCase-1] Click 2nd image of "Feature Brand Module"
+ Running action Click on featureBrandImg [{xpath=(//div[@data-component-type='FEATURED_BRAND_ITEM']//div[@class='productImg']//img)['<index>']}] with data {index=2}
+2017-12-10 21:47:13.249 [INFO] : [TestNG-method=runTestCase-1] Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+2017-12-10 21:47:15.286 [INFO] : [TestNG-method=runTestCase-1] Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class="active"]/h1}, {xpath=//*[@id="divPageTitle"]//h1}] with data {storeas=category}
+2017-12-10 21:47:15.988 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:47:17.253 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:47:18.019 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 25 sec
+2017-12-10 21:47:18.335 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_FeatureBrandModule_ComponentsAreClickable_uk_chrome.html

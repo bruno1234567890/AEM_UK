@@ -1,0 +1,48 @@
+2017-12-10 21:45:21.850 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:45:22.749 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:45:22.749 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:45:24.950 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:45:26.467 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:45:26.650 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:45:27.467 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-10 21:45:27.467 [INFO] : [TestNG-method=runTestCase-1] Search an item with at least 7 Related Items
+ Test module "ByProductNum"
+2017-12-10 21:45:27.467 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:45:31.850 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=212060}
+2017-12-10 21:45:32.364 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:45:36.919 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:45:42.602 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 15 sec
+2017-12-10 21:45:42.759 [INFO] : [TestNG-method=runTestCase-1] Verify the UI of Related Carousel:
+1.Verify 6 or more related items are displayed
+2.Verify left/right arrow function
+3.Verify product features: image, price, description, rating
+ Test module "VerifyRelatedCarousel"
+2017-12-10 21:45:42.760 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure we are at correct page: "Product Detail" page
+ Running action WaitUntilObjectExist on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {wait=2}
+2017-12-10 21:45:44.917 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page of target item
+ Running action ContainsText on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {text=212060}
+2017-12-10 21:45:45.060 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure there's Related Carousel section
+ Running action WaitUntilObjectExist on relatedCarouselTitle [{xpath=//*[contains(@id,'product_carousel')]//*[.='You may also like...']}] with data {wait=3}
+2017-12-10 21:45:48.218 [INFO] : [TestNG-method=runTestCase-1] Verify that related carousel title is displayed
+ Running action VerifyExist on relatedCarouselTitle [{xpath=//*[contains(@id,'product_carousel')]//*[.='You may also like...']}]
+2017-12-10 21:45:48.302 [INFO] : [TestNG-method=runTestCase-1] Verify that the first one related item is displayed
+ Running action VerifyExist on firstRelatedCarouselItem [{xpath=//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]}]
+2017-12-10 21:45:48.433 [INFO] : [TestNG-method=runTestCase-1] Verify that the image of first one related item
+ Running action VerifyExist on firstRelatedCarouseItemImg [{xpath=//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]//img}]
+2017-12-10 21:45:48.565 [INFO] : [TestNG-method=runTestCase-1] Verify that the description of first one related item
+ Running action VerifyExist on firstRelatedCarouseItemDesc [{xpath=//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]//*[@class="productDesc"]}]
+2017-12-10 21:45:48.702 [INFO] : [TestNG-method=runTestCase-1] Verify that the price of first one related item
+ Running action VerifyExist on firstRelatedCarouseItemPrice [{xpath=//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]//*[@class="productPrice"]}]
+2017-12-10 21:45:48.852 [INFO] : [TestNG-method=runTestCase-1] If there's item rating
+ Running action CheckForElements on relatedCarouseItemRating [{xpath=//*[contains(@class, 'relatedItemsCarousel')]//div[@class="productRatings"]}]
+2017-12-10 21:45:54.288 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 11 sec
+2017-12-10 21:45:54.618 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_PDP_RelatedCarousel_VerifyUI_uk_chrome.html

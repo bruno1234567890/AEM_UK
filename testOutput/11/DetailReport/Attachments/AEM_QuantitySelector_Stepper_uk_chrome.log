@@ -1,0 +1,85 @@
+2017-12-05 21:04:23.117 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:04:25.959 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvcuk.com"
+ Test module "GotoUrl"
+2017-12-05 21:04:26.099 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:04:30.323 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:04:31.926 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:04:32.118 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:04:32.876 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-05 21:04:32.877 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "ByProductNum"
+2017-12-05 21:04:32.881 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:04:37.442 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229530}
+2017-12-05 21:04:38.146 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:04:42.263 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:04:47.802 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-05 21:04:47.805 [INFO] : [TestNG-method=runTestCase-1] Verify the qty seletor
+ Test module "VerifyQtySeletor"
+2017-12-05 21:04:47.806 [INFO] : [TestNG-method=runTestCase-1] Verify the quantity selector exist
+ Running action VerifyExist on productQtyInputBox [{css=.productQuantity}]
+2017-12-05 21:04:47.944 [INFO] : [TestNG-method=runTestCase-1] Verify the default qty is 1
+ Running action ContainsText on productQtyInputBox [{css=.productQuantity}] with data {text=1}
+2017-12-05 21:04:48.419 [INFO] : [TestNG-method=runTestCase-1] Verify the default minus sign is inactive
+ Running action VerifyExist on inactiveQTYMinusSign [{xpath=//*[@class="stepDown" and @state="inactive"]}]
+2017-12-05 21:04:48.545 [INFO] : [TestNG-method=runTestCase-1] Verify the default minus sign is inactive
+ Running action VerifyNotExist on activeQTYMinusSign [{xpath=//*[@class="stepDown" and @state="active"]}]
+2017-12-05 21:04:48.592 [INFO] : [TestNG-method=runTestCase-1] Verify the default plus sign is active
+ Running action VerifyExist on activeQTYPlusSign [{xpath=//*[@class="stepUp" and @state="active"]}]
+2017-12-05 21:04:48.711 [INFO] : [TestNG-method=runTestCase-1] Verify the default plus sign is active
+ Running action VerifyNotExist on inactiveQTYPlusSign [{xpath=//*[@class="stepUp" and @state="inactive"]}]
+2017-12-05 21:04:48.758 [INFO] : [TestNG-method=runTestCase-1] Try to click the minus sign
+ Running action Click on inactiveQTYMinusSign [{xpath=//*[@class="stepDown" and @state="inactive"]}]
+2017-12-05 21:04:48.915 [INFO] : [TestNG-method=runTestCase-1] Verify the qty remain 1
+ Running action ContainsText on productQtyInputBox [{css=.productQuantity}] with data {text=1}
+2017-12-05 21:04:49.027 [INFO] : [TestNG-method=runTestCase-1] Click plus sign
+ Running action Click on activeQTYPlusSign [{xpath=//*[@class="stepUp" and @state="active"]}]
+2017-12-05 21:04:49.194 [INFO] : [TestNG-method=runTestCase-1] Verify the minus sign become active
+ Running action VerifyExist on activeQTYMinusSign [{xpath=//*[@class="stepDown" and @state="active"]}]
+2017-12-05 21:04:49.258 [INFO] : [TestNG-method=runTestCase-1] Verify the minus sign become active
+ Running action VerifyNotExist on inactiveQTYMinusSign [{xpath=//*[@class="stepDown" and @state="inactive"]}]
+2017-12-05 21:04:49.299 [INFO] : [TestNG-method=runTestCase-1] Verify the qty increase to 2
+ Running action ContainsText on productQtyInputBox [{css=.productQuantity}] with data {text=2}
+2017-12-05 21:04:49.427 [INFO] : [TestNG-method=runTestCase-1] Click minus sign
+ Running action Click on activeQTYMinusSign [{xpath=//*[@class="stepDown" and @state="active"]}]
+2017-12-05 21:04:49.538 [INFO] : [TestNG-method=runTestCase-1] Verify the qty change to 1
+ Running action VerifyNotExist on activeQTYMinusSign [{xpath=//*[@class="stepDown" and @state="active"]}]
+2017-12-05 21:04:49.571 [INFO] : [TestNG-method=runTestCase-1] Verify the minus sign become inactive
+ Running action VerifyExist on inactiveQTYMinusSign [{xpath=//*[@class="stepDown" and @state="inactive"]}]
+2017-12-05 21:04:49.623 [INFO] : [TestNG-method=runTestCase-1] Verify the qty change to 1
+ Running action ContainsText on productQtyInputBox [{css=.productQuantity}] with data {text=1}
+2017-12-05 21:04:49.724 [INFO] : [TestNG-method=runTestCase-1] Click plus sign
+ Running action Click on activeQTYPlusSign [{xpath=//*[@class="stepUp" and @state="active"]}]
+2017-12-05 21:04:49.854 [INFO] : [TestNG-method=runTestCase-1] Verify the qty change to 2
+ Running action ContainsText on productQtyInputBox [{css=.productQuantity}] with data {text=2}
+2017-12-05 21:04:49.983 [INFO] : [TestNG-method=runTestCase-1] Click plus sign
+ Running action Click on activeQTYPlusSign [{xpath=//*[@class="stepUp" and @state="active"]}]
+2017-12-05 21:04:50.106 [INFO] : [TestNG-method=runTestCase-1] Verify the qty change to 3
+ Running action ContainsText on productQtyInputBox [{css=.productQuantity}] with data {text=3}
+2017-12-05 21:04:50.234 [INFO] : [TestNG-method=runTestCase-1] Click plus sign
+ Running action Click on activeQTYPlusSign [{xpath=//*[@class="stepUp" and @state="active"]}]
+2017-12-05 21:04:50.367 [INFO] : [TestNG-method=runTestCase-1] Verify the qty change to 4
+ Running action ContainsText on productQtyInputBox [{css=.productQuantity}] with data {text=4}
+2017-12-05 21:04:50.498 [INFO] : [TestNG-method=runTestCase-1] Click plus sign
+ Running action Click on activeQTYPlusSign [{xpath=//*[@class="stepUp" and @state="active"]}]
+2017-12-05 21:04:50.616 [INFO] : [TestNG-method=runTestCase-1] Verify the qty change to 5
+ Running action ContainsText on productQtyInputBox [{css=.productQuantity}] with data {text=5}
+2017-12-05 21:04:50.730 [INFO] : [TestNG-method=runTestCase-1] Verify the plus sign become inactive
+ Running action VerifyNotExist on activeQTYPlusSign [{xpath=//*[@class="stepUp" and @state="active"]}]
+2017-12-05 21:04:50.778 [INFO] : [TestNG-method=runTestCase-1] Verify the plus sign become inactive
+ Running action VerifyExist on inactiveQTYPlusSign [{xpath=//*[@class="stepUp" and @state="inactive"]}]
+2017-12-05 21:04:50.879 [INFO] : [TestNG-method=runTestCase-1] Try to click the plus sign
+ Running action Click on inactiveQTYPlusSign [{xpath=//*[@class="stepUp" and @state="inactive"]}]
+2017-12-05 21:04:50.985 [INFO] : [TestNG-method=runTestCase-1] Verify the qty remain 5
+ Running action ContainsText on productQtyInputBox [{css=.productQuantity}] with data {text=5}
+2017-12-05 21:04:51.080 [INFO] : [TestNG-method=runTestCase-1] Verify the plus sign become inactive
+ Running action VerifyNotExist on activeQTYPlusSign [{xpath=//*[@class="stepUp" and @state="active"]}]
+2017-12-05 21:04:51.105 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 3 sec
+2017-12-05 21:04:51.424 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_QuantitySelector_Stepper_uk_chrome.html

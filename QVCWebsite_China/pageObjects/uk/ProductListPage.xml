@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ProductListPage" include="MastheadMain">
+	<TestObject name="productListModule"> 
+		<properties>   
+			<xpath>//*[@data-component-type='PRODUCT_LISTING_LIST']</xpath>
+			<id>frmProductList</id>
+		</properties> 
+	</TestObject>	
+	<TestObject name="productListHeader"> 
+		<properties>   
+			<xpath>//*[@class="active"]/h1</xpath>
+			<xpath>//*[@id="divPageTitle"]//h1</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="filterByLabel">
+		<Properties>
+			<xpath>//*[@class='facetedTitle bg-white']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="firstProductDesLink"> 
+		<properties>   
+			<xpath>//*[@class='col-tn-6 col-sm-4 galleryItem']//*[@class='productDesc'][2]</xpath>
+			<xpath>(//*[@class='productDesc'])[1]</xpath>
+			<xpath>//*[@class='productName'][1]//a</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstProductImg"> 
+		<properties>   
+			<xpath>//*[@class='productInfoWrapper']//*[@class='primary lazy'][1]</xpath>
+			<xpath>(//*[@class='prodDetailLink'])[1]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstRatingProductImg"> 
+		<properties>   
+			<xpath>(//*[@class='productNumberOfReviews']/../../..)[1]//img</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstRatingProductDesc"> 
+		<properties>   
+			<xpath>(//*[@class='productNumberOfReviews']/../../..)[1]//*[@class="productName"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstRatingProductQVCPrice"> 
+		<properties>   
+			<xpath>(//*[@class='productNumberOfReviews']/../../..)[1]//*[@class="productQvcPrice"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="firstRatingProductRating"> 
+		<properties>   
+			<xpath>(//*[@class='productNumberOfReviews']/../../..)[1]//*[@class="productRatings"]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="pageControl"> 
+		<properties>
+			<xpath>//*[@class='plControlPanel bg-white']</xpath>
+			<xpath>//*[@class='listDescriptionProductSortWrapper']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="leftNavTool"> 
+		<properties>
+			<xpath>//*[@class='col-sm-4 col-md-3 col-lg-3 col-xs-7 col-tn-10 facetedNav']</xpath>
+			<id>divNavFaceted</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="BrandFilter_FirstUnselected"> 
+		<properties>
+			<xpath>//*[@class='RefineLink']//input[@id='cbTiana B1']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="BrandFilter_FirstSelected"> 
+		<properties>  
+			<xpath>//*[@class='RefineLink']//input[@id='cbTiana B1' and @checked='checked']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="BrandFilter_FirstSelectedText"> 
+		<properties>   
+			<xpath>//*[@for='cbSize1']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PriceFilter_FirstUnselected"> 
+		<properties> 
+			<xpath>//*[@class='RefineLink']//input[@id='cb£25 - £501']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PriceFilter_FirstUnselectedText"> 
+		<properties>   
+			<xpath>//*[@for='cb£25 - £501']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PriceFilter_FirstSelected"> 
+		<properties> 
+			<xpath>//*[@class='RefineLink']//input[@id='cb£25 - £501' and @checked='checked']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="PriceFilter_FirstSelectedText"> 
+		<properties>   
+			<xpath>//*[@class='RefineLink']//label[contains(text(),"£25 - £50")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="ProductTotalNum"> 
+		<properties>   
+			<xpath>//*[@class='inlineLabelLeftOfSelect']//strong</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="1stSelectedResult"> 
+		<properties>   
+			<xpath>//*[@id='seoNavlink2' and contains(text(),"Tiana B")]</xpath>
+			<xpath>//*[@id='seoNavlink1' and contains(text(),"Tiana B")]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="2ndSelectedResult"> 
+		<properties>   
+			<xpath>//*[@id='seoNavlink1' and contains(text(),"£25 - £50")]</xpath>
+		</properties> 
+	</TestObject>	
+</Page>

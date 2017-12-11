@@ -1,0 +1,188 @@
+<html>
+<head>
+<title>TestNG:  AEM_PDP_BV_Reviews_WriteAReview_ItemWithReview_VerifySubmittedreview_uk_chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AEM_PDP_BV_Reviews_WriteAReview_ItemWithReview_VerifySubmittedreview_uk_chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 11 00:45:54 EST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>44 seconds (44076 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qvc.selenium.plugin.TestCase.runTestCase()'><b>runTestCase</b><br>Test class: com.qvc.selenium.plugin.TestCase (AEM_PDP_BV_Reviews_WriteAReview_ItemWithReview_VerifySubmittedreview_uk_chrome)<br/>
+<a href="#Output-774911157" onClick='toggleBox("Output-774911157", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-774911157" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-774911157">
+<div class=stepevent.level.toString()>Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Open browser and go to qa.qvcuk.com
+ Test module &quot;GoToUrl&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}] with data {wait=2}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 4 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Search product
+ Test module &quot;ByProductNum&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229545}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Search&quot; button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 14 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click on the &quot;Write a Review&quot; link
+ Test module &quot;ClickWriteAReviewBtn&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Product Detail&quot; page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class=&quot;breadcrumb pageBreadcrumb&quot;]}] with data {text=Product Detail}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that &quot;Write A Review&quot; button is displayed on product detail page
+ Running action VerifyExist on writeAReviewBtn [{xpath=//*[@id='BVRRContainer']//*[@class='btn btn-primary btnWriteReview']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Write A Review&quot; button on product detail page
+ Running action Click on writeAReviewBtn [{xpath=//*[@id='BVRRContainer']//*[@class='btn btn-primary btnWriteReview']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 0 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Login by email
+ Test module &quot;ByEmail&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the object exist
+ Running action WaitUntilObjectExist on signInHeader [{id=divPageTitle}] with data {wait=10}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Veify we are at &quot;Sign In&quot; page
+ Running action ContainsText on signInHeader [{id=divPageTitle}] with data {text=Sign In}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input email address
+ Running action SendKeys on emailAddressTextbox [{id=txtEmailAddress}, {name=logonId}] with data {text=a20170602034151@qvc.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input password
+ Running action SendKeys on passwordTextbox [{id=txtPassword}, {name=logonPassword}] with data {text=QtpQvc1357}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Sign in&quot;
+ Running action Click on loginBtn [{id=btnSignIn}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 13 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the account who had submitted a review
+ Test module &quot;VerifyHadAReview&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait 3 sec. until the &quot;Thank You&quot; page which is diaplayed.
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Thank You!&quot; existed.
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Thank You!}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;You have already submitted the following review for this product.&quot; existed.
+ Running action ContainsText on submittedWarningMsg [{xpath=//*[@id='BVRRSubmitContentHeaderID']/*[@class=&quot;BVRRDuplicateContentHeaderSentence BVRRDuplicateContentHeaderSentenceDuplicate&quot;]}] with data {text=You have already submitted the following review for}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the message contain the product number
+ Running action ContainsText on submittedWarningMsg [{xpath=//*[@id='BVRRSubmitContentHeaderID']/*[@class=&quot;BVRRDuplicateContentHeaderSentence BVRRDuplicateContentHeaderSentenceDuplicate&quot;]}] with data {text=229545}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click on the &quot; Reutrn to product&quot; link.
+ Running action Click on returnToProductLink [{xpath=//*[@id='BVRRReviewFormButtonsID']/a}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait 3 sec. until the &quot;Product Detail&quot; page which is diaplayed.
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class=&quot;breadcrumb pageBreadcrumb&quot;]}] with data {wait=3}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Product Detail&quot; page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class=&quot;breadcrumb pageBreadcrumb&quot;]}] with data {text=Product Detail}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 10 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Report file generated: c:\seleniumframeworkplugin\testOutput\16\DetailReport\Pass_AEM_PDP_BV_Reviews_WriteAReview_ItemWithReview_VerifySubmittedreview_uk_chrome.html
+</div><br/><br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>com.qvc.selenium.plugin.TestCase@69f71b08</td></tr>
+</table><p>
+</body>
+</html>

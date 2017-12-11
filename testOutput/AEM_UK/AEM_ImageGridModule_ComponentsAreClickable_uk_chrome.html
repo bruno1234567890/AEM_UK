@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>TestNG:  AEM_ImageGridModule_ComponentsAreClickable_uk_chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AEM_ImageGridModule_ComponentsAreClickable_uk_chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 11 00:48:01 EST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>24 seconds (24015 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qvc.selenium.plugin.TestCase.runTestCase()'><b>runTestCase</b><br>Test class: com.qvc.selenium.plugin.TestCase (AEM_ImageGridModule_ComponentsAreClickable_uk_chrome)<br/>
+<a href="#Output-1727447240" onClick='toggleBox("Output-1727447240", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1727447240" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1727447240">
+<div class=stepevent.level.toString()>Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Go to URL qa.qvc.com
+ Test module &quot;GotoUrl&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}] with data {wait=2}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 5 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify user can be navigated to correct page after click each image
+ Test module &quot;ImageGrid_Clickable&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify Image Grid Module header exist
+ Running action VerifyExist on imageGridHeader [{xpath=//*[@data-module-type='IMAGE_GRID']//h2}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click left image of &quot;Image Grid Module&quot;
+ Running action Click on gridLeftImg [{xpath=//div[@data-component-type='&lt;grid&gt;']//div[@class='col-tn-6 col-sm-4 left']//img}] with data {grid=IMAGE_GRID}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class=&quot;active&quot;]/h1}, {xpath=//*[@id=&quot;divPageTitle&quot;]//h1}] with data {storeas=category}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Return to home page
+ Running action Browser with data {action=back}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click Middle image -1st left  of &quot;Image Grid Module&quot;
+ Running action Click on gridMidLeftImg [{xpath=//div[@data-component-type='&lt;grid&gt;']//div[@class='col-tn-6 top left']//img}] with data {grid=IMAGE_GRID}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class=&quot;active&quot;]/h1}, {xpath=//*[@id=&quot;divPageTitle&quot;]//h1}] with data {storeas=category}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Return to home page
+ Running action Browser with data {action=back}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click Middle image -1st right  of &quot;Image Grid Module&quot;
+ Running action Click on gridMidRightImg [{xpath=//div[@data-component-type='&lt;grid&gt;']//div[@class='col-tn-6 top right']//img}] with data {grid=IMAGE_GRID}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class=&quot;active&quot;]/h1}, {xpath=//*[@id=&quot;divPageTitle&quot;]//h1}] with data {storeas=category}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Return to home page
+ Running action Browser with data {action=back}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click right image of &quot;Image Grid Module&quot;
+ Running action Click on gridRightImg [{xpath=//div[@data-component-type='&lt;grid&gt;']//div[@class='col-tn-6 col-sm-4 col-sm-push-4 right']//img}] with data {grid=IMAGE_GRID}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class=&quot;active&quot;]/h1}, {xpath=//*[@id=&quot;divPageTitle&quot;]//h1}] with data {storeas=category}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 17 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Report file generated: c:\seleniumframeworkplugin\testOutput\16\DetailReport\Pass_AEM_ImageGridModule_ComponentsAreClickable_uk_chrome.html
+</div><br/><br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.qvc.selenium.plugin.TestCase@4265d38c</td></tr>
+</table><p>
+</body>
+</html>

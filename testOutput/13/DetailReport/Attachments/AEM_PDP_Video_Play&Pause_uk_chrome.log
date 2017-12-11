@@ -1,0 +1,69 @@
+2017-12-10 21:46:02.716 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://10.14.19.220:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=WINDOWS}]
+2017-12-10 21:46:07.888 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:46:07.888 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:46:11.338 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:46:12.664 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:46:12.850 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:46:13.328 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:46:13.328 [INFO] : [TestNG-method=runTestCase-1] Search a product with On Air Presenatation Video
+ Test module "BYPRODUCTNUM"
+2017-12-10 21:46:13.344 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:46:17.850 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=148947}
+2017-12-10 21:46:18.488 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:46:22.817 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:46:28.065 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 21:46:28.065 [INFO] : [TestNG-method=runTestCase-1] Verify that video can play and pause
+ Test module "VerifyVideoPlay&Pause"
+2017-12-10 21:46:28.065 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure we are at correct page: "Product Detail" page
+ Running action WaitUntilObjectExist on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-10 21:46:28.266 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at  correct product number's "Product Detail" page
+ Running action ContainsText on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {text=148947}
+2017-12-10 21:46:28.368 [INFO] : [TestNG-method=runTestCase-1] Wait until video player is shown
+ Running action WaitUntilObjectExist on videoField [{xpath=//div[@class="productVideo"]}] with data {wait=3}
+2017-12-10 21:46:31.574 [INFO] : [TestNG-method=runTestCase-1] Loop to click Video player until Resume button is shown
+ Running action VerifyExist on videoPlayer [{xpath=//div[@class="productVideo"]//video}]
+2017-12-10 21:46:31.703 [INFO] : [TestNG-method=runTestCase-1] Loop to click Video player until Resume button is shown
+ Running action VerifyExist on resumeBtn [{xpath=//button[@title="Resume"]}]
+2017-12-10 21:46:37.506 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//button[@title="Resume"]}
+2017-12-10 21:46:37.506 [ERROR] : [TestNG-method=runTestCase-1] Exception: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title="Resume"]"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-26 23:59:50'
+System info: host: 'QUFT12015', ip: '10.14.19.220', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=E:\Users\00926256\AppData\Local\Temp\scoped_dir6452_30502}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8b49666f51620e41af10d6b599373c75
+*** Element info: {Using=xpath, value=//button[@title="Resume"]}
+Command duration or timeout: 139 milliseconds
+2017-12-10 21:46:37.506 [INFO] : [TestNG-method=runTestCase-1] Loop click video player to pause
+[Note: In order to make sure the buttons in control bar can be found]
+ Running action Click on videoPlayer [{xpath=//div[@class="productVideo"]//video}]
+2017-12-10 21:46:38.067 [INFO] : [TestNG-method=runTestCase-1] Verify Play button in contorl bar is displayed when video is puased
+ Running action VerifyExist on playVideoBtn [{xpath=//button[@title="Play"]}]
+2017-12-10 21:46:38.381 [INFO] : [TestNG-method=runTestCase-1] Verify Resume button which is in the middle of video is displayed when video is paused
+ Running action VerifyExist on resumeBtn [{xpath=//button[@title="Resume"]}]
+2017-12-10 21:46:38.449 [INFO] : [TestNG-method=runTestCase-1] Click Resume button to play video
+ Running action Click on resumeBtn [{xpath=//button[@title="Resume"]}]
+2017-12-10 21:46:38.603 [INFO] : [TestNG-method=runTestCase-1] Verify Pause button in control bar is displayed when video is playing
+ Running action VerifyExist on pauseVideoBtn [{xpath=//button[@title="Pause"]}]
+2017-12-10 21:46:38.666 [INFO] : [TestNG-method=runTestCase-1] Click Pause button in control bar
+ Running action Click on pauseVideoBtn [{xpath=//button[@title="Pause"]}]
+2017-12-10 21:46:38.819 [INFO] : [TestNG-method=runTestCase-1] Verify Play button in control bar is displayed when video is puased
+ Running action VerifyExist on playVideoBtn [{xpath=//button[@title="Play"]}]
+2017-12-10 21:46:38.865 [INFO] : [TestNG-method=runTestCase-1] Click Play button in control bar
+ Running action Click on playVideoBtn [{xpath=//button[@title="Play"]}]
+2017-12-10 21:46:39.065 [INFO] : [TestNG-method=runTestCase-1] Verify Pause button in control bar is displayed when video is playing
+ Running action VerifyExist on pauseVideoBtn [{xpath=//button[@title="Pause"]}]
+2017-12-10 21:46:39.139 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 11 sec
+2017-12-10 21:46:40.769 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_PDP_Video_Play&Pause_uk_chrome.html

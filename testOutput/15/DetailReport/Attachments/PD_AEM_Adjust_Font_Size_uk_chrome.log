@@ -1,0 +1,71 @@
+2017-12-10 22:58:26.382 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 22:58:27.470 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvcuk.com"
+ Test module "GotoUrl"
+2017-12-10 22:58:27.472 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 22:58:30.743 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 22:58:32.394 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 22:58:32.613 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 22:58:33.555 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-10 22:58:33.566 [INFO] : [TestNG-method=runTestCase-1] Search a regular item
+ Test module "ByProductNum"
+2017-12-10 22:58:33.568 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 22:58:38.289 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229451}
+2017-12-10 22:58:39.075 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 22:58:42.758 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 22:58:48.471 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 22:58:48.575 [INFO] : [TestNG-method=runTestCase-1] Verify "Adjust Font Size" exists and font size can be enlarge and reduce
+ Test module "VerifyAdjustFontSize"
+2017-12-10 22:58:48.577 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 22:58:48.768 [INFO] : [TestNG-method=runTestCase-1] Verify Adjust Text Size object exists
+ Running action VerifyExist on AdjustFontSizeText [{xpath=//*[@class="adjustFontSize"]}]
+2017-12-10 22:58:48.908 [INFO] : [TestNG-method=runTestCase-1] Verify Adjust Text Size is visable
+ Running action ContainsText on AdjustFontSizeText [{xpath=//*[@class="adjustFontSize"]}] with data {text=Adjust Text Size}
+2017-12-10 22:58:49.058 [INFO] : [TestNG-method=runTestCase-1] Verify increase size button exist and default red
+ Running action VerifyExist on increaseSizeButtonRed [{xpath=//*[@class="increaseSize"]}]
+2017-12-10 22:58:49.203 [INFO] : [TestNG-method=runTestCase-1] Verify decrease size button exist and default red
+ Running action VerifyExist on decreaseSizeButtonRed [{xpath=//*[@class="decreaseSize"]}]
+2017-12-10 22:58:49.352 [INFO] : [TestNG-method=runTestCase-1] Verify the size of the current accordion text is 13 px
+ Running action VerifyExist on accordionTextSize_13px [{xpath=//*[@class="accordionText" and @style="font-size: 13px;"]}]
+2017-12-10 22:58:49.535 [INFO] : [TestNG-method=runTestCase-1] Click increase size button
+ Running action Click on increaseSizeButtonRed [{xpath=//*[@class="increaseSize"]}]
+2017-12-10 22:58:49.826 [INFO] : [TestNG-method=runTestCase-1] Verify the size of the current accordion text is 15 px
+ Running action VerifyExist on accordionTextSize_15px [{xpath=//*[@class="accordionText" and @style="font-size: 15px;"]}]
+2017-12-10 22:58:49.923 [INFO] : [TestNG-method=runTestCase-1] Click increase size button
+ Running action Click on increaseSizeButtonRed [{xpath=//*[@class="increaseSize"]}]
+2017-12-10 22:58:50.054 [INFO] : [TestNG-method=runTestCase-1] Verify the size of the current accordion text is 17 px
+ Running action VerifyExist on accordionTextSize_17px [{xpath=//*[@class="accordionText" and @style="font-size: 17px;"]}]
+2017-12-10 22:58:50.162 [INFO] : [TestNG-method=runTestCase-1] Click increase size button
+ Running action Click on increaseSizeButtonRed [{xpath=//*[@class="increaseSize"]}]
+2017-12-10 22:58:50.386 [INFO] : [TestNG-method=runTestCase-1] Verify the size of the current accordion text is 19 px
+ Running action VerifyExist on accordionTextSize_19px [{xpath=//*[@class="accordionText" and @style="font-size: 19px;"]}]
+2017-12-10 22:58:50.493 [INFO] : [TestNG-method=runTestCase-1] Verify the increase size button turns grey
+ Running action VerifyExist on increaseSizeButtonGrey [{xpath=//*[@class="increaseSize disabled"]}]
+2017-12-10 22:58:50.596 [INFO] : [TestNG-method=runTestCase-1] Click decrease size button
+ Running action Click on decreaseSizeButtonRed [{xpath=//*[@class="decreaseSize"]}]
+2017-12-10 22:58:50.776 [INFO] : [TestNG-method=runTestCase-1] Verify the size of the current accordion text is 17 px
+ Running action VerifyExist on accordionTextSize_17px [{xpath=//*[@class="accordionText" and @style="font-size: 17px;"]}]
+2017-12-10 22:58:50.833 [INFO] : [TestNG-method=runTestCase-1] Click decrease size button
+ Running action Click on decreaseSizeButtonRed [{xpath=//*[@class="decreaseSize"]}]
+2017-12-10 22:58:50.948 [INFO] : [TestNG-method=runTestCase-1] Verify the size of the current accordion text is 15 px
+ Running action VerifyExist on accordionTextSize_15px [{xpath=//*[@class="accordionText" and @style="font-size: 15px;"]}]
+2017-12-10 22:58:51.011 [INFO] : [TestNG-method=runTestCase-1] Click decrease size button
+ Running action Click on decreaseSizeButtonRed [{xpath=//*[@class="decreaseSize"]}]
+2017-12-10 22:58:51.129 [INFO] : [TestNG-method=runTestCase-1] Verify the size of the current accordion text is 13 px
+ Running action VerifyExist on accordionTextSize_13px [{xpath=//*[@class="accordionText" and @style="font-size: 13px;"]}]
+2017-12-10 22:58:51.200 [INFO] : [TestNG-method=runTestCase-1] Click decrease size button
+ Running action Click on decreaseSizeButtonRed [{xpath=//*[@class="decreaseSize"]}]
+2017-12-10 22:58:51.368 [INFO] : [TestNG-method=runTestCase-1] Verify the size of the current accordion text is 11 px
+ Running action VerifyExist on accordionTextSize_11px [{xpath=//*[@class="accordionText" and @style="font-size: 11px;"]}]
+2017-12-10 22:58:51.471 [INFO] : [TestNG-method=runTestCase-1] Verify the decrease size button turns grey
+ Running action VerifyExist on decreaseSizeButtonGrey [{xpath=//*[@class="decreaseSize disabled"]}]
+2017-12-10 22:58:51.579 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 3 sec
+2017-12-10 22:58:51.930 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\15\DetailReport\Pass_PD_AEM_Adjust_Font_Size_uk_chrome.html

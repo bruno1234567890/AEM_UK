@@ -1,0 +1,53 @@
+2017-12-10 21:53:17.450 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:53:18.382 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvcuk.com"
+ Test module "GotoUrl"
+2017-12-10 21:53:18.384 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:53:20.714 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:53:22.272 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:53:22.465 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:53:23.209 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-10 21:53:23.229 [INFO] : [TestNG-method=runTestCase-1] Navigate to on air item
+ Test module "NavToItemOnAir"
+2017-12-10 21:53:23.230 [INFO] : [TestNG-method=runTestCase-1] Click on air item
+ Running action Click on itemOnAirImg [{xpath=//*[@data-module-type='ON_AIR']//div[@class='onAirProdInfo']//*[contains(@class,'productImg')]}]
+2017-12-10 21:53:26.782 [INFO] : [TestNG-method=runTestCase-1] Wait until the object show up to make sure we are switch to correct page
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {wait=5}
+2017-12-10 21:53:31.932 [INFO] : [TestNG-method=runTestCase-1] Verify we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:53:32.053 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 8 sec
+2017-12-10 21:53:32.055 [INFO] : [TestNG-method=runTestCase-1] Verify the on air item badge exist
+ Test module "VerifyIOABadgeExist"
+2017-12-10 21:53:32.055 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:53:32.196 [INFO] : [TestNG-method=runTestCase-1] Verify the Item on air text exist
+ Running action ContainsText on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}] with data {text=Item On Air}
+2017-12-10 21:53:32.568 [INFO] : [TestNG-method=runTestCase-1] Verify the Item on air badge exist
+ Running action ContainsText on itemOnAirBadge [{xpath=//*[@class='col-tn-4 col-xs-2']//*[@class="prodBadge"]}] with data {text=ITEM ON AIR}
+2017-12-10 21:53:32.725 [INFO] : [TestNG-method=runTestCase-1] Store the product number
+ Running action TEXT on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {storeas=ProductNum}
+2017-12-10 21:53:32.880 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:53:32.888 [INFO] : [TestNG-method=runTestCase-1] Search product
+ Test module "ByProductNum"
+2017-12-10 21:53:32.888 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:53:37.378 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=827533}
+2017-12-10 21:53:37.993 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:53:40.784 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:53:46.810 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 13 sec
+2017-12-10 21:53:46.810 [INFO] : [TestNG-method=runTestCase-1] Verify the on air item badge not exist
+ Test module "VerifyIOABadgeNotExist"
+2017-12-10 21:53:46.811 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:53:46.968 [INFO] : [TestNG-method=runTestCase-1] Verify the Item on air text not exist
+ Running action VerifyNotExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:53:47.027 [INFO] : [TestNG-method=runTestCase-1] Verify the Item on air badge not exist
+ Running action VerifyNotExist on itemOnAirBadge [{xpath=//*[@class='col-tn-4 col-xs-2']//*[@class="prodBadge"]}]
+2017-12-10 21:53:47.088 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:53:47.380 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Pass_AEM_PDP_Item_On_Air_UK_uk_chrome.html

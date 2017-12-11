@@ -1,0 +1,8 @@
+2017-12-11 00:41:01.124 [INFO] com.qvc.selenium.LocalTestSuiteRunner.main() : Build Suite Execution Time 0 min, 5 sec
+2017-12-11 00:50:12.288 [INFO] com.qvc.selenium.LocalTestSuiteRunner.main() : Summary report file generate: testOutput\16\AEM_UK_SummaryReport.html
+2017-12-11 00:50:14.899 [INFO] com.qvc.selenium.LocalTestSuiteRunner.main() : >> AEM_UK <<
+2017-12-11 00:50:15.732 [INFO] com.qvc.selenium.LocalTestSuiteRunner.main() :  Execution Time 9 min, 14 sec
+2017-12-11 00:50:15.743 [INFO] com.qvc.selenium.LocalTestSuiteRunner.main() : Build Suite Execution Time 0 min, 0 sec
+2017-12-11 00:52:25.961 [INFO] com.qvc.selenium.LocalTestSuiteRunner.main() : Summary report file generate: testOutput\16\AEM_UK_SummaryReport_ReRun.html
+2017-12-11 00:52:27.872 [INFO] com.qvc.selenium.LocalTestSuiteRunner.main() : >> AEM_UK <<
+2017-12-11 00:52:28.158 [INFO] com.qvc.selenium.LocalTestSuiteRunner.main() :  Execution Time 2 min, 12 sec

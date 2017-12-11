@@ -1,0 +1,37 @@
+2017-12-10 21:46:57.321 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:46:58.250 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:46:58.250 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-10 21:47:01.669 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:47:03.364 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:47:03.587 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:47:04.149 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:47:04.149 [INFO] : [TestNG-method=runTestCase-1] Verify the large static image is displayed on home  page and linking to related page
+ Test module "LargeStaticImg_Clickable"
+2017-12-10 21:47:04.149 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on BackToHomePage [{xpath=//img[@title='QVC']}, {id=pageMasthead}, {id=divMastheadLogo}, {id=mastheadLogo}, {linkText=Home}]
+2017-12-10 21:47:04.302 [INFO] : [TestNG-method=runTestCase-1] Verify the large static image is displayed
+ Running action VerifyExist on largeStaticImage [{xpath=//*[@class='visible-dt cq-dd-largeDisplayImage']}]
+2017-12-10 21:47:04.418 [INFO] : [TestNG-method=runTestCase-1] Click the large static image
+ Running action Click on largeStaticImage [{xpath=//*[@class='visible-dt cq-dd-largeDisplayImage']}]
+2017-12-10 21:47:06.216 [INFO] : [TestNG-method=runTestCase-1] Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+2017-12-10 21:49:07.211 [INFO] : [TestNG-method=runTestCase-1] Locator was: {id=frmProductList}
+2017-12-10 21:49:07.212 [ERROR] : [TestNG-method=runTestCase-1] Exception: no such element: Unable to locate element: {"method":"id","selector":"frmProductList"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 4.4.0-96-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'wchpilsgrid04', ip: '167.140.56.169', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-96-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57), userDataDir=/tmp/.org.chromium.Chromium.6Iz66b}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 43acbd02f01929f09284248ca40e6426
+*** Element info: {Using=id, value=frmProductList}
+Command duration or timeout: 346 milliseconds
+2017-12-10 21:49:07.213 [ERROR] : [TestNG-method=runTestCase-1] 3: PERFORM-WaitUntilObjectExist : Wait until product list page display
+2017-12-10 21:49:07.744 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Fail_AEM_StaticImage_ComponentsAreClickable_FrontEnd_uk_chrome.html

@@ -1,0 +1,50 @@
+2017-12-11 00:47:41.359 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-11 00:47:42.445 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-11 00:47:42.445 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-11 00:47:46.392 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-11 00:47:48.124 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-11 00:47:48.324 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-11 00:47:48.964 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-11 00:47:49.019 [INFO] : [TestNG-method=runTestCase-1] Verify that clicking on multiple products on the On Air module  takes user to correct page for that product
+ Test module "IROA_Clickable"
+2017-12-11 00:47:49.020 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-11 00:47:49.589 [INFO] : [TestNG-method=runTestCase-1] Verify that "On Air Module" is displayed
+ Running action VerifyExist on onAirModule [{xpath=//*[@data-module-type="ON_AIR"]}]
+2017-12-11 00:47:49.780 [INFO] : [TestNG-method=runTestCase-1] Verify "WATCH NOW" link is displayed
+ Running action VerifyExist on watchNowLink [{xpath=//*[@class='onAirWatch col-tn-12 col-xs-6']//a}]
+2017-12-11 00:47:49.909 [INFO] : [TestNG-method=runTestCase-1] Click "WATCH NOW" link
+ Running action Click on watchNowLink [{xpath=//*[@class='onAirWatch col-tn-12 col-xs-6']//a}]
+2017-12-11 00:47:50.161 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser - QVC Live Stream
+ Running action Browser with data {action=SwitchToNewBrowser}
+2017-12-11 00:47:50.208 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser, windowHandle - CDwindow-feee62ac-d845-4926-9533-179cc80fe389
+2017-12-11 00:47:50.213 [INFO] : [TestNG-method=runTestCase-1] Wait until "QVC Live Stream" page displayed
+ Running action WaitUntilObjectExist on TVHeader [{class=active}]
+2017-12-11 00:47:51.951 [INFO] : [TestNG-method=runTestCase-1] Verify that "QVC Live Stream" page is displayed
+ Running action ContainsText on TVHeader [{class=active}] with data {text=QVC UK – Watch Live}
+2017-12-11 00:47:52.093 [INFO] : [TestNG-method=runTestCase-1] Close the new browser
+ Running action Browser with data {action=CloseNewBrowser}
+2017-12-11 00:47:52.182 [INFO] : [TestNG-method=runTestCase-1] Close the new browser, windowHandle - CDwindow-b2740f87-9654-4b49-ad57-25527e331da3
+2017-12-11 00:47:52.183 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on BackToHomePage [{xpath=//img[@title='QVC']}, {id=pageMasthead}, {id=divMastheadLogo}, {id=mastheadLogo}, {linkText=Home}]
+2017-12-11 00:47:52.408 [INFO] : [TestNG-method=runTestCase-1] Click the first product image of "Items recently on air"
+ Running action Click on itemsRecentlyOnAirImg1 [{xpath=//*[@data-module-type="ON_AIR"]//*[@class='carouselItem col-sm-2'][1]//a[1]}]
+2017-12-11 00:47:55.621 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-11 00:47:55.767 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action VerifyExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-11 00:47:55.874 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-11 00:47:57.158 [INFO] : [TestNG-method=runTestCase-1] Click "Shop Items On Air"
+ Running action Click on shopItemsOnAirBtn [{xpath=//*[@data-component-type="ITEMS_RECENTLY_ON_AIR"]//*[@class="btn btn-primary"]}]
+2017-12-11 00:47:59.527 [INFO] : [TestNG-method=runTestCase-1] Wait until IROA page display
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=10}
+2017-12-11 00:48:10.746 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Shop QVC TV page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Recent on-air items}
+2017-12-11 00:48:11.676 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 22 sec
+2017-12-11 00:48:12.023 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\16\DetailReport\Pass_AEM_IROA_ComponentsAreClickable_uk_chrome.html

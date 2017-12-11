@@ -1,0 +1,59 @@
+2017-12-05 21:09:56.501 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:09:57.383 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-05 21:09:57.384 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:09:59.751 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:10:01.206 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:10:01.391 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:10:02.139 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-05 21:10:02.140 [INFO] : [TestNG-method=runTestCase-1] Search an item with Related Items
+ Test module "ByProductNum"
+2017-12-05 21:10:02.141 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:10:06.672 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=212060}
+2017-12-05 21:10:07.334 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:10:11.489 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:10:16.798 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-05 21:10:16.839 [INFO] : [TestNG-method=runTestCase-1] Click the image/description of one Related item, navigate to PDP page of that item
+ Test module "ClickRelatedCarouselItem"
+2017-12-05 21:10:16.840 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure we are at correct page: "Product Detail" page
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:10:16.992 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:10:17.101 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure there's Related Carousel section
+ Running action WaitUntilObjectExist on relatedCarouselTitle [{xpath=//*[contains(@id,'product_carousel')]//*[.='You may also like...']}] with data {wait=3}
+2017-12-05 21:10:20.225 [INFO] : [TestNG-method=runTestCase-1] Verify that related carousel title is displayed
+ Running action VerifyExist on relatedCarouselTitle [{xpath=//*[contains(@id,'product_carousel')]//*[.='You may also like...']}]
+2017-12-05 21:10:20.295 [INFO] : [TestNG-method=runTestCase-1] Store the description of the first one related item
+ Running action Text on firstRelatedCarouseItemDesc [{xpath=//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]//*[@class="productDesc"]}] with data {storeas=productDesc}
+2017-12-05 21:10:20.462 [INFO] : [TestNG-method=runTestCase-1] Click image of first one related item
+ Running action Click on firstRelatedCarouseItemImg [{xpath=//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]//img}]
+2017-12-05 21:10:23.914 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure we are at correct page: "Product Detail" page
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:10:24.050 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:10:24.160 [INFO] : [TestNG-method=runTestCase-1] Verify the item description is same as the first one related item's
+ Running action ContainsText on productTitleText [{xpath=//*[@class='pdShortDesc']//h1}] with data {text=Liz Earle Cleanse/Polish duo}
+2017-12-05 21:10:24.348 [INFO] : [TestNG-method=runTestCase-1] Back to last page
+ Running action Browser with data {action=back}
+2017-12-05 21:10:26.226 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure we are at correct page: "Product Detail" page
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:10:26.339 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:10:26.453 [INFO] : [TestNG-method=runTestCase-1] Click the description of first one related item
+ Running action Click on firstRelatedCarouseItemDesc [{xpath=//*[contains(@class, 'relatedItemsCarousel')]//div[contains(@class,'carouselItem')][1]//*[@class="productDesc"]}]
+2017-12-05 21:10:28.955 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure we are at correct page: "Product Detail" page
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:10:29.069 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:10:29.202 [INFO] : [TestNG-method=runTestCase-1] Verify the item description is same as the first one related item's
+ Running action ContainsText on productTitleText [{xpath=//*[@class='pdShortDesc']//h1}] with data {text=Liz Earle Cleanse/Polish duo}
+2017-12-05 21:10:29.361 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 12 sec
+2017-12-05 21:10:29.648 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_PDP_RelatedCarousel_ClickItem_uk_chrome.html

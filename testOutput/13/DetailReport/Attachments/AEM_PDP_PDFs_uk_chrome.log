@@ -1,0 +1,41 @@
+2017-12-10 21:40:54.404 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:40:55.601 [INFO] : [TestNG-method=runTestCase-1] Go to url qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:40:55.601 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:40:58.871 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:41:00.572 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:41:00.810 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:41:01.758 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-10 21:41:01.758 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "ByProductNum"
+2017-12-10 21:41:01.758 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:41:06.350 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=146094}
+2017-12-10 21:41:07.034 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:41:11.534 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:41:17.402 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 15 sec
+2017-12-10 21:41:17.556 [INFO] : [TestNG-method=runTestCase-1] Verify the pdf link
+ Test module "VerifyPDF"
+2017-12-10 21:41:17.560 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:41:17.841 [INFO] : [TestNG-method=runTestCase-1] Verify the pdf attachment exist
+ Running action VerifyExist on pdfSecondAttachFileLink [{xpath=//*[@class="accordionFiles"]//li[2]/a}]
+2017-12-10 21:41:18.019 [INFO] : [TestNG-method=runTestCase-1] Click the pdf link
+ Running action Click on pdfSecondAttachFileLink [{xpath=//*[@class="accordionFiles"]//li[2]/a}]
+2017-12-10 21:41:18.351 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser
+ Running action Browser with data {action=SwitchToNewBrowser}
+2017-12-10 21:41:18.403 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser, windowHandle - CDwindow-0804c8db-93cb-40cb-b7ea-4ba08da76e62
+2017-12-10 21:41:18.403 [INFO] : [TestNG-method=runTestCase-1] Verify PDF review page exist
+ Running action VerifyExist on pdfPageContent [{id=pageContainer1}, {xpath=//*[@type="application/pdf"]}]
+2017-12-10 21:41:19.033 [INFO] : [TestNG-method=runTestCase-1] Close the new browser
+ Running action Browser with data {action=CloseNewBrowser}
+2017-12-10 21:41:19.134 [INFO] : [TestNG-method=runTestCase-1] Close the new browser, windowHandle - CDwindow-77412d73-4b35-41a3-a5d1-a37aee506898
+2017-12-10 21:41:19.134 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 1 sec
+2017-12-10 21:41:19.456 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_PDP_PDFs_uk_chrome.html

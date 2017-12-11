@@ -1,0 +1,167 @@
+2017-12-10 21:43:23.160 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:43:24.197 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:43:24.198 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:43:26.539 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:43:28.050 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:43:28.256 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:43:29.015 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-10 21:43:29.022 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "BYPRODUCTNUM"
+2017-12-10 21:43:29.023 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:43:33.638 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=228484}
+2017-12-10 21:43:34.313 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:43:38.625 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:43:44.374 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 15 sec
+2017-12-10 21:43:44.424 [INFO] : [TestNG-method=runTestCase-1] Expand the first question of "View all Q&A"
+ Test module "NavToFirstQuestionOfViewAllQA"
+2017-12-10 21:43:44.430 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:43:44.612 [INFO] : [TestNG-method=runTestCase-1] Verify we are on page "VIEW ALL Q&A"
+ Running action VerifyExist on toolbarOfTabViewAllQAndA [{xpath=//div[@id='BVQAViewQuestionsContentID']//div[@id='BVQAToolbarID']}]
+2017-12-10 21:43:44.757 [INFO] : [TestNG-method=runTestCase-1] Click link of the first question title
+ Running action Click on firstQuestionTitleOfViewAllQAndALink [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class='BVQAQuestionSummary']/a}]
+2017-12-10 21:43:45.106 [INFO] : [TestNG-method=runTestCase-1] Store the text of the first question title
+ Running action Text on firstQuestionTitleOfViewAllQAndALink [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class='BVQAQuestionSummary']/a}] with data {storeas=firstQuestionTitle}
+2017-12-10 21:43:45.240 [INFO] : [TestNG-method=runTestCase-1] Check whether the question has question detail
+ Running action CheckForElements on firstQuestionDetailOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//div[@class='BVQAContentText BVQAQuestionDetails']}]
+2017-12-10 21:43:45.405 [INFO] : [TestNG-method=runTestCase-1] Verify the question detail of the first question title exists
+ Running action VerifyExist on firstQuestionDetailOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//div[@class='BVQAContentText BVQAQuestionDetails']}]
+2017-12-10 21:43:45.489 [INFO] : [TestNG-method=runTestCase-1] Save the text of the question detail of the first question title exists
+ Running action Text on firstQuestionDetailOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//div[@class='BVQAContentText BVQAQuestionDetails']}] with data {storeas=firstQuestionDetail}
+2017-12-10 21:43:45.596 [INFO] : [TestNG-method=runTestCase-1] Verify the  asker's nickname of the first question is displayed
+ Running action VerifyExist on askerOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//div[@class='BVQAQuestionDataBar BVQADataBar']//div[@class='BVQANickname']}]
+2017-12-10 21:43:45.719 [INFO] : [TestNG-method=runTestCase-1] Store the  asker's nickname of the first question
+ Running action Text on askerOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//div[@class='BVQAQuestionDataBar BVQADataBar']//div[@class='BVQANickname']}] with data {storeas=askerOfFirstQuestion}
+2017-12-10 21:43:45.810 [INFO] : [TestNG-method=runTestCase-1] Verify button"ANSWER" exists
+ Running action VerifyExist on firstAnswerBtnOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="btn btn-secondary btnAnswerQuestion"]}]
+2017-12-10 21:43:45.936 [INFO] : [TestNG-method=runTestCase-1] Verify the date of the first question is displayed
+ Running action VerifyExist on dateOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//div[@class="BVQAElapsedTime"]}]
+2017-12-10 21:43:46.055 [INFO] : [TestNG-method=runTestCase-1] Store the  date of the first question
+ Running action Text on dateOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//div[@class="BVQAElapsedTime"]}] with data {storeas=Date}
+2017-12-10 21:43:46.158 [INFO] : [TestNG-method=runTestCase-1] Verify the location of the first question is displayed
+ Running action VerifyExist on locationOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//div[@class="BVQALocation"]}]
+2017-12-10 21:43:46.282 [INFO] : [TestNG-method=runTestCase-1] Store the location of the first question
+ Running action Text on locationOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//div[@class="BVQALocation"]}] with data {storeas=Location}
+2017-12-10 21:43:46.388 [INFO] : [TestNG-method=runTestCase-1] Check whether the age info detail exist
+ Running action CheckForElements on ageTextOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[contains(@class,'BVQAContextDataValueagePrefix')]}]
+2017-12-10 21:43:46.535 [INFO] : [TestNG-method=runTestCase-1] Verify the text of "Age" exist
+ Running action ContainsText on ageTextOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[contains(@class,'BVQAContextDataValueagePrefix')]}] with data {text=Age}
+2017-12-10 21:43:46.662 [INFO] : [TestNG-method=runTestCase-1] Store the content of "Age"
+ Running action Text on ageContentOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValueage"]}] with data {storeas=Age}
+2017-12-10 21:43:46.833 [INFO] : [TestNG-method=runTestCase-1] Check whether the shop time info detail exist
+ Running action CheckForElements on shopTimeTextOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[contains(@class,'BVQAContextDataValuehowLongShoppingPrefix')]}]
+2017-12-10 21:43:46.980 [INFO] : [TestNG-method=runTestCase-1] Verify the text of "How long have you been shopping with QVC" exist
+ Running action ContainsText on shopTimeTextOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[contains(@class,'BVQAContextDataValuehowLongShoppingPrefix')]}] with data {text=How long have you been shopping with QVC}
+2017-12-10 21:43:47.110 [INFO] : [TestNG-method=runTestCase-1] Store the content of shop time
+ Running action Text on shopTimeContentOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValuehowLongShopping"]}] with data {storeas=shopTime}
+2017-12-10 21:43:47.265 [INFO] : [TestNG-method=runTestCase-1] Check whether the recommend info detail exist
+ Running action CheckForElements on recommendTextOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[contains(@class,'BVQAContextDataValuewouldRecommendPrefix')]}]
+2017-12-10 21:43:47.409 [INFO] : [TestNG-method=runTestCase-1] Verify the text of "Would you recommend this product as a gift" exist
+ Running action ContainsText on recommendTextOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[contains(@class,'BVQAContextDataValuewouldRecommendPrefix')]}] with data {text=Would you recommend this product as a gift}
+2017-12-10 21:43:47.559 [INFO] : [TestNG-method=runTestCase-1] Store the content of recommend
+ Running action Text on recommendContentOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValuewouldRecommend"]}] with data {storeas=recommendContent}
+2017-12-10 21:43:47.734 [INFO] : [TestNG-method=runTestCase-1] Check whether the gift option info detail exist
+ Running action CheckForElements on giftOptionTextOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[contains(@class,'BVQAContextDataValueperfectGiftForPrefix')]}]
+2017-12-10 21:43:47.856 [INFO] : [TestNG-method=runTestCase-1] Verify the text of "Who would this be a perfect gift for" exist
+ Running action ContainsText on giftOptionTextOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[contains(@class,'BVQAContextDataValueperfectGiftForPrefix')]}] with data {text=Who would this be a perfect gift for}
+2017-12-10 21:43:47.996 [INFO] : [TestNG-method=runTestCase-1] Store the content of gift option
+ Running action Text on giftOptionContentOfFirstQuestionOfViewAllQAndA [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValueperfectGiftFor"]}] with data {storeas=giftOption}
+2017-12-10 21:43:48.163 [INFO] : [TestNG-method=runTestCase-1] Verify button "Flag"(Report as inappropriate) exists
+ Running action VerifyExist on firstReportAsInappropriateOfViewAllQAndABtn [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[@class="BVQAFeedback BVQAInappropriateFeedback"]//div[@class="BVQAActiveFeedback"]/a}]
+2017-12-10 21:43:48.290 [INFO] : [TestNG-method=runTestCase-1] Verify button "Helpful" exists
+ Running action VerifyExist on answerHelpYesBtn [{xpath=//*[contains(@id,'BVQAAnswer')][1]//*[@class='BVQAActiveFeedback']/*[@title="Helpful"]}, {xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[contains(@id,"BVQAAnswer")][1]//div[contains(@class,"BVQAPositiveFeedback")]//div[@class="BVQAActiveFeedback"]}]
+2017-12-10 21:43:48.432 [INFO] : [TestNG-method=runTestCase-1] Verify button "Unhelpful" exists
+ Running action VerifyExist on answerHelpfulNoBtn [{xpath=//*[contains(@id,'BVQAAnswer')][1]//*[@class="BVQAFeedback BVQAHelpfulnessFeedback BVQANegativeFeedback"]//*[@class="BVQAActiveFeedback"]/a}, {xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[contains(@id,"BVQAAnswer")][1]//div[contains(@class,"BVQANegativeFeedback")]//div[@class="BVQAActiveFeedback"]}]
+2017-12-10 21:43:48.558 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-10 21:43:48.559 [INFO] : [TestNG-method=runTestCase-1] Click "Report as inappropriate" link of the frist question of "View all Q&A"
+ Test module "ClickReportInapproQuestionAllQA"
+2017-12-10 21:43:48.560 [INFO] : [TestNG-method=runTestCase-1] Verify link "Report as inappropriate" exists
+ Running action VerifyExist on firstReportAsInappropriateOfViewAllQAndABtn [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[@class="BVQAFeedback BVQAInappropriateFeedback"]//div[@class="BVQAActiveFeedback"]/a}]
+2017-12-10 21:43:48.630 [INFO] : [TestNG-method=runTestCase-1] Click "Report as inappropriate" link of the frist question
+ Running action Click on firstReportAsInappropriateOfViewAllQAndABtn [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAContent BVQAQuestion"]//*[@class="BVQAFeedback BVQAInappropriateFeedback"]//div[@class="BVQAActiveFeedback"]/a}]
+2017-12-10 21:43:48.815 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:43:48.829 [INFO] : [TestNG-method=runTestCase-1] Sign in
+ Test module "ByEmail"
+2017-12-10 21:43:48.831 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on signInHeader [{id=divPageTitle}] with data {wait=10}
+2017-12-10 21:43:58.972 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Sign In" page
+ Running action ContainsText on signInHeader [{id=divPageTitle}] with data {text=Sign In}
+2017-12-10 21:43:59.077 [INFO] : [TestNG-method=runTestCase-1] Input email address
+ Running action SendKeys on emailAddressTextbox [{id=txtEmailAddress}, {name=logonId}] with data {text=a20170602034151@qvc.com}
+2017-12-10 21:43:59.568 [INFO] : [TestNG-method=runTestCase-1] Input password
+ Running action SendKeys on passwordTextbox [{id=txtPassword}, {name=logonPassword}] with data {text=QtpQvc1357}
+2017-12-10 21:43:59.879 [INFO] : [TestNG-method=runTestCase-1] Click "Sign in"
+ Running action Click on loginBtn [{id=btnSignIn}]
+2017-12-10 21:44:02.183 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 13 sec
+2017-12-10 21:44:02.286 [INFO] : [TestNG-method=runTestCase-1] Verify the page of Report inappropriate question
+ Test module "VeriyReportInapproQuestion"
+2017-12-10 21:44:02.290 [INFO] : [TestNG-method=runTestCase-1] Wait until the report Inappropriate Title exist
+ Running action WaitUntilObjectExist on ReportInappropriateTitle [{id=BVQAInappropriateFeedbackFormTitleID}]
+2017-12-10 21:44:02.434 [INFO] : [TestNG-method=runTestCase-1] Verify the tile of report Inappropriate
+ Running action ContainsText on ReportInappropriateTitle [{id=BVQAInappropriateFeedbackFormTitleID}] with data {text=Report As Inappropriate}
+2017-12-10 21:44:02.603 [INFO] : [TestNG-method=runTestCase-1] Verify the question title is the same as we selected
+ Running action ContainsText on InappropriateTitle [{class=BVQAQuestionSummary}] with data {text=sfsfsdfsd}
+2017-12-10 21:44:02.969 [INFO] : [TestNG-method=runTestCase-1] Verify the nick name of the asker is the same as we selected
+ Running action ContainsText on InappropriatePerson [{class=BVQANickname}] with data {text=ChristopherW}
+2017-12-10 21:44:03.166 [INFO] : [TestNG-method=runTestCase-1] Verify the location of the asker is the same as we selected
+ Running action ContainsText on InappropriateLocation [{class=BVQALocation}] with data {text= - London}
+2017-12-10 21:44:03.359 [INFO] : [TestNG-method=runTestCase-1] Verify the question date is the same as we selected
+ Running action ContainsText on InappropriateDate [{class=BVQAElapsedTime}] with data {text=5 years, 7 months ago}
+2017-12-10 21:44:03.550 [INFO] : [TestNG-method=runTestCase-1] Check whether the question detail exist
+ Running action CheckForElements on InappropriateContent [{xpath=//*[@class="BVQAContentText BVQAAnswerText"]}]
+2017-12-10 21:44:09.491 [INFO] : [TestNG-method=runTestCase-1] Check whether the age detail exist
+ Running action CheckForElements on ageText [{xpath=//*[contains(@class,'BVQAContextDataValueagePrefix')]}]
+2017-12-10 21:44:09.631 [INFO] : [TestNG-method=runTestCase-1] Verify the text of "Age" exist
+ Running action ContainsText on ageText [{xpath=//*[contains(@class,'BVQAContextDataValueagePrefix')]}] with data {text=Age}
+2017-12-10 21:44:09.759 [INFO] : [TestNG-method=runTestCase-1] Verify the content of "Age" exist
+ Running action ContainsText on ageContent [{xpath=//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValueage"]}] with data {text=55-64}
+2017-12-10 21:44:09.934 [INFO] : [TestNG-method=runTestCase-1] Check whether the shop time info detail exist
+ Running action CheckForElements on shopTimeText [{xpath=//*[contains(@class,'BVQAContextDataValuehowLongShoppingPrefix')]}]
+2017-12-10 21:44:10.055 [INFO] : [TestNG-method=runTestCase-1] Verify the text of "How long have you been shopping with QVC" exist
+ Running action ContainsText on shopTimeText [{xpath=//*[contains(@class,'BVQAContextDataValuehowLongShoppingPrefix')]}] with data {text=How long have you been shopping with QVC}
+2017-12-10 21:44:10.149 [INFO] : [TestNG-method=runTestCase-1] Verify the content of shop time exist
+ Running action ContainsText on shopTimeContent [{xpath=//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValuehowLongShopping"]}] with data {text=Less than 1 year}
+2017-12-10 21:44:10.315 [INFO] : [TestNG-method=runTestCase-1] Check whether the recommend info detail exist
+ Running action CheckForElements on recommendText [{xpath=//*[contains(@class,'BVQAContextDataValuewouldRecommendPrefix')]}]
+2017-12-10 21:44:10.440 [INFO] : [TestNG-method=runTestCase-1] Verify the text of "Would you recommend this product as a gift" exist
+ Running action ContainsText on recommendText [{xpath=//*[contains(@class,'BVQAContextDataValuewouldRecommendPrefix')]}] with data {text=Would you recommend this product as a gift}
+2017-12-10 21:44:10.557 [INFO] : [TestNG-method=runTestCase-1] Verify the content of recommend exist
+ Running action ContainsText on recommendContent [{xpath=//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValuewouldRecommend"]}] with data {text=Yes}
+2017-12-10 21:44:10.711 [INFO] : [TestNG-method=runTestCase-1] Check whether the gift option info detail exist
+ Running action CheckForElements on giftOptionText [{xpath=//*[contains(@class,'BVQAContextDataValueperfectGiftForPrefix')]}]
+2017-12-10 21:44:10.842 [INFO] : [TestNG-method=runTestCase-1] Verify the text of "Who would this be a perfect gift for" exist
+ Running action ContainsText on giftOptionText [{xpath=//*[contains(@class,'BVQAContextDataValueperfectGiftForPrefix')]}] with data {text=Who would this be a perfect gift for}
+2017-12-10 21:44:10.962 [INFO] : [TestNG-method=runTestCase-1] Verify the content of gift option exist
+ Running action ContainsText on giftOptionContent [{xpath=//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValueperfectGiftFor"]}] with data {text=Mums}
+2017-12-10 21:44:11.132 [INFO] : [TestNG-method=runTestCase-1] Verify the reason for report title
+ Running action ContainsText on reportReasonTitle [{class=BVQAFieldHeader}] with data {text=Reason for Report}
+2017-12-10 21:44:11.292 [INFO] : [TestNG-method=runTestCase-1] Verify the text box for report reason exist
+ Running action VerifyExist on reportReasonInputBox [{id=BVQAFieldTextAreaQuestionInappropriateReasontextID}, {id=BVQAFieldTextAreaAnswerInappropriateReasontextID}]
+2017-12-10 21:44:11.411 [INFO] : [TestNG-method=runTestCase-1] Verify the warning tip message
+ Running action ContainsText on reportTips [{id=BVQAInappropriateFeedbackProcessingDelayID}] with data {text=Reports are typically addressed within 72 hours, pending approval}
+2017-12-10 21:44:11.547 [INFO] : [TestNG-method=runTestCase-1] Verify the submit button exist
+ Running action VerifyExist on submitBtn [{id=BVQASubmitInappropriateFeedbackButtonID}]
+2017-12-10 21:44:11.659 [INFO] : [TestNG-method=runTestCase-1] Verify the cancel button exist
+ Running action VerifyExist on cancelBtn [{id=BVQACancelInappropriateFeedbackButtonID}]
+2017-12-10 21:44:11.768 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 9 sec
+2017-12-10 21:44:11.769 [INFO] : [TestNG-method=runTestCase-1] Cancel Report in appropriate question
+ Test module "CancelReportInapproQuestion"
+2017-12-10 21:44:11.770 [INFO] : [TestNG-method=runTestCase-1] Click the cancel buttom
+ Running action Click on cancelBtn [{id=BVQACancelInappropriateFeedbackButtonID}]
+2017-12-10 21:44:16.297 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist to make sure we switch to PDP page
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:44:16.471 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:44:16.587 [INFO] : [TestNG-method=runTestCase-1] Verify the report successful message not exist
+ Running action VerifyNotExist on ReportInappropriateQuestionFeedBackMsg [{xpath=//div[contains(@id,"BVQAQuestionAndAnswers")][1]//*[@class="BVQAFeedbackList BVQAQuestionFeedbackList"]//div[@class="BVQAFeedbackMessage"]}]
+2017-12-10 21:44:16.653 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-10 21:44:17.195 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_PDP_BV_Q&A_ReportInappropriateQuestion_Cancel_ViewAllQ&A_NoAuthorization_uk_chrome.html

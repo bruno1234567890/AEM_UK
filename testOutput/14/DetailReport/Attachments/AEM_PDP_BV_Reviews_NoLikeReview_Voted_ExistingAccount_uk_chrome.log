@@ -1,0 +1,59 @@
+2017-12-10 21:56:13.884 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:56:14.827 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:56:14.831 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:56:17.246 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:56:18.782 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:56:19.014 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:56:19.799 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-10 21:56:19.815 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "ByProductNum"
+2017-12-10 21:56:19.815 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:56:24.413 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=228484}
+2017-12-10 21:56:25.189 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:56:29.496 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:56:35.414 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 15 sec
+2017-12-10 21:56:35.414 [INFO] : [TestNG-method=runTestCase-1] Click no like review
+ Test module "ClickNoOfLikeReview"
+2017-12-10 21:56:35.414 [INFO] : [TestNG-method=runTestCase-1] Wait until the "No" button of frist review display
+ Running action WaitUntilObjectExist on firstReviewNoBtnActive [{xpath=//*[contains(@id,"BVRRDisplayContentReviewID")][1]//*[@class="BVRRReviewFeedbackLink BVRRReviewFeedbackLinkActive BVRRReviewFeedbackLinkNo"]}]
+2017-12-10 21:56:35.667 [INFO] : [TestNG-method=runTestCase-1] Click "No"
+ Running action Click on firstReviewNoBtnActive [{xpath=//*[contains(@id,"BVRRDisplayContentReviewID")][1]//*[@class="BVRRReviewFeedbackLink BVRRReviewFeedbackLinkActive BVRRReviewFeedbackLinkNo"]}]
+2017-12-10 21:56:35.898 [INFO] : [TestNG-method=runTestCase-1] Wait until the next page title exist
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-10 21:56:38.482 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 3 sec
+2017-12-10 21:56:38.482 [INFO] : [TestNG-method=runTestCase-1] Sign in
+ Test module "ByEmail"
+2017-12-10 21:56:38.498 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on signInHeader [{id=divPageTitle}] with data {wait=10}
+2017-12-10 21:56:48.614 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Sign In" page
+ Running action ContainsText on signInHeader [{id=divPageTitle}] with data {text=Sign In}
+2017-12-10 21:56:48.718 [INFO] : [TestNG-method=runTestCase-1] Input email address
+ Running action SendKeys on emailAddressTextbox [{id=txtEmailAddress}, {name=logonId}] with data {text=a20170608044003@qvc.com}
+2017-12-10 21:56:49.027 [INFO] : [TestNG-method=runTestCase-1] Input password
+ Running action SendKeys on passwordTextbox [{id=txtPassword}, {name=logonPassword}] with data {text=Qvctester1}
+2017-12-10 21:56:49.351 [INFO] : [TestNG-method=runTestCase-1] Click "Sign in"
+ Running action Click on loginBtn [{id=btnSignIn}]
+2017-12-10 21:56:55.613 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 17 sec
+2017-12-10 21:56:55.698 [INFO] : [TestNG-method=runTestCase-1] Verify like review success
+ Test module "VerifyReviewFeedbackSuccess"
+2017-12-10 21:56:55.698 [INFO] : [TestNG-method=runTestCase-1] Wait until the like review feedback page display
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-10 21:56:56.813 [INFO] : [TestNG-method=runTestCase-1] Verify the "Yes" button become unclickable
+ Running action VerifyExist on firstReviewYesBtnInActive [{xpath=//*[contains(@id,"BVRRDisplayContentReviewID")][1]//*[@class="BVRRReviewFeedbackLink BVRRReviewFeedbackLinkInactive BVRRReviewFeedbackLinkInactiveYes"]}]
+2017-12-10 21:56:56.951 [INFO] : [TestNG-method=runTestCase-1] Verify the "No" button become unclickable
+ Running action VerifyExist on firstReviewNoBtnInActive [{xpath=//*[contains(@id,"BVRRDisplayContentReviewID")][1]//*[@class="BVRRReviewFeedbackLink BVRRReviewFeedbackLinkInactive BVRRReviewFeedbackLinkInactiveNo"]}]
+2017-12-10 21:56:57.119 [INFO] : [TestNG-method=runTestCase-1] Verify the feedback success message exist
+ Running action VerifyExist on firstReviewFeedbackMsg [{xpath=//*[contains(@id,"BVRRDisplayContentReviewID")][1]//*[@class="BVRRReviewFeedbackMessage"]}]
+2017-12-10 21:56:57.282 [INFO] : [TestNG-method=runTestCase-1] Verify the feedback success message
+ Running action ContainsText on firstReviewFeedbackMsg [{xpath=//*[contains(@id,"BVRRDisplayContentReviewID")][1]//*[@class="BVRRReviewFeedbackMessage"]}] with data {text=Vote recorded. Vote may take up to 12 hours to display}
+2017-12-10 21:56:57.432 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 1 sec
+2017-12-10 21:56:57.737 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Pass_AEM_PDP_BV_Reviews_NoLikeReview_Voted_ExistingAccount_uk_chrome.html

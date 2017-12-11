@@ -1,0 +1,78 @@
+2017-12-05 21:09:19.162 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:09:20.196 [INFO] : [TestNG-method=runTestCase-1] Go to url qa.qvc.com
+ Test module "GotoUrl"
+2017-12-05 21:09:20.197 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:09:22.390 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:09:23.909 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:09:24.101 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:09:24.861 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-05 21:09:24.862 [INFO] : [TestNG-method=runTestCase-1] Search a product that has not question
+ Test module "ByProductNum"
+2017-12-05 21:09:24.862 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:09:29.395 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=228484}
+2017-12-05 21:09:30.064 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:09:34.128 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:09:39.736 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-05 21:09:39.737 [INFO] : [TestNG-method=runTestCase-1] Click facebook share button
+ Test module "ClickFacebookShareLink"
+2017-12-05 21:09:39.737 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist to make sure we switch to PDP page
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:09:39.891 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:09:40.020 [INFO] : [TestNG-method=runTestCase-1] Verify the facebook share link exist
+ Running action VerifyExist on facebookShareLink [{xpath=//a[@class="btnExtSocials fb-share-button"]}]
+2017-12-05 21:09:40.155 [INFO] : [TestNG-method=runTestCase-1] Click  the facebook share link
+ Running action Click on facebookShareLink [{xpath=//a[@class="btnExtSocials fb-share-button"]}]
+2017-12-05 21:09:40.433 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser - Facebook log in page
+ Running action Browser with data {action=SwitchToNewBrowser}
+2017-12-05 21:09:40.465 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser, windowHandle - CDwindow-96f35e4c-ecb2-4086-9597-11f4c5928ddf
+2017-12-05 21:09:40.466 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we are switch to correct page
+ Running action WaitUntilObjectExist on facebookLogInPageTitle [{xpath=//h2[@id="homelink"]}] with data {wait=5}
+2017-12-05 21:09:45.636 [INFO] : [TestNG-method=runTestCase-1] Verify we are at "Facebook  log in" page
+ Running action ContainsText on facebookLogInPageTitle [{xpath=//h2[@id="homelink"]}] with data {text=Facebook}
+2017-12-05 21:09:45.743 [INFO] : [TestNG-method=runTestCase-1] Running action VerifyExist on facebookLogInPageInfo [{xpath=//form[@id="login_form"]}]
+2017-12-05 21:09:45.878 [INFO] : [TestNG-method=runTestCase-1] Close the new browser
+ Running action Browser with data {action=CloseNewBrowser}
+2017-12-05 21:09:45.982 [INFO] : [TestNG-method=runTestCase-1] Close the new browser, windowHandle - CDwindow-50196098-7180-435e-a36d-8a75b39b5837
+2017-12-05 21:09:45.983 [INFO] : [TestNG-method=runTestCase-1] Make sure we switch back to PDP page
+ Running action VerifyExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:09:46.072 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-05 21:09:46.073 [INFO] : [TestNG-method=runTestCase-1] Click facebook like button
+ Test module "ClickFacebookLikeLink"
+2017-12-05 21:09:46.073 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist to make sure we switch to PDP page
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:09:46.176 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:09:46.324 [INFO] : [TestNG-method=runTestCase-1] Wait util the object facebook like link exists
+ Running action WaitUntilObjectExist on frameWithfacebookLikeLinkInside [{xpath=//div[@class="facebook-like-button"]//iframe}] with data {wait=5}
+2017-12-05 21:09:51.647 [INFO] : [TestNG-method=runTestCase-1] Switch to frame - facebook like
+ Running action Frame on frameWithfacebookLikeLinkInside [{xpath=//div[@class="facebook-like-button"]//iframe}] with data {frameaction=switchto}
+2017-12-05 21:09:51.742 [INFO] : [TestNG-method=runTestCase-1] mouse over facebook
+ Running action MOUSEEVENT on facebookLikeLink [{id=u_0_1}] with data {mouseaction=mouseover}
+2017-12-05 21:09:52.010 [INFO] : [TestNG-method=runTestCase-1] Click  the facebook like link
+ Running action Click on facebookLikeLink [{id=u_0_1}]
+2017-12-05 21:09:52.392 [INFO] : [TestNG-method=runTestCase-1] Swith back
+ Running action Frame on frameWithfacebookLikeLinkInside [{xpath=//div[@class="facebook-like-button"]//iframe}] with data {frameaction=switchback}
+2017-12-05 21:09:52.421 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser - Facebook log in page
+ Running action Browser with data {action=SwitchToNewBrowser}
+2017-12-05 21:09:52.453 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser, windowHandle - CDwindow-64dd3775-0d48-489b-93b9-c824079085eb
+2017-12-05 21:09:52.454 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we are switch to correct page
+ Running action WaitUntilObjectExist on facebookLogInPageTitle [{xpath=//h2[@id="homelink"]}] with data {wait=5}
+2017-12-05 21:09:57.605 [INFO] : [TestNG-method=runTestCase-1] Verify we are at "Facebook  log in" page
+ Running action ContainsText on facebookLogInPageTitle [{xpath=//h2[@id="homelink"]}] with data {text=Facebook}
+2017-12-05 21:09:57.707 [INFO] : [TestNG-method=runTestCase-1] Running action VerifyExist on facebookLogInPageInfo [{xpath=//form[@id="login_form"]}]
+2017-12-05 21:09:57.822 [INFO] : [TestNG-method=runTestCase-1] Close the new browser
+ Running action Browser with data {action=CloseNewBrowser}
+2017-12-05 21:09:57.913 [INFO] : [TestNG-method=runTestCase-1] Close the new browser, windowHandle - CDwindow-50196098-7180-435e-a36d-8a75b39b5837
+2017-12-05 21:09:57.914 [INFO] : [TestNG-method=runTestCase-1] Make sure we switch back to PDP page
+ Running action VerifyExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:09:57.995 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 11 sec
+2017-12-05 21:10:02.132 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_PDP_FacebookLink_uk_chrome.html

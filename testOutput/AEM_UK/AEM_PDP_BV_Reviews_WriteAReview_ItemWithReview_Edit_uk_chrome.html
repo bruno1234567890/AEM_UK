@@ -1,0 +1,528 @@
+<html>
+<head>
+<title>TestNG:  AEM_PDP_BV_Reviews_WriteAReview_ItemWithReview_Edit_uk_chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AEM_PDP_BV_Reviews_WriteAReview_ItemWithReview_Edit_uk_chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 11 00:45:46 EST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>107 seconds (107314 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qvc.selenium.plugin.TestCase.runTestCase()'><b>runTestCase</b><br>Test class: com.qvc.selenium.plugin.TestCase (AEM_PDP_BV_Reviews_WriteAReview_ItemWithReview_Edit_uk_chrome)<br/>
+<a href="#Output-1308032353" onClick='toggleBox("Output-1308032353", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1308032353" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1308032353">
+<div class=stepevent.level.toString()>Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Open browser and go to qa.qvc.com
+ Test module &quot;GoToUrl&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}] with data {wait=2}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 5 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Search product
+ Test module &quot;ByProductNum&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229545}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Search&quot; button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 14 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click on the &quot;Write a Review&quot; link
+ Test module &quot;ClickWriteAReviewBtn&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Product Detail&quot; page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class=&quot;breadcrumb pageBreadcrumb&quot;]}] with data {text=Product Detail}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that &quot;Write A Review&quot; button is displayed on product detail page
+ Running action VerifyExist on writeAReviewBtn [{xpath=//*[@id='BVRRContainer']//*[@class='btn btn-primary btnWriteReview']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Write A Review&quot; button on product detail page
+ Running action Click on writeAReviewBtn [{xpath=//*[@id='BVRRContainer']//*[@class='btn btn-primary btnWriteReview']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 0 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Create an new account and login
+ Test module &quot;CreateNewAccount&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the object exist
+ Running action WaitUntilObjectExist on signInHeader [{id=divPageTitle}] with data {wait=10}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Veify we are at &quot;Sign In&quot; page
+ Running action ContainsText on signInHeader [{id=divPageTitle}] with data {text=Sign In}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Sign up&quot; button on &quot;Sign in&quot; page
+ Running action Click on signUpBtn [{id=btnSignUp}, {name=Signup Button}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the object exists
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}] with data {wait=2}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Create a QVC account&quot; page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Create a QVC account}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input email address
+ Running action SendKeys on emailAddressTextbox [{id=txtEmailAddress}] with data {text=a20171211124626@qvc.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input email address again
+ Running action SendKeys on confEmailWebEdit [{id=txtEmailAddressConf}] with data {text=a20171211124626@qvc.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the object exists
+ Running action WaitUntilObjectExist on passwordTxt [{id=lblPassword}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input password
+ Running action SendKeys on passwordTextbox [{id=txtPassword}] with data {text=Qvctester1}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Confirm password
+ Running action SendKeys on confirmPasswordTextbox [{id=txtVerifyPassword}] with data {text=Qvctester1}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select the security question
+ Running action Select on securityQuestionList [{id=txtSecQuestion1}] with data {text=Where were you born?}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Enter the answer
+ Running action SendKeys on securityAnswerTextbox [{id=txtSecAnswer1}] with data {text=1988}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input first name
+ Running action SendKeys on firstNameWebEdit [{id=txtFirstName}] with data {text=SeleniumFirstName}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input last name
+ Running action SendKeys on lastNameWebEdit [{id=txtLastName}] with data {text=SeleniumLastName}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input house number
+ Running action SendKeys on houseNumWebEdit [{id=txtAddress1}] with data {text=1714}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input street name
+ Running action SendKeys on addressWebEdit [{id=txtAddress2}] with data {text=Pavilion 9 Byland Way}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input city
+ Running action SendKeys on cityWebEdit [{id=txtCity}] with data {text=Billingham}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input Zip code
+ Running action SendKeys on zipCodeWebEdit [{id=txtZipPostalCode}] with data {text=TS23 4EB}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input evening phone number
+ Running action SendKeys on phoneWebEdit [{id=txtphone1}] with data {text=3333 333 3333}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input birthday date
+ Running action SendKeys on dateOfBirthWebEdit [{id=txtDateOfBirth}] with data {text=01/02/1988}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input pin
+ Running action SendKeys on pinWebEdit [{id=txtPin}] with data {text=9818}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Sign Up&quot; button
+ Running action Click on signUpBtn [{xpath=//*[@id='btnContinue'and @value='Sign Up']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the object exists
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Request completed&quot; page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Request completed}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Return To QVC UK Homepage&quot; button
+ Running action Click on returnToHomepageBtn [{id=btnTakeMeShopping}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the object exists
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at home page
+ Running action VerifyExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 32 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Search product
+ Test module &quot;ByProductNum&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229545}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Search&quot; button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 13 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click on the &quot;Write a Review&quot; link
+ Test module &quot;ClickWriteAReviewBtn&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Product Detail&quot; page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class=&quot;breadcrumb pageBreadcrumb&quot;]}] with data {text=Product Detail}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that &quot;Write A Review&quot; button is displayed on product detail page
+ Running action VerifyExist on writeAReviewBtn [{xpath=//*[@id='BVRRContainer']//*[@class='btn btn-primary btnWriteReview']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Write A Review&quot; button on product detail page
+ Running action Click on writeAReviewBtn [{xpath=//*[@id='BVRRContainer']//*[@class='btn btn-primary btnWriteReview']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 0 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Write a Review and click on the &quot;Preview&quot; button
+ Test module &quot;WriteAReview&quot;&quot; with data: &quot;{reviewtitle=Review Title Test, packageinfo=whether pakging test, reviewemail=test@qvc.com, nickname=&lt;NickName&gt;, giftperson=Families, reviewcontent=this is test for over 50 character.this is test for over 50 character., location=china, shoptime=1-2 years, recommend=yes, ratestar=5, age=under 25}&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait 3 sec. until the &quot;Write a Review&quot; page which is diaplayed.
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Write a Review&quot; page.
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Write a Review}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click the rate star.
+ Running action Click on RateStar [{id=star_link_rating_&lt;RateStar&gt;}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select the &quot;Yes&quot; radio of recommend to friend.
+ Running action Click on recommendToFriendYesRadioBtn [{id=BVRRRecommendToFriendYesID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type the title in the &quot;Review Title&quot; textbox: &quot;Review Title Test&quot;
+ Running action SendKeys on reviewTitleText [{id=BVRRFieldTextReviewTitleID}] with data {text=Review Title Test}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store review title
+ Running action TEXT on reviewTitleText [{id=BVRRFieldTextReviewTitleID}] with data {storeas=reviewTitle}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type under 50 character comment in the &quot;Review&quot; field.
+ Running action SendKeys on reviewContentTextBox [{id=BVRRFieldTextAreaReviewTextID}] with data {text=this is test for under 50 character.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the warning message when under 50 character
+ Running action ContainsText on reviewTextWarningMsg [{id=BVRRFieldHelperReviewReviewtextID}] with data {text=Minimum required characters left}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type comment in the &quot;Review&quot; field.
+ Running action SendKeys on reviewContentTextBox [{id=BVRRFieldTextAreaReviewTextID}] with data {text=this is test for over 50 character.this is test for over 50 character.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store review content
+ Running action TEXT on reviewContentTextBox [{id=BVRRFieldTextAreaReviewTextID}] with data {storeas=reviewContent}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the warning message when reach 50 character
+ Running action ContainsText on reviewTextWarningMsg [{id=BVRRFieldHelperReviewReviewtextID}] with data {text=Minimum reached}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type the nick name
+ Running action SendKeys on chooseNickNameTextBox [{id=BVRRFieldTextReviewUsernicknameID}] with data {cclastfournumber=2218, text=4000467158072218, creditcard=4000467158072218}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store nick name
+ Running action TEXT on chooseNickNameTextBox [{id=BVRRFieldTextReviewUsernicknameID}] with data {storeas=NickName}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type the the packageing requirement
+ Running action SendKeys on PackagingRequirementTextBox [{id=BVRRFieldTextAreaReviewPackagingID}] with data {text=whether pakging test}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type the location
+ Running action SendKeys on userLocationTextBox [{id=BVRRFieldTextReviewUserlocationID}] with data {text=china}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store location
+ Running action TEXT on userLocationTextBox [{id=BVRRFieldTextReviewUserlocationID}] with data {storeas=location}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Check whether the email text box exist
+ Running action CheckForElements on emailTextbox [{id=BVRRFieldTextReviewUseremailID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type the email address: test@qvc.com
+ Running action SendKeys on emailTextbox [{id=BVRRFieldTextReviewUseremailID}] with data {text=test@qvc.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store email
+ Running action TEXT on emailTextbox [{id=BVRRFieldTextReviewUseremailID}] with data {storeas=ReviewEmail}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select the age
+ Running action Select on ageSelection [{id=BVRRFieldSelectReviewContextualDataFieldAgeID}] with data {text=under 25}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select the shop time in the &quot;And how long have you been shopping with QVC?&quot; function.
+ Running action Select on shopTimeSelection [{id=BVRRFieldSelectReviewContextualDataFieldHowLongShoppingID}] with data {text=1-2 years}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select the recommend answer in the &quot;Would you recommend this product as a gift&quot; function.
+ Running action Select on recommendThisProductSelection [{id=BVRRFieldSelectReviewContextualDataFieldWouldRecommendID}] with data {text=yes}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select the gift option in the &quot;Who would this be a perfect gift for?&quot; function.
+ Running action Select on perfectGiftSelection [{id=BVRRFieldSelectReviewContextualDataFieldPerfectGiftForID}] with data {text=Families}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Check the check box of agree of term
+ Running action Click on agreeTermCheckBox [{id=BVRRFieldCheckboxReviewAgreedToTermsAndConditionsID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click on the &quot;PREVIEW&quot; button.
+ Running action Click on previewBtn [{id=BVRRPreviewReviewButtonID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 11 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click Edit button
+ Test module &quot;ClickEditReview&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait 3 sec. until the &quot;Preview Your Review&quot; page which is diaplayed.
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Preview Your Review&quot; page.
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Preview Your Review}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click on the &quot;Edit&quot;  button.
+ Running action Click on editBtn [{id=BVRREditReviewButtonID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait 3 sec. until the &quot;Write a Review&quot; page which is diaplayed.
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Write a Review&quot; page.
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Write a Review}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 7 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Edit a Review and click on the &quot;Preview&quot; button
+ Test module &quot;WriteAReview&quot;&quot; with data: &quot;{reviewtitle=Review Title Test (Edit), packageinfo=whether pakging test(Edit), reviewemail=testEdit@qvc.com, nickname=4000467158072218, giftperson=Teachers, reviewcontent=this is test for over 50 character.this is test for over 50 character.(Edit), location=china(Edit), shoptime=10+ years, recommend=No, ratestar=4, age=35-44}&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait 3 sec. until the &quot;Write a Review&quot; page which is diaplayed.
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Write a Review&quot; page.
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Write a Review}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click the rate star.
+ Running action Click on RateStar [{id=star_link_rating_&lt;RateStar&gt;}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select the &quot;Yes&quot; radio of recommend to friend.
+ Running action Click on recommendToFriendYesRadioBtn [{id=BVRRRecommendToFriendYesID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type the title in the &quot;Review Title&quot; textbox: &quot;Review Title Test&quot;
+ Running action SendKeys on reviewTitleText [{id=BVRRFieldTextReviewTitleID}] with data {text=Review Title Test (Edit)}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store review title
+ Running action TEXT on reviewTitleText [{id=BVRRFieldTextReviewTitleID}] with data {storeas=reviewTitle}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type under 50 character comment in the &quot;Review&quot; field.
+ Running action SendKeys on reviewContentTextBox [{id=BVRRFieldTextAreaReviewTextID}] with data {text=this is test for under 50 character.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the warning message when under 50 character
+ Running action ContainsText on reviewTextWarningMsg [{id=BVRRFieldHelperReviewReviewtextID}] with data {text=Minimum required characters left}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type comment in the &quot;Review&quot; field.
+ Running action SendKeys on reviewContentTextBox [{id=BVRRFieldTextAreaReviewTextID}] with data {text=this is test for over 50 character.this is test for over 50 character.(Edit)}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store review content
+ Running action TEXT on reviewContentTextBox [{id=BVRRFieldTextAreaReviewTextID}] with data {storeas=reviewContent}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the warning message when reach 50 character
+ Running action ContainsText on reviewTextWarningMsg [{id=BVRRFieldHelperReviewReviewtextID}] with data {text=Minimum reached}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type the nick name
+ Running action SendKeys on chooseNickNameTextBox [{id=BVRRFieldTextReviewUsernicknameID}] with data {cclastfournumber=4497, text=4000670481514497, creditcard=4000670481514497}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store nick name
+ Running action TEXT on chooseNickNameTextBox [{id=BVRRFieldTextReviewUsernicknameID}] with data {storeas=NickName}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type the the packageing requirement
+ Running action SendKeys on PackagingRequirementTextBox [{id=BVRRFieldTextAreaReviewPackagingID}] with data {text=whether pakging test(Edit)}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type the location
+ Running action SendKeys on userLocationTextBox [{id=BVRRFieldTextReviewUserlocationID}] with data {text=china(Edit)}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store location
+ Running action TEXT on userLocationTextBox [{id=BVRRFieldTextReviewUserlocationID}] with data {storeas=location}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Check whether the email text box exist
+ Running action CheckForElements on emailTextbox [{id=BVRRFieldTextReviewUseremailID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type the email address: test@qvc.com
+ Running action SendKeys on emailTextbox [{id=BVRRFieldTextReviewUseremailID}] with data {text=testEdit@qvc.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store email
+ Running action TEXT on emailTextbox [{id=BVRRFieldTextReviewUseremailID}] with data {storeas=ReviewEmail}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select the age
+ Running action Select on ageSelection [{id=BVRRFieldSelectReviewContextualDataFieldAgeID}] with data {text=35-44}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select the shop time in the &quot;And how long have you been shopping with QVC?&quot; function.
+ Running action Select on shopTimeSelection [{id=BVRRFieldSelectReviewContextualDataFieldHowLongShoppingID}] with data {text=10+ years}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select the recommend answer in the &quot;Would you recommend this product as a gift&quot; function.
+ Running action Select on recommendThisProductSelection [{id=BVRRFieldSelectReviewContextualDataFieldWouldRecommendID}] with data {text=No}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select the gift option in the &quot;Who would this be a perfect gift for?&quot; function.
+ Running action Select on perfectGiftSelection [{id=BVRRFieldSelectReviewContextualDataFieldPerfectGiftForID}] with data {text=Teachers}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Check the check box of agree of term
+ Running action Click on agreeTermCheckBox [{id=BVRRFieldCheckboxReviewAgreedToTermsAndConditionsID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click on the &quot;PREVIEW&quot; button.
+ Running action Click on previewBtn [{id=BVRRPreviewReviewButtonID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 12 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify all infromation
+ Test module &quot;VerifyPreviewReviewPage&quot;&quot; with data: &quot;{reviewtitle=Review Title Test (Edit), packageinfo=whether pakging test(Edit), reviewemail=testEdit@qvc.com, nickname=4000670481514497, giftperson=Teachers, reviewcontent=this is test for over 50 character.this is test for over 50 character.(Edit), location=china(Edit), shoptime=10+ years, recommend=No, ratestar=4, age=35-44}&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait 3 sec. until the &quot;Preview Your Review&quot; page which is diaplayed.
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Preview Your Review&quot; page.
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Preview Your Review}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Warning message&quot; in the top of the page.
+ Running action ContainsText on warningMsg [{xpath=//*[@class='BVRRPreviewContentHeaderSentence BVRRPreviewContentHeaderSentenceSubmit']}, {id=BVRRReviewSubmittedDisplayDisclaimerID}] with data {text=Check your review}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Warning message detail&quot; in the top of the page.
+ Running action ContainsText on warningMsgContent [{xpath=//*[@class=&quot;BVRRPreviewContentHeaderSentence BVRRPreviewContentHeaderSentenceDisclaimer&quot;]}] with data {text=If you're happy with your review click 'Submit', or click 'Edit' to make changes. Submitted reviews will be posted on the site within the next 72 hours.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Review Title&quot;
+ Running action ContainsText on reviewTitle [{xpath=//*[@class='BVRRValue BVRRReviewTitle']}] with data {text=Review Title Test (Edit)}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Rate Star&quot; existed.
+ Running action VerifyExist on RateStar [{xpath=//*[@title=&quot;&lt;RateStar&gt; out of 5&quot;]}] with data {ratestar=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Review Text&quot; existed
+ Running action ContainsText on reviewText [{xpath=//*[@class=&quot;BVRRReviewText&quot;]}] with data {text=this is test for over 50 character.this is test for over 50 character.(Edit)}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the nick name existed.
+ Running action ContainsText on nickName [{xpath=//*[@class=&quot;BVRRNickname&quot;]}] with data {text=4000670481514497}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the location text existed
+ Running action ContainsText on locationContext [{xpath=//*[@class='BVRRLabel BVRRUserLocationPrefix']}] with data {text=Location:}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the location content existed.
+ Running action ContainsText on locationSelection [{xpath=//*[@class='BVRRValue BVRRUserLocation']}] with data {text=china(Edit)}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the age text existed
+ Running action ContainsText on ageContext [{xpath=//*[@class='BVRRLabel BVRRContextDataValuePrefix BVRRContextDataValueagePrefix']}] with data {text=Age:}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the age content exist
+ Running action ContainsText on ageSelection [{xpath=//*[@class='BVRRValue BVRRContextDataValue BVRRContextDataValueage']}] with data {text=35-44}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the shop time text
+ Running action ContainsText on shopTimeContext [{xpath=//*[@class='BVRRLabel BVRRContextDataValuePrefix BVRRContextDataValuehowLongShoppingPrefix']}] with data {text=How long have you been shopping with QVC?}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the shop time content text
+ Running action ContainsText on shopTimeSelection [{xpath=//*[@class='BVRRValue BVRRContextDataValue BVRRContextDataValuehowLongShopping']}] with data {text=10+ years}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the recommend text existed
+ Running action ContainsText on recommendThisProductContext [{xpath=//*[@class='BVRRLabel BVRRContextDataValuePrefix BVRRContextDataValuewouldRecommendPrefix']}] with data {text=Would you recommend this product as a gift?}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the recommend answer exist
+ Running action ContainsText on recommendThisProductSelection [{xpath=//*[@class='BVRRValue BVRRContextDataValue BVRRContextDataValuewouldRecommend']}] with data {text=No}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the gift option text exist
+ Running action ContainsText on perfectGiftContext [{xpath=//*[@class='BVRRLabel BVRRContextDataValuePrefix BVRRContextDataValueperfectGiftForPrefix']}] with data {text=Who would this be a perfect gift for?}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the gift selection existed.
+ Running action ContainsText on perfectGiftSelection [{xpath=//*[@class='BVRRValue BVRRContextDataValue BVRRContextDataValueperfectGiftFor']}] with data {text=Teachers}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the send email text
+ Running action ContainsText on sendEmailContext [{xpath=//*[@class='BVRRFieldFollowingText']}] with data {text=Please send me an email when my review is posted.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the checkbox  of &quot;send email&quot; selected.
+ Running action VerifyObjectStatus on sendEmailCheckbox [{id=BVRRFieldCheckboxReviewUseremailalertsID}] with data {action=verifycheckboxselected}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Notifications&quot; warning message: &quot;Notifications will be sent to &quot;
+ Running action ContainsText on notificationsContext [{id=BVRRReviewPreviewNotificationID}] with data {text=Notifications will be sent to}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the email addres
+ Running action ContainsText on emailAddress [{xpath=//*[@id='BVRRReviewPreviewNotificationID']/*[@class=&quot;BVRREmailAddress&quot;]}] with data {text=testEdit@qvc.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the check box of &quot;term of use&quot; exist
+ Running action VerifyExist on agreeTermOfUseCheckBox [{id=BVRRFieldCheckboxReviewAgreedToTermsAndConditionsID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the text of term of use
+ Running action ContainsText on agreeTermOfUseText [{id=BVRRFieldLabelReviewAgreedtotermsandconditionsID}] with data {text=I accept these Terms of Use}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the submit button exist
+ Running action VerifyExist on submitBtn [{id=BVRRSubmitReviewButtonID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the edit button exist
+ Running action VerifyExist on editBtn [{id=BVRREditReviewButtonID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the cancel button exist
+ Running action VerifyExist on cancelBtn [{id=BVRRCancelReviewButtonID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 7 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Report file generated: c:\seleniumframeworkplugin\testOutput\16\DetailReport\Pass_AEM_PDP_BV_Reviews_WriteAReview_ItemWithReview_Edit_uk_chrome.html
+</div><br/><br/>
+</div>
+</td>
+<td></td>
+<td>107</td>
+<td>com.qvc.selenium.plugin.TestCase@665b5682</td></tr>
+</table><p>
+</body>
+</html>

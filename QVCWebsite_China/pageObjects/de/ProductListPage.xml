@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ProductListPage" include="MastheadMain">
+	<TestObject name="productListModule"> 
+		<properties>   
+			<id>frmProductList</id>
+			<xpath>//*[@data-component-type='PRODUCT_LISTING_LIST']</xpath>
+		</properties> 
+	</TestObject>	
+	<TestObject name="productListHeader"> 
+		<properties>   
+			<xpath>//*[@id='divPageTitle']/h1</xpath>
+			<xpath>//*[@id='pageContent']//h1</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="filterByLabel">
+		<Properties>
+			<xpath>//*[@class='facetedTitle bg-white']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="productList">
+		<Properties>			
+			<id>frmProductList</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="pageControl"> 
+		<properties>   
+			<xpath>//*[@class='listDescriptionProductSortWrapper']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="leftNavTool"> 
+		<properties>   
+			<id>divNavFaceted</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="optionOfSelection"> 
+		<properties>   
+			<id>seoNavlink1</id>
+		</properties> 
+	</TestObject>
+	<TestObject name="LevelTwoBreadCrumb"> 
+		<properties>   
+			<xpath>//*[@id='breadCrumbs']//a[2]</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="breadcrumbs"> 
+		<properties>   
+			<xpath>//*[@id='divBreadCrumbsPageTitleWrapper']//*[@id='breadCrumbs']</xpath>
+		</properties> 
+	</TestObject>
+	<TestObject name="leftNavContent"> 
+		<properties>   
+			<id>divContentNav</id>
+		</properties> 
+	</TestObject>
+</Page>

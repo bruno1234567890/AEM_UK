@@ -1,0 +1,50 @@
+2017-12-10 21:47:27.385 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:47:28.402 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:47:28.402 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-10 21:47:31.832 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:47:33.571 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:47:33.785 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:47:34.618 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-10 21:47:34.618 [INFO] : [TestNG-method=runTestCase-1] Verify the Story module
+ Test module "VerifyStoryModule"
+2017-12-10 21:47:34.618 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on BackToHomePage [{xpath=//img[@title='QVC']}, {id=pageMasthead}, {id=divMastheadLogo}, {id=mastheadLogo}, {linkText=Home}]
+2017-12-10 21:47:34.767 [INFO] : [TestNG-method=runTestCase-1] Verify the header of story module exist
+ Running action VerifyExist on StoryModuleHeader [{xpath=//*[@data-module-type="STORY"]//h2}]
+2017-12-10 21:47:34.924 [INFO] : [TestNG-method=runTestCase-1] Verify the content header of story module exist
+ Running action VerifyExist on StoryModuleContentHeader [{xpath=//*[@data-module-type="STORY"]//h3}]
+2017-12-10 21:47:35.248 [INFO] : [TestNG-method=runTestCase-1] Verify the content of story module exist
+ Running action VerifyExist on StoryModuleContent [{xpath=//*[@data-component-type="STORY"]//p}]
+2017-12-10 21:47:35.402 [INFO] : [TestNG-method=runTestCase-1] Verify the image of story module exist
+ Running action VerifyExist on StoryModuleImg [{xpath=//*[@data-component-type="STORY"]//img}]
+2017-12-10 21:47:35.532 [INFO] : [TestNG-method=runTestCase-1] Verify the primary button of story module exist
+ Running action VerifyExist on StoryModulePrimaryBtn [{xpath=//*[@data-module-type="STORY"]//*[@class="btn btn-primary "]}]
+2017-12-10 21:47:35.650 [INFO] : [TestNG-method=runTestCase-1] Verify the secondary button of story module exist
+ Running action VerifyExist on StoryModuleSecondaryBtn [{xpath=//*[@data-module-type="STORY"]//*[@class="btn btn-secondary "]}]
+2017-12-10 21:47:35.761 [INFO] : [TestNG-method=runTestCase-1] Click the primary button
+ Running action Click on StoryModulePrimaryBtn [{xpath=//*[@data-module-type="STORY"]//*[@class="btn btn-primary "]}]
+2017-12-10 21:47:37.902 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}] with data {wait=3}
+2017-12-10 21:47:42.787 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:47:44.477 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on BackToHomePage [{xpath=//img[@title='QVC']}, {id=pageMasthead}, {id=divMastheadLogo}, {id=mastheadLogo}, {linkText=Home}] with data {wait=3}
+2017-12-10 21:47:47.600 [INFO] : [TestNG-method=runTestCase-1] Click the image
+ Running action Click on StoryModuleImg [{xpath=//*[@data-component-type="STORY"]//img}]
+2017-12-10 21:47:48.975 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}] with data {wait=3}
+2017-12-10 21:47:54.643 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:47:56.448 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on BackToHomePage [{xpath=//img[@title='QVC']}, {id=pageMasthead}, {id=divMastheadLogo}, {id=mastheadLogo}, {linkText=Home}] with data {wait=3}
+2017-12-10 21:47:59.582 [INFO] : [TestNG-method=runTestCase-1] Click the secondary button
+ Running action Click on StoryModuleSecondaryBtn [{xpath=//*[@data-module-type="STORY"]//*[@class="btn btn-secondary "]}]
+2017-12-10 21:48:01.108 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}] with data {wait=3}
+2017-12-10 21:48:06.657 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 32 sec
+2017-12-10 21:48:06.981 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_Story_PublishedPage_FrontEnd_uk_chrome.html

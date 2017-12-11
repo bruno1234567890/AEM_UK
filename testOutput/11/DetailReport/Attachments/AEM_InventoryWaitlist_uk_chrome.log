@@ -1,0 +1,67 @@
+2017-12-05 21:04:23.156 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:04:25.975 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvc.com"
+ Test module "GotoUrl"
+2017-12-05 21:04:26.108 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:04:30.814 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:04:30.995 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:04:31.207 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:04:31.977 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-05 21:04:32.013 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "ByProductNum"
+2017-12-05 21:04:32.015 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:04:36.594 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=757814}
+2017-12-05 21:04:37.216 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:04:40.598 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:04:46.082 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-05 21:04:46.358 [INFO] : [TestNG-method=runTestCase-1] Verify the waitlist message
+ Test module "VerifyWaitListSelected"
+2017-12-05 21:04:46.401 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:04:46.569 [INFO] : [TestNG-method=runTestCase-1] If have waitlist color
+ Running action CheckForElements on FirstWaitListColorOption [{xpath=//*[@class="selectOption" and @ats="W"][1]//input}, {xpath=//*[@class="selectColor" and @ats="W"][1]//input}, {xpath=//*[@ats="W"][1]/*[@class="swatchBox selectOption"]}]
+2017-12-05 21:04:53.290 [INFO] : [TestNG-method=runTestCase-1] If have waitlist color
+ Running action CheckForElements on FirstWaitListColor [{xpath=//*[@class="selectColor" and @ats="W"][1]}, {xpath=//*[@class="selectOption" and @ats="W"][1]}, {xpath=//*[@ats="W"][1]/*[@class="swatchBox selectColor"]}, {xpath=//*[@ats="W"][1]/*[@class="swatchBox selectOption"]}]
+2017-12-05 21:05:00.342 [INFO] : [TestNG-method=runTestCase-1] If have waitlist size
+ Running action CheckForElements on FirstWaitListSize [{xpath=//*[@class="selectSize" and @ats="W"][1]}, {xpath=//*[@ats="W"][1]//*[@class="swatchBox selectSize"]}]
+2017-12-05 21:05:06.016 [INFO] : [TestNG-method=runTestCase-1] Running action WaitUntilObjectExist on waitListSelected [{xpath=//*[@class="status waitlist"]}] with data {wait=5}
+2017-12-05 21:05:11.166 [INFO] : [TestNG-method=runTestCase-1] Verify waitlist displayed when click the swatch for the waitlist option
+ Running action ContainsText on waitListSelected [{xpath=//*[@class="status waitlist"]}] with data {text=Available on Waitlist}
+2017-12-05 21:05:11.291 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 24 sec
+2017-12-05 21:05:11.291 [INFO] : [TestNG-method=runTestCase-1] Search waitlist option product
+ Test module "ByProductNum"" with data: "{productnum=146094}"
+2017-12-05 21:05:11.292 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:05:16.956 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=146094}
+2017-12-05 21:05:17.468 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:05:21.643 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:05:27.302 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 16 sec
+2017-12-05 21:05:27.303 [INFO] : [TestNG-method=runTestCase-1] Verify the waitlist message
+ Test module "VerifyWaitListSelected"
+2017-12-05 21:05:27.304 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:05:27.474 [INFO] : [TestNG-method=runTestCase-1] If have waitlist color
+ Running action CheckForElements on FirstWaitListColorOption [{xpath=//*[@class="selectOption" and @ats="W"][1]//input}, {xpath=//*[@class="selectColor" and @ats="W"][1]//input}, {xpath=//*[@ats="W"][1]/*[@class="swatchBox selectOption"]}]
+2017-12-05 21:05:33.947 [INFO] : [TestNG-method=runTestCase-1] If have waitlist color
+ Running action CheckForElements on FirstWaitListColor [{xpath=//*[@class="selectColor" and @ats="W"][1]}, {xpath=//*[@class="selectOption" and @ats="W"][1]}, {xpath=//*[@ats="W"][1]/*[@class="swatchBox selectColor"]}, {xpath=//*[@ats="W"][1]/*[@class="swatchBox selectOption"]}]
+2017-12-05 21:05:34.875 [INFO] : [TestNG-method=runTestCase-1] Select the 1st waitlist color
+ Running action Click on FirstWaitListColor [{xpath=//*[@class="selectColor" and @ats="W"][1]}, {xpath=//*[@class="selectOption" and @ats="W"][1]}, {xpath=//*[@ats="W"][1]/*[@class="swatchBox selectColor"]}, {xpath=//*[@ats="W"][1]/*[@class="swatchBox selectOption"]}]
+2017-12-05 21:05:35.819 [INFO] : [TestNG-method=runTestCase-1] If have waitlist size
+ Running action CheckForElements on FirstWaitListSize [{xpath=//*[@class="selectSize" and @ats="W"][1]}, {xpath=//*[@ats="W"][1]//*[@class="swatchBox selectSize"]}]
+2017-12-05 21:05:36.351 [INFO] : [TestNG-method=runTestCase-1] Select the 1st waitlist size
+ Running action Click on FirstWaitListSize [{xpath=//*[@class="selectSize" and @ats="W"][1]}, {xpath=//*[@ats="W"][1]//*[@class="swatchBox selectSize"]}]
+2017-12-05 21:05:36.939 [INFO] : [TestNG-method=runTestCase-1] Running action WaitUntilObjectExist on waitListSelected [{xpath=//*[@class="status waitlist"]}] with data {wait=5}
+2017-12-05 21:05:42.064 [INFO] : [TestNG-method=runTestCase-1] Verify waitlist displayed when click the swatch for the waitlist option
+ Running action ContainsText on waitListSelected [{xpath=//*[@class="status waitlist"]}] with data {text=Available on Waitlist}
+2017-12-05 21:05:42.159 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-05 21:05:42.448 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_InventoryWaitlist_uk_chrome.html

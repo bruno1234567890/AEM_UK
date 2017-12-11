@@ -1,0 +1,69 @@
+2017-12-11 00:50:16.013 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-11 00:50:16.991 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvcuk.com"
+ Test module "GotoUrl"
+2017-12-11 00:50:16.991 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-11 00:50:19.573 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-11 00:50:21.107 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-11 00:50:21.306 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-11 00:50:22.041 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-11 00:50:22.052 [INFO] : [TestNG-method=runTestCase-1] Search a product  with sold out option
+ Test module "ByProductNum"
+2017-12-11 00:50:22.053 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-11 00:50:26.659 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=831756}
+2017-12-11 00:50:27.343 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-11 00:50:30.674 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-11 00:50:36.240 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-11 00:50:36.349 [INFO] : [TestNG-method=runTestCase-1] Verify sold out tooltips displayed when hover over the swatch for the sold out option
+ Test module "VerifySoldOutHover"
+2017-12-11 00:50:36.354 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-11 00:50:36.558 [INFO] : [TestNG-method=runTestCase-1] If have soldout size
+ Running action CheckForElements on FirstSoldOutSize [{xpath=//*[@class="selectSize" and @ats="N"][1]}, {xpath=//*[@ats="N"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-11 00:50:37.116 [INFO] : [TestNG-method=runTestCase-1] Hover over the swatch for the sold out option
+ Running action MouseEvent on FirstSoldOutSize [{xpath=//*[@class="selectSize" and @ats="N"][1]}, {xpath=//*[@ats="N"][1]/*[@class="swatchBox selectSize"]}] with data {mouseaction=mouseover}
+2017-12-11 00:50:37.689 [INFO] : [TestNG-method=runTestCase-1] Verify title displayed when hover over the swatch for the sold out option
+ Running action VerifyExist on hoverOverTitle [{xpath=//*[@class="popover fade top in"]//*[@class="popover-title"]}]
+2017-12-11 00:50:37.844 [INFO] : [TestNG-method=runTestCase-1] Verify title displayed when hover over the swatch for the sold out option
+ Running action ContainsText on hoverOverTitle [{xpath=//*[@class="popover fade top in"]//*[@class="popover-title"]}] with data {text=SINGLE}
+2017-12-11 00:50:38.007 [INFO] : [TestNG-method=runTestCase-1] Verify sold out tooltips displayed when hover over the swatch for the sold out option
+ Running action VerifyExist on hoverOverText [{xpath=//*[@class="popover fade top in"][1]//*[@class="popover-content"]}]
+2017-12-11 00:50:38.160 [INFO] : [TestNG-method=runTestCase-1] Verify sold out tooltips  displayed when hover over the swatch for the sold out option
+ Running action ContainsText on hoverOverText [{xpath=//*[@class="popover fade top in"][1]//*[@class="popover-content"]}] with data {text=Sold Out}
+2017-12-11 00:50:38.305 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 1 sec
+2017-12-11 00:50:38.305 [INFO] : [TestNG-method=runTestCase-1] Search a waitlist product_size only
+ Test module "ByProductNum"" with data: "{productnum=672161}"
+2017-12-11 00:50:38.305 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-11 00:50:42.821 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=672161}
+2017-12-11 00:50:43.522 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-11 00:50:46.326 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-11 00:50:51.918 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 13 sec
+2017-12-11 00:50:51.919 [INFO] : [TestNG-method=runTestCase-1] Verify waitList tooltips displayed when hover over the swatch for the waitlist option
+ Test module "VerifyWaitListHover"
+2017-12-11 00:50:51.920 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-11 00:50:52.143 [INFO] : [TestNG-method=runTestCase-1] If have waitlist size
+ Running action CheckForElements on FirstWaitListSize [{xpath=//*[@class="selectSize" and @ats="W"][1]}, {xpath=//*[@ats="W"][1]//*[@class="swatchBox selectSize"]}]
+2017-12-11 00:50:52.859 [INFO] : [TestNG-method=runTestCase-1] Hover over the swatch for the waitlist option
+ Running action MouseEvent on FirstWaitListSize [{xpath=//*[@class="selectSize" and @ats="W"][1]}, {xpath=//*[@ats="W"][1]//*[@class="swatchBox selectSize"]}] with data {mouseaction=mouseover}
+2017-12-11 00:50:53.406 [INFO] : [TestNG-method=runTestCase-1] Verify title displayed when hover over the swatch for the waitlist option
+ Running action VerifyExist on hoverOverTitle [{xpath=//*[@class="popover fade top in"]//*[@class="popover-title"]}]
+2017-12-11 00:50:53.559 [INFO] : [TestNG-method=runTestCase-1] Verify title displayed when hover over the swatch for the waitlist option
+ Running action ContainsText on hoverOverTitle [{xpath=//*[@class="popover fade top in"]//*[@class="popover-title"]}] with data {text=SIZE J}
+2017-12-11 00:50:53.701 [INFO] : [TestNG-method=runTestCase-1] Verify waitlist tooltips displayed when hover over the swatch for the waitlist option
+ Running action VerifyExist on hoverOverText [{xpath=//*[@class="popover fade top in"][1]//*[@class="popover-content"]}]
+2017-12-11 00:50:53.843 [INFO] : [TestNG-method=runTestCase-1] Verify waitlist tooltips displayed when hover over the swatch for the waitlist option
+ Running action ContainsText on hoverOverText [{xpath=//*[@class="popover fade top in"][1]//*[@class="popover-content"]}] with data {text=Waitlist}
+2017-12-11 00:50:53.974 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 2 sec
+2017-12-11 00:50:54.263 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\16\DetailReport\ReRun\Pass_AEM_SizeColorOptions_Hover_uk_chrome.html

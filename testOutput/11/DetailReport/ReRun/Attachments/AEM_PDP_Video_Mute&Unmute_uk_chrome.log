@@ -1,0 +1,131 @@
+2017-12-05 21:13:54.345 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:13:57.330 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-05 21:13:57.331 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:14:02.854 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:14:03.052 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:14:03.267 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:14:04.040 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-05 21:14:04.041 [INFO] : [TestNG-method=runTestCase-1] Search a product with On Air Presenatation Video
+ Test module "BYPRODUCTNUM"
+2017-12-05 21:14:04.041 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:14:08.622 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=148947}
+2017-12-05 21:14:09.297 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:14:13.158 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:14:18.901 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-05 21:14:18.901 [INFO] : [TestNG-method=runTestCase-1] Verify that video can mute and unmute
+ Test module "VerifyVideoMute&Unmute"
+2017-12-05 21:14:18.902 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure we are at correct page: "Product Detail" page
+ Running action WaitUntilObjectExist on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-05 21:14:19.039 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at  correct product number's "Product Detail" page
+ Running action ContainsText on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {text=148947}
+2017-12-05 21:14:19.175 [INFO] : [TestNG-method=runTestCase-1] Wait until video player is shown
+ Running action WaitUntilObjectExist on videoField [{xpath=//div[@class="productVideo"]}] with data {wait=3}
+2017-12-05 21:14:22.360 [INFO] : [TestNG-method=runTestCase-1] Click video player to pause
+[Note: In order to make sure the buttons in control bar can be found]
+ Running action Click on videoPlayer [{xpath=//div[@class="productVideo"]//video}]
+2017-12-05 21:14:22.610 [INFO] : [TestNG-method=runTestCase-1] Loop to click Video player until Resume button is shown
+ Running action VerifyExist on resumeBtn [{xpath=//button[@title="Resume"]}]
+2017-12-05 21:14:22.722 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:23.778 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:24.832 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:25.876 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:26.941 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:27.942 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//*[@class="breadcrumb pageBreadcrumb"]}
+2017-12-05 21:14:27.942 [ERROR] : [TestNG-method=runTestCase-1] 
+2017-12-05 21:14:27.943 [INFO] : [TestNG-method=runTestCase-1] Loop click video player to pause
+[Note: In order to make sure the buttons in control bar can be found]
+ Running action Click on videoPlayer [{xpath=//div[@class="productVideo"]//video}]
+2017-12-05 21:14:28.138 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:29.172 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:30.276 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:31.319 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:32.371 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:33.372 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//*[@class="deliveryOption adPurchase"]}
+2017-12-05 21:14:33.372 [ERROR] : [TestNG-method=runTestCase-1] 
+2017-12-05 21:14:33.374 [INFO] : [TestNG-method=runTestCase-1] Loop click video player to pause
+[Note: In order to make sure the buttons in control bar can be found]
+ Running action Click on videoPlayer [{xpath=//div[@class="productVideo"]//video}]
+2017-12-05 21:14:33.592 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:34.642 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:35.697 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:36.752 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:37.810 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:38.811 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}
+2017-12-05 21:14:38.811 [ERROR] : [TestNG-method=runTestCase-1] 
+2017-12-05 21:14:38.812 [INFO] : [TestNG-method=runTestCase-1] Loop click video player to pause
+[Note: In order to make sure the buttons in control bar can be found]
+ Running action Click on videoPlayer [{xpath=//div[@class="productVideo"]//video}]
+2017-12-05 21:14:39.144 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:40.197 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:41.246 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:42.298 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:43.351 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:44.352 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//button[@title="Resume"]}
+2017-12-05 21:14:44.352 [ERROR] : [TestNG-method=runTestCase-1] 
+2017-12-05 21:14:44.353 [INFO] : [TestNG-method=runTestCase-1] Loop click video player to pause
+[Note: In order to make sure the buttons in control bar can be found]
+ Running action Click on videoPlayer [{xpath=//div[@class="productVideo"]//video}]
+2017-12-05 21:14:44.757 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:45.807 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:46.859 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:47.913 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:48.958 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:49.958 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//button[@title="Resume"]}
+2017-12-05 21:14:49.958 [ERROR] : [TestNG-method=runTestCase-1] 
+2017-12-05 21:14:49.960 [INFO] : [TestNG-method=runTestCase-1] Loop click video player to pause
+[Note: In order to make sure the buttons in control bar can be found]
+ Running action Click on videoPlayer [{xpath=//div[@class="productVideo"]//video}]
+2017-12-05 21:14:50.185 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:51.239 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:52.291 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:53.339 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:54.392 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:55.393 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//button[@title="Resume"]}
+2017-12-05 21:14:55.393 [ERROR] : [TestNG-method=runTestCase-1] 
+2017-12-05 21:14:55.394 [INFO] : [TestNG-method=runTestCase-1] Loop click video player to pause
+[Note: In order to make sure the buttons in control bar can be found]
+ Running action Click on videoPlayer [{xpath=//div[@class="productVideo"]//video}]
+2017-12-05 21:14:55.637 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:56.689 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:57.740 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:58.789 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:14:59.853 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:00.854 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//button[@title="Resume"]}
+2017-12-05 21:15:00.854 [ERROR] : [TestNG-method=runTestCase-1] 
+2017-12-05 21:15:00.855 [INFO] : [TestNG-method=runTestCase-1] Loop click video player to pause
+[Note: In order to make sure the buttons in control bar can be found]
+ Running action Click on videoPlayer [{xpath=//div[@class="productVideo"]//video}]
+2017-12-05 21:15:01.061 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:02.114 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:03.166 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:04.221 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:05.266 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:06.267 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//button[@title="Resume"]}
+2017-12-05 21:15:06.267 [ERROR] : [TestNG-method=runTestCase-1] 
+2017-12-05 21:15:06.268 [INFO] : [TestNG-method=runTestCase-1] Click resume button to play video
+[Note: In order to make sure the buttons in control bar can be found]
+ Running action Click on resumeBtn [{xpath=//button[@title="Resume"]}]
+2017-12-05 21:15:06.327 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:07.379 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:08.427 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:09.483 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:10.530 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:11.578 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:12.633 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:13.677 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:14.724 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:15.778 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-05 21:15:16.779 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//button[@title="Resume"]}
+2017-12-05 21:15:16.779 [ERROR] : [TestNG-method=runTestCase-1] 
+2017-12-05 21:15:16.780 [ERROR] : [TestNG-method=runTestCase-1] 7: PERFORM-Click : Click resume button to play video
+[Note: In order to make sure the buttons in control bar can be found]
+2017-12-05 21:15:17.474 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\ReRun\Fail_AEM_PDP_Video_Mute&Unmute_uk_chrome.html

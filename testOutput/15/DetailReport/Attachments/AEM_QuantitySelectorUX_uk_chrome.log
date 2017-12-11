@@ -1,0 +1,53 @@
+2017-12-10 22:57:50.458 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 22:57:53.769 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvcuk.com"
+ Test module "GotoUrl"
+2017-12-10 22:57:53.950 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 22:57:58.342 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 22:58:00.141 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 22:58:00.315 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 22:58:01.106 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-10 22:58:01.107 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "ByProductNum"
+2017-12-10 22:58:01.111 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 22:58:05.806 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229451}
+2017-12-10 22:58:06.597 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 22:58:10.395 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 22:58:16.072 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 22:58:16.072 [INFO] : [TestNG-method=runTestCase-1] Verify the "QTY" input box
+ Test module "VerifyQtyInputBox"
+2017-12-10 22:58:16.077 [INFO] : [TestNG-method=runTestCase-1] Verify the QTY field exists
+ Running action VerifyExist on productQtyField [{class=buyBoxQuantity}]
+2017-12-10 22:58:16.212 [INFO] : [TestNG-method=runTestCase-1] Verify the lable of Quantity exists
+ Running action ContainsText on productQtyField [{class=buyBoxQuantity}] with data {text=Quantity}
+2017-12-10 22:58:16.341 [INFO] : [TestNG-method=runTestCase-1] Click the input box
+ Running action Click on productQtyInputBox [{css=.productQuantity}]
+2017-12-10 22:58:16.585 [INFO] : [TestNG-method=runTestCase-1] Enter a normal number in QTY input box
+ Running action SendKeys on productQtyInputBox [{css=.productQuantity}] with data {text=3}
+2017-12-10 22:58:16.773 [INFO] : [TestNG-method=runTestCase-1] Verify the number we enter is display
+ Running action ContainsText on productQtyInputBox [{css=.productQuantity}] with data {text=3}
+2017-12-10 22:58:16.908 [INFO] : [TestNG-method=runTestCase-1] Enter a number with two digit in QTY input box
+ Running action SendKeys on productQtyInputBox [{css=.productQuantity}] with data {text=15}
+2017-12-10 22:58:17.138 [INFO] : [TestNG-method=runTestCase-1] Verify the system only keep the last legal number
+ Running action ContainsText on productQtyInputBox [{css=.productQuantity}] with data {text=5}
+2017-12-10 22:58:17.298 [INFO] : [TestNG-method=runTestCase-1] Enter a number over 5 in QTY input box
+ Running action SendKeys on productQtyInputBox [{css=.productQuantity}] with data {text=6}
+2017-12-10 22:58:17.509 [INFO] : [TestNG-method=runTestCase-1] Verify the warning message display
+ Running action VerifyExist on productQtyPopMsg [{xpath=//*[@class="buyBoxSelect buyBoxQuantity"]//*[@class="popover fade top in"]}]
+2017-12-10 22:58:17.724 [INFO] : [TestNG-method=runTestCase-1] Verify the warning message content
+ Running action ContainsText on productQtyPopMsg [{xpath=//*[@class="buyBoxSelect buyBoxQuantity"]//*[@class="popover fade top in"]}] with data {text=Please enter a value between 1 and 5}
+2017-12-10 22:58:17.831 [INFO] : [TestNG-method=runTestCase-1] Enter a number with letter or special character in QTY input box
+ Running action SendKeys on productQtyInputBox [{css=.productQuantity}] with data {text=4a+}
+2017-12-10 22:58:17.999 [INFO] : [TestNG-method=runTestCase-1] Verify the system only keep the first legal number
+ Running action ContainsText on productQtyInputBox [{css=.productQuantity}] with data {text=4}
+2017-12-10 22:58:18.130 [INFO] : [TestNG-method=runTestCase-1] Verify the system will not allow display alpha and special character
+ Running action NotContainsText on productQtyField [{class=buyBoxQuantity}] with data {text=4a+}
+2017-12-10 22:58:18.258 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 2 sec
+2017-12-10 22:58:18.666 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\15\DetailReport\Pass_AEM_QuantitySelectorUX_uk_chrome.html

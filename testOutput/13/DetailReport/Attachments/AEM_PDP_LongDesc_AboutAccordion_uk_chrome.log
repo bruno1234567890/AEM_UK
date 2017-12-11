@@ -1,0 +1,43 @@
+2017-12-10 21:46:18.203 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:46:19.234 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:46:19.234 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:46:21.717 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:46:23.386 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:46:23.640 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:46:24.636 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:46:24.651 [INFO] : [TestNG-method=runTestCase-1] Search regular Product
+ Test module "BYPRODUCTNUM"
+2017-12-10 21:46:24.651 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:46:29.390 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=212060}
+2017-12-10 21:46:31.234 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:46:36.066 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:46:41.949 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 17 sec
+2017-12-10 21:46:42.033 [INFO] : [TestNG-method=runTestCase-1] Verify the about accordian
+ Test module "VerifyAboutAccordion"
+2017-12-10 21:46:42.033 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:46:42.265 [INFO] : [TestNG-method=runTestCase-1] Verify the About description exist
+ Running action VerifyExist on AboutLongDescription [{xpath=//*[contains(@class,"accMoreInfo")]}]
+2017-12-10 21:46:42.418 [INFO] : [TestNG-method=runTestCase-1] Verify the About description title
+ Running action ContainsText on AboutLongDescriptionTitle [{xpath=//*[contains(@class,"accMoreInfo")]//*[@class="accordionTitle"]}] with data {text=About}
+2017-12-10 21:46:42.634 [INFO] : [TestNG-method=runTestCase-1] Verify the accordion is collpsed
+ Running action VerifyNotExist on AboutLongDescriptionExpand [{xpath=//*[contains(@class,"accMoreInfo")]//*[@style="display: block;"]}]
+2017-12-10 21:46:42.803 [INFO] : [TestNG-method=runTestCase-1] Click the description title
+ Running action Click on AboutLongDescriptionTitle [{xpath=//*[contains(@class,"accMoreInfo")]//*[@class="accordionTitle"]}]
+2017-12-10 21:46:43.086 [INFO] : [TestNG-method=runTestCase-1] Verify the accordion is expand
+ Running action VerifyExist on AboutLongDescriptionExpand [{xpath=//*[contains(@class,"accMoreInfo")]//*[@style="display: block;"]}]
+2017-12-10 21:46:43.391 [INFO] : [TestNG-method=runTestCase-1] Verify the text of About accordion display
+ Running action VerifyExist on AboutLongDescriptionContent [{xpath=//*[contains(@class,"accMoreInfo")]//*[@class="accordionText"]}]
+2017-12-10 21:46:43.634 [INFO] : [TestNG-method=runTestCase-1] Verify the image of About accordion display
+ Running action VerifyExist on AboutLongDescriptionImage [{xpath=//*[contains(@class,"accMoreInfo")]//*[@class="accordionText"]//img}]
+2017-12-10 21:46:44.018 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 1 sec
+2017-12-10 21:46:44.133 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_PDP_LongDesc_AboutAccordion_uk_chrome.html

@@ -1,0 +1,61 @@
+2017-12-10 21:56:15.390 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:56:16.497 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:56:16.497 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:56:19.613 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:56:21.291 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:56:21.566 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:56:22.600 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-10 21:56:22.600 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "ByProductNum"
+2017-12-10 21:56:22.600 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:56:27.317 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229545}
+2017-12-10 21:56:28.201 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:56:32.683 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:56:38.614 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 16 sec
+2017-12-10 21:56:38.707 [INFO] : [TestNG-method=runTestCase-1] Verify the bottom page navigation of review module
+ Test module "VerifyReviewsPageNavBottom"
+2017-12-10 21:56:38.711 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist to make sure we switch to PDP page
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:56:38.865 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:56:38.998 [INFO] : [TestNG-method=runTestCase-1] Wait until the review module display
+ Running action WaitUntilObjectExist on reviewsSortAndPageNav [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]}] with data {wait=4}
+2017-12-10 21:56:43.196 [INFO] : [TestNG-method=runTestCase-1] Verify the page stay on "1" on the bottom
+ Running action ContainsText on reviewPageNavSelectdPageInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPageNumber BVRRSelectedPageNumber"]}] with data {text=1}
+2017-12-10 21:56:43.421 [INFO] : [TestNG-method=runTestCase-1] Verify the page previous link not exist on the bottom
+ Running action VerifyNotExist on reviewPagePreviousInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPreviousPage"]}]
+2017-12-10 21:56:43.498 [INFO] : [TestNG-method=runTestCase-1] Verify the page next link exist on the bottom
+ Running action VerifyExist on reviewPageNextInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRNextPage"]}]
+2017-12-10 21:56:43.665 [INFO] : [TestNG-method=runTestCase-1] Click the page next link on the bottom
+ Running action Click on reviewPageNextInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRNextPage"]}]
+2017-12-10 21:56:43.912 [INFO] : [TestNG-method=runTestCase-1] Wait until the review page number refresh
+ Running action WaitUntilObjectExist on reviewPageNavSelectdPageInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPageNumber BVRRSelectedPageNumber"]}] with data {wait=2}
+2017-12-10 21:56:46.067 [INFO] : [TestNG-method=runTestCase-1] Verify the page stay on "2" on the bottom
+ Running action ContainsText on reviewPageNavSelectdPageInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPageNumber BVRRSelectedPageNumber"]}] with data {text=2}
+2017-12-10 21:56:46.221 [INFO] : [TestNG-method=runTestCase-1] Verify the page previous link exist on the bottom
+ Running action VerifyExist on reviewPagePreviousInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPreviousPage"]}]
+2017-12-10 21:56:46.550 [INFO] : [TestNG-method=runTestCase-1] Click the page previous link on the bottom
+ Running action Click on reviewPagePreviousInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPreviousPage"]}]
+2017-12-10 21:56:46.881 [INFO] : [TestNG-method=runTestCase-1] Wait until the review page number refresh
+ Running action WaitUntilObjectExist on reviewPageNavSelectdPageInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPageNumber BVRRSelectedPageNumber"]}] with data {wait=2}
+2017-12-10 21:56:49.020 [INFO] : [TestNG-method=runTestCase-1] Verify the page stay on "1" on the bottom
+ Running action ContainsText on reviewPageNavSelectdPageInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPageNumber BVRRSelectedPageNumber"]}] with data {text=1}
+2017-12-10 21:56:49.197 [INFO] : [TestNG-method=runTestCase-1] Verify the page previous link not exist on the bottom
+ Running action VerifyNotExist on reviewPagePreviousInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPreviousPage"]}]
+2017-12-10 21:56:49.251 [INFO] : [TestNG-method=runTestCase-1] Click the "2" page number on the bottom
+ Running action Click on reviewPageNavSecondPageInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPageNumber"]/a[@title="2"]}]
+2017-12-10 21:56:49.665 [INFO] : [TestNG-method=runTestCase-1] Wait until the review page number refresh
+ Running action WaitUntilObjectExist on reviewPageNavSelectdPageInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPageNumber BVRRSelectedPageNumber"]}] with data {wait=2}
+2017-12-10 21:56:51.804 [INFO] : [TestNG-method=runTestCase-1] Verify the page stay on "2" on the bottom
+ Running action ContainsText on reviewPageNavSelectdPageInBottom [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentFooterID"][2]//*[@class="BVRRPageLink BVRRPageNumber BVRRSelectedPageNumber"]}] with data {text=2}
+2017-12-10 21:56:51.965 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 13 sec
+2017-12-10 21:56:52.243 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Pass_AEM_PDP_BV_Reviews_PageNavigation_Bottom_uk_chrome.html

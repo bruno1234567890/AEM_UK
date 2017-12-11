@@ -1,0 +1,616 @@
+<html>
+<head>
+<title>TestNG:  AEM_PDP_BV_Q&A_AskAQuestionButtonInFooter_Submit_uk_chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AEM_PDP_BV_Q&A_AskAQuestionButtonInFooter_Submit_uk_chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 11 00:43:11 EST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>115 seconds (115934 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qvc.selenium.plugin.TestCase.runTestCase()'><b>runTestCase</b><br>Test class: com.qvc.selenium.plugin.TestCase (AEM_PDP_BV_Q&A_AskAQuestionButtonInFooter_Submit_uk_chrome)<br/>
+<a href="#Output-500060988" onClick='toggleBox("Output-500060988", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-500060988" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-500060988">
+<div class=stepevent.level.toString()>Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Go to url qa.qvc.com
+ Test module &quot;GotoUrl&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}] with data {wait=2}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 4 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Search a product that has not question
+ Test module &quot;ByProductNum&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=228484}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Search&quot; button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 15 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Ask A Question&quot; button
+ Test module &quot;ClickAskAQuestionBtnInFooter&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Product Detail&quot; page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class=&quot;breadcrumb pageBreadcrumb&quot;]}] with data {text=Product Detail}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that &quot;ASK A QUESTION&quot; button is displayed in the footer on product detail page
+ Running action VerifyExist on askAQuestionBtnInFooter [{id=BVQAAskQuestionID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;ASK A QUESTION&quot; button on product detail page
+ Running action Click on askAQuestionBtnInFooter [{id=BVQAAskQuestionID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 0 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Login by email
+ Test module &quot;CreateNewAccount&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the object exist
+ Running action WaitUntilObjectExist on signInHeader [{id=divPageTitle}] with data {wait=10}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Veify we are at &quot;Sign In&quot; page
+ Running action ContainsText on signInHeader [{id=divPageTitle}] with data {text=Sign In}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Sign up&quot; button on &quot;Sign in&quot; page
+ Running action Click on signUpBtn [{id=btnSignUp}, {name=Signup Button}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the object exists
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}] with data {wait=2}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Create a QVC account&quot; page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Create a QVC account}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input email address
+ Running action SendKeys on emailAddressTextbox [{id=txtEmailAddress}] with data {text=a20171211124351@qvc.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input email address again
+ Running action SendKeys on confEmailWebEdit [{id=txtEmailAddressConf}] with data {text=a20171211124351@qvc.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the object exists
+ Running action WaitUntilObjectExist on passwordTxt [{id=lblPassword}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input password
+ Running action SendKeys on passwordTextbox [{id=txtPassword}] with data {text=Qvctester1}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Confirm password
+ Running action SendKeys on confirmPasswordTextbox [{id=txtVerifyPassword}] with data {text=Qvctester1}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select the security question
+ Running action Select on securityQuestionList [{id=txtSecQuestion1}] with data {text=Where were you born?}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Enter the answer
+ Running action SendKeys on securityAnswerTextbox [{id=txtSecAnswer1}] with data {text=1988}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input first name
+ Running action SendKeys on firstNameWebEdit [{id=txtFirstName}] with data {text=SeleniumFirstName}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input last name
+ Running action SendKeys on lastNameWebEdit [{id=txtLastName}] with data {text=SeleniumLastName}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input house number
+ Running action SendKeys on houseNumWebEdit [{id=txtAddress1}] with data {text=1295}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input street name
+ Running action SendKeys on addressWebEdit [{id=txtAddress2}] with data {text=Pavilion 9 Byland Way}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input city
+ Running action SendKeys on cityWebEdit [{id=txtCity}] with data {text=Billingham}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input Zip code
+ Running action SendKeys on zipCodeWebEdit [{id=txtZipPostalCode}] with data {text=TS23 4EB}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input evening phone number
+ Running action SendKeys on phoneWebEdit [{id=txtphone1}] with data {text=3333 333 3333}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input birthday date
+ Running action SendKeys on dateOfBirthWebEdit [{id=txtDateOfBirth}] with data {text=01/02/1988}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Input pin
+ Running action SendKeys on pinWebEdit [{id=txtPin}] with data {text=9818}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Sign Up&quot; button
+ Running action Click on signUpBtn [{xpath=//*[@id='btnContinue'and @value='Sign Up']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the object exists
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Request completed&quot; page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Request completed}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Return To QVC UK Homepage&quot; button
+ Running action Click on returnToHomepageBtn [{id=btnTakeMeShopping}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the object exists
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at home page
+ Running action VerifyExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 34 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Search a product that has not question
+ Test module &quot;ByProductNum&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=228484}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Search&quot; button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 15 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Ask A Question&quot; button
+ Test module &quot;ClickAskAQuestionBtnInFooter&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Product Detail&quot; page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class=&quot;breadcrumb pageBreadcrumb&quot;]}] with data {text=Product Detail}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that &quot;ASK A QUESTION&quot; button is displayed in the footer on product detail page
+ Running action VerifyExist on askAQuestionBtnInFooter [{id=BVQAAskQuestionID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;ASK A QUESTION&quot; button on product detail page
+ Running action Click on askAQuestionBtnInFooter [{id=BVQAAskQuestionID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 0 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the information of the page
+ Test module &quot;VerifyAskAQuestionPage&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Ask a question&quot; page
+ Running action ContainsText on pageHeader [{id=divPageTitle}] with data {text=Ask a question}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify Warning message area existeded
+ Running action VerifyExist on warningMsg [{id=BVQAQuestionEditFormSubTitleCustomID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verfiy the &quot;Customer Care&quot; existeded
+ Running action VerifyExist on customerCareLink [{linkText=Customer Care}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verfiy the &quot;Ask a new question&quot; of title existeded
+ Running action ContainsText on askANewQuestionTitle [{id=BVQAQuestionEditFormTitleID}] with data {text=Ask a new question}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify&quot;Ask a question&quot; existeded
+ Running action VerifyExist on askAQuestionContext [{xpath=//*[@class='BVQAFieldHeader']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verfiy the &quot;Example: How many are in a package?&quot; existeded
+ Running action ContainsText on askAQuestionExample [{xpath=//*[@class='BVQAFormText BVQAFieldMessage']}] with data {text=Example: How many are in a package?}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot; Add additional details&quot; existeded
+ Running action VerifyExist on addAdditionalDetailsTContext [{xpath=//*[@id='BVQAQuestionQuestionDetailsFieldID']/*[@class=&quot;BVQAFieldHeader&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify warning message of add additional details is displayed: &quot;Questions usually take up to 40 hours to publish. Did you know... if you text your question about the current on-air item to 80782, it could be answered live on TV.&quot;
+ Running action ContainsText on addAdditionalDetailsWarningMsg [{xpath=//*[@class='BVQACustomQuestionHelper']}] with data {text=Questions usually take up to 40 hours to publish. Did you know... if you text your question about the current on-air item to 80782, it could be answered live on TV.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click on the &quot;See Guidelines&quot; button
+ Running action Click on seeGuidelinesBtn [{xpath=//*[@name=&quot;BV_TrackingTag_Question_Submission_QAndAGuidelines&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Switch to new browser - Question and Answer-Guidelines page
+ Running action Browser with data {action=SwitchToNewBrowser}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Switch to new browser, windowHandle - CDwindow-f7928468-51fc-4790-a541-a9dbe5d45b98
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;QVC values your questions and answers!&quot; existed in the guidelines page
+ Running action ContainsText on guidelinesPageTitle [{id=BVQAGuidelinesDocumentationHeaderID}] with data {text=QVC values your questions and answers!}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the guidelines area existed
+ Running action VerifyExist on guidelinesContextArea [{id=BVQAGuidelinesDocumentationID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Close&quot; button existed
+ Running action VerifyExist on closeThisWindowBtn [{xpath=//*[@class=&quot;BVQACloseWindowLink&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the new browser
+ Running action Browser with data {action=CloseNewBrowser}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the new browser, windowHandle - CDwindow-22e4023a-daa8-45ab-9593-dc6eaa164235
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot; Products related to my question&quot; existeded
+ Running action ContainsText on productRelatedToQuestionTitle [{xpath=//*[@id='BVQAQuestionProductReferencesFieldID']/*[@class=&quot;BVQAFieldHeader&quot;]}] with data {text=Products related to my question}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;What products provide context to your question? Add them.&quot; existed
+ Running action ContainsText on whatProductProvideContext [{xpath=//*[@id='BVQAQuestionProductReferencesFieldID']/*[@class=&quot;BVQAFormText BVQAFieldMessage&quot;]}] with data {text=What products provide context to your question? Add them.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Related products:&quot; existeded
+ Running action ContainsText on relatedProductsContext [{xpath=//*[@id='BVQAQuestionProductReferencesFieldID']//*[@class=&quot;BVSUTitle BVSU_PLTitle&quot;]}] with data {text=Related products:}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the image link of  &quot;Related products&quot; existeded
+ Running action VerifyExist on searchProductImagLink [{xpath=//*[@id='BVSU_PLProduct0_ContainerID']/*[@class=&quot;BVSUInside BVSU_PLInsideProduct BVSU_PLInsideProductEmpty&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click on  the &quot;Add&quot; link
+ Running action Click on addLink [{xpath=//*[@id=&quot;BVSU_PLProduct0_ContainerID&quot;]//*[@class=&quot;BVSU_PLProductAction&quot;][1]/*[@name=&quot;BV_TrackingTag_Question_Submission_ProductLinkAdd&quot;]/*[@class=&quot;BVSULinkSpan&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the title &quot;Recommend a product from our product catalogue&quot; existeded
+ Running action ContainsText on recommnedAProductTitle [{xpath=//*[@class=&quot;BVSUTitle BVSU_SearchTitle&quot;]}] with data {text=Recommend a product from our product catalogue}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Search for&quot; existeded
+ Running action ContainsText on searchForContext [{xpath=//*[@for=&quot;BVSU_PLInputSearchID&quot;]/*[@class=&quot;BVSUFieldLabel&quot;]}] with data {text=Search for}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the search product text box existeded
+ Running action VerifyExist on searchProductTextbox [{id=BVSU_PLInputSearchID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Search&quot; button existeded
+ Running action VerifyExist on searchBtn [{xpath=//*[@class=&quot;BVSUInput BVSUInputButton BVSUInputButtonSearch&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Browse all products&quot;existed
+ Running action ContainsText on browserAllProductContext [{xpath=//*[@class=&quot;BVSULink BVSULinkBrowseAllProducts&quot;]//*[@class=&quot;BVSULinkSpan&quot;]}] with data {text=Browse all products}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click the &quot;Done&quot; button
+ Running action Click on doneBtn [{xpath=//*[@class=&quot;BVSUButtonContainer BVSU_SearchButtonContainer&quot;]/*[@class=&quot;BVSUInput BVSUInputButton BVSUInputButtonSearch&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click the mangnifying glass icon
+ Running action Click on magnifyingGlassIcon [{xpath=//*[@id=&quot;BVSU_PLProduct0_ContainerID&quot;]//*[@class=&quot;BVSUInside BVSU_PLInsideProduct BVSU_PLInsideProductEmpty&quot;]/*[@class=&quot;BVSU_PLProductImage&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click the &quot;Close&quot; link
+ Running action Click on closeLink [{xpath=//*[@class=&quot;BVSULink BVSULinkClose&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify  the &quot;Do not show my nickname&quot; existed
+ Running action ContainsText on doNotShowNicknameContext [{xpath=//*[@id=&quot;BVQAQuestionDisplayAsAnonymousFieldID&quot;]//*[@class=&quot;BVQAFieldFollowingText&quot;]}] with data {text=Do not show my nickname}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the checkbox of &quot;Do not show my nickname&quot; existed
+ Running action VerifyExist on doNotShowNicknameCheckbox [{xpath=//*[@id=&quot;BVQAQuestionDisplayAsAnonymousFieldID&quot;]//*[@id=&quot;BVQAFieldCheckboxQuestionUseranonymousID&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot; Say where you're from&quot; existed
+ Running action ContainsText on sayWhereTitle [{xpath=//*[@id=&quot;BVQAQuestionUserLocationFieldID&quot;]//*[@class=&quot;BVQAFieldHeader&quot;]}] with data {text=Say where you're from}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Please send me an email when my question is posted.&quot; existed
+ Running action ContainsText on questionPostedSendemailContext [{xpath=//*[@id=&quot;BVQAQuestionSendEmailAlertsID&quot;]//*[@class=&quot;BVQAFieldFollowingText&quot;]}] with data {text=Please send me an email when my question is posted.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the &quot;Please send me an email when my question is posted.&quot;
+ Running action Text on questionPostedSendemailContext [{xpath=//*[@id=&quot;BVQAQuestionSendEmailAlertsID&quot;]//*[@class=&quot;BVQAFieldFollowingText&quot;]}] with data {storeas=QuestionPosted}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the checkbox of &quot;Please send me an email when my question is posted.&quot; existeded
+ Running action VerifyExist on questionPostedSendemailCheckbox [{xpath=//*[@id=&quot;BVQAQuestionSendEmailAlertsID&quot;]//*[@id=&quot;BVQAFieldCheckboxQuestionUseremailalertsID&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify  &quot;Please send me an email when my question is answered.&quot; existed
+ Running action ContainsText on questionAnsweredSendemailContext [{xpath=//*[@id=&quot;BVQAQuestionSendEmailAlertWhenAnsweredID&quot;]//*[@class=&quot;BVQAFieldFollowingText&quot;]}] with data {text=Please send me an email when my question is answered.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Save the check box of &quot;Please send me an email when my question is answered.&quot;
+ Running action Text on questionAnsweredSendemailContext [{xpath=//*[@id=&quot;BVQAQuestionSendEmailAlertWhenAnsweredID&quot;]//*[@class=&quot;BVQAFieldFollowingText&quot;]}] with data {storeas=QuestionAnswered}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the check box of &quot;Please send me an email when my question is answered.&quot; existed
+ Running action VerifyExist on questionAnsweredSendemailCheckbox [{xpath=//*[@id=&quot;BVQAQuestionSendEmailAlertWhenAnsweredID&quot;]//*[@id=&quot;BVQAFieldCheckboxQuestionSendemailonanswerID&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Email&quot; existed
+ Running action ContainsText on emailContext [{xpath=//*[@id=&quot;BVQAQuestionUserEmailAddressFieldID&quot;]//*[@class=&quot;BVQAFieldHeader&quot;]}] with data {text=Email}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;We will ONLY use your email to notify you in regards to your submission.&quot; existed
+ Running action ContainsText on emailWarningMsg [{xpath=//*[@id=&quot;BVQAQuestionEditEmailDisclaimer&quot;]}] with data {text=We will ONLY use your email to notify you in regards to your submission.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Your age&quot; existed
+ Running action ContainsText on yourAgeContext [{xpath=//*[@id=&quot;ContextualDataFieldAge&quot;]/*[@class=&quot;BVQAFieldHeader&quot;]}] with data {text=Your age}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;And how long have you been shopping with QVC?&quot; existed
+ Running action ContainsText on howLongShoppingContext [{xpath=//*[@id=&quot;ContextualDataFieldHowLongShopping&quot;]//*[@class=&quot;BVQAFieldHeader&quot;]}] with data {text=And how long have you been shopping with QVC?}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Save  the &quot;And how long have you been shopping with QVC?&quot;
+ Running action Text on howLongShoppingContext [{xpath=//*[@id=&quot;ContextualDataFieldHowLongShopping&quot;]//*[@class=&quot;BVQAFieldHeader&quot;]}] with data {storeas=HowLongShoppingText}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Would you recommend this product as a gift? existed
+ Running action ContainsText on recommendProductContext [{xpath=//*[@id=&quot;ContextualDataFieldWouldRecommend&quot;]//*[@class=&quot;BVQAFieldHeader&quot;]}] with data {text=Would you recommend this product as a gift?}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the &quot;Would you recommend this product as a gift?&quot;
+ Running action Text on recommendProductContext [{xpath=//*[@id=&quot;ContextualDataFieldWouldRecommend&quot;]//*[@class=&quot;BVQAFieldHeader&quot;]}] with data {storeas=RecommendProductText}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Who would this be a perfect gift for?&quot; existed
+ Running action ContainsText on perfectGiftContext [{xpath=//*[@id=&quot;ContextualDataFieldPerfectGiftFor&quot;]//*[@class=&quot;BVQAFieldHeader&quot;]}] with data {text=Who would this be a perfect gift for?}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the &quot;Who would this be a perfect gift for?&quot;
+ Running action Text on perfectGiftContext [{xpath=//*[@id=&quot;ContextualDataFieldPerfectGiftFor&quot;]//*[@class=&quot;BVQAFieldHeader&quot;]}] with data {storeas=PerfectGiftText}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;This information is shown next to your Q&amp;As. It helps you and other customers find Q&amp;As from similar people.&quot; existed
+ Running action ContainsText on inforWarningMsg [{xpath=//*[@class=&quot;BVQAContextDataFields&quot;]//*[@id=&quot;BVQACustomLabelInputHelperID&quot;]}] with data {text=This information is shown next to your Q&amp;As. It helps you and other customers find Q&amp;As from similar people.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Please make sure you read and understand our Terms of Use before accepting them.&quot; existed
+ Running action ContainsText on makeSureWarningMsg [{xpath=//*[@class=&quot;BVRRAgreedToTermsAndConditionsHelperCustom&quot;]}] with data {text=Please make sure you read and understand our Terms of Use before accepting them.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;I accept these Terms of Use.&quot; existed
+ Running action ContainsText on acceptTermContext [{xpath=//*[@id=&quot;BVQAQuestionAgreedToTermsAndConditionsID&quot;]//*[@class=&quot;BVQAFieldFollowingText&quot;]}] with data {text=I accept these}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the checkbox of &quot;I accept these Terms of Use&quot; existed
+ Running action VerifyExist on acceptTermCheckbox [{xpath=//*[@id='BVQAFieldCheckboxQuestionAgreedToTermsAndConditionsID']}, {id=BVQAFieldCheckboxQuestionAgreedToTermsAndConditionsID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Terms of Use&quot; link existed
+ Running action ContainsText on termsLink [{linkText=Terms of Use}] with data {text=Terms of Use}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click on the &quot;Terms of Use&quot; link
+ Running action Click on termsLink [{linkText=Terms of Use}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Switch to new browser - Question and Answer-Guidelines page
+ Running action Browser with data {action=SwitchToNewBrowser}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Switch to new browser, windowHandle - CDwindow-30fa03ec-0aa4-4ac0-8b28-fc9c7468a99d
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;QUESTION &amp; ANSWER TERMS OF USE&quot; existed
+ Running action ContainsText on termOfUseTitle [{id=BVQATermsAndConditionsDocumentationHeaderID}] with data {text=QUESTION &amp; ANSWER TERMS OF USE}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the document of &quot;Terms of use&quot; existed
+ Running action VerifyExist on termOfUseDocument [{id=BVQATermsAndConditionsDocumentationID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Close this window&quot; button existed
+ Running action VerifyExist on closeBtn [{id=BVQACloseWindowLinkDivID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the new browser
+ Running action Browser with data {action=CloseNewBrowser}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the new browser, windowHandle - CDwindow-22e4023a-daa8-45ab-9593-dc6eaa164235
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Questions and answers are typically posted within 72 hours, pending approval.&quot; existed
+ Running action ContainsText on pendingApprovalWarningMsg [{id=BVQAQuestionEditDisplayDisclaimerID}] with data {text=Questions and answers are typically posted within 72 hours, pending approval.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 14 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type the madatory information
+ Test module &quot;TypeTextAndClickPreviewBtn&quot;&quot; with data: &quot;{askaquestiontext=Ask a question test, recommendproduct=Yes, shoppingrange=1-2 years, nickname=Your nickname*, emailaddress=test@qvc.com, addadditionaltext=This is a text information in the add additional details text box, citytext=China, perfectgift=Mums, yourage=25-34}&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at &quot;Ask a question&quot; page
+ Running action ContainsText on pageHeader [{id=divPageTitle}] with data {text=Ask a question}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type information in the textbox of &quot;Ask a question&quot;
+ Running action SendKeys on askAQuestionTextbox [{id=BVQAFieldTextQuestionSummaryID}] with data {text=Ask a question test}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type information in the textbox of  &quot;Add Additional Details&quot;
+ Running action SendKeys on addAdditionalDetailsTextbox [{id=BVQAFieldTextAreaQuestionDetailsID}] with data {text=This is a text information in the add additional details text box}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify if the nickname need to be typed and verify the &quot;Choose a nickname&quot; existed
+ Running action CheckForElements on chooseANicknameTitle [{xpath=//div[@class='BVQAFieldHeader' and contains(text(),'Choose a nickname')]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type a nickname in the textbox
+ Running action SendKeys on nicknameTextbox [{id=BVQAFieldTextQuestionUsernicknameID}, {id=BVRRFieldTextReviewUsernicknameID}] with data {text=a20171211124439qvcPas}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Save the nickname
+ Running action Text on nicknameTextbox [{id=BVQAFieldTextQuestionUsernicknameID}, {id=BVRRFieldTextReviewUsernicknameID}] with data {storeas=NickName}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify if the nickname need to be typed and verify the &quot;Your nickname&quot; existed
+ Running action CheckForElements on yourNicknameTitle [{xpath=//div[@class='BVQAFieldHeader' and contains(text(),'Your nickname')]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select ture in the  checkbox of &quot; Please send me an email when my question is posted&quot;
+ Running action SendKeys on cityTextbox [{xpath=//*[@class=&quot;BVQAFieldMain&quot;]//*[@id=&quot;BVQAFieldTextQuestionUserlocationID&quot;]}] with data {text=China}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Type a email address in the text box of &quot;Email&quot;
+ Running action SendKeys on emailTextbox [{xpath=//*[@id=&quot;BVQAQuestionUserEmailAddressFieldID&quot;]//*[@id=&quot;BVQAFieldTextQuestionUseremailID&quot;]}] with data {text=test@qvc.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select a age in the &quot;Your Age&quot; option
+ Running action Select on yourAgeOption [{id=BVQAFieldSelectQuestionContextualDataFieldAgeID}] with data {text=25-34}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;And how long have you been shopping with QVC?&quot; existed
+ Running action Text on howLongShoppingContext [{xpath=//*[@id=&quot;ContextualDataFieldHowLongShopping&quot;]//*[@class=&quot;BVQAFieldHeader&quot;]}] with data {storeas=HowLongShoppingText}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select a year in the  &quot;And how long have you been shopping with QVC?&quot; option
+ Running action Select on howLongShoppingOption [{xpath=//*[@id=&quot;ContextualDataFieldHowLongShopping&quot;]//*[@id=&quot;BVQAFieldSelectQuestionContextualDataFieldHowLongShoppingID&quot;]}] with data {text=1-2 years}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the &quot;Would you recommend this product as a gift?&quot;
+ Running action Text on recommendProductContext [{xpath=//*[@id=&quot;ContextualDataFieldWouldRecommend&quot;]//*[@class=&quot;BVQAFieldHeader&quot;]}] with data {storeas=RecommendProductText}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select a value in the  &quot;Would you recommend this product as a gift?&quot; option
+ Running action Select on recommendProductOption [{xpath=//*[@id=&quot;ContextualDataFieldWouldRecommend&quot;]//*[@id=&quot;BVQAFieldSelectQuestionContextualDataFieldWouldRecommendID&quot;]}] with data {text=Yes}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the &quot;Who would this be a perfect gift for?&quot;
+ Running action Text on perfectGiftContext [{xpath=//*[@id=&quot;ContextualDataFieldPerfectGiftFor&quot;]//*[@class=&quot;BVQAFieldHeader&quot;]}] with data {storeas=PerfectGiftText}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select a value in the  &quot;Who would this be a perfect gift for?&quot; option
+ Running action Select on perfectGiftOption [{xpath=//*[@id=&quot;ContextualDataFieldPerfectGiftFor&quot;]//*[@id=&quot;BVQAFieldSelectQuestionContextualDataFieldPerfectGiftForID&quot;]}] with data {text=Mums}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the &quot;Please send me an email when my question is posted.&quot;
+ Running action Text on questionPostedSendemailContext [{xpath=//*[@id=&quot;BVQAQuestionSendEmailAlertsID&quot;]//*[@class=&quot;BVQAFieldFollowingText&quot;]}] with data {storeas=QuestionPosted}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Save the check box of &quot;Please send me an email when my question is answered.&quot;
+ Running action Text on questionAnsweredSendemailContext [{xpath=//*[@id=&quot;BVQAQuestionSendEmailAlertWhenAnsweredID&quot;]//*[@class=&quot;BVQAFieldFollowingText&quot;]}] with data {storeas=QuestionAnswered}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select ture in the checkbox of &quot;I accept these Terms of Use&quot;
+ Running action Click on acceptTermCheckbox [{xpath=//*[@id='BVQAFieldCheckboxQuestionAgreedToTermsAndConditionsID']}, {id=BVQAFieldCheckboxQuestionAgreedToTermsAndConditionsID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click on the &quot;Preview&quot; button
+ Running action Click on previewBtn [{id=BVQAPreviewQuestionButtonID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;I accept these Terms of Use.&quot; is set true
+ Running action CheckForElements on termsErrTitle [{xpath=//*[@id='BVQAQuestionAgreedToTermsAndConditionsID']/*[@class=&quot;BVQAError BVQAErrorText BVQAFieldErrorMessage&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 18 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify Question preview section
+ Test module &quot;VerifyInformation&quot;&quot; with data: &quot;{askaquestiontext=Ask a question test, recommendproduct=Yes, shoppingrange=1-2 years, emailaddress=test@qvc.com, addadditionaltext=This is a text information in the add additional details text box, citytext=China, perfectgift=Mums, yourage=25-34}&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify we are at the &quot;Preview your Question&quot; page
+ Running action ContainsText on divHomepage [{id=divPageTitle}] with data {text=Preview your Question}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the ask a question context
+ Running action ContainsText on askQuestionContext [{xpath=//*[@class=&quot;BVQAQuestionSummary&quot;]}] with data {text=Ask a question test}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the nick name
+ Running action ContainsText on nickName [{xpath=//*[@id='BVQAQuestionOverallSummaryID']//*[@class=&quot;BVQANickname&quot;]}] with data {text=a20171211124439qvcPas}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the city name
+ Running action ContainsText on cityName [{xpath=//*[@id='BVQAQuestionOverallSummaryID']//*[@class=&quot;BVQALocation&quot;]}] with data {text=China}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Add Additional Details&quot;
+ Running action ContainsText on addAdditionalDetails [{xpath=//*[@id='BVQAQuestionOverallSummaryID']/*[@class=&quot;BVQAContentText BVQAQuestionDetails&quot;]}] with data {text=This is a text information in the add additional details text box}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;age&quot; existed
+ Running action ContainsText on ageContext [{xpath=//*[@id='BVQAQuestionOverallSummaryID']//*[@class=&quot;BVQALabel BVQAContextDataValuePrefix BVQAContextDataValueagePrefix&quot;]}] with data {text=Age}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the age range existed
+ Running action ContainsText on ageRange [{xpath=//*[@id='BVQAQuestionOverallSummaryID']//*[@class=&quot;BVQAValue BVQAContextDataValue BVQAContextDataValueage&quot;]}] with data {text=25-34}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;How long have you been shopping with QVC?&quot; existed
+ Running action ContainsText on howLongContext [{xpath=//*[@class=&quot;BVQALabel BVQAContextDataValuePrefix BVQAContextDataValuehowLongShoppingPrefix&quot;]}] with data {text=How long have you been shopping with QVC?}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the shopping range existed
+ Running action ContainsText on shoppingRange [{xpath=//*[@class=&quot;BVQAValue BVQAContextDataValue BVQAContextDataValuehowLongShopping&quot;]}] with data {text=1-2 years}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Would you recommend this product as a gift?&quot; existed
+ Running action ContainsText on recommendProductContext [{xpath=//*[@class=&quot;BVQALabel BVQAContextDataValuePrefix BVQAContextDataValuewouldRecommendPrefix&quot;]}] with data {text=Would you recommend this product as a gift?}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the answer of &quot;Would you recommend this product as a gift?&quot; existed
+ Running action ContainsText on recommendProductAnswer [{xpath=//*[@class=&quot;BVQAValue BVQAContextDataValue BVQAContextDataValuewouldRecommend&quot;]}] with data {text=Yes}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Who would this be a perfect gift for?&quot; existed
+ Running action ContainsText on perfectGiftContext [{xpath=//*[@class=&quot;BVQALabel BVQAContextDataValuePrefix BVQAContextDataValueperfectGiftForPrefix&quot;]}] with data {text=Who would this be a perfect gift for?}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the answer of &quot;Who would this be a perfect gift for?&quot; existed
+ Running action ContainsText on perfectGiftAnswer [{xpath=//*[@class=&quot;BVQAValue BVQAContextDataValue BVQAContextDataValueperfectGiftFor&quot;]}] with data {text=Mums}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the checkbox of &quot;Please send me an email when my question is posted&quot; is set ture
+ Running action VerifyExist on sendMeEmailCheckboxTure [{xpath=//*[@class=&quot;BVQAFieldMain&quot;]/*[@checked=&quot;checked&quot; and @id=&quot;BVQAFieldCheckboxQuestionUseremailalertsID&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Please send me an email when my question is posted.&quot; existed
+ Running action ContainsText on sendPostedContext [{xpath=//*[@id='BVQAQuestionSendEmailAlertsID']//*[@class=&quot;BVQAFieldFollowingText&quot;]}] with data {text=Please send me an email when my question is posted.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Please send me an email when my question is answered.&quot; existed
+ Running action ContainsText on sendAnswerContext [{xpath=//*[@id='BVQAQuestionSendEmailAlertWhenAnsweredID']//*[@class=&quot;BVQAFieldFollowingText&quot;]}] with data {text=Please send me an email when my question is answered.}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Please send me an email when my question is answered&quot; is set ture
+ Running action VerifyExist on sendAnswerCheckboxTure [{xpath=//*[@id='BVQAFieldCheckboxQuestionSendemailonanswerID' and @checked=&quot;checked&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Notifications will be sent to &quot; existed
+ Running action ContainsText on notificationsContext [{xpath=//*[@id=&quot;BVQAQuestionPreviewNotificationID&quot;]}] with data {text=Notifications will be sent to}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the  email address
+ Running action ContainsText on emailAddress [{xpath=//*[@id=&quot;BVQAQuestionPreviewNotificationID&quot;]/*[@class=&quot;BVQAEmailAddress&quot;]}] with data {text=test@qvc.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;I accept these &quot; existed
+ Running action ContainsText on acceptContext [{xpath=//*[@id='BVQAQuestionAgreedToTermsAndConditionsID']//*[@class=&quot;BVQAFieldFollowingText&quot;]}] with data {text=I accept these}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Terms Of Use&quot; link existed
+ Running action VerifyExist on termsOfUseLink [{linkText=Terms of Use}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Questions and answers are typically posted within 72 hours, pending approval&quot; existed
+ Running action ContainsText on approvalWarningMsg [{id=BVQAQuestionPostDelayDisclaimerID}] with data {text=Questions and answers are typically posted within 72 hours, pending approval}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 4 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click on the &quot;Submit&quot; button
+ Test module &quot;ClickSubmitBtn&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify we are at the &quot;Preview your Question&quot; page
+ Running action ContainsText on divHomepage [{id=divPageTitle}] with data {text=Preview your Question}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the &quot;Submit&quot; button existed
+ Running action Click on submitBtn [{id=BVQASubmitQuestionButtonID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 1 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the information and click on the &quot;Back to product&quot; button
+ Test module &quot;VerifyAskQuestionSuccess&quot;&quot; with data: &quot;{infor=Questions and answers are typically posted within 72 hours, pending approval}&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify we are at the &quot;Thank you&quot; page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Thank you!}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the ask a question context
+ Running action ContainsText on thankYouWarningMsg [{id=BVQAQuestionSubmittedDisplayDisclaimerID}] with data {text=Questions and answers are typically posted within 72 hours, pending approval}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the count questrions and answers existed.
+ Running action VerifyExist on countQAndA [{id=BVQAQuestionAndAnswerCountID}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click on the &quot;Back to product&quot; button
+ Running action Click on backtoProductBtn [{xpath=//*[@name=&quot;BV_TrackingTag_Question_Submission_ThankYou_ReturnToProduct&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class=&quot;breadcrumb pageBreadcrumb&quot;]}] with data {text=Product Detail}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 5 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Report file generated: c:\seleniumframeworkplugin\testOutput\16\DetailReport\Pass_AEM_PDP_BV_Q&amp;A_AskAQuestionButtonInFooter_Submit_uk_chrome.html
+</div><br/><br/>
+</div>
+</td>
+<td></td>
+<td>115</td>
+<td>com.qvc.selenium.plugin.TestCase@6408ca94</td></tr>
+</table><p>
+</body>
+</html>

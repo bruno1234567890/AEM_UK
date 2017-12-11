@@ -1,0 +1,56 @@
+2017-12-10 21:59:00.520 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://10.14.19.220:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=WINDOWS}]
+2017-12-10 21:59:03.749 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:59:03.749 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-10 21:59:07.298 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:59:09.689 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:59:09.822 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:10.150 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-10 21:59:10.150 [INFO] : [TestNG-method=runTestCase-1] Verify user can be navigated to PDP correctly after click product image/product title
+ Test module "ProductGrid_Clickable"
+2017-12-10 21:59:10.150 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:10.449 [INFO] : [TestNG-method=runTestCase-1] Verify Product Grid Module header exist
+ Running action VerifyExist on productGridHeader [{xpath=//*[@data-module-type='PRODUCT_GRID']//h2}]
+2017-12-10 21:59:10.557 [INFO] : [TestNG-method=runTestCase-1] Click left image of "Product Grid Module"
+ Running action Click on gridLeftImg [{xpath=//div[@data-component-type='<grid>']//div[@class='col-tn-6 col-sm-4 left']//img}] with data {grid=PRODUCT_GRID}
+2017-12-10 21:59:13.481 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:59:13.608 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:59:13.697 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:59:14.614 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:15.233 [INFO] : [TestNG-method=runTestCase-1] Click Middle image -1st left  of "Product Grid Module"
+ Running action Click on gridMidLeftImg [{xpath=//div[@data-component-type='<grid>']//div[@class='col-tn-6 top left']//img}] with data {grid=PRODUCT_GRID}
+2017-12-10 21:59:17.651 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:59:17.766 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:59:17.898 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:59:18.933 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:19.284 [INFO] : [TestNG-method=runTestCase-1] Click Middle image -1st right  of "Product Grid Module"
+ Running action Click on gridMidRightImg [{xpath=//div[@data-component-type='<grid>']//div[@class='col-tn-6 top right']//img}] with data {grid=PRODUCT_GRID}
+2017-12-10 21:59:21.496 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:59:21.612 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:59:21.903 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:59:22.748 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:23.197 [INFO] : [TestNG-method=runTestCase-1] Click right image of "Product Grid Module"
+ Running action Click on gridRightImg [{xpath=//div[@data-component-type='<grid>']//div[@class='col-tn-6 col-sm-4 col-sm-push-4 right']//img}] with data {grid=PRODUCT_GRID}
+2017-12-10 21:59:25.964 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:59:26.080 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:59:26.180 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 16 sec
+2017-12-10 21:59:27.576 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Pass_AEM_ProductGridModule_ComponentsAreClickable_uk_chrome.html

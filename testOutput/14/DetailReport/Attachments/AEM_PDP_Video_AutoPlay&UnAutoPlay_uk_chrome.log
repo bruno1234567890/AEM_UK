@@ -1,0 +1,51 @@
+2017-12-10 21:58:11.783 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:58:12.837 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:58:12.840 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:58:15.297 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:58:16.828 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:58:17.027 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:58:17.866 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:58:17.866 [INFO] : [TestNG-method=runTestCase-1] Search a product with On Air Presenatation Video, Bonus video
+ Test module "BYPRODUCTNUM"
+2017-12-10 21:58:17.866 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:58:22.349 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=148947}
+2017-12-10 21:58:22.897 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:58:26.981 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:58:32.666 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 21:58:32.764 [INFO] : [TestNG-method=runTestCase-1] Verify that video is auto-playing when AutoPlay checkbox is checked and auto-paused when AutoPlay checkbox is not checked
+ Test module "VerifyVideoAutoPlayCheckbox"
+2017-12-10 21:58:32.764 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure we are at correct page: "Product Detail" page
+ Running action WaitUntilObjectExist on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-10 21:58:32.896 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at  correct product number's "Product Detail" page
+ Running action ContainsText on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {text=148947}
+2017-12-10 21:58:33.012 [INFO] : [TestNG-method=runTestCase-1] Wait until video player is shown
+ Running action WaitUntilObjectExist on videoField [{xpath=//div[@class="productVideo"]}] with data {wait=3}
+2017-12-10 21:58:36.214 [INFO] : [TestNG-method=runTestCase-1] Verify that Auto-Play Video is checked
+ Running action VerifyExist on autoPlayVideoChkBox [{xpath=//div[contains(@class,'videoCheckAutoPlay')]/label[contains(@class,'active')]}]
+2017-12-10 21:58:36.336 [INFO] : [TestNG-method=runTestCase-1] Verify that video is auto-playing(Play button is not displayed) when AutoPlay is checked
+ Running action VerifyNotExist on playVideoBtn [{xpath=//button[@title="Play"]}]
+2017-12-10 21:58:36.451 [INFO] : [TestNG-method=runTestCase-1] Uncheck Auto-play checkbox
+ Running action Click on autoPlayVideoChkBox [{xpath=//div[contains(@class,'videoCheckAutoPlay')]/label[contains(@class,'active')]}]
+2017-12-10 21:58:36.746 [INFO] : [TestNG-method=runTestCase-1] Verify that Auto-Play checkbox is not checked
+ Running action VerifyExist on unAutoPlayVideoChkBox [{xpath=//div[contains(@class,'videoCheckAutoPlay')]/label[not(contains(@class,'active'))]}]
+2017-12-10 21:58:36.850 [INFO] : [TestNG-method=runTestCase-1] Refresh PDP page to reload video
+ Running action Browser with data {action=refresh}
+2017-12-10 21:58:39.444 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure we are at correct page: "Product Detail" page
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:58:39.596 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:58:39.764 [INFO] : [TestNG-method=runTestCase-1] Verify that Auto-Play checkbox is not checked
+ Running action VerifyExist on unAutoPlayVideoChkBox [{xpath=//div[contains(@class,'videoCheckAutoPlay')]/label[not(contains(@class,'active'))]}]
+2017-12-10 21:58:39.912 [INFO] : [TestNG-method=runTestCase-1] Verify that video is not auto-playing(Play button is displayed) when AutoPlay is unchecked
+ Running action VerifyExist on playVideoBtn [{xpath=//button[@title="Play"]}]
+2017-12-10 21:58:40.080 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-10 21:58:40.381 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Pass_AEM_PDP_Video_AutoPlay&UnAutoPlay_uk_chrome.html

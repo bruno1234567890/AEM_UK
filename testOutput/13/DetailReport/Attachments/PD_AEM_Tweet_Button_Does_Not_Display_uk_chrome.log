@@ -1,0 +1,45 @@
+2017-12-10 21:40:45.507 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:40:46.520 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvc.com"
+ Test module "GotoUrl"
+2017-12-10 21:40:46.520 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:40:48.671 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:40:50.218 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:40:50.404 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:40:51.179 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-10 21:40:51.179 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "ByProductNum"
+2017-12-10 21:40:51.179 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:40:55.733 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229454}
+2017-12-10 21:40:56.465 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:40:59.851 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:41:05.189 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 21:41:05.189 [INFO] : [TestNG-method=runTestCase-1] Verify tweet icon is displayed and twitter login screen overlay appears
+ Test module "VerifyTweetIcon"
+2017-12-10 21:41:05.190 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:41:05.343 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:41:05.469 [INFO] : [TestNG-method=runTestCase-1] Verify tweet icon is displayed on product detail page
+ Running action VerifyExist on tweetIconImag [{xpath=//*[@class='shareBtnContainer']//*[@class='twitter-share-button btnExtSocials']}]
+2017-12-10 21:41:05.603 [INFO] : [TestNG-method=runTestCase-1] Click the tweet icon
+ Running action Click on tweetIconImag [{xpath=//*[@class='shareBtnContainer']//*[@class='twitter-share-button btnExtSocials']}]
+2017-12-10 21:41:05.874 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser - Share a link with your followers
+ Running action Browser with data {action=SwitchToNewBrowser}
+2017-12-10 21:41:05.921 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser, windowHandle - CDwindow-7faf9351-2d1f-4e5e-9a94-7a4ad5d4e906
+2017-12-10 21:41:05.921 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we are switch to correct page
+ Running action WaitUntilObjectExist on tweetPageHeaderTxt [{xpath=//*[@id='bd']/h2}] with data {wait=3}
+2017-12-10 21:41:09.103 [INFO] : [TestNG-method=runTestCase-1] Verify we are at "Share a link with your followers" page
+ Running action ContainsText on tweetPageHeaderTxt [{xpath=//*[@id='bd']/h2}] with data {text=Share a link with your followers}
+2017-12-10 21:41:09.251 [INFO] : [TestNG-method=runTestCase-1] Close the new browser
+ Running action Browser with data {action=CloseNewBrowser}
+2017-12-10 21:41:09.387 [INFO] : [TestNG-method=runTestCase-1] Close the new browser, windowHandle - CDwindow-c7b25273-adc1-4395-b9e0-0eac89a5bec4
+2017-12-10 21:41:09.387 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-10 21:41:09.686 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_PD_AEM_Tweet_Button_Does_Not_Display_uk_chrome.html

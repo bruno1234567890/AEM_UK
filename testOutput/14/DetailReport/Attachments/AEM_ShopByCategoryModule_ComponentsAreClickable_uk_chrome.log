@@ -1,0 +1,40 @@
+2017-12-10 21:59:21.887 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:59:23.012 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:59:23.012 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-10 21:59:26.505 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:59:28.417 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:59:28.633 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:29.365 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-10 21:59:29.365 [INFO] : [TestNG-method=runTestCase-1] Verify that user can be navigated to correct page after click each image
+ Test module "ShopByCategory_Clickable"
+2017-12-10 21:59:29.365 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:30.212 [INFO] : [TestNG-method=runTestCase-1] Verify header text "Shop By Category" displayed
+ Running action ContainsText on shopByCategoryHeader [{xpath=//*[@data-module-type='SHOP_BY_CATEGORY']//h2}] with data {text=Shop By Category}
+2017-12-10 21:59:30.419 [INFO] : [TestNG-method=runTestCase-1] Click 1st image of "Shop By Catetory Module"
+ Running action Click on shopByCategoryImg [{xpath=(//*[@data-module-type='SHOP_BY_CATEGORY']//div[@data-component-type='SHOP_BY_CATEGORY_ITEM']//img)[<index>]}] with data {index=1}
+2017-12-10 21:59:33.112 [INFO] : [TestNG-method=runTestCase-1] Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+2017-12-10 21:59:34.711 [INFO] : [TestNG-method=runTestCase-1] Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class="active"]/h1}, {xpath=//*[@id="divPageTitle"]//h1}] with data {storeas=category}
+2017-12-10 21:59:35.616 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:59:37.404 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:38.066 [INFO] : [TestNG-method=runTestCase-1] Click 2nd image of "Shop By Catetory Module"
+ Running action Click on shopByCategoryImg [{xpath=(//*[@data-module-type='SHOP_BY_CATEGORY']//div[@data-component-type='SHOP_BY_CATEGORY_ITEM']//img)[<index>]}] with data {index=2}
+2017-12-10 21:59:40.271 [INFO] : [TestNG-method=runTestCase-1] Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+2017-12-10 21:59:43.250 [INFO] : [TestNG-method=runTestCase-1] Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class="active"]/h1}, {xpath=//*[@id="divPageTitle"]//h1}] with data {storeas=category}
+2017-12-10 21:59:44.049 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:59:45.695 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:46.366 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 17 sec
+2017-12-10 21:59:46.716 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Pass_AEM_ShopByCategoryModule_ComponentsAreClickable_uk_chrome.html

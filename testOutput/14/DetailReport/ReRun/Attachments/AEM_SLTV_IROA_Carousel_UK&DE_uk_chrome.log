@@ -1,0 +1,79 @@
+2017-12-10 22:01:22.015 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 22:01:23.224 [INFO] : [TestNG-method=runTestCase-1] Navigate to QVC
+ Test module "GotoUrl"
+2017-12-10 22:01:23.225 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 22:01:27.325 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 22:01:29.395 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 22:01:29.610 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 22:01:30.510 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-10 22:01:30.510 [INFO] : [TestNG-method=runTestCase-1] Navigate to watch tv live
+ Test module "NavToWatchTVLive"
+2017-12-10 22:01:30.510 [INFO] : [TestNG-method=runTestCase-1] Hover the "Shop QVC TV" menu
+ Running action MouseEvent on ShopQVCTVlink [{xpath=//*[@class="shopQVCTV"]/a[@aria-label="Shop QVC TV"]}, {xpath=//div[@id="mastTierTwo"]//a[text()="Shop QVC TV"]}] with data {mouseaction=mouseover}
+2017-12-10 22:01:30.721 [INFO] : [TestNG-method=runTestCase-1] Click "Watch QVC TV" link
+ Running action Click on watchQVCTVLink [{xpath=//*[@class="shopTVDropDown"]//*[@title="Watch QVC TV"]}, {xpath=//*[@class="qvctv visible-desktop"]//a[text()="Watch QVC TV"]}]
+2017-12-10 22:01:32.712 [INFO] : [TestNG-method=runTestCase-1] Wait until the object show up to make sure we are switch to correct page
+ Running action WaitUntilObjectExist on TVHeader [{class=active}]
+2017-12-10 22:01:32.917 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at live channel page
+ Running action ContainsText on TVHeader [{class=active}] with data {text=QVC UK – Watch Live}
+2017-12-10 22:01:33.118 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 2 sec
+2017-12-10 22:01:33.119 [INFO] : [TestNG-method=runTestCase-1] Select live channel
+ Test module "SelectLiveChannel"
+2017-12-10 22:01:33.121 [INFO] : [TestNG-method=runTestCase-1] Verify the channel selector exist
+ Running action VerifyExist on channelSelector [{id=ssmplive_html5_api}]
+2017-12-10 22:01:33.399 [INFO] : [TestNG-method=runTestCase-1] Verify the "LIVE Channel" exist
+ Running action ContainsText on liveChannelLink [{xpath=//*[@id="liveTvChannelMenu"]//a[@data-channelname="LIVE"]}] with data {text=LIVE}
+2017-12-10 22:01:33.649 [INFO] : [TestNG-method=runTestCase-1] Select the "LIVE Channel"
+ Running action Click on liveChannelLink [{xpath=//*[@id="liveTvChannelMenu"]//a[@data-channelname="LIVE"]}]
+2017-12-10 22:01:33.930 [INFO] : [TestNG-method=runTestCase-1] Wait until object exist
+ Running action WaitUntilObjectExist on IROACarouselItem1th [{xpath=//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][1]}] with data {wait=3}
+2017-12-10 22:01:37.115 [INFO] : [TestNG-method=runTestCase-1] Verify the "LIVE Channel"  is active
+ Running action ContainsText on activeState [{xpath=//*[@id="liveTvChannelMenu"]//*[@class="btn btn-default activeChannel"]}] with data {text=LIVE}
+2017-12-10 22:01:37.363 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-10 22:01:37.363 [INFO] : [TestNG-method=runTestCase-1] Verify IOA Buy box
+ Test module "VerifyBuyBoxElements"
+2017-12-10 22:01:37.363 [INFO] : [TestNG-method=runTestCase-1] Verify the buy box layer exist
+ Running action VerifyExist on buyBoxLayerIOA [{id=qProdOverlay}]
+2017-12-10 22:01:37.466 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - buyBoxLayerIOA
+2017-12-10 22:01:38.535 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - buyBoxLayerIOA
+2017-12-10 22:01:39.614 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - buyBoxLayerIOA
+2017-12-10 22:01:40.680 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - buyBoxLayerIOA
+2017-12-10 22:01:41.740 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - buyBoxLayerIOA
+2017-12-10 22:01:42.726 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}
+2017-12-10 22:01:42.726 [ERROR] : [TestNG-method=runTestCase-1] 
+2017-12-10 22:01:43.129 [INFO] : [TestNG-method=runTestCase-1] Verify the product name of the buy box exist
+ Running action VerifyExist on IOAProductName [{xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}]
+2017-12-10 22:01:48.880 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}
+2017-12-10 22:01:48.880 [ERROR] : [TestNG-method=runTestCase-1] Exception: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="qProdOverlay"]//*[@class="productDesc"]"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 4.4.0-96-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'wchpilsgrid03', ip: '167.140.56.160', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-96-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57), userDataDir=/tmp/.org.chromium.Chromium.nmSR2F}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 39a220fbd0bcac0fbfd1fed0dd5cedad
+*** Element info: {Using=xpath, value=//*[@id="qProdOverlay"]//*[@class="productDesc"]}
+Command duration or timeout: 369 milliseconds
+2017-12-10 22:01:49.381 [INFO] : [TestNG-method=runTestCase-1] Store the product name
+ Running action Text on IOAProductName [{xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}] with data {storeas=ProductName}
+2017-12-10 22:01:59.697 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}
+2017-12-10 22:01:59.697 [ERROR] : [TestNG-method=runTestCase-1] Exception: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="qProdOverlay"]//*[@class="productDesc"]"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 4.4.0-96-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'wchpilsgrid03', ip: '167.140.56.160', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-96-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57), userDataDir=/tmp/.org.chromium.Chromium.nmSR2F}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 39a220fbd0bcac0fbfd1fed0dd5cedad
+*** Element info: {Using=xpath, value=//*[@id="qProdOverlay"]//*[@class="productDesc"]}
+Command duration or timeout: 386 milliseconds
+2017-12-10 22:01:59.697 [ERROR] : [TestNG-method=runTestCase-1] 2: STOREVALUE-Text : Store the product name
+2017-12-10 22:02:00.515 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\ReRun\Fail_AEM_SLTV_IROA_Carousel_UK&DE_uk_chrome.html

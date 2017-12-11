@@ -1,0 +1,151 @@
+2017-12-10 21:57:06.267 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:57:07.284 [INFO] : [TestNG-method=runTestCase-1] Go to url qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:57:07.284 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:57:10.297 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:57:11.951 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:57:12.150 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:57:13.098 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:57:13.113 [INFO] : [TestNG-method=runTestCase-1] Navigate to Item On Air page and verify "BEAUTY Channel","LIVE Channel","EXTRA Channel" and "STYLE Channel" channel are displayed
+ Test module "NavToItemOnAir"
+2017-12-10 21:57:13.113 [INFO] : [TestNG-method=runTestCase-1] Click on air item
+ Running action Click on itemOnAirImg [{xpath=//*[@data-module-type='ON_AIR']//div[@class='onAirProdInfo']//*[contains(@class,'productImg')]}]
+2017-12-10 21:57:17.397 [INFO] : [TestNG-method=runTestCase-1] Wait until the object show up to make sure we are switch to correct page
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {wait=5}
+2017-12-10 21:57:22.553 [INFO] : [TestNG-method=runTestCase-1] Verify we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:57:22.697 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 9 sec
+2017-12-10 21:57:22.697 [INFO] : [TestNG-method=runTestCase-1] Click channel "CHRISTMAS" Channel
+ Test module "IOA_SwitchToOneChannel"" with data: "{channelname=CHRISTMAS}"
+2017-12-10 21:57:22.698 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:57:22.855 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Item On Air" page
+ Running action ContainsText on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}] with data {text=Item on air}
+2017-12-10 21:57:23.014 [INFO] : [TestNG-method=runTestCase-1] Check if the channel is set to inactive state
+ Running action CheckForElements on iOAUnselectedChannelLink [{xpath=//*[@title="<ChannelName>" and @class='btn btn-default']}] with data {channelname=CHRISTMAS}
+2017-12-10 21:57:23.166 [INFO] : [TestNG-method=runTestCase-1] Click the channel button if it is inactive
+ Running action Click on iOAUnselectedChannelLink [{xpath=//*[@title="<ChannelName>" and @class='btn btn-default']}] with data {channelname=CHRISTMAS}
+2017-12-10 21:57:26.433 [INFO] : [TestNG-method=runTestCase-1] Verify that the channel is set to active state
+ Running action VerifyExist on iOASelectedChannelLink [{xpath=//*[@title="<ChannelName>" and @class='btn btn-default selectedChannel']}] with data {channelname=CHRISTMAS}
+2017-12-10 21:57:26.635 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 3 sec
+2017-12-10 21:57:26.666 [INFO] : [TestNG-method=runTestCase-1] Get current product number and save
+ Test module "GetCurrentProductNum"
+2017-12-10 21:57:26.682 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:57:26.816 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Item On Air" page
+ Running action ContainsText on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}] with data {text=Item on air}
+2017-12-10 21:57:26.967 [INFO] : [TestNG-method=runTestCase-1] Verify the product number exists
+ Running action VerifyExist on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-10 21:57:27.117 [INFO] : [TestNG-method=runTestCase-1] Get the product number
+ Running action TEXT on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {storeas=productNumPD}
+2017-12-10 21:57:27.234 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:57:27.235 [INFO] : [TestNG-method=runTestCase-1] Click channel "LIVE" Channel
+ Test module "IOA_SwitchToOneChannel"" with data: "{channelname=LIVE}"
+2017-12-10 21:57:27.236 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:57:27.316 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Item On Air" page
+ Running action ContainsText on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}] with data {text=Item on air}
+2017-12-10 21:57:27.482 [INFO] : [TestNG-method=runTestCase-1] Check if the channel is set to inactive state
+ Running action CheckForElements on iOAUnselectedChannelLink [{xpath=//*[@title="<ChannelName>" and @class='btn btn-default']}] with data {channelname=LIVE}
+2017-12-10 21:57:27.634 [INFO] : [TestNG-method=runTestCase-1] Click the channel button if it is inactive
+ Running action Click on iOAUnselectedChannelLink [{xpath=//*[@title="<ChannelName>" and @class='btn btn-default']}] with data {channelname=LIVE}
+2017-12-10 21:57:31.451 [INFO] : [TestNG-method=runTestCase-1] Verify that the channel is set to active state
+ Running action VerifyExist on iOASelectedChannelLink [{xpath=//*[@title="<ChannelName>" and @class='btn btn-default selectedChannel']}] with data {channelname=LIVE}
+2017-12-10 21:57:31.615 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-10 21:57:31.663 [INFO] : [TestNG-method=runTestCase-1] Compare current product number on air is different
+ Test module "CompareProductNum"
+2017-12-10 21:57:31.663 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:57:31.812 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Item On Air" page
+ Running action ContainsText on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}] with data {text=Item on air}
+2017-12-10 21:57:31.997 [INFO] : [TestNG-method=runTestCase-1] Verify the product number exists
+ Running action VerifyExist on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-10 21:57:32.133 [INFO] : [TestNG-method=runTestCase-1] Verify the product number is different
+ Running action NotContainsText on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {text=147788}
+2017-12-10 21:57:32.251 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:57:32.282 [INFO] : [TestNG-method=runTestCase-1] Get current product number and save
+ Test module "GetCurrentProductNum"
+2017-12-10 21:57:32.282 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:57:32.367 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Item On Air" page
+ Running action ContainsText on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}] with data {text=Item on air}
+2017-12-10 21:57:32.513 [INFO] : [TestNG-method=runTestCase-1] Verify the product number exists
+ Running action VerifyExist on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-10 21:57:32.582 [INFO] : [TestNG-method=runTestCase-1] Get the product number
+ Running action TEXT on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {storeas=productNumPD}
+2017-12-10 21:57:32.682 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:57:32.698 [INFO] : [TestNG-method=runTestCase-1] Click channel "CHRISTMAS" Channel
+ Test module "IOA_SwitchToOneChannel"" with data: "{channelname=CHRISTMAS}"
+2017-12-10 21:57:32.698 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:57:32.751 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Item On Air" page
+ Running action ContainsText on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}] with data {text=Item on air}
+2017-12-10 21:57:32.897 [INFO] : [TestNG-method=runTestCase-1] Check if the channel is set to inactive state
+ Running action CheckForElements on iOAUnselectedChannelLink [{xpath=//*[@title="<ChannelName>" and @class='btn btn-default']}] with data {channelname=CHRISTMAS}
+2017-12-10 21:57:33.050 [INFO] : [TestNG-method=runTestCase-1] Click the channel button if it is inactive
+ Running action Click on iOAUnselectedChannelLink [{xpath=//*[@title="<ChannelName>" and @class='btn btn-default']}] with data {channelname=CHRISTMAS}
+2017-12-10 21:57:35.656 [INFO] : [TestNG-method=runTestCase-1] Verify that the channel is set to active state
+ Running action VerifyExist on iOASelectedChannelLink [{xpath=//*[@title="<ChannelName>" and @class='btn btn-default selectedChannel']}] with data {channelname=CHRISTMAS}
+2017-12-10 21:57:35.850 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 3 sec
+2017-12-10 21:57:35.850 [INFO] : [TestNG-method=runTestCase-1] Compare current product number on air is different
+ Test module "CompareProductNum"
+2017-12-10 21:57:35.850 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:57:35.998 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Item On Air" page
+ Running action ContainsText on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}] with data {text=Item on air}
+2017-12-10 21:57:36.150 [INFO] : [TestNG-method=runTestCase-1] Verify the product number exists
+ Running action VerifyExist on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-10 21:57:36.288 [INFO] : [TestNG-method=runTestCase-1] Verify the product number is different
+ Running action NotContainsText on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {text=827533}
+2017-12-10 21:57:36.396 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:57:36.396 [INFO] : [TestNG-method=runTestCase-1] Get current product number and save
+ Test module "GetCurrentProductNum"
+2017-12-10 21:57:36.396 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:57:36.472 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Item On Air" page
+ Running action ContainsText on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}] with data {text=Item on air}
+2017-12-10 21:57:36.619 [INFO] : [TestNG-method=runTestCase-1] Verify the product number exists
+ Running action VerifyExist on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-10 21:57:36.713 [INFO] : [TestNG-method=runTestCase-1] Get the product number
+ Running action TEXT on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {storeas=productNumPD}
+2017-12-10 21:57:36.820 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:57:36.821 [INFO] : [TestNG-method=runTestCase-1] Click channel "STYLE" Channel
+ Test module "IOA_SwitchToOneChannel"" with data: "{channelname=STYLE}"
+2017-12-10 21:57:36.822 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:57:36.888 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Item On Air" page
+ Running action ContainsText on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}] with data {text=Item on air}
+2017-12-10 21:57:37.011 [INFO] : [TestNG-method=runTestCase-1] Check if the channel is set to inactive state
+ Running action CheckForElements on iOAUnselectedChannelLink [{xpath=//*[@title="<ChannelName>" and @class='btn btn-default']}] with data {channelname=STYLE}
+2017-12-10 21:57:37.196 [INFO] : [TestNG-method=runTestCase-1] Click the channel button if it is inactive
+ Running action Click on iOAUnselectedChannelLink [{xpath=//*[@title="<ChannelName>" and @class='btn btn-default']}] with data {channelname=STYLE}
+2017-12-10 21:57:39.966 [INFO] : [TestNG-method=runTestCase-1] Verify that the channel is set to active state
+ Running action VerifyExist on iOASelectedChannelLink [{xpath=//*[@title="<ChannelName>" and @class='btn btn-default selectedChannel']}] with data {channelname=STYLE}
+2017-12-10 21:57:40.149 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 3 sec
+2017-12-10 21:57:40.196 [INFO] : [TestNG-method=runTestCase-1] Compare current product number on air is different
+ Test module "CompareProductNum"
+2017-12-10 21:57:40.196 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:57:40.412 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Item On Air" page
+ Running action ContainsText on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}] with data {text=Item on air}
+2017-12-10 21:57:40.715 [INFO] : [TestNG-method=runTestCase-1] Verify the product number exists
+ Running action VerifyExist on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-10 21:57:40.866 [INFO] : [TestNG-method=runTestCase-1] Verify the product number is different
+ Running action NotContainsText on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {text=147788}
+2017-12-10 21:57:40.981 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:57:41.014 [INFO] : [TestNG-method=runTestCase-1] Get current product number and save
+ Test module "GetCurrentProductNum"
+2017-12-10 21:57:41.015 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:57:41.107 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Item On Air" page
+ Running action ContainsText on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}] with data {text=Item on air}
+2017-12-10 21:57:41.234 [INFO] : [TestNG-method=runTestCase-1] Verify the product number exists
+ Running action VerifyExist on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-10 21:57:41.351 [INFO] : [TestNG-method=runTestCase-1] Get the product number
+ Running action TEXT on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {storeas=productNumPD}
+2017-12-10 21:57:41.465 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:57:41.798 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Pass_AEM_PDP_ItemNumChangeByOnAirChannel_uk_chrome.html

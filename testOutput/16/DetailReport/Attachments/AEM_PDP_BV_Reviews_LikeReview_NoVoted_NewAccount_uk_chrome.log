@@ -1,0 +1,110 @@
+2017-12-11 00:45:10.982 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-11 00:45:12.208 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-11 00:45:12.208 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-11 00:45:14.518 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-11 00:45:16.007 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-11 00:45:16.192 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-11 00:45:17.028 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-11 00:45:17.059 [INFO] : [TestNG-method=runTestCase-1] Navigation to sign in page
+ Test module "NavToSignIn"
+2017-12-11 00:45:17.059 [INFO] : [TestNG-method=runTestCase-1] Click sign in
+ Running action Click on signInLink [{xpath=//*[@class="acctGreeting acctUnAuth"]//p[1]}, {linkText=Sign in or register}]
+2017-12-11 00:45:18.529 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 1 sec
+2017-12-11 00:45:18.544 [INFO] : [TestNG-method=runTestCase-1] Create new account
+ Test module "CreateNewAccount"
+2017-12-11 00:45:18.544 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on signInHeader [{id=divPageTitle}] with data {wait=10}
+2017-12-11 00:45:28.907 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Sign In" page
+ Running action ContainsText on signInHeader [{id=divPageTitle}] with data {text=Sign In}
+2017-12-11 00:45:29.044 [INFO] : [TestNG-method=runTestCase-1] Click "Sign up" button on "Sign in" page
+ Running action Click on signUpBtn [{id=btnSignUp}, {name=Signup Button}]
+2017-12-11 00:45:30.921 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-11 00:45:31.045 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-11 00:45:36.712 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Create a QVC account" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Create a QVC account}
+2017-12-11 00:45:36.877 [INFO] : [TestNG-method=runTestCase-1] Input email address
+ Running action SendKeys on emailAddressTextbox [{id=txtEmailAddress}] with data {text=a20171211124536@qvc.com}
+2017-12-11 00:45:37.375 [INFO] : [TestNG-method=runTestCase-1] Input email address again
+ Running action SendKeys on confEmailWebEdit [{id=txtEmailAddressConf}] with data {text=a20171211124536@qvc.com}
+2017-12-11 00:45:37.875 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on passwordTxt [{id=lblPassword}]
+2017-12-11 00:45:38.008 [INFO] : [TestNG-method=runTestCase-1] Input password
+ Running action SendKeys on passwordTextbox [{id=txtPassword}] with data {text=Qvctester1}
+2017-12-11 00:45:38.590 [INFO] : [TestNG-method=runTestCase-1] Confirm password
+ Running action SendKeys on confirmPasswordTextbox [{id=txtVerifyPassword}] with data {text=Qvctester1}
+2017-12-11 00:45:38.944 [INFO] : [TestNG-method=runTestCase-1] Select the security question
+ Running action Select on securityQuestionList [{id=txtSecQuestion1}] with data {text=Where were you born?}
+2017-12-11 00:45:39.592 [INFO] : [TestNG-method=runTestCase-1] Enter the answer
+ Running action SendKeys on securityAnswerTextbox [{id=txtSecAnswer1}] with data {text=1988}
+2017-12-11 00:45:39.960 [INFO] : [TestNG-method=runTestCase-1] Input first name
+ Running action SendKeys on firstNameWebEdit [{id=txtFirstName}] with data {text=SeleniumFirstName}
+2017-12-11 00:45:40.411 [INFO] : [TestNG-method=runTestCase-1] Input last name
+ Running action SendKeys on lastNameWebEdit [{id=txtLastName}] with data {text=SeleniumLastName}
+2017-12-11 00:45:41.006 [INFO] : [TestNG-method=runTestCase-1] Input house number
+ Running action SendKeys on houseNumWebEdit [{id=txtAddress1}] with data {text=8111}
+2017-12-11 00:45:41.406 [INFO] : [TestNG-method=runTestCase-1] Input street name
+ Running action SendKeys on addressWebEdit [{id=txtAddress2}] with data {text=Pavilion 9 Byland Way}
+2017-12-11 00:45:41.790 [INFO] : [TestNG-method=runTestCase-1] Input city
+ Running action SendKeys on cityWebEdit [{id=txtCity}] with data {text=Billingham}
+2017-12-11 00:45:42.094 [INFO] : [TestNG-method=runTestCase-1] Input Zip code
+ Running action SendKeys on zipCodeWebEdit [{id=txtZipPostalCode}] with data {text=TS23 4EB}
+2017-12-11 00:45:42.427 [INFO] : [TestNG-method=runTestCase-1] Input evening phone number
+ Running action SendKeys on phoneWebEdit [{id=txtphone1}] with data {text=3333 333 3333}
+2017-12-11 00:45:42.826 [INFO] : [TestNG-method=runTestCase-1] Input birthday date
+ Running action SendKeys on dateOfBirthWebEdit [{id=txtDateOfBirth}] with data {text=01/02/1988}
+2017-12-11 00:45:43.159 [INFO] : [TestNG-method=runTestCase-1] Input pin
+ Running action SendKeys on pinWebEdit [{id=txtPin}] with data {text=9818}
+2017-12-11 00:45:43.460 [INFO] : [TestNG-method=runTestCase-1] Click "Sign Up" button
+ Running action Click on signUpBtn [{xpath=//*[@id='btnContinue'and @value='Sign Up']}]
+2017-12-11 00:45:46.159 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-11 00:45:46.276 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Request completed" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Request completed}
+2017-12-11 00:45:46.360 [INFO] : [TestNG-method=runTestCase-1] Click "Return To QVC UK Homepage" button
+ Running action Click on returnToHomepageBtn [{id=btnTakeMeShopping}]
+2017-12-11 00:45:48.360 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-11 00:45:49.176 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at home page
+ Running action VerifyExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-11 00:45:50.076 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 31 sec
+2017-12-11 00:45:50.076 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "ByProductNum"
+2017-12-11 00:45:50.076 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-11 00:45:54.644 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=228484}
+2017-12-11 00:45:55.445 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-11 00:45:59.342 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-11 00:46:05.260 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 15 sec
+2017-12-11 00:46:05.307 [INFO] : [TestNG-method=runTestCase-1] Click like review
+ Test module "ClickYesOfLikeReview"
+2017-12-11 00:46:05.307 [INFO] : [TestNG-method=runTestCase-1] Wait until the "Yes" button of frist review display
+ Running action WaitUntilObjectExist on firstReviewYesBtnActive [{xpath=//*[contains(@id,"BVRRDisplayContentReviewID")][1]//*[@class="BVRRReviewFeedbackLink BVRRReviewFeedbackLinkActive BVRRReviewFeedbackLinkYes"]}]
+2017-12-11 00:46:05.444 [INFO] : [TestNG-method=runTestCase-1] Click "Yes"
+ Running action Click on firstReviewYesBtnActive [{xpath=//*[contains(@id,"BVRRDisplayContentReviewID")][1]//*[@class="BVRRReviewFeedbackLink BVRRReviewFeedbackLinkActive BVRRReviewFeedbackLinkYes"]}]
+2017-12-11 00:46:05.721 [INFO] : [TestNG-method=runTestCase-1] Wait until the next page title exist
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-11 00:46:06.690 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 1 sec
+2017-12-11 00:46:06.777 [INFO] : [TestNG-method=runTestCase-1] Verify like review success
+ Test module "VerifyReviewFeedbackSuccess"
+2017-12-11 00:46:06.777 [INFO] : [TestNG-method=runTestCase-1] Wait until the like review feedback page display
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-11 00:46:07.543 [INFO] : [TestNG-method=runTestCase-1] Verify the "Yes" button become unclickable
+ Running action VerifyExist on firstReviewYesBtnInActive [{xpath=//*[contains(@id,"BVRRDisplayContentReviewID")][1]//*[@class="BVRRReviewFeedbackLink BVRRReviewFeedbackLinkInactive BVRRReviewFeedbackLinkInactiveYes"]}]
+2017-12-11 00:46:07.706 [INFO] : [TestNG-method=runTestCase-1] Verify the "No" button become unclickable
+ Running action VerifyExist on firstReviewNoBtnInActive [{xpath=//*[contains(@id,"BVRRDisplayContentReviewID")][1]//*[@class="BVRRReviewFeedbackLink BVRRReviewFeedbackLinkInactive BVRRReviewFeedbackLinkInactiveNo"]}]
+2017-12-11 00:46:07.860 [INFO] : [TestNG-method=runTestCase-1] Verify the feedback success message exist
+ Running action VerifyExist on firstReviewFeedbackMsg [{xpath=//*[contains(@id,"BVRRDisplayContentReviewID")][1]//*[@class="BVRRReviewFeedbackMessage"]}]
+2017-12-11 00:46:07.991 [INFO] : [TestNG-method=runTestCase-1] Verify the feedback success message
+ Running action ContainsText on firstReviewFeedbackMsg [{xpath=//*[contains(@id,"BVRRDisplayContentReviewID")][1]//*[@class="BVRRReviewFeedbackMessage"]}] with data {text=Vote recorded. Vote may take up to 12 hours to display}
+2017-12-11 00:46:08.091 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 1 sec
+2017-12-11 00:46:08.420 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\16\DetailReport\Pass_AEM_PDP_BV_Reviews_LikeReview_NoVoted_NewAccount_uk_chrome.html

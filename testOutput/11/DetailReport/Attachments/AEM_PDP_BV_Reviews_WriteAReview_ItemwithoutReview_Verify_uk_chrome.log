@@ -1,0 +1,7 @@
+2017-12-05 21:09:05.631 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:09:06.476 [INFO] : [TestNG-method=runTestCase-1] Open browser and go to qa.qvcuk.com
+ Test module "GotoUrl"
+2017-12-05 21:09:06.476 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:11:06.858 [ERROR] : [TestNG-method=runTestCase-1] 0: PERFORM-GoToUrl : Nav to QVC
+2017-12-05 21:13:07.164 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Fail_AEM_PDP_BV_Reviews_WriteAReview_ItemwithoutReview_Verify_uk_chrome.html

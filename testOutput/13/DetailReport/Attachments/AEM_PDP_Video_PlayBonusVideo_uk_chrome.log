@@ -1,0 +1,41 @@
+2017-12-10 21:46:03.809 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:46:04.765 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:46:04.765 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:46:07.019 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:46:08.465 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:46:08.670 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:46:09.465 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-10 21:46:09.465 [INFO] : [TestNG-method=runTestCase-1] Search a product with On Air Presenatation Video, Bonus video
+ Test module "ByProductNum"
+2017-12-10 21:46:09.465 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:46:14.006 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=129205}
+2017-12-10 21:46:15.269 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:46:20.603 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:46:26.271 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 16 sec
+2017-12-10 21:46:26.271 [INFO] : [TestNG-method=runTestCase-1] Verify that bonus video can play successfully
+ Test module "VerifyPlayBonusVideo"
+2017-12-10 21:46:26.272 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure we are at correct page: "Product Detail" page
+ Running action WaitUntilObjectExist on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-10 21:46:26.434 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at  correct product number's "Product Detail" page
+ Running action ContainsText on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {text=129205}
+2017-12-10 21:46:26.574 [INFO] : [TestNG-method=runTestCase-1] Wait until video player is shown
+ Running action WaitUntilObjectExist on videoField [{xpath=//div[@class="productVideo"]}] with data {wait=3}
+2017-12-10 21:46:29.750 [INFO] : [TestNG-method=runTestCase-1] Click the first bonus video
+ Running action Click on firstBonusVideo [{xpath=//div[@class='video'][1]}]
+2017-12-10 21:46:30.102 [INFO] : [TestNG-method=runTestCase-1] Wait until video player is shown
+ Running action WaitUntilObjectExist on videoField [{xpath=//div[@class="productVideo"]}] with data {wait=3}
+2017-12-10 21:46:33.234 [INFO] : [TestNG-method=runTestCase-1] Verify the first bonus video is in selected state
+ Running action VerifyExist on firstBonusVideoSelected [{xpath=//div[@class='video' and @state="selected"]}]
+2017-12-10 21:46:33.533 [INFO] : [TestNG-method=runTestCase-1] Verify the  video player is in playing state
+ Running action VerifyNotExist on resumeBtn [{xpath=//button[@title="Resume"]}]
+2017-12-10 21:46:33.603 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-10 21:46:33.865 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_PDP_Video_PlayBonusVideo_uk_chrome.html

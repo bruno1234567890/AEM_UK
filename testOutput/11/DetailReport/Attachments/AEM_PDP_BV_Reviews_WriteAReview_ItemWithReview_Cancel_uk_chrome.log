@@ -1,0 +1,178 @@
+2017-12-05 21:09:07.176 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:09:08.541 [INFO] : [TestNG-method=runTestCase-1] Open browser and go to qa.qvc.com
+ Test module "GoToUrl"
+2017-12-05 21:09:08.544 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:09:10.982 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:09:12.483 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:09:12.661 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:09:13.469 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-05 21:09:13.476 [INFO] : [TestNG-method=runTestCase-1] Search product
+ Test module "ByProductNum"
+2017-12-05 21:09:13.477 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:09:18.169 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229545}
+2017-12-05 21:09:18.675 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:09:24.029 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:09:29.588 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 16 sec
+2017-12-05 21:09:29.588 [INFO] : [TestNG-method=runTestCase-1] Click on the "Write a Review" link
+ Test module "ClickWriteAReviewBtn"
+2017-12-05 21:09:29.589 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:09:29.789 [INFO] : [TestNG-method=runTestCase-1] Verify that "Write A Review" button is displayed on product detail page
+ Running action VerifyExist on writeAReviewBtn [{xpath=//*[@id='BVRRContainer']//*[@class='btn btn-primary btnWriteReview']}]
+2017-12-05 21:09:29.925 [INFO] : [TestNG-method=runTestCase-1] Click "Write A Review" button on product detail page
+ Running action Click on writeAReviewBtn [{xpath=//*[@id='BVRRContainer']//*[@class='btn btn-primary btnWriteReview']}]
+2017-12-05 21:09:30.156 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-05 21:09:30.157 [INFO] : [TestNG-method=runTestCase-1] Create an new account and login
+ Test module "CreateNewAccount"
+2017-12-05 21:09:30.157 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on signInHeader [{id=divPageTitle}] with data {wait=10}
+2017-12-05 21:09:40.302 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Sign In" page
+ Running action ContainsText on signInHeader [{id=divPageTitle}] with data {text=Sign In}
+2017-12-05 21:09:40.406 [INFO] : [TestNG-method=runTestCase-1] Click "Sign up" button on "Sign in" page
+ Running action Click on signUpBtn [{id=btnSignUp}, {name=Signup Button}]
+2017-12-05 21:09:44.799 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-05 21:09:44.915 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:09:50.889 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Create a QVC account" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Create a QVC account}
+2017-12-05 21:09:50.979 [INFO] : [TestNG-method=runTestCase-1] Input email address
+ Running action SendKeys on emailAddressTextbox [{id=txtEmailAddress}] with data {text=a20171205090950@qvc.com}
+2017-12-05 21:09:51.540 [INFO] : [TestNG-method=runTestCase-1] Input email address again
+ Running action SendKeys on confEmailWebEdit [{id=txtEmailAddressConf}] with data {text=a20171205090950@qvc.com}
+2017-12-05 21:09:52.166 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on passwordTxt [{id=lblPassword}]
+2017-12-05 21:09:52.325 [INFO] : [TestNG-method=runTestCase-1] Input password
+ Running action SendKeys on passwordTextbox [{id=txtPassword}] with data {text=Qvctester1}
+2017-12-05 21:09:52.951 [INFO] : [TestNG-method=runTestCase-1] Confirm password
+ Running action SendKeys on confirmPasswordTextbox [{id=txtVerifyPassword}] with data {text=Qvctester1}
+2017-12-05 21:09:53.326 [INFO] : [TestNG-method=runTestCase-1] Select the security question
+ Running action Select on securityQuestionList [{id=txtSecQuestion1}] with data {text=Where were you born?}
+2017-12-05 21:09:53.942 [INFO] : [TestNG-method=runTestCase-1] Enter the answer
+ Running action SendKeys on securityAnswerTextbox [{id=txtSecAnswer1}] with data {text=1988}
+2017-12-05 21:09:54.278 [INFO] : [TestNG-method=runTestCase-1] Input first name
+ Running action SendKeys on firstNameWebEdit [{id=txtFirstName}] with data {text=SeleniumFirstName}
+2017-12-05 21:09:54.695 [INFO] : [TestNG-method=runTestCase-1] Input last name
+ Running action SendKeys on lastNameWebEdit [{id=txtLastName}] with data {text=SeleniumLastName}
+2017-12-05 21:09:55.124 [INFO] : [TestNG-method=runTestCase-1] Input house number
+ Running action SendKeys on houseNumWebEdit [{id=txtAddress1}] with data {text=2518}
+2017-12-05 21:09:55.435 [INFO] : [TestNG-method=runTestCase-1] Input street name
+ Running action SendKeys on addressWebEdit [{id=txtAddress2}] with data {text=Pavilion 9 Byland Way}
+2017-12-05 21:09:55.896 [INFO] : [TestNG-method=runTestCase-1] Input city
+ Running action SendKeys on cityWebEdit [{id=txtCity}] with data {text=Billingham}
+2017-12-05 21:09:56.292 [INFO] : [TestNG-method=runTestCase-1] Input Zip code
+ Running action SendKeys on zipCodeWebEdit [{id=txtZipPostalCode}] with data {text=TS23 4EB}
+2017-12-05 21:09:56.826 [INFO] : [TestNG-method=runTestCase-1] Input evening phone number
+ Running action SendKeys on phoneWebEdit [{id=txtphone1}] with data {text=3333 333 3333}
+2017-12-05 21:09:57.247 [INFO] : [TestNG-method=runTestCase-1] Input birthday date
+ Running action SendKeys on dateOfBirthWebEdit [{id=txtDateOfBirth}] with data {text=01/02/1988}
+2017-12-05 21:09:57.617 [INFO] : [TestNG-method=runTestCase-1] Input pin
+ Running action SendKeys on pinWebEdit [{id=txtPin}] with data {text=9818}
+2017-12-05 21:09:57.894 [INFO] : [TestNG-method=runTestCase-1] Click "Sign Up" button
+ Running action Click on signUpBtn [{xpath=//*[@id='btnContinue'and @value='Sign Up']}]
+2017-12-05 21:10:00.223 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-05 21:10:00.335 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Request completed" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Request completed}
+2017-12-05 21:10:00.453 [INFO] : [TestNG-method=runTestCase-1] Click "Return To QVC UK Homepage" button
+ Running action Click on returnToHomepageBtn [{id=btnTakeMeShopping}]
+2017-12-05 21:10:02.538 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:10:03.563 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at home page
+ Running action VerifyExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:10:04.388 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 34 sec
+2017-12-05 21:10:04.397 [INFO] : [TestNG-method=runTestCase-1] Search product
+ Test module "ByProductNum"
+2017-12-05 21:10:04.399 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:10:08.906 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229545}
+2017-12-05 21:10:09.585 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:10:13.075 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:10:19.077 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-05 21:10:19.078 [INFO] : [TestNG-method=runTestCase-1] Click on the "Write a Review" link
+ Test module "ClickWriteAReviewBtn"
+2017-12-05 21:10:19.079 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:10:19.284 [INFO] : [TestNG-method=runTestCase-1] Verify that "Write A Review" button is displayed on product detail page
+ Running action VerifyExist on writeAReviewBtn [{xpath=//*[@id='BVRRContainer']//*[@class='btn btn-primary btnWriteReview']}]
+2017-12-05 21:10:19.400 [INFO] : [TestNG-method=runTestCase-1] Click "Write A Review" button on product detail page
+ Running action Click on writeAReviewBtn [{xpath=//*[@id='BVRRContainer']//*[@class='btn btn-primary btnWriteReview']}]
+2017-12-05 21:10:19.596 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-05 21:10:19.597 [INFO] : [TestNG-method=runTestCase-1] Write a Review and click on the "Preview" button
+ Test module "WriteAReview"" with data: "{reviewtitle=Review Title Test, packageinfo=whether pakging test, reviewemail=test@qvc.com, nickname=<NickName>, giftperson=Families, reviewcontent=this is test for over 50 character.this is test for over 50 character., location=china, shoptime=1-2 years, recommend=yes, ratestar=5, age=under 25}"
+2017-12-05 21:10:19.598 [INFO] : [TestNG-method=runTestCase-1] Wait 3 sec. until the "Write a Review" page which is diaplayed.
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+2017-12-05 21:10:22.744 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Write a Review" page.
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Write a Review}
+2017-12-05 21:10:22.865 [INFO] : [TestNG-method=runTestCase-1] Click the rate star.
+ Running action Click on RateStar [{id=star_link_rating_<RateStar>}]
+2017-12-05 21:10:23.294 [INFO] : [TestNG-method=runTestCase-1] Select the "Yes" radio of recommend to friend.
+ Running action Click on recommendToFriendYesRadioBtn [{id=BVRRRecommendToFriendYesID}]
+2017-12-05 21:10:23.832 [INFO] : [TestNG-method=runTestCase-1] Type the title in the "Review Title" textbox: "Review Title Test"
+ Running action SendKeys on reviewTitleText [{id=BVRRFieldTextReviewTitleID}] with data {text=Review Title Test}
+2017-12-05 21:10:24.252 [INFO] : [TestNG-method=runTestCase-1] Store review title
+ Running action TEXT on reviewTitleText [{id=BVRRFieldTextReviewTitleID}] with data {storeas=reviewTitle}
+2017-12-05 21:10:24.379 [INFO] : [TestNG-method=runTestCase-1] Type under 50 character comment in the "Review" field.
+ Running action SendKeys on reviewContentTextBox [{id=BVRRFieldTextAreaReviewTextID}] with data {text=this is test for under 50 character.}
+2017-12-05 21:10:24.950 [INFO] : [TestNG-method=runTestCase-1] Verify the warning message when under 50 character
+ Running action ContainsText on reviewTextWarningMsg [{id=BVRRFieldHelperReviewReviewtextID}] with data {text=Minimum required characters left}
+2017-12-05 21:10:25.148 [INFO] : [TestNG-method=runTestCase-1] Type comment in the "Review" field.
+ Running action SendKeys on reviewContentTextBox [{id=BVRRFieldTextAreaReviewTextID}] with data {text=this is test for over 50 character.this is test for over 50 character.}
+2017-12-05 21:10:25.878 [INFO] : [TestNG-method=runTestCase-1] Store review content
+ Running action TEXT on reviewContentTextBox [{id=BVRRFieldTextAreaReviewTextID}] with data {storeas=reviewContent}
+2017-12-05 21:10:26.006 [INFO] : [TestNG-method=runTestCase-1] Verify the warning message when reach 50 character
+ Running action ContainsText on reviewTextWarningMsg [{id=BVRRFieldHelperReviewReviewtextID}] with data {text=Minimum reached}
+2017-12-05 21:10:26.115 [INFO] : [TestNG-method=runTestCase-1] Type the nick name
+ Running action SendKeys on chooseNickNameTextBox [{id=BVRRFieldTextReviewUsernicknameID}] with data {cclastfournumber=4821, text=4000565998234821, creditcard=4000565998234821}
+2017-12-05 21:10:26.424 [INFO] : [TestNG-method=runTestCase-1] Store nick name
+ Running action TEXT on chooseNickNameTextBox [{id=BVRRFieldTextReviewUsernicknameID}] with data {storeas=NickName}
+2017-12-05 21:10:26.532 [INFO] : [TestNG-method=runTestCase-1] Type the the packageing requirement
+ Running action SendKeys on PackagingRequirementTextBox [{id=BVRRFieldTextAreaReviewPackagingID}] with data {text=whether pakging test}
+2017-12-05 21:10:26.883 [INFO] : [TestNG-method=runTestCase-1] Type the location
+ Running action SendKeys on userLocationTextBox [{id=BVRRFieldTextReviewUserlocationID}] with data {text=china}
+2017-12-05 21:10:27.183 [INFO] : [TestNG-method=runTestCase-1] Store location
+ Running action TEXT on userLocationTextBox [{id=BVRRFieldTextReviewUserlocationID}] with data {storeas=location}
+2017-12-05 21:10:27.281 [INFO] : [TestNG-method=runTestCase-1] Check whether the email text box exist
+ Running action CheckForElements on emailTextbox [{id=BVRRFieldTextReviewUseremailID}]
+2017-12-05 21:10:27.408 [INFO] : [TestNG-method=runTestCase-1] Type the email address: test@qvc.com
+ Running action SendKeys on emailTextbox [{id=BVRRFieldTextReviewUseremailID}] with data {text=test@qvc.com}
+2017-12-05 21:10:27.701 [INFO] : [TestNG-method=runTestCase-1] Store email
+ Running action TEXT on emailTextbox [{id=BVRRFieldTextReviewUseremailID}] with data {storeas=ReviewEmail}
+2017-12-05 21:10:27.816 [INFO] : [TestNG-method=runTestCase-1] Select the age
+ Running action Select on ageSelection [{id=BVRRFieldSelectReviewContextualDataFieldAgeID}] with data {text=under 25}
+2017-12-05 21:10:28.279 [INFO] : [TestNG-method=runTestCase-1] Select the shop time in the "And how long have you been shopping with QVC?" function.
+ Running action Select on shopTimeSelection [{id=BVRRFieldSelectReviewContextualDataFieldHowLongShoppingID}] with data {text=1-2 years}
+2017-12-05 21:10:28.819 [INFO] : [TestNG-method=runTestCase-1] Select the recommend answer in the "Would you recommend this product as a gift" function.
+ Running action Select on recommendThisProductSelection [{id=BVRRFieldSelectReviewContextualDataFieldWouldRecommendID}] with data {text=yes}
+2017-12-05 21:10:29.258 [INFO] : [TestNG-method=runTestCase-1] Select the gift option in the "Who would this be a perfect gift for?" function.
+ Running action Select on perfectGiftSelection [{id=BVRRFieldSelectReviewContextualDataFieldPerfectGiftForID}] with data {text=Families}
+2017-12-05 21:10:30.238 [INFO] : [TestNG-method=runTestCase-1] Check the check box of agree of term
+ Running action Click on agreeTermCheckBox [{id=BVRRFieldCheckboxReviewAgreedToTermsAndConditionsID}]
+2017-12-05 21:10:30.482 [INFO] : [TestNG-method=runTestCase-1] Click on the "PREVIEW" button.
+ Running action Click on previewBtn [{id=BVRRPreviewReviewButtonID}]
+2017-12-05 21:10:31.158 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 11 sec
+2017-12-05 21:10:31.169 [INFO] : [TestNG-method=runTestCase-1] Cancel your review
+ Test module "CancelYourReview"
+2017-12-05 21:10:31.170 [INFO] : [TestNG-method=runTestCase-1] Wait 3 sec. until the "Preview Your Review" page which is diaplayed.
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+2017-12-05 21:10:34.446 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Preview Your Review" page.
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Preview Your Review}
+2017-12-05 21:10:34.550 [INFO] : [TestNG-method=runTestCase-1] Click on the 'Cancel  button.
+ Running action Click on cancelBtn [{id=BVRRCancelReviewButtonID}]
+2017-12-05 21:10:38.196 [INFO] : [TestNG-method=runTestCase-1] Wait 3 sec. until the "Product Detail" page which is diaplayed.
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {wait=3}
+2017-12-05 21:10:41.328 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page.
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:10:41.415 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 10 sec
+2017-12-05 21:10:41.710 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_PDP_BV_Reviews_WriteAReview_ItemWithReview_Cancel_uk_chrome.html

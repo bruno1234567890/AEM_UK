@@ -1,0 +1,41 @@
+2017-12-05 21:10:16.454 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:10:17.674 [INFO] : [TestNG-method=runTestCase-1] Open browser and go to qa.qvc.com
+ Test module "GoToURL"
+2017-12-05 21:10:17.677 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:10:19.948 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:10:22.433 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:10:22.627 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:10:23.439 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-05 21:10:23.440 [INFO] : [TestNG-method=runTestCase-1] Search product
+ Test module "ByProductNum"
+2017-12-05 21:10:23.441 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:10:28.003 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=228484}
+2017-12-05 21:10:28.639 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:10:33.413 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:10:38.973 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 15 sec
+2017-12-05 21:10:39.017 [INFO] : [TestNG-method=runTestCase-1] Click on the "Pinterest" icon
+ Test module "ClickPinterestIcon"
+2017-12-05 21:10:39.018 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:10:39.194 [INFO] : [TestNG-method=runTestCase-1] Verify the "Share this Product" area existed.
+ Running action VerifyExist on shareThisProductArea [{xpath=//*[@id='pageContent']//*[@class="col-tn-12 col-md-6 socialShare"]}]
+2017-12-05 21:10:39.510 [INFO] : [TestNG-method=runTestCase-1] Click on the "Pinterest" button
+ Running action Click on pinterestBtn [{xpath=//*[@data-pin-log="button_pinit"]}]
+2017-12-05 21:10:39.831 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser - Pinterest page
+ Running action Browser with data {action=SwitchToNewBrowser}
+2017-12-05 21:10:39.866 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser, windowHandle - CDwindow-cc58c9fe-01cd-492d-b5ad-7b9ba6de5bbe
+2017-12-05 21:10:39.867 [INFO] : [TestNG-method=runTestCase-1] Verify the "Pinterest" page is displayed
+ Running action VerifyExist on signUpForPinterestTitle [{xpath=//*[contains(text(),'Welcome to Pinterest')]}, {xpath=//*[contains(text(),'Sign up to see more')]}]
+2017-12-05 21:10:46.133 [INFO] : [TestNG-method=runTestCase-1] Close the new browser
+ Running action Browser with data {action=CloseNewBrowser}
+2017-12-05 21:10:46.735 [INFO] : [TestNG-method=runTestCase-1] Close the new browser, windowHandle - CDwindow-50c25f12-18f0-4a9e-89d6-de2f5d03316c
+2017-12-05 21:10:46.735 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-05 21:10:47.051 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_PDP_SB_ClickPinterestIcon_uk_chrome.html

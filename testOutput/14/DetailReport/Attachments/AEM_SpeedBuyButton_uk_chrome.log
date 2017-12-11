@@ -1,0 +1,88 @@
+2017-12-10 21:52:25.258 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:52:26.229 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvcuk.com"
+ Test module "GotoUrl"
+2017-12-10 21:52:26.230 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:52:28.151 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:52:29.643 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:52:29.840 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:52:30.575 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-10 21:52:30.576 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "ByProductNum"
+2017-12-10 21:52:30.578 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:52:35.087 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=148738}
+2017-12-10 21:52:35.733 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:52:39.166 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:52:44.805 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 21:52:45.189 [INFO] : [TestNG-method=runTestCase-1] Verify the error message displayed when customer forget to select color or size
+ Test module "VerifyErrMsgWOColorAndSize_SB"
+2017-12-10 21:52:45.220 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:52:45.436 [INFO] : [TestNG-method=runTestCase-1] Verify speed buy button with "SPEED BUY" text
+ Running action ContainsText on speedBuyBtn [{class=btnSpeedBuy}] with data {text=SPEED BUY}
+2017-12-10 21:52:45.633 [INFO] : [TestNG-method=runTestCase-1] Click"Speed Buy" button
+ Running action Click on speedBuyBtn [{class=btnSpeedBuy}]
+2017-12-10 21:52:45.883 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select color.
+ Running action VerifyExist on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}]
+2017-12-10 21:52:46.035 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer don't select color.
+ Running action ContainsText on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}] with data {text=Please select a colour}
+2017-12-10 21:52:46.151 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size.
+ Running action VerifyExist on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}]
+2017-12-10 21:52:46.354 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size.
+ Running action ContainsText on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}] with data {text=Please select a size}
+2017-12-10 21:52:46.451 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 1 sec
+2017-12-10 21:52:46.527 [INFO] : [TestNG-method=runTestCase-1] Click "Speed Buy"
+ Test module "SpeedBuy"
+2017-12-10 21:52:46.528 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:52:46.654 [INFO] : [TestNG-method=runTestCase-1] Get the product number
+ Running action Text on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {storeas=productNumPD}
+2017-12-10 21:52:46.786 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-10 21:52:53.539 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 21:52:54.119 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available color
+ Running action Click on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 21:52:54.717 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 21:52:55.331 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available size
+ Running action Click on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 21:52:56.015 [INFO] : [TestNG-method=runTestCase-1] SELECT quantity
+ Running action SendKeys on productQtyInputBox [{css=.productQuantity}] with data {text=1}
+2017-12-10 21:52:56.338 [INFO] : [TestNG-method=runTestCase-1] Click "speed buy"
+ Running action Click on speedBuyBtn [{class=btnSpeedBuy}]
+2017-12-10 21:53:02.331 [INFO] : [TestNG-method=runTestCase-1] If the item is waitlist
+ Running action CheckForElements on yesBtn [{xpath=//input[@class='primaryButton' and @value='Yes']}, {xpath=//*[@value='Yes']}]
+2017-12-10 21:53:07.602 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on signInHeader [{id=divPageTitle}] with data {wait=5}
+2017-12-10 21:53:12.762 [INFO] : [TestNG-method=runTestCase-1] Verify we are at sign in page
+ Running action ContainsText on signInHeader [{id=divPageTitle}] with data {text=Speed Buy one-step verification}
+2017-12-10 21:53:12.869 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 26 sec
+2017-12-10 21:53:12.886 [INFO] : [TestNG-method=runTestCase-1] Speed buy Sign In
+ Test module "LoginByEmailWithReview"
+2017-12-10 21:53:12.896 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "SpeedBuy" page
+ Running action ContainsText on speedBuyHeader [{id=divPageTitle}] with data {text=Speed Buy one-step verification}
+2017-12-10 21:53:13.031 [INFO] : [TestNG-method=runTestCase-1] Input email address
+ Running action SendKeys on emailAddressInput [{id=txtEmailAddress}] with data {text=20154221555976@qvc.com}
+2017-12-10 21:53:13.426 [INFO] : [TestNG-method=runTestCase-1] Input password
+ Running action SendKeys on passWordInput [{id=txtPassword}] with data {text=Qvctester1}
+2017-12-10 21:53:13.715 [INFO] : [TestNG-method=runTestCase-1] Click "Sign in" button to submit order
+ Running action Click on submitOrder [{id=btnSignIn}]
+2017-12-10 21:53:18.422 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:53:18.464 [INFO] : [TestNG-method=runTestCase-1] User is taken to review(submit order) page.
+ Test module "SubmitOrder"
+2017-12-10 21:53:18.471 [INFO] : [TestNG-method=runTestCase-1] Wait until the "Submit Order" page displayed
+ Running action WaitUntilObjectExist on SubmitOrderHeader [{id=divPageTitle}] with data {wait=5}
+2017-12-10 21:53:23.597 [INFO] : [TestNG-method=runTestCase-1] Verify we are at "Submit Order" page
+ Running action ContainsText on SubmitOrderHeader [{id=divPageTitle}] with data {text=Submit Order}
+2017-12-10 21:53:23.700 [INFO] : [TestNG-method=runTestCase-1] Click "Confirm order & pay" button
+ Running action Click on clickHereToSubmitOrderBtn [{xpath=//*[@class='primaryButton']}]
+2017-12-10 21:53:27.329 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 8 sec
+2017-12-10 21:53:27.622 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Pass_AEM_SpeedBuyButton_uk_chrome.html

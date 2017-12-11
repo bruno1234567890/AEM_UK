@@ -1,0 +1,68 @@
+2017-12-05 21:11:44.524 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:11:45.536 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-05 21:11:45.537 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-05 21:11:51.550 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:11:51.688 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:11:51.970 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:11:52.597 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-05 21:11:52.649 [INFO] : [TestNG-method=runTestCase-1] Verify that user can be navigated to PDP after click each image,  the carousel arrow is shown if the number of products is more than six
+ Test module "ProductCarousel_Clickable"
+2017-12-05 21:11:52.651 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:11:53.245 [INFO] : [TestNG-method=runTestCase-1] Verify Product Carousel Module header exist
+ Running action VerifyExist on productCarouselHeader [{xpath=//*[@data-module-type='PRODUCT_CAROUSEL']//h2}]
+2017-12-05 21:11:53.368 [INFO] : [TestNG-method=runTestCase-1] The carousel arrow is shown if the number of products is more than six
+ Running action VerifyExist on carouselRightImg [{xpath=//*[@data-module-type='<module>']//img[@alt='Scroll right']}] with data {module=PRODUCT_CAROUSEL}
+2017-12-05 21:11:53.506 [INFO] : [TestNG-method=runTestCase-1] Click 1st image of "Product Carousel Module"
+ Running action Click on productCarouselImg [{xpath=(//*[@data-module-type='PRODUCT_CAROUSEL']//div[starts-with(@class,'productImg')])[<index>]}] with data {index=1}
+2017-12-05 21:11:56.797 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:11:57.001 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:11:57.162 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-05 21:11:58.353 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:11:59.057 [INFO] : [TestNG-method=runTestCase-1] Click 2nd image of "Product Carousel Module"
+ Running action Click on productCarouselImg [{xpath=(//*[@data-module-type='PRODUCT_CAROUSEL']//div[starts-with(@class,'productImg')])[<index>]}] with data {index=2}
+2017-12-05 21:12:01.856 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:12:02.123 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:12:02.230 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-05 21:12:03.418 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:04.210 [INFO] : [TestNG-method=runTestCase-1] Click 3rd image of "Product Carousel Module"
+ Running action Click on productCarouselImg [{xpath=(//*[@data-module-type='PRODUCT_CAROUSEL']//div[starts-with(@class,'productImg')])[<index>]}] with data {index=3}
+2017-12-05 21:12:06.785 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:12:06.917 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:12:07.127 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-05 21:12:08.303 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:09.243 [INFO] : [TestNG-method=runTestCase-1] Click 4th image of "Product Carousel Module"
+ Running action Click on productCarouselImg [{xpath=(//*[@data-module-type='PRODUCT_CAROUSEL']//div[starts-with(@class,'productImg')])[<index>]}] with data {index=4}
+2017-12-05 21:12:11.586 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:12:11.945 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:12:12.113 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-05 21:12:13.290 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:13.970 [INFO] : [TestNG-method=runTestCase-1] Click 5th image of "Product Carousel Module"
+ Running action Click on productCarouselImg [{xpath=(//*[@data-module-type='PRODUCT_CAROUSEL']//div[starts-with(@class,'productImg')])[<index>]}] with data {index=5}
+2017-12-05 21:12:16.146 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:12:16.487 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:12:16.613 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 23 sec
+2017-12-05 21:12:16.905 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_ProductCarouselModule_ComponentsAreClickable_uk_chrome.html

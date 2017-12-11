@@ -1,0 +1,168 @@
+<html>
+<head>
+<title>TestNG:  AEM_IROA_ComponentsAreClickable_uk_chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AEM_IROA_ComponentsAreClickable_uk_chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 11 00:47:41 EST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>30 seconds (30668 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qvc.selenium.plugin.TestCase.runTestCase()'><b>runTestCase</b><br>Test class: com.qvc.selenium.plugin.TestCase (AEM_IROA_ComponentsAreClickable_uk_chrome)<br/>
+<a href="#Output-97761164" onClick='toggleBox("Output-97761164", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-97761164" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-97761164">
+<div class=stepevent.level.toString()>Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Go to URL qa.qvc.com
+ Test module &quot;GotoUrl&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}] with data {wait=2}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 6 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that clicking on multiple products on the On Air module  takes user to correct page for that product
+ Test module &quot;IROA_Clickable&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that &quot;On Air Module&quot; is displayed
+ Running action VerifyExist on onAirModule [{xpath=//*[@data-module-type=&quot;ON_AIR&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify &quot;WATCH NOW&quot; link is displayed
+ Running action VerifyExist on watchNowLink [{xpath=//*[@class='onAirWatch col-tn-12 col-xs-6']//a}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;WATCH NOW&quot; link
+ Running action Click on watchNowLink [{xpath=//*[@class='onAirWatch col-tn-12 col-xs-6']//a}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Switch to new browser - QVC Live Stream
+ Running action Browser with data {action=SwitchToNewBrowser}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Switch to new browser, windowHandle - CDwindow-feee62ac-d845-4926-9533-179cc80fe389
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until &quot;QVC Live Stream&quot; page displayed
+ Running action WaitUntilObjectExist on TVHeader [{class=active}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that &quot;QVC Live Stream&quot; page is displayed
+ Running action ContainsText on TVHeader [{class=active}] with data {text=QVC UK – Watch Live}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the new browser
+ Running action Browser with data {action=CloseNewBrowser}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the new browser, windowHandle - CDwindow-b2740f87-9654-4b49-ad57-25527e331da3
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until homepage display
+ Running action WaitUntilObjectExist on BackToHomePage [{xpath=//img[@title='QVC']}, {id=pageMasthead}, {id=divMastheadLogo}, {id=mastheadLogo}, {linkText=Home}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click the first product image of &quot;Items recently on air&quot;
+ Running action Click on itemsRecentlyOnAirImg1 [{xpath=//*[@data-module-type=&quot;ON_AIR&quot;]//*[@class='carouselItem col-sm-2'][1]//a[1]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class=&quot;breadcrumb pageBreadcrumb&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify we are at product detail page
+ Running action VerifyExist on productDetailHeader [{xpath=//*[@class=&quot;breadcrumb pageBreadcrumb&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Return to home page
+ Running action Browser with data {action=back}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Shop Items On Air&quot;
+ Running action Click on shopItemsOnAirBtn [{xpath=//*[@data-component-type=&quot;ITEMS_RECENTLY_ON_AIR&quot;]//*[@class=&quot;btn btn-primary&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until IROA page display
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=10}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify we are at Shop QVC TV page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Recent on-air items}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 22 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Report file generated: c:\seleniumframeworkplugin\testOutput\16\DetailReport\Pass_AEM_IROA_ComponentsAreClickable_uk_chrome.html
+</div><br/><br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>com.qvc.selenium.plugin.TestCase@72cd4a58</td></tr>
+</table><p>
+</body>
+</html>

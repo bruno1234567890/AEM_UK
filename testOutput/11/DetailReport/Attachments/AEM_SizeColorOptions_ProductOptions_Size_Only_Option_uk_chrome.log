@@ -1,0 +1,37 @@
+2017-12-05 21:04:48.314 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:04:49.315 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvcuk.com"
+ Test module "GotoUrl"
+2017-12-05 21:04:49.321 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:04:51.506 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:04:53.325 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:04:53.539 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:04:54.319 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-05 21:04:54.321 [INFO] : [TestNG-method=runTestCase-1] Search a product with only size option
+ Test module "ByProductNum"
+2017-12-05 21:04:54.322 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:04:58.979 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=699775}
+2017-12-05 21:04:59.618 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:05:03.436 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:05:08.902 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-05 21:05:08.903 [INFO] : [TestNG-method=runTestCase-1] Verify size only_Select option label displayed
+ Test module "VerifySizeOnlyText"
+2017-12-05 21:05:08.904 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {wait=5}
+2017-12-05 21:05:14.067 [INFO] : [TestNG-method=runTestCase-1] Verify the "Select option" labels display
+ Running action VerifyExist on sizeText [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]}]
+2017-12-05 21:05:14.270 [INFO] : [TestNG-method=runTestCase-1] Verify the Color labels are not displayed
+ Running action NotContainsText on sizeText [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]}] with data {text=Color}
+2017-12-05 21:05:14.459 [INFO] : [TestNG-method=runTestCase-1] Verify the Size labels are not displayed
+ Running action NotContainsText on sizeText [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]}] with data {text=Size}
+2017-12-05 21:05:14.615 [INFO] : [TestNG-method=runTestCase-1] Verify the "Select option" text displayed
+ Running action ContainsText on sizeText [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]}] with data {text=Select option}
+2017-12-05 21:05:14.820 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-05 21:05:15.136 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_SizeColorOptions_ProductOptions_Size_Only_Option_uk_chrome.html

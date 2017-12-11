@@ -1,0 +1,123 @@
+2017-12-05 21:08:47.821 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:08:48.788 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-05 21:08:48.789 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:08:51.712 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:08:53.374 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:08:53.590 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:08:54.461 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-05 21:08:54.462 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "ByProductNum"
+2017-12-05 21:08:54.463 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:08:59.098 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=214898}
+2017-12-05 21:08:59.896 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:09:04.129 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:09:10.053 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 15 sec
+2017-12-05 21:09:10.142 [INFO] : [TestNG-method=runTestCase-1] Verify the top reviews sort selector
+ Test module "VerifyReviewSortSeletorInTop"
+2017-12-05 21:09:10.143 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:09:10.314 [INFO] : [TestNG-method=runTestCase-1] Wait until the review module display
+ Running action WaitUntilObjectExist on reviewsSortAndPageNav [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]}] with data {wait=4}
+2017-12-05 21:09:14.465 [INFO] : [TestNG-method=runTestCase-1] Verify the top sort review selector exist
+ Running action VerifyExist on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}]
+2017-12-05 21:09:14.628 [INFO] : [TestNG-method=runTestCase-1] Store the first review tilte before sort by "Date - Newest First"
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {storeas=FirstReviewTitle}
+2017-12-05 21:09:14.776 [INFO] : [TestNG-method=runTestCase-1] Sort review by "Date - Newest First"
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}] with data {text=Date - Newest First}
+2017-12-05 21:09:15.426 [INFO] : [TestNG-method=runTestCase-1] Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {wait=4}
+2017-12-05 21:09:19.539 [INFO] : [TestNG-method=runTestCase-1] Store the first review tilte when sort  by "Date - Newest First"
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {storeas=FirstReviewTitle}
+2017-12-05 21:09:19.625 [INFO] : [TestNG-method=runTestCase-1] Sort review by "Date - Oldest First"
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}] with data {text=Date - Oldest First}
+2017-12-05 21:09:20.366 [INFO] : [TestNG-method=runTestCase-1] Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {wait=4}
+2017-12-05 21:09:24.483 [INFO] : [TestNG-method=runTestCase-1] Verify the order of the review had changed by "Date - Oldest First" so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {text=test contributeer}
+2017-12-05 21:09:24.577 [INFO] : [TestNG-method=runTestCase-1] Store the first review tilte when sort  by "Date - Oldest First"
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {storeas=FirstReviewTitle}
+2017-12-05 21:09:24.678 [INFO] : [TestNG-method=runTestCase-1] Sort review by "Date - Newest First"
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}] with data {text=Date - Newest First}
+2017-12-05 21:09:25.417 [INFO] : [TestNG-method=runTestCase-1] Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {wait=4}
+2017-12-05 21:09:29.514 [INFO] : [TestNG-method=runTestCase-1] Verify the order of the review had changed by "Date - Newest First" so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {text=Review Title Test}
+2017-12-05 21:09:29.605 [INFO] : [TestNG-method=runTestCase-1] Sort review by "Rating - High to Low"
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}] with data {text=Rating - High to Low}
+2017-12-05 21:09:30.374 [INFO] : [TestNG-method=runTestCase-1] Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {wait=4}
+2017-12-05 21:09:34.488 [INFO] : [TestNG-method=runTestCase-1] Store the first review tilte when sort  by "Rating - High to Low"
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {storeas=FirstReviewTitle}
+2017-12-05 21:09:34.581 [INFO] : [TestNG-method=runTestCase-1] Sort review by "Rating - Low to High "
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}] with data {text=Rating - Low to High}
+2017-12-05 21:09:35.417 [INFO] : [TestNG-method=runTestCase-1] Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {wait=4}
+2017-12-05 21:09:39.526 [INFO] : [TestNG-method=runTestCase-1] Verify the order of the review had changed by "Rating - Low to High " so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {text=Review Title Test4}
+2017-12-05 21:09:39.635 [INFO] : [TestNG-method=runTestCase-1] Store the first review tilte when sort  by "Rating - Low to High "
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {storeas=FirstReviewTitle}
+2017-12-05 21:09:39.738 [INFO] : [TestNG-method=runTestCase-1] Sort review by "Rating - High to Low"
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}] with data {text=Rating - High to Low}
+2017-12-05 21:09:40.682 [INFO] : [TestNG-method=runTestCase-1] Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {wait=4}
+2017-12-05 21:09:44.824 [INFO] : [TestNG-method=runTestCase-1] Verify the order of the review had changed by "Rating - High to Low" so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {text=Review Title Test9}
+2017-12-05 21:09:44.919 [INFO] : [TestNG-method=runTestCase-1] Sort review by "Helpfulness - High to Low"
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}] with data {text=Helpfulness - High to Low}
+2017-12-05 21:09:45.818 [INFO] : [TestNG-method=runTestCase-1] Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {wait=4}
+2017-12-05 21:09:49.930 [INFO] : [TestNG-method=runTestCase-1] Store the first review tilte when sort  by "Helpfulness - High to Low"
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {storeas=FirstReviewTitle}
+2017-12-05 21:09:50.023 [INFO] : [TestNG-method=runTestCase-1] Sort review by "Helpfulness - Low to High"
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}] with data {text=Helpfulness - Low to High}
+2017-12-05 21:09:50.988 [INFO] : [TestNG-method=runTestCase-1] Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {wait=4}
+2017-12-05 21:09:55.101 [INFO] : [TestNG-method=runTestCase-1] Verify the order of the review had changed by "Helpfulness - Low to High" so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {text=Review Title Test6}
+2017-12-05 21:09:55.190 [INFO] : [TestNG-method=runTestCase-1] Store the first review tilte when sort  by "Helpfulness - Low to High"
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {storeas=FirstReviewTitle}
+2017-12-05 21:09:55.273 [INFO] : [TestNG-method=runTestCase-1] Sort review by "Helpfulness - High to Low"
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}] with data {text=Helpfulness - High to Low}
+2017-12-05 21:09:56.494 [INFO] : [TestNG-method=runTestCase-1] Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {wait=4}
+2017-12-05 21:10:00.617 [INFO] : [TestNG-method=runTestCase-1] Verify the order of the review had changed by "Helpfulness - High to Low" so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {text=Review Title Test4}
+2017-12-05 21:10:00.715 [INFO] : [TestNG-method=runTestCase-1] Sort review by "Length - Long to Short"
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}] with data {text=Length - Long to Short}
+2017-12-05 21:10:01.630 [INFO] : [TestNG-method=runTestCase-1] Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {wait=4}
+2017-12-05 21:10:05.730 [INFO] : [TestNG-method=runTestCase-1] Store the first review tilte when sort  by "Length - Long to Short"
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {storeas=FirstReviewTitle}
+2017-12-05 21:10:05.822 [INFO] : [TestNG-method=runTestCase-1] Sort review by "Length - Short to Long"
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}] with data {text=Length - Short to Long}
+2017-12-05 21:10:06.652 [INFO] : [TestNG-method=runTestCase-1] Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {wait=4}
+2017-12-05 21:10:10.769 [INFO] : [TestNG-method=runTestCase-1] Verify the order of the review had changed by "Length - Short to Long" so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {text=Review Title Test22}
+2017-12-05 21:10:10.851 [INFO] : [TestNG-method=runTestCase-1] Store the first review tilte when sort  by "Length - Short to Long"
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {storeas=FirstReviewTitle}
+2017-12-05 21:10:10.967 [INFO] : [TestNG-method=runTestCase-1] Sort review by "Length - Long to Short"
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}] with data {text=Length - Long to Short}
+2017-12-05 21:10:12.482 [INFO] : [TestNG-method=runTestCase-1] Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {wait=4}
+2017-12-05 21:10:16.595 [INFO] : [TestNG-method=runTestCase-1] Verify the order of the review had changed by "Length - Long to Short" so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {text=test contributeer}
+2017-12-05 21:10:16.684 [INFO] : [TestNG-method=runTestCase-1] Store the first review tilte before sort by "Top Contributors First"
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {storeas=FirstReviewTitle}
+2017-12-05 21:10:16.777 [INFO] : [TestNG-method=runTestCase-1] Sort review by "Top Contributors First"
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id="BVRRDisplayContentSelectBVFrameID"]}] with data {text=Top Contributors First}
+2017-12-05 21:10:17.422 [INFO] : [TestNG-method=runTestCase-1] Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {wait=4}
+2017-12-05 21:10:21.543 [INFO] : [TestNG-method=runTestCase-1] Verify the order of the review had changed by "Top Contributors First" so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id="BVRRDisplayContentBodyID"]/div[1]//*[@class="BVRRValue BVRRReviewTitle"]}] with data {text=Review Title Test22}
+2017-12-05 21:10:21.627 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 1 min, 11 sec
+2017-12-05 21:10:21.916 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_PDP_BV_Reviews_SortSelector_Top_uk_chrome.html

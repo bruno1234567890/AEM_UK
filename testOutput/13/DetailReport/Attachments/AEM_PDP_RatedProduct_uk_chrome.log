@@ -1,0 +1,37 @@
+2017-12-10 21:45:18.237 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:45:19.195 [INFO] : [TestNG-method=runTestCase-1] Go to url qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:45:19.195 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:45:21.835 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:45:23.402 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:45:23.577 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:45:24.551 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:45:24.551 [INFO] : [TestNG-method=runTestCase-1] Search rated product
+ Test module "ByProductNum"
+2017-12-10 21:45:24.551 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:45:29.251 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229545}
+2017-12-10 21:45:29.822 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:45:33.629 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:45:39.633 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 15 sec
+2017-12-10 21:45:39.734 [INFO] : [TestNG-method=runTestCase-1] Verify that product rating is displayed on product detail page
+ Test module "VerifyProductRating"
+2017-12-10 21:45:39.734 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:45:39.949 [INFO] : [TestNG-method=runTestCase-1] Verify that product rating image is displayed
+ Running action VerifyExist on productRatingImage [{xpath=(//*[@class='BVImgOrSprite'])[1]}]
+2017-12-10 21:45:40.102 [INFO] : [TestNG-method=runTestCase-1] Verify that product rating number is displayed
+ Running action VerifyExist on productRatingNumberText [{xpath=//*[@id='BVRRRatingSummaryLinkReadID']//*[@class='BVRRNumber'][1]}]
+2017-12-10 21:45:40.265 [INFO] : [TestNG-method=runTestCase-1] Store product rating review number
+ Running action Text on productRatingNumberText [{xpath=//*[@id='BVRRRatingSummaryLinkReadID']//*[@class='BVRRNumber'][1]}] with data {storeas=RatingReviewNumebr}
+2017-12-10 21:45:40.417 [INFO] : [TestNG-method=runTestCase-1] Store product rating star value
+ Running action Text on reviewStarsValue [{xpath=//*[@class='BVRRCustomProductRating col-tn-6']//*[@class='BVRRNumber BVRRRatingNumber']}] with data {storeas=RatingStarValue}
+2017-12-10 21:45:40.602 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:45:40.980 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_PDP_RatedProduct_uk_chrome.html

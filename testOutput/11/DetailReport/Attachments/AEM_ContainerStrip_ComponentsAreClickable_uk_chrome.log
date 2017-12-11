@@ -1,0 +1,92 @@
+2017-12-05 21:12:00.183 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:12:01.101 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-05 21:12:01.105 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-05 21:12:04.446 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:12:06.052 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:12:06.196 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:06.788 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-05 21:12:06.876 [INFO] : [TestNG-method=runTestCase-1] Verify the link of Container strip module
+ Test module "VerifyContainerStripLink"
+2017-12-05 21:12:06.877 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on BackToHomePage [{xpath=//img[@title='QVC']}, {id=pageMasthead}, {id=divMastheadLogo}, {id=mastheadLogo}, {linkText=Home}]
+2017-12-05 21:12:06.988 [INFO] : [TestNG-method=runTestCase-1] Verify the container strip module exist
+ Running action VerifyExist on ContainerStripModule [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]}]
+2017-12-05 21:12:07.126 [INFO] : [TestNG-method=runTestCase-1] Verify the picture of container strip exist
+ Running action VerifyExist on ContainerStripImg1 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][1]//img}]
+2017-12-05 21:12:07.239 [INFO] : [TestNG-method=runTestCase-1] Click the picture of container strip
+ Running action Click on ContainerStripImg1 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][1]//img}]
+2017-12-05 21:12:09.797 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on PageBreadCrumbs [{id=breadCrumbs}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+2017-12-05 21:12:12.940 [INFO] : [TestNG-method=runTestCase-1] Return to HomePage
+ Running action Browser with data {action=Back}
+2017-12-05 21:12:14.251 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on BackToHomePage [{xpath=//img[@title='QVC']}, {id=pageMasthead}, {id=divMastheadLogo}, {id=mastheadLogo}, {linkText=Home}]
+2017-12-05 21:12:14.412 [INFO] : [TestNG-method=runTestCase-1] Verify the hearder text under the picture of container strip exist
+ Running action VerifyExist on ContainerStripHearderLink1 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][1]//p}]
+2017-12-05 21:12:14.581 [INFO] : [TestNG-method=runTestCase-1] Click the hearder text under the picture of container strip
+ Running action Click on ContainerStripHearderLink1 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][1]//p}]
+2017-12-05 21:12:15.402 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on PageBreadCrumbs [{id=breadCrumbs}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+2017-12-05 21:12:18.519 [INFO] : [TestNG-method=runTestCase-1] Return to HomePage
+ Running action Browser with data {action=Back}
+2017-12-05 21:12:19.592 [INFO] : [TestNG-method=runTestCase-1] Verify the picture of container strip exist
+ Running action WaitUntilObjectExist on ContainerStripImg2 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][2]//img}]
+2017-12-05 21:12:19.766 [INFO] : [TestNG-method=runTestCase-1] Click the picture of container strip
+ Running action Click on ContainerStripImg2 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][2]//img}]
+2017-12-05 21:12:20.522 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on PageBreadCrumbs [{id=breadCrumbs}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+2017-12-05 21:12:23.642 [INFO] : [TestNG-method=runTestCase-1] Return to HomePage
+ Running action Browser with data {action=Back}
+2017-12-05 21:12:24.688 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on BackToHomePage [{xpath=//img[@title='QVC']}, {id=pageMasthead}, {id=divMastheadLogo}, {id=mastheadLogo}, {linkText=Home}]
+2017-12-05 21:12:24.843 [INFO] : [TestNG-method=runTestCase-1] Verify the hearder text under the picture of container strip exist
+ Running action VerifyExist on ContainerStripHearderLink2 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][2]//p}]
+2017-12-05 21:12:25.007 [INFO] : [TestNG-method=runTestCase-1] Click the hearder text under the picture of container strip
+ Running action Click on ContainerStripHearderLink2 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][2]//p}]
+2017-12-05 21:12:25.881 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on PageBreadCrumbs [{id=breadCrumbs}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+2017-12-05 21:12:28.994 [INFO] : [TestNG-method=runTestCase-1] Return to HomePage
+ Running action Browser with data {action=Back}
+2017-12-05 21:12:30.101 [INFO] : [TestNG-method=runTestCase-1] Verify the picture of container strip exist
+ Running action WaitUntilObjectExist on ContainerStripImg3 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][3]//img}]
+2017-12-05 21:12:30.290 [INFO] : [TestNG-method=runTestCase-1] Click the picture of container strip
+ Running action Click on ContainerStripImg3 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][3]//img}]
+2017-12-05 21:12:31.796 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on PageBreadCrumbs [{id=breadCrumbs}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+2017-12-05 21:12:34.911 [INFO] : [TestNG-method=runTestCase-1] Return to HomePage
+ Running action Browser with data {action=Back}
+2017-12-05 21:12:36.015 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on BackToHomePage [{xpath=//img[@title='QVC']}, {id=pageMasthead}, {id=divMastheadLogo}, {id=mastheadLogo}, {linkText=Home}]
+2017-12-05 21:12:36.187 [INFO] : [TestNG-method=runTestCase-1] Verify the hearder text under the picture of container strip exist
+ Running action VerifyExist on ContainerStripHearderLink3 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][3]//p}]
+2017-12-05 21:12:36.343 [INFO] : [TestNG-method=runTestCase-1] Click the hearder text under the picture of container strip
+ Running action Click on ContainerStripHearderLink3 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][3]//p}]
+2017-12-05 21:12:37.220 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on PageBreadCrumbs [{id=breadCrumbs}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+2017-12-05 21:12:40.349 [INFO] : [TestNG-method=runTestCase-1] Return to HomePage
+ Running action Browser with data {action=Back}
+2017-12-05 21:12:41.391 [INFO] : [TestNG-method=runTestCase-1] Verify the picture of container strip exist
+ Running action WaitUntilObjectExist on ContainerStripImg4 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][4]//img}]
+2017-12-05 21:12:41.760 [INFO] : [TestNG-method=runTestCase-1] Click the picture of container strip
+ Running action Click on ContainerStripImg4 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][4]//img}]
+2017-12-05 21:12:42.661 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on PageBreadCrumbs [{id=breadCrumbs}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+2017-12-05 21:12:45.796 [INFO] : [TestNG-method=runTestCase-1] Return to HomePage
+ Running action Browser with data {action=Back}
+2017-12-05 21:12:46.844 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on BackToHomePage [{xpath=//img[@title='QVC']}, {id=pageMasthead}, {id=divMastheadLogo}, {id=mastheadLogo}, {linkText=Home}]
+2017-12-05 21:12:47.023 [INFO] : [TestNG-method=runTestCase-1] Verify the hearder text under the picture of container strip exist
+ Running action VerifyExist on ContainerStripHearderLink4 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][4]//p}]
+2017-12-05 21:12:47.200 [INFO] : [TestNG-method=runTestCase-1] Click the hearder text under the picture of container strip
+ Running action Click on ContainerStripHearderLink4 [{xpath=//*[@data-module-type="CONTAINER_STRIP"][1]//*[@class="col-tn-6 col-xs-3"][4]//p}]
+2017-12-05 21:12:48.198 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on PageBreadCrumbs [{id=breadCrumbs}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {wait=3}
+2017-12-05 21:12:51.306 [INFO] : [TestNG-method=runTestCase-1] Return to HomePage
+ Running action Browser with data {action=Back}
+2017-12-05 21:12:52.215 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 45 sec
+2017-12-05 21:12:52.511 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_ContainerStrip_ComponentsAreClickable_uk_chrome.html

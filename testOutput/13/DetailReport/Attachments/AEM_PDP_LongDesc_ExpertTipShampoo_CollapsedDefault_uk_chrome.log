@@ -1,0 +1,37 @@
+2017-12-10 21:46:32.761 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:46:33.886 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:46:33.903 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:46:36.366 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:46:37.965 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:46:38.203 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:46:39.071 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:46:39.092 [INFO] : [TestNG-method=runTestCase-1] Search regular Product
+ Test module "ByProductNum"
+2017-12-10 21:46:39.092 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:46:43.571 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=212060}
+2017-12-10 21:46:44.271 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:46:49.303 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:46:55.334 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 16 sec
+2017-12-10 21:46:55.401 [INFO] : [TestNG-method=runTestCase-1] Verify the accordian is collpsed as default
+ Test module "VerifyLongDescDefault"" with data: "{longdescriptiontitle=Expert tips to use shampoo - test additional Tabs}"
+2017-12-10 21:46:55.402 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:46:55.665 [INFO] : [TestNG-method=runTestCase-1] Verify the more info tab is collapsed as default
+ Running action VerifyExist on CollapsedLongDescription [{xpath=//*[contains(@class,"accordion_collapsed")]//*[@class="accordionTitle" and text()="<LongDescriptionTitle>"]}]
+2017-12-10 21:46:55.819 [INFO] : [TestNG-method=runTestCase-1] Click the long descrition
+ Running action Click on CollapsedLongDescription [{xpath=//*[contains(@class,"accordion_collapsed")]//*[@class="accordionTitle" and text()="<LongDescriptionTitle>"]}]
+2017-12-10 21:46:56.066 [INFO] : [TestNG-method=runTestCase-1] Verify the collapsed tab is expand
+ Running action VerifyNotExist on CollapsedLongDescription [{xpath=//*[contains(@class,"accordion_collapsed")]//*[@class="accordionTitle" and text()="<LongDescriptionTitle>"]}]
+2017-12-10 21:46:56.165 [INFO] : [TestNG-method=runTestCase-1] Verify the collapsed tab is expand
+ Running action VerifyExist on ExpandLongDescription [{xpath=//*[contains(@class,"accordion_expanded")]//*[@class="accordionTitle" and text()="<LongDescriptionTitle>"]}]
+2017-12-10 21:46:56.306 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:46:56.682 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_PDP_LongDesc_ExpertTipShampoo_CollapsedDefault_uk_chrome.html

@@ -1,0 +1,39 @@
+2017-12-10 21:58:36.768 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:58:37.936 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:58:37.936 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:58:40.897 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:58:42.435 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:58:42.649 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:58:43.597 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:58:43.612 [INFO] : [TestNG-method=runTestCase-1] Search regular Product
+ Test module "BYPRODUCTNUM"
+2017-12-10 21:58:43.612 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:58:48.250 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=212060}
+2017-12-10 21:58:49.051 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:58:53.898 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:58:59.812 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 16 sec
+2017-12-10 21:58:59.812 [INFO] : [TestNG-method=runTestCase-1] Verify the Special Feature accordian
+ Test module "VerifyExpertTipsAccordion"
+2017-12-10 21:58:59.812 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:59:00.019 [INFO] : [TestNG-method=runTestCase-1] Verify the Expert tips description exist
+ Running action VerifyExist on ExpertTipsLongDescription [{xpath=//*[contains(@class,"accMoreInfo")]//a[contains(text(),'Expert tips')]/..}]
+2017-12-10 21:59:00.202 [INFO] : [TestNG-method=runTestCase-1] Verify the Expert tips description title
+ Running action ContainsText on ExpertTipsLongDescriptionTitle [{xpath=//*[contains(@class,"accMoreInfo")]//a[contains(text(),'Expert tips')]}] with data {text=Expert tips}
+2017-12-10 21:59:00.720 [INFO] : [TestNG-method=runTestCase-1] Verify the accordion is collpsed
+ Running action VerifyNotExist on ExpertTipsLongDescriptionExpand [{xpath=//*[contains(@class,"accMoreInfo")]//a[contains(text(),'Expert tips')]/following-sibling::div}]
+2017-12-10 21:59:00.881 [INFO] : [TestNG-method=runTestCase-1] Click the description title
+ Running action Click on ExpertTipsLongDescriptionTitle [{xpath=//*[contains(@class,"accMoreInfo")]//a[contains(text(),'Expert tips')]}]
+2017-12-10 21:59:01.150 [INFO] : [TestNG-method=runTestCase-1] Verify the accordion is expand
+ Running action VerifyExist on ExpertTipsLongDescriptionExpand [{xpath=//*[contains(@class,"accMoreInfo")]//a[contains(text(),'Expert tips')]/following-sibling::div}]
+2017-12-10 21:59:01.414 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 1 sec
+2017-12-10 21:59:01.788 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Pass_AEM_PDP_LongDesc_ExpertTips_uk_chrome.html

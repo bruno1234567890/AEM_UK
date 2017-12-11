@@ -1,0 +1,63 @@
+2017-12-05 21:04:23.162 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:04:26.042 [INFO] : [TestNG-method=runTestCase-1] Go to url qa.qvcuk.com
+ Test module "GotoUrl"
+2017-12-05 21:04:26.109 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:04:30.833 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:04:31.044 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:04:31.247 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:04:32.018 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-05 21:04:32.019 [INFO] : [TestNG-method=runTestCase-1] Search a product is all sold out
+ Test module "ByProductNum"
+2017-12-05 21:04:32.021 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:04:36.640 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=144499}
+2017-12-05 21:04:37.320 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:04:41.071 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:04:46.536 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-05 21:04:46.537 [INFO] : [TestNG-method=runTestCase-1] Verify message is displayed for products that are no longer for sale and all pricing and options are removed
+ Test module "VerifyAllSoldOutPage"
+2017-12-05 21:04:46.539 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:04:46.727 [INFO] : [TestNG-method=runTestCase-1] Verify that all price information is removed
+ Running action VerifyNotExist on priceInfo [{xpath=//*[@class="pricingTable"]}]
+2017-12-05 21:04:46.784 [INFO] : [TestNG-method=runTestCase-1] Verify that easy pay information is removed
+ Running action VerifyNotExist on easyPayDescText [{xpath=//*[@class="easyPayDesc"]}]
+2017-12-05 21:04:46.848 [INFO] : [TestNG-method=runTestCase-1] Verify that offer details links is removed
+ Running action VerifyNotExist on easyPayOfferDetailsLinks [{xpath=//*[@class="col-tn-12 col-lg-4 easyPayDetails"]//*[@class="arrow fancybox fancybox.ajax"]}, {xpath=//*[@title="Easy Pay Offer Details"]}]
+2017-12-05 21:04:46.901 [INFO] : [TestNG-method=runTestCase-1] Verify that "Buy More Save More" information is removed
+ Running action VerifyNotExist on buyMoreSaveMoveText [{xpath=//*[@class="col-tn-12 col-xs-6 buyBoxQuantityInfo"]}]
+2017-12-05 21:04:46.945 [INFO] : [TestNG-method=runTestCase-1] Verify that "Buy More Save More" link is removed
+ Running action VerifyNotExist on buyMoreSaveMoveOfferLink [{xpath=//*[@class="col-tn-12 col-xs-6 buyBoxQuantityInfo"]//*[@class="arrow fancybox fancybox.ajax"]}]
+2017-12-05 21:04:46.991 [INFO] : [TestNG-method=runTestCase-1] Verify that color is removed
+ Running action VerifyNotExist on colorText [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]}]
+2017-12-05 21:04:47.042 [INFO] : [TestNG-method=runTestCase-1] Verify that size is removed
+ Running action VerifyNotExist on sizeText [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]}]
+2017-12-05 21:04:47.091 [INFO] : [TestNG-method=runTestCase-1] Verify that color is removed
+ Running action VerifyNotExist on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-05 21:04:47.138 [INFO] : [TestNG-method=runTestCase-1] Verify that size is removed
+ Running action VerifyNotExist on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-05 21:04:47.196 [INFO] : [TestNG-method=runTestCase-1] Verify that add to cart button is removed
+ Running action VerifyNotExist on addToCartbtn [{class=btnAddToCart}]
+2017-12-05 21:04:47.252 [INFO] : [TestNG-method=runTestCase-1] Verify that speed buy button is removed
+ Running action VerifyNotExist on speedBuyBtn [{class=btnSpeedBuy}]
+2017-12-05 21:04:47.305 [INFO] : [TestNG-method=runTestCase-1] Verify that add to wishlist button is removed
+ Running action VerifyNotExist on addToWishListBtn [{class=btnAddToWishList}]
+2017-12-05 21:04:47.359 [INFO] : [TestNG-method=runTestCase-1] Verify that quantity is removed
+ Running action VerifyNotExist on quantityLabel [{xpath=//*[@class='col-tn-6']//label[@class='aboveLabel' ]}]
+2017-12-05 21:04:47.428 [INFO] : [TestNG-method=runTestCase-1] Verify that Qcard information is removed
+ Running action VerifyNotExist on QCardInfo [{xpath=//*[@id="pdQcardEasyPay"]}]
+2017-12-05 21:04:47.538 [INFO] : [TestNG-method=runTestCase-1] Verify that delivery date estimated is removed
+ Running action VerifyNotExist on deliveryDateEstimateInfo [{xpath=//*[@id="pdEDD_Wrapper"]}]
+2017-12-05 21:04:47.580 [INFO] : [TestNG-method=runTestCase-1] Verify that sold out message is displayed
+ Running action VerifyExist on allSoldOutStatus [{xpath=//*[@class="status allSoldOut"]}]
+2017-12-05 21:04:47.692 [INFO] : [TestNG-method=runTestCase-1] Verify that sold out message is displayed
+ Running action ContainsText on allSoldOutStatus [{xpath=//*[@class="status allSoldOut"]}] with data {text=We're sorry, this product is not available at this time. Use the search bar to find similar items.}
+2017-12-05 21:04:47.849 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 1 sec
+2017-12-05 21:04:48.289 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_PDP_Sold_Out_PDP_uk_chrome.html

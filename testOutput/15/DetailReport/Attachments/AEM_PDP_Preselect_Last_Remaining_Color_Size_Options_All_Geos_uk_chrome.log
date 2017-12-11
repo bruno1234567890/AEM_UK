@@ -1,0 +1,116 @@
+2017-12-10 22:59:28.982 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 22:59:29.984 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvcuk.com
+ Test module "GotoUrl"
+2017-12-10 22:59:29.986 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 22:59:32.833 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 22:59:34.463 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 22:59:34.639 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 22:59:35.532 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 22:59:35.541 [INFO] : [TestNG-method=runTestCase-1] Search a product with only one color and one size
+ Test module "ByProductNum"
+2017-12-10 22:59:35.542 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 22:59:40.144 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=698804}
+2017-12-10 22:59:40.895 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 22:59:44.685 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 22:59:50.364 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 22:59:50.468 [INFO] : [TestNG-method=runTestCase-1] Verify 'Color' 'Size' text shows right for a UK product
+ Test module "VerifyColorSizeText"
+2017-12-10 22:59:50.474 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {wait=5}
+2017-12-10 22:59:55.645 [INFO] : [TestNG-method=runTestCase-1] Verify that the "Select colour" label is displayed
+ Running action VerifyExist on colorText [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]}]
+2017-12-10 22:59:55.810 [INFO] : [TestNG-method=runTestCase-1] Verify that the "Select colour" text is displayed
+ Running action ContainsText on colorText [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]}] with data {text=Select colour}
+2017-12-10 22:59:55.960 [INFO] : [TestNG-method=runTestCase-1] Verify that the "Select size" label is displayed
+ Running action VerifyExist on sizeText [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]}]
+2017-12-10 22:59:56.163 [INFO] : [TestNG-method=runTestCase-1] Verify that the "Select size" text is displayed
+ Running action ContainsText on sizeText [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]}] with data {text=Select size}
+2017-12-10 22:59:56.372 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 22:59:56.374 [INFO] : [TestNG-method=runTestCase-1] Verify the only one color is selected already
+ Test module "VerifyOnlyColorSelected"
+2017-12-10 22:59:56.374 [INFO] : [TestNG-method=runTestCase-1] Verify that the only one color is selected already
+ Running action VerifyExist on onlyOneColorSelected [{xpath=//*[@class="buyBoxColorList"]//*[@state="selected"]}]
+2017-12-10 22:59:56.510 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 22:59:56.511 [INFO] : [TestNG-method=runTestCase-1] Verify the only one size is not selected
+ Test module "VerifySizeNotSelected"
+2017-12-10 22:59:56.512 [INFO] : [TestNG-method=runTestCase-1] Verify that no size is selected
+ Running action VerifyNotExist on sizeIsSelected [{xpath=//*[@class="selectSize" and @state="selected"]}]
+2017-12-10 22:59:56.571 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 22:59:56.573 [INFO] : [TestNG-method=runTestCase-1] Search a product with mutiple sizes and one color
+ Test module "ByProductNum"" with data: "{productnum=150206}"
+2017-12-10 22:59:56.574 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 23:00:01.200 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=150206}
+2017-12-10 23:00:02.200 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 23:00:05.848 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 23:00:12.040 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 15 sec
+2017-12-10 23:00:12.153 [INFO] : [TestNG-method=runTestCase-1] Verify the only one color is selected already
+ Test module "VerifyOnlyColorSelected"
+2017-12-10 23:00:12.154 [INFO] : [TestNG-method=runTestCase-1] Verify that the only one color is selected already
+ Running action VerifyExist on onlyOneColorSelected [{xpath=//*[@class="buyBoxColorList"]//*[@state="selected"]}]
+2017-12-10 23:00:12.281 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 23:00:12.282 [INFO] : [TestNG-method=runTestCase-1] Verify no size is  selected
+ Test module "VerifySizeNotSelected"
+2017-12-10 23:00:12.283 [INFO] : [TestNG-method=runTestCase-1] Verify that no size is selected
+ Running action VerifyNotExist on sizeIsSelected [{xpath=//*[@class="selectSize" and @state="selected"]}]
+2017-12-10 23:00:12.318 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 23:00:12.319 [INFO] : [TestNG-method=runTestCase-1] Search a product with mutiple color and one size
+ Test module "ByProductNum"" with data: "{productnum=136559}"
+2017-12-10 23:00:12.320 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 23:00:16.743 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=136559}
+2017-12-10 23:00:17.322 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 23:00:21.398 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 23:00:27.161 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 23:00:27.162 [INFO] : [TestNG-method=runTestCase-1] Verify the only one size is not selected
+ Test module "VerifySizeNotSelected"
+2017-12-10 23:00:27.163 [INFO] : [TestNG-method=runTestCase-1] Verify that no size is selected
+ Running action VerifyNotExist on sizeIsSelected [{xpath=//*[@class="selectSize" and @state="selected"]}]
+2017-12-10 23:00:27.198 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 23:00:27.200 [INFO] : [TestNG-method=runTestCase-1] Search a product with only one color
+ Test module "ByProductNum"" with data: "{productnum=830638}"
+2017-12-10 23:00:27.200 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 23:00:31.790 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=830638}
+2017-12-10 23:00:32.469 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 23:00:36.222 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 23:00:41.842 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 23:00:41.843 [INFO] : [TestNG-method=runTestCase-1] Verify the only one color is selected already
+ Test module "VerifyOnlyColorSelected"
+2017-12-10 23:00:41.844 [INFO] : [TestNG-method=runTestCase-1] Verify that the only one color is selected already
+ Running action VerifyExist on onlyOneColorSelected [{xpath=//*[@class="buyBoxColorList"]//*[@state="selected"]}]
+2017-12-10 23:00:42.001 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 23:00:42.002 [INFO] : [TestNG-method=runTestCase-1] Search a product with only one size
+ Test module "ByProductNum"" with data: "{productnum=697232}"
+2017-12-10 23:00:42.003 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 23:00:46.470 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=697232}
+2017-12-10 23:00:47.070 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 23:00:50.221 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 23:00:55.791 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 13 sec
+2017-12-10 23:00:55.886 [INFO] : [TestNG-method=runTestCase-1] Verify the only one size is not selected
+ Test module "VerifySizeNotSelected"
+2017-12-10 23:00:55.890 [INFO] : [TestNG-method=runTestCase-1] Verify that no size is selected
+ Running action VerifyNotExist on sizeIsSelected [{xpath=//*[@class="selectSize" and @state="selected"]}]
+2017-12-10 23:00:55.969 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 23:00:56.291 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\15\DetailReport\Pass_AEM_PDP_Preselect_Last_Remaining_Color_Size_Options_All_Geos_uk_chrome.html

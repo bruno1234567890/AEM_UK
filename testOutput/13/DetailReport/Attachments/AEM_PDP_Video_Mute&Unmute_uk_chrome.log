@@ -1,0 +1,61 @@
+2017-12-10 21:46:00.252 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:46:01.375 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:46:01.376 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:46:04.233 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:46:05.818 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:46:05.976 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:46:06.918 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:46:06.918 [INFO] : [TestNG-method=runTestCase-1] Search a product with On Air Presenatation Video
+ Test module "BYPRODUCTNUM"
+2017-12-10 21:46:06.918 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:46:11.618 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=148947}
+2017-12-10 21:46:12.403 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:46:16.733 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:46:22.568 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 15 sec
+2017-12-10 21:46:22.568 [INFO] : [TestNG-method=runTestCase-1] Verify that video can mute and unmute
+ Test module "VerifyVideoMute&Unmute"
+2017-12-10 21:46:22.569 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure we are at correct page: "Product Detail" page
+ Running action WaitUntilObjectExist on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-10 21:46:22.717 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at  correct product number's "Product Detail" page
+ Running action ContainsText on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {text=148947}
+2017-12-10 21:46:22.833 [INFO] : [TestNG-method=runTestCase-1] Wait until video player is shown
+ Running action WaitUntilObjectExist on videoField [{xpath=//div[@class="productVideo"]}] with data {wait=3}
+2017-12-10 21:46:26.017 [INFO] : [TestNG-method=runTestCase-1] Click video player to pause
+[Note: In order to make sure the buttons in control bar can be found]
+ Running action Click on videoPlayer [{xpath=//div[@class="productVideo"]//video}]
+2017-12-10 21:46:26.303 [INFO] : [TestNG-method=runTestCase-1] Loop to click Video player until Resume button is shown
+ Running action VerifyExist on resumeBtn [{xpath=//button[@title="Resume"]}]
+2017-12-10 21:46:26.403 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-10 21:46:27.474 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-10 21:46:28.550 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-10 21:46:29.618 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-10 21:46:30.672 [INFO] : [TestNG-method=runTestCase-1] Object not displayed, reload the object - resumeBtn
+2017-12-10 21:46:31.673 [INFO] : [TestNG-method=runTestCase-1] Locator was: {xpath=//div[@class="productVideo"]//video}
+2017-12-10 21:46:31.674 [ERROR] : [TestNG-method=runTestCase-1] 
+2017-12-10 21:46:31.675 [INFO] : [TestNG-method=runTestCase-1] Loop click video player to pause
+[Note: In order to make sure the buttons in control bar can be found]
+ Running action Click on videoPlayer [{xpath=//div[@class="productVideo"]//video}]
+2017-12-10 21:46:31.965 [INFO] : [TestNG-method=runTestCase-1] Click resume button to play video
+[Note: In order to make sure the buttons in control bar can be found]
+ Running action Click on resumeBtn [{xpath=//button[@title="Resume"]}]
+2017-12-10 21:46:32.192 [INFO] : [TestNG-method=runTestCase-1] Verify that video is in muted state aumatically
+ Running action VerifyExist on unmuteBtn [{xpath=//div[@title='Unmute']}]
+2017-12-10 21:46:32.345 [INFO] : [TestNG-method=runTestCase-1] Click unmute button
+ Running action Click on unmuteBtn [{xpath=//div[@title='Unmute']}]
+2017-12-10 21:46:32.745 [INFO] : [TestNG-method=runTestCase-1] Verify that video is in unmuted state after clicking unmute button
+ Running action VerifyExist on muteBtn [{xpath=//div[@title='Mute']}]
+2017-12-10 21:46:32.886 [INFO] : [TestNG-method=runTestCase-1] Click mute button
+ Running action Click on muteBtn [{xpath=//div[@title='Mute']}]
+2017-12-10 21:46:33.054 [INFO] : [TestNG-method=runTestCase-1] Verify that video is in muted state after clicking mute button
+ Running action VerifyExist on unmuteBtn [{xpath=//div[@title='Unmute']}]
+2017-12-10 21:46:33.164 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 10 sec
+2017-12-10 21:46:33.502 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_PDP_Video_Mute&Unmute_uk_chrome.html

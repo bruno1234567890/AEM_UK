@@ -1,0 +1,130 @@
+2017-12-05 05:48:56.074 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 05:48:59.811 [INFO] : [TestNG-method=runTestCase-1] Navigate to qa.qvcuk.com
+ Test module "GotoUrl"
+2017-12-05 05:49:00.024 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 05:49:03.715 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 05:49:05.457 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 05:49:05.673 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 05:49:06.393 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-05 05:49:06.455 [INFO] : [TestNG-method=runTestCase-1] Navigate to "QVC UK – Watch Live" page
+ Test module "NavToWatchTVLive"
+2017-12-05 05:49:06.458 [INFO] : [TestNG-method=runTestCase-1] Hover the "Shop QVC TV" menu
+ Running action MouseEvent on ShopQVCTVlink [{xpath=//*[@class="shopQVCTV"]/a[@aria-label="Shop QVC TV"]}, {xpath=//div[@id="mastTierTwo"]//a[text()="Shop QVC TV"]}] with data {mouseaction=mouseover}
+2017-12-05 05:49:07.150 [INFO] : [TestNG-method=runTestCase-1] Click "Watch QVC TV" link
+ Running action Click on watchQVCTVLink [{xpath=//*[@class="shopTVDropDown"]//*[@title="Watch QVC TV"]}, {xpath=//*[@class="qvctv visible-desktop"]//a[text()="Watch QVC TV"]}]
+2017-12-05 05:49:09.270 [INFO] : [TestNG-method=runTestCase-1] Wait until the object show up to make sure we are switch to correct page
+ Running action WaitUntilObjectExist on TVHeader [{class=active}]
+2017-12-05 05:49:17.430 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at live channel page
+ Running action ContainsText on TVHeader [{class=active}] with data {text=QVC UK – Watch Live}
+2017-12-05 05:49:17.576 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 11 sec
+2017-12-05 05:49:17.617 [INFO] : [TestNG-method=runTestCase-1] Verify elements in the buy box of live channel
+ Test module "VerifyBuyBoxElements"
+2017-12-05 05:49:17.619 [INFO] : [TestNG-method=runTestCase-1] Verify the buy box layer exist
+ Running action VerifyExist on buyBoxLayerIOA [{id=qProdOverlay}]
+2017-12-05 05:49:17.766 [INFO] : [TestNG-method=runTestCase-1] Verify the product name of the buy box exist
+ Running action VerifyExist on IOAProductName [{xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}]
+2017-12-05 05:49:17.900 [INFO] : [TestNG-method=runTestCase-1] Store the product name
+ Running action Text on IOAProductName [{xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}] with data {storeas=ProductName}
+2017-12-05 05:49:18.000 [INFO] : [TestNG-method=runTestCase-1] Check whether the QVC price exist
+ Running action CheckForElements on IOAQVCPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="qvcPrice"]}]
+2017-12-05 05:49:18.177 [INFO] : [TestNG-method=runTestCase-1] Verify the QVC price exist
+ Running action VerifyExist on IOAQVCPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="qvcPrice"]}]
+2017-12-05 05:49:18.262 [INFO] : [TestNG-method=runTestCase-1] Check whether the strikeout price exist
+ Running action CheckForElements on IOAPriceStrikeOut [{xpath=//*[@id="qProdOverlay"]//*[@class="price strikeout"]}]
+2017-12-05 05:49:23.912 [INFO] : [TestNG-method=runTestCase-1] Check whether the feature price exist
+ Running action CheckForElements on IOAFeaturePrice [{xpath=//*[@id="qProdOverlay"]//*[@class="featuredPrice"]}]
+2017-12-05 05:49:29.547 [INFO] : [TestNG-method=runTestCase-1] Check whether the retail price cost exist
+ Running action CheckForElements on IOARetailPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="rvPrice"]}]
+2017-12-05 05:49:35.182 [INFO] : [TestNG-method=runTestCase-1] Check whether the shipping cost exist
+ Running action CheckForElements on IOAShippingCost [{xpath=//*[@id="qProdOverlay"]//*[@class="shPrice freeSH"]/..//label}]
+2017-12-05 05:49:35.320 [INFO] : [TestNG-method=runTestCase-1] Verify the shipping cost exist
+ Running action VerifyExist on IOAShippingCost [{xpath=//*[@id="qProdOverlay"]//*[@class="shPrice freeSH"]/..//label}]
+2017-12-05 05:49:35.400 [INFO] : [TestNG-method=runTestCase-1] Check whether the easy pay info exist
+ Running action CheckForElements on IOAEasyPayInfo [{xpath=//*[@id="qProdOverlay"]//*[@class="easyPayInfo"]}]
+2017-12-05 05:49:41.150 [INFO] : [TestNG-method=runTestCase-1] Check whether the rating data exist
+ Running action CheckForElements on IOARating [{xpath=//*[@id="qProdOverlay"]//*[@class="productRatings"]}]
+2017-12-05 05:49:46.878 [INFO] : [TestNG-method=runTestCase-1] Verify the shop now button exist
+ Running action WaitUntilObjectExist on IOAShopNowBtn [{xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-default"]}, {xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-primary"]}]
+2017-12-05 05:49:47.705 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 30 sec
+2017-12-05 05:49:47.707 [INFO] : [TestNG-method=runTestCase-1] Click show now button on "QVC UK – Watch Live" page
+ Test module "BuyIOA"
+2017-12-05 05:49:47.708 [INFO] : [TestNG-method=runTestCase-1] Click the shop now button in the buy box layer to add the product
+ Running action Click on IOAShopNowBtn [{xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-default"]}, {xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-primary"]}]
+2017-12-05 05:49:48.379 [INFO] : [TestNG-method=runTestCase-1] Swith to new browser
+ Running action Browser with data {action=SwitchToNewBrowser}
+2017-12-05 05:49:48.416 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser, windowHandle - CDwindow-67fe0ad5-e08e-494e-a58d-6e1f809c8c35
+2017-12-05 05:49:48.418 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 05:49:51.335 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 05:49:51.492 [INFO] : [TestNG-method=runTestCase-1] Verify the product is the one we had chosen
+ Running action ContainsText on productTitleText [{xpath=//*[@class='pdShortDesc']//h1}] with data {text=Northern Nights 100% Cotton Flannel 2 Fitted Sheets & 4 Pillowcases}
+2017-12-05 05:49:51.655 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 3 sec
+2017-12-05 05:49:51.779 [INFO] : [TestNG-method=runTestCase-1] Speed buy
+ Test module "SpeedBuy"
+2017-12-05 05:49:51.780 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 05:49:51.913 [INFO] : [TestNG-method=runTestCase-1] Get the product number
+ Running action Text on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {storeas=productNumPD}
+2017-12-05 05:49:52.106 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-05 05:49:57.228 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-05 05:49:57.719 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available color
+ Running action Click on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-05 05:49:58.301 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-05 05:49:58.819 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available size
+ Running action Click on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-05 05:49:59.443 [INFO] : [TestNG-method=runTestCase-1] SELECT quantity
+ Running action SendKeys on productQtyInputBox [{css=.productQuantity}] with data {text=<Qty>}
+2017-12-05 05:49:59.770 [INFO] : [TestNG-method=runTestCase-1] Click "speed buy"
+ Running action Click on speedBuyBtn [{class=btnSpeedBuy}]
+2017-12-05 05:50:07.519 [INFO] : [TestNG-method=runTestCase-1] If the item is waitlist
+ Running action CheckForElements on yesBtn [{xpath=//input[@class='primaryButton' and @value='Yes']}, {xpath=//*[@value='Yes']}]
+2017-12-05 05:50:12.565 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on signInHeader [{id=divPageTitle}] with data {wait=5}
+2017-12-05 05:50:24.294 [INFO] : [TestNG-method=runTestCase-1] Verify we are at sign in page
+ Running action ContainsText on signInHeader [{id=divPageTitle}] with data {text=Speed Buy one-step verification}
+2017-12-05 05:50:24.429 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 32 sec
+2017-12-05 05:50:24.485 [INFO] : [TestNG-method=runTestCase-1] Login by email with review
+ Test module "LoginByEmailWithReview"
+2017-12-05 05:50:24.491 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "SpeedBuy" page
+ Running action ContainsText on speedBuyHeader [{id=divPageTitle}] with data {text=Speed Buy one-step verification}
+2017-12-05 05:50:24.706 [INFO] : [TestNG-method=runTestCase-1] Input email address
+ Running action SendKeys on emailAddressInput [{id=txtEmailAddress}] with data {text=a2016080601@qvc.com}
+2017-12-05 05:50:25.096 [INFO] : [TestNG-method=runTestCase-1] Input password
+ Running action SendKeys on passWordInput [{id=txtPassword}] with data {text=Qvctester1}
+2017-12-05 05:50:25.402 [INFO] : [TestNG-method=runTestCase-1] Click "Sign in" button to submit order
+ Running action Click on submitOrder [{id=btnSignIn}]
+2017-12-05 05:50:31.768 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-05 05:50:31.843 [INFO] : [TestNG-method=runTestCase-1] Submit order
+ Test module "SubmitOrder"
+2017-12-05 05:50:31.850 [INFO] : [TestNG-method=runTestCase-1] Wait until the "Submit Order" page displayed
+ Running action WaitUntilObjectExist on SubmitOrderHeader [{id=divPageTitle}] with data {wait=5}
+2017-12-05 05:50:36.973 [INFO] : [TestNG-method=runTestCase-1] Verify we are at "Submit Order" page
+ Running action ContainsText on SubmitOrderHeader [{id=divPageTitle}] with data {text=Submit Order}
+2017-12-05 05:50:37.122 [INFO] : [TestNG-method=runTestCase-1] Click "Confirm order & pay" button
+ Running action Click on clickHereToSubmitOrderBtn [{xpath=//*[@class='primaryButton']}]
+2017-12-05 05:50:40.873 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 9 sec
+2017-12-05 05:50:40.914 [INFO] : [TestNG-method=runTestCase-1] Output order number
+ Test module "OrderConfirmation"
+2017-12-05 05:50:40.928 [INFO] : [TestNG-method=runTestCase-1] Veify we are at Order Confirmation page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Thank you for your order. Here is your confirmation.}
+2017-12-05 05:50:41.122 [INFO] : [TestNG-method=runTestCase-1] Record OrderNum
+ Running action Text on orderNumberText [{xpath=//*[@class='orderNumber']}] with data {regex=[0-9]+, storeas=orderNum}
+2017-12-05 05:50:41.273 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-05 05:50:41.310 [INFO] : [TestNG-method=runTestCase-1] Logout
+ Test module "SignOut"
+2017-12-05 05:50:41.316 [INFO] : [TestNG-method=runTestCase-1] Mouseover "Sign In" area to make the sign out link show up
+ Running action MouseEvent on signInArea [{xpath=//*[@class="acctGreeting acctUnAuth"]}, {xpath=//*[@class="acctGreeting acctAuth"]}, {xpath=(//*[contains(text(),"Hello")])[1]}, {xpath=//*[@id="customer"]//a[contains(text(),"Sign out")]}] with data {mouseaction=mouseover}
+2017-12-05 05:50:42.559 [INFO] : [TestNG-method=runTestCase-1] Verify "Sign Out" link exists
+ Running action VerifyExist on signOutLink [{linkText=Sign out}, {xpath=(//a[@title='Sign out'])[1]}, {xpath=//div[@class='acctGreeting acctAuth']//a[@title='Sign out']}, {xpath=//*[@class="menuIconCell myAccountMenu"]//a[@data-link-tag="SIGNOUT"]}]
+2017-12-05 05:50:42.666 [INFO] : [TestNG-method=runTestCase-1] Click "Sign Out" link
+ Running action Click on signOutLink [{linkText=Sign out}, {xpath=(//a[@title='Sign out'])[1]}, {xpath=//div[@class='acctGreeting acctAuth']//a[@title='Sign out']}, {xpath=//*[@class="menuIconCell myAccountMenu"]//a[@data-link-tag="SIGNOUT"]}]
+2017-12-05 05:50:43.429 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 2 sec
+2017-12-05 05:50:43.771 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\10\DetailReport\Pass_AEM_SLTV_BuyBox_Shop_Now_Speedbuy_All_Geos_uk_chrome.html

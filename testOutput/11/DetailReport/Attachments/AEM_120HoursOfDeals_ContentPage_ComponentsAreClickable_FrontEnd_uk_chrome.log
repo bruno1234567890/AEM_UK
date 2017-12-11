@@ -1,0 +1,98 @@
+2017-12-05 21:11:49.214 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:11:50.237 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-05 21:11:50.237 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-05 21:11:53.825 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:11:55.480 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:11:55.652 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:11:56.208 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-05 21:11:56.210 [INFO] : [TestNG-method=runTestCase-1] Verify click 120 Deals "Add to Cart" nav to shopping cart
+ Test module "Deals_AddtoCart"
+2017-12-05 21:11:56.210 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:11:56.687 [INFO] : [TestNG-method=runTestCase-1] Click add to cart button of 120 Deals
+ Running action Click on addToCartBtn_Deals [{xpath=//div[@id='feature-item']//a[contains(text(), 'Add to Basket')]}]
+2017-12-05 21:11:59.507 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on firstAvailableColor [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectColor") and contains(@style,'active')][1]}]
+2017-12-05 21:12:00.218 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available color
+ Running action Click on firstAvailableColor [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectColor") and contains(@style,'active')][1]}]
+2017-12-05 21:12:00.978 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on firstAvailableSize [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectSize") and contains(@style,'active')][1]}]
+2017-12-05 21:12:01.466 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available size
+ Running action Click on firstAvailableSize [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectSize") and contains(@style,'active')][1]}]
+2017-12-05 21:12:01.990 [INFO] : [TestNG-method=runTestCase-1] If have continue button
+ Running action CheckForElements on continueBtn [{xpath=//*[@id='divButtons']//*[@value='CONTINUE']}]
+2017-12-05 21:12:02.156 [INFO] : [TestNG-method=runTestCase-1] Click continue button on make your selection page
+ Running action Click on continueBtn [{xpath=//*[@id='divButtons']//*[@value='CONTINUE']}]
+2017-12-05 21:12:05.122 [INFO] : [TestNG-method=runTestCase-1] Wait until shopping cart page displayed
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-05 21:12:05.240 [INFO] : [TestNG-method=runTestCase-1] Verify we are at shopping cart page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Shopping basket}
+2017-12-05 21:12:05.360 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 9 sec
+2017-12-05 21:12:05.361 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-05 21:12:05.361 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-05 21:12:08.772 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:12:14.651 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:15.247 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 9 sec
+2017-12-05 21:12:15.248 [INFO] : [TestNG-method=runTestCase-1] Verify click 120 Deals "Speed Buy" nav to speedbuy login
+ Test module "Deals_SpeedBuy"
+2017-12-05 21:12:15.248 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:15.784 [INFO] : [TestNG-method=runTestCase-1] Click speed buy button of item on air
+ Running action Click on speedBuyBtnD_Deals [{xpath=//div[@id='feature-item']//a[contains(text(), 'Speed Buy')]}]
+2017-12-05 21:12:17.366 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on firstAvailableColor [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectColor") and contains(@style,'active')][1]}]
+2017-12-05 21:12:17.878 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available color
+ Running action Click on firstAvailableColor [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectColor") and contains(@style,'active')][1]}]
+2017-12-05 21:12:18.718 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on firstAvailableSize [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectSize") and contains(@style,'active')][1]}]
+2017-12-05 21:12:19.281 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available size
+ Running action Click on firstAvailableSize [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectSize") and contains(@style,'active')][1]}]
+2017-12-05 21:12:19.840 [INFO] : [TestNG-method=runTestCase-1] If have continue button
+ Running action CheckForElements on continueBtn [{xpath=//*[@id='divButtons']//*[@value='CONTINUE']}]
+2017-12-05 21:12:19.977 [INFO] : [TestNG-method=runTestCase-1] Click continue button on make your selection page
+ Running action Click on continueBtn [{xpath=//*[@id='divButtons']//*[@value='CONTINUE']}]
+2017-12-05 21:12:24.147 [INFO] : [TestNG-method=runTestCase-1] Wait until speed buy login page displayed
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-05 21:12:24.422 [INFO] : [TestNG-method=runTestCase-1] Verify we are at "Speed Buy One-Step Verification" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Speed Buy One-Step Verification}
+2017-12-05 21:12:24.510 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 9 sec
+2017-12-05 21:12:24.511 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-05 21:12:24.512 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-05 21:12:27.834 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:12:33.555 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:34.193 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 9 sec
+2017-12-05 21:12:34.194 [INFO] : [TestNG-method=runTestCase-1] Verify user can be navigated to PDP correctly after click product image/product title
+ Test module "Deals_Clickable"
+2017-12-05 21:12:34.195 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:34.692 [INFO] : [TestNG-method=runTestCase-1] Click image of "120 Deals"
+ Running action Click on 120DealsImg [{css=#feature-item .img-responsive}]
+2017-12-05 21:12:46.102 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:12:46.219 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:12:46.362 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-05 21:12:47.297 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:47.831 [INFO] : [TestNG-method=runTestCase-1] Click desc of "120 Deals"
+ Running action Click on 120DealsDesc [{css=#feature-item .productDesc}]
+2017-12-05 21:12:49.795 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 21:12:50.130 [INFO] : [TestNG-method=runTestCase-1] Verify we are at product detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:12:50.275 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 16 sec
+2017-12-05 21:12:50.659 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_120HoursOfDeals_ContentPage_ComponentsAreClickable_FrontEnd_uk_chrome.html

@@ -1,0 +1,47 @@
+2017-12-10 21:54:00.084 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:54:01.524 [INFO] : [TestNG-method=runTestCase-1] Open browser and go to qa.qvcuk.com
+ Test module "GotoUrl"
+2017-12-10 21:54:01.525 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:54:04.183 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:54:05.969 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:54:06.234 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:54:07.314 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:54:07.316 [INFO] : [TestNG-method=runTestCase-1] Search product
+ Test module "ByProductNum"
+2017-12-10 21:54:07.317 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:54:11.943 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229451}
+2017-12-10 21:54:12.734 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:54:16.435 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:54:22.197 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 21:54:22.197 [INFO] : [TestNG-method=runTestCase-1] Click on the " Policies & Guidelines " link
+ Test module "ClickPoliciesAndGuidelinesLink"
+2017-12-10 21:54:22.197 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist to make sure we switch to PDP page
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:54:22.367 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:54:22.537 [INFO] : [TestNG-method=runTestCase-1] Click the "Policies&Guidelines" Link
+ Running action Click on policiesAndGuidelinesLink [{xpath=//*[@name="BV_TrackingTag_QA_Display_QAndAGuidelines"]}]
+2017-12-10 21:54:22.913 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:54:22.930 [INFO] : [TestNG-method=runTestCase-1] Verify the " Policies & Guidelines" and click "close this window" link
+ Test module "VerifyPoliciesAndGuidelines"
+2017-12-10 21:54:22.930 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser - Policies & Guidelines
+ Running action Browser with data {action=SwitchToNewBrowser}
+2017-12-10 21:54:22.977 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser, windowHandle - CDwindow-e49b99ec-8aeb-4178-8fac-b3419bedd2f4
+2017-12-10 21:54:22.977 [INFO] : [TestNG-method=runTestCase-1] Wait util the "QVC values your questions and answers!" page which is dispalyed.
+ Running action WaitUntilObjectExist on pageHeaderID [{xpath=//*[@id='BVQAGuidelinesDocumentationHeaderID']}, {id=BVQAGuidelinesDocumentationHeaderID}] with data {wait=3}
+2017-12-10 21:54:26.166 [INFO] : [TestNG-method=runTestCase-1] Verify we are at "QVC values your questions and answers!" page
+ Running action CONTAINSTEXT on pageHeaderID [{xpath=//*[@id='BVQAGuidelinesDocumentationHeaderID']}, {id=BVQAGuidelinesDocumentationHeaderID}] with data {text=QVC values your questions and answers!}
+2017-12-10 21:54:26.334 [INFO] : [TestNG-method=runTestCase-1] Verify the text existed: "To ensure your question or answer meets our posting guidelines, please adhere to the following:"
+ Running action CONTAINSTEXT on policiesAndGuidelinesDetail [{xpath=//*[@id='BVQAGuidelinesDocumentationID']/p[1]}] with data {text=When writing your question or answer, please follow these guidelines}
+2017-12-10 21:54:26.535 [INFO] : [TestNG-method=runTestCase-1] Click on the " Close This Window " link to close the new window
+ Running action Click on closeThisWindowLink [{xpath=//*[@id='BVQACloseWindowLinkDivID']/a[@class="BVQACloseWindowLink"]}]
+2017-12-10 21:54:26.810 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 3 sec
+2017-12-10 21:54:27.152 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Pass_AEM_PDP_BV_PoliciesAndGuidelines_ClickAndVerify_uk_chrome.html

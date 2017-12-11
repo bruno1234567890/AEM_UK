@@ -1,0 +1,120 @@
+2017-12-10 23:07:14.579 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 23:07:15.727 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 23:07:15.727 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 23:07:18.045 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 23:07:19.630 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 23:07:19.843 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 23:07:20.651 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-10 23:07:20.666 [INFO] : [TestNG-method=runTestCase-1] Search regular Product
+ Test module "ByProductNum"
+2017-12-10 23:07:20.666 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 23:07:25.467 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=200375}
+2017-12-10 23:07:26.145 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 23:07:29.399 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 23:07:35.001 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 23:07:35.100 [INFO] : [TestNG-method=runTestCase-1] Verify auto delivery item
+ Test module "VerifyAutoDeliveryItemToolTip"
+2017-12-10 23:07:35.106 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 23:07:35.344 [INFO] : [TestNG-method=runTestCase-1] Verify that the delivery options exists
+ Running action ContainsText on DeliveryOptionLabel [{xpath=//*[@class="buyBoxSelect buyBoxSelectDelivery"]//*[@class="aboveLabel"]}] with data {text=Delivery Options}
+2017-12-10 23:07:35.515 [INFO] : [TestNG-method=runTestCase-1] Verify that the delivery option tool tip exists
+ Running action VerifyExist on DeliveryOptionTooltip [{xpath=//*[@class="buyBoxSelect buyBoxSelectDelivery"]//*[@class="infoIcon fancybox fancybox.ajax"]}]
+2017-12-10 23:07:35.652 [INFO] : [TestNG-method=runTestCase-1] Hover the delivery option tool tip so that the alt tag "Delivery Options Details" is displayed
+ Running action MouseEvent on DeliveryOptionTooltip [{xpath=//*[@class="buyBoxSelect buyBoxSelectDelivery"]//*[@class="infoIcon fancybox fancybox.ajax"]}] with data {mouseaction=mouseover}
+2017-12-10 23:07:35.804 [INFO] : [TestNG-method=runTestCase-1] Click delivery option tool tip
+ Running action Click on DeliveryOptionTooltip [{xpath=//*[@class="buyBoxSelect buyBoxSelectDelivery"]//*[@class="infoIcon fancybox fancybox.ajax"]}]
+2017-12-10 23:07:36.398 [INFO] : [TestNG-method=runTestCase-1] Wait until the delivery option details popup shows
+ Running action WaitUntilObjectExist on deliveryOptionsDetailsPopup [{xpath=//*[@class='fancybox-wrap fancybox-desktop fancybox-type-ajax fancybox-opened']}] with data {wait=3}
+2017-12-10 23:07:39.568 [INFO] : [TestNG-method=runTestCase-1] Verify that the delivery option details popup exists
+ Running action VerifyExist on deliveryOptionsDetailsPopup [{xpath=//*[@class='fancybox-wrap fancybox-desktop fancybox-type-ajax fancybox-opened']}]
+2017-12-10 23:07:39.699 [INFO] : [TestNG-method=runTestCase-1] Verify that the delivery option details title is displayed
+ Running action ContainsText on deliveryOptionsDetailsPopup [{xpath=//*[@class='fancybox-wrap fancybox-desktop fancybox-type-ajax fancybox-opened']}] with data {text=What are these delivery options}
+2017-12-10 23:07:39.888 [INFO] : [TestNG-method=runTestCase-1] Verify that the delivery option details content is displayed
+ Running action VerifyExist on popupText [{xpath=//*[@class="fancybox-skin"]//*[contains(@class,"rich-text-editor")]}]
+2017-12-10 23:07:40.034 [INFO] : [TestNG-method=runTestCase-1] Verify that the delivery option details content is mentionen about "Auto-Delivery"
+ Running action ContainsText on popupText [{xpath=//*[@class="fancybox-skin"]//*[contains(@class,"rich-text-editor")]}] with data {text=Auto Delivery}
+2017-12-10 23:07:40.183 [INFO] : [TestNG-method=runTestCase-1] Verify that close button is displayed
+ Running action VerifyExist on popupClose [{xpath=//*[@class="fancybox-item fancybox-close"]}]
+2017-12-10 23:07:40.317 [INFO] : [TestNG-method=runTestCase-1] Close the popup window
+ Running action Click on popupClose [{xpath=//*[@class="fancybox-item fancybox-close"]}]
+2017-12-10 23:07:40.551 [INFO] : [TestNG-method=runTestCase-1] Verify that the delivery option details popup exists
+ Running action VerifyNotExist on deliveryOptionsDetailsPopup [{xpath=//*[@class='fancybox-wrap fancybox-desktop fancybox-type-ajax fancybox-opened']}]
+2017-12-10 23:07:40.683 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 23:07:40.745 [INFO] : [TestNG-method=runTestCase-1] Add to cart
+ Test module "AddToCart_AD"
+2017-12-10 23:07:40.745 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 23:07:40.867 [INFO] : [TestNG-method=runTestCase-1] Get the product number
+ Running action Text on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {storeas=productNumPD}
+2017-12-10 23:07:41.082 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-10 23:07:41.213 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available color
+ Running action Click on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-10 23:07:41.467 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 23:07:47.120 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 23:07:52.486 [INFO] : [TestNG-method=runTestCase-1] Click autodelivery option
+ Running action Click on AutoDeliveryOption [{xpath=//*[@class="deliveryOption adPurchase"]}]
+2017-12-10 23:07:52.767 [INFO] : [TestNG-method=runTestCase-1] Click "Add to Basket"
+ Running action Click on addToCartbtn [{class=btnAddToCart}]
+2017-12-10 23:07:54.967 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 23:07:54.983 [INFO] : [TestNG-method=runTestCase-1] Click Yes to continue
+ Test module "ClickYes"
+2017-12-10 23:07:54.983 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Auto-Delivery Order Confirmation page
+ Running action ContainsText on Auto-diHeader [{id=divPageTitle}] with data {text=Auto Delivery order confirmation}
+2017-12-10 23:07:55.200 [INFO] : [TestNG-method=runTestCase-1] Click yes button
+ Running action Click on btnYes [{xpath=//input[@class='primaryButton buttonAlignVertical' and @value='Yes']}, {xpath=//*[@class='primaryButton buttonAlignVertical']}]
+2017-12-10 23:07:57.884 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 2 sec
+2017-12-10 23:07:57.916 [INFO] : [TestNG-method=runTestCase-1] Click Checkout button
+ Test module "CheckOut"
+2017-12-10 23:07:57.916 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Shopping basket" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Shopping basket}
+2017-12-10 23:07:58.128 [INFO] : [TestNG-method=runTestCase-1] Click "Checkout"
+ Running action Click on checkoutBtn [{xpath=//*[@class="divProductButtons"]//*[@value="Checkout"][1]}]
+2017-12-10 23:08:00.614 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 2 sec
+2017-12-10 23:08:00.614 [INFO] : [TestNG-method=runTestCase-1] Sign In
+ Test module "ByEmail"
+2017-12-10 23:08:00.629 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on signInHeader [{id=divPageTitle}] with data {wait=10}
+2017-12-10 23:08:10.768 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Sign In" page
+ Running action ContainsText on signInHeader [{id=divPageTitle}] with data {text=Sign In}
+2017-12-10 23:08:10.868 [INFO] : [TestNG-method=runTestCase-1] Input email address
+ Running action SendKeys on emailAddressTextbox [{id=txtEmailAddress}, {name=logonId}] with data {text=a20170605061838@qvc.com}
+2017-12-10 23:08:11.268 [INFO] : [TestNG-method=runTestCase-1] Input password
+ Running action SendKeys on passwordTextbox [{id=txtPassword}, {name=logonPassword}] with data {text=Qvctester1}
+2017-12-10 23:08:11.600 [INFO] : [TestNG-method=runTestCase-1] Click "Sign in"
+ Running action Click on loginBtn [{id=btnSignIn}]
+2017-12-10 23:08:14.630 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 23:08:14.637 [INFO] : [TestNG-method=runTestCase-1] Use current as shipTo address
+ Test module "UseCurrent"
+2017-12-10 23:08:14.640 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Ship-To Address" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Delivery address}
+2017-12-10 23:08:14.833 [ERROR] : [TestNG-method=runTestCase-1] Verification Failed. Expect text was not found: Delivery address, actual text: Submit order
+2017-12-10 23:08:15.029 [INFO] : [TestNG-method=runTestCase-1] Click "Contine"
+ Running action Click on continuebtn [{id=btnContinueAddressBook}]
+2017-12-10 23:08:25.550 [INFO] : [TestNG-method=runTestCase-1] Locator was: {id=btnContinueAddressBook}
+2017-12-10 23:08:25.550 [ERROR] : [TestNG-method=runTestCase-1] Exception: no such element: Unable to locate element: {"method":"id","selector":"btnContinueAddressBook"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 4.4.0-96-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'wchpilsgrid04', ip: '167.140.56.169', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-96-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57), userDataDir=/tmp/.org.chromium.Chromium.hoKv5G}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 1aa4d6af0232a94a98174770803ef01e
+*** Element info: {Using=id, value=btnContinueAddressBook}
+Command duration or timeout: 301 milliseconds
+2017-12-10 23:08:25.551 [ERROR] : [TestNG-method=runTestCase-1] 1: PERFORM-Click : Click "Contine"
+2017-12-10 23:08:26.079 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\15\DetailReport\ReRun\Fail_AEM_PDP_AutoDelivery_VerifyADPlan_uk_chrome.html

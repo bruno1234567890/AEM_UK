@@ -1,0 +1,44 @@
+2017-12-10 21:58:49.814 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:58:50.712 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:58:50.712 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-10 21:58:53.712 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:58:55.565 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:58:55.780 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:58:56.396 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:58:56.457 [INFO] : [TestNG-method=runTestCase-1] Verify click IOA "Speed Buy" nav to SpeedBuy login page
+ Test module "IOA_SpeedBuy"
+2017-12-10 21:58:56.457 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:58:57.034 [INFO] : [TestNG-method=runTestCase-1] Verify the on air module exist
+ Running action VerifyExist on onAirModule [{xpath=//*[@data-module-type="ON_AIR"]}]
+2017-12-10 21:58:57.248 [INFO] : [TestNG-method=runTestCase-1] If have add to cart button on homepage
+ Running action CheckForElements on speedBuyIOABtn [{xpath=//*[@data-module-type='ON_AIR']//div[@class='onAirProdBtn']//a[contains(text(),'Speed Buy')]}]
+2017-12-10 21:58:57.366 [INFO] : [TestNG-method=runTestCase-1] Click speed buy button of item on air
+ Running action Click on speedBuyIOABtn [{xpath=//*[@data-module-type='ON_AIR']//div[@class='onAirProdBtn']//a[contains(text(),'Speed Buy')]}]
+2017-12-10 21:59:00.643 [INFO] : [TestNG-method=runTestCase-1] If the item is waitlist
+ Running action CheckForElements on yesBtn [{xpath=//input[@class='primaryButton' and @value='Yes']}, {xpath=//*[@value='Yes']}]
+2017-12-10 21:59:05.782 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on firstAvailableColor [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectColor") and contains(@style,'active')][1]}]
+2017-12-10 21:59:06.565 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available color
+ Running action Click on firstAvailableColor [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectColor") and contains(@style,'active')][1]}]
+2017-12-10 21:59:07.197 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on firstAvailableSize [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectSize") and contains(@style,'active')][1]}]
+2017-12-10 21:59:07.895 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available size
+ Running action Click on firstAvailableSize [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectSize") and contains(@style,'active')][1]}]
+2017-12-10 21:59:08.497 [INFO] : [TestNG-method=runTestCase-1] If have continue button
+ Running action CheckForElements on continueBtn [{xpath=//*[@id='divButtons']//*[@value='CONTINUE']}]
+2017-12-10 21:59:08.634 [INFO] : [TestNG-method=runTestCase-1] Click continue button on make your selection page
+ Running action Click on continueBtn [{xpath=//*[@id='divButtons']//*[@value='CONTINUE']}]
+2017-12-10 21:59:13.365 [INFO] : [TestNG-method=runTestCase-1] Wait until speed buy login page display
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-10 21:59:13.497 [INFO] : [TestNG-method=runTestCase-1] Verify we are at "Speed Buy One-Step Verification" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Speed Buy One-Step Verification}
+2017-12-10 21:59:13.627 [INFO] : [TestNG-method=runTestCase-1] If have view more button
+ Running action CheckForElements on viewMoreBtn [{xpath=//*[@class='shopBtn']//*[@class='btn btn-primary']}]
+2017-12-10 21:59:19.351 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 22 sec
+2017-12-10 21:59:19.647 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Pass_AEM_OnAir_SpeedBuy_uk_chrome.html

@@ -1,0 +1,54 @@
+2017-12-10 21:58:54.974 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:58:56.196 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:58:56.196 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-10 21:58:59.519 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:59:01.329 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:59:01.785 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:02.481 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-10 21:59:02.531 [INFO] : [TestNG-method=runTestCase-1] Verify channel changing for IOA/IROA section.
+ Test module "IOA_ChannelSwitch"
+2017-12-10 21:59:02.532 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:59:03.112 [INFO] : [TestNG-method=runTestCase-1] Verify that "On Air Module" is displayed
+ Running action VerifyExist on onAirModule [{xpath=//*[@data-module-type="ON_AIR"]}]
+2017-12-10 21:59:03.335 [INFO] : [TestNG-method=runTestCase-1] Verify "WATCH NOW" link is displayed
+ Running action VerifyExist on watchNowLink [{xpath=//*[@class='onAirWatch col-tn-12 col-xs-6']//a}]
+2017-12-10 21:59:03.512 [INFO] : [TestNG-method=runTestCase-1] Mouseover the "Channel Menu" of items recently on air
+ Running action MouseEvent on OnAirChanelMenu [{css=.channelMenu span}] with data {mouseaction=mouseover}
+2017-12-10 21:59:03.733 [INFO] : [TestNG-method=runTestCase-1] Click "Beauty Channel"
+ Running action Click on BeautyChannel [{xpath=//*[@class="channelMenu"]//li[text()='BEAUTY']}]
+2017-12-10 21:59:05.333 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on watchNowLink [{xpath=//*[@class='onAirWatch col-tn-12 col-xs-6']//a}] with data {wait=3}
+2017-12-10 21:59:08.412 [INFO] : [TestNG-method=runTestCase-1] Verify channel switch to "Beauty Channel"
+ Running action ContainsText on OnAirChanelMenu [{css=.channelMenu span}] with data {text=BEAUTY}
+2017-12-10 21:59:08.565 [INFO] : [TestNG-method=runTestCase-1] Mouseover the "Channel Menu" of items recently on air
+ Running action MouseEvent on OnAirChanelMenu [{css=.channelMenu span}] with data {mouseaction=mouseover}
+2017-12-10 21:59:08.712 [INFO] : [TestNG-method=runTestCase-1] Click Style channel
+ Running action Click on StyleChannel [{xpath=//*[@class="channelMenu"]//li[text()='STYLE']}]
+2017-12-10 21:59:10.097 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on watchNowLink [{xpath=//*[@class='onAirWatch col-tn-12 col-xs-6']//a}] with data {wait=3}
+2017-12-10 21:59:13.319 [INFO] : [TestNG-method=runTestCase-1] Verify channel switch to Style channel
+ Running action ContainsText on OnAirChanelMenu [{css=.channelMenu span}] with data {text=STYLE}
+2017-12-10 21:59:13.431 [INFO] : [TestNG-method=runTestCase-1] Mouseover the "Channel Menu" of items recently on air
+ Running action MouseEvent on OnAirChanelMenu [{css=.channelMenu span}] with data {mouseaction=mouseover}
+2017-12-10 21:59:13.581 [INFO] : [TestNG-method=runTestCase-1] Click "CHRISTMAS" channel
+ Running action Click on ChristmasChannel [{xpath=//*[@class="channelMenu"]//li[text()='CHRISTMAS']}]
+2017-12-10 21:59:15.033 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on watchNowLink [{xpath=//*[@class='onAirWatch col-tn-12 col-xs-6']//a}] with data {wait=3}
+2017-12-10 21:59:18.165 [INFO] : [TestNG-method=runTestCase-1] Verify channel switch to "CHRISTMAS Channel"
+ Running action ContainsText on OnAirChanelMenu [{css=.channelMenu span}] with data {text=CHRISTMAS}
+2017-12-10 21:59:18.313 [INFO] : [TestNG-method=runTestCase-1] Mouseover the "Channel Menu" of items recently on air
+ Running action MouseEvent on OnAirChanelMenu [{css=.channelMenu span}] with data {mouseaction=mouseover}
+2017-12-10 21:59:18.453 [INFO] : [TestNG-method=runTestCase-1] Click "Live Channel"
+ Running action Click on LiveChannel [{xpath=//*[@class="channelMenu"]//span[text()='LIVE']}, {xpath=//*[@class="channelMenu"]//li[text()='LIVE']}]
+2017-12-10 21:59:19.883 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on watchNowLink [{xpath=//*[@class='onAirWatch col-tn-12 col-xs-6']//a}] with data {wait=3}
+2017-12-10 21:59:23.012 [INFO] : [TestNG-method=runTestCase-1] Verify channel switch to "Live Channel"
+ Running action ContainsText on OnAirChanelMenu [{css=.channelMenu span}] with data {text=LIVE}
+2017-12-10 21:59:23.165 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 20 sec
+2017-12-10 21:59:23.499 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Pass_AEM_OnAir_ChannelSwitch_uk_chrome.html

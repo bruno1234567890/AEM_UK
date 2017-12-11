@@ -1,0 +1,34 @@
+2017-12-10 21:46:44.133 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:46:45.165 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:46:45.165 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-10 21:46:48.148 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:46:49.805 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:46:50.018 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:46:50.602 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:46:50.602 [INFO] : [TestNG-method=runTestCase-1] Verify user can be navigated to the TSV PDP after click TSV image/Shop Now button
+ Test module "LinksToTSV"
+2017-12-10 21:46:50.602 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:46:51.117 [INFO] : [TestNG-method=runTestCase-1] Click image of "Item on air"
+ Running action Click on tsvContainer [{class=tsvCountdown}]
+2017-12-10 21:46:55.104 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:46:55.265 [INFO] : [TestNG-method=runTestCase-1] Verify we are at TSV item page
+ Running action VerifyExist on tsvBadge [{xpath=//*[@class="tsvBadge badgeRight"]}]
+2017-12-10 21:46:55.434 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:46:56.683 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:46:57.321 [INFO] : [TestNG-method=runTestCase-1] Click tsv Shop Now button
+ Running action Click on tsvShopBtn [{css=.shopDt}]
+2017-12-10 21:47:00.167 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:47:00.276 [INFO] : [TestNG-method=runTestCase-1] Verify we are at TSV item page
+ Running action VerifyExist on tsvBadge [{xpath=//*[@class="tsvBadge badgeRight"]}]
+2017-12-10 21:47:00.388 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 9 sec
+2017-12-10 21:47:00.736 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_TSV_LinksToTSVItem_uk_chrome.html

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="ProgramGuidePage_AEM" include="MastheadMain">
+	 
+	 <TestObject name="QVCPlusLink"> 
+        	<properties>   
+          		<id>btn2CH</id>          		
+        	</properties> 
+     </TestObject>
+	 
+	  <TestObject name="printHeader"> 
+        	<properties>   
+          		<xpath>//*[.='Print Q Guide']</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="TVHeader"> 
+        	<properties> 				         					
+          		<xpath>//*[.='TV Program Guide']</xpath>          		
+        	</properties> 
+     </TestObject>
+	 
+	  <TestObject name="daliyTab"> 
+        	<properties>   
+          		<xpath>//*[.='Daily']</xpath>          		
+        	</properties> 
+     </TestObject>
+	 
+	   <TestObject name="selectedTab"> 
+        	<properties>   
+          		<xpath>//*[@class='selected' and contains(text(),'&lt;selectedValue&gt;')]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 
+	  <TestObject name="weeklyTab"> 
+        	<properties>   
+          		<xpath>//*[.='Weekly']</xpath>           		
+        	</properties> 
+     </TestObject>
+	 
+	 <TestObject name="daySelection"> 
+        	<properties>   
+          		<xpath>//*[@class='dropDownMenu daySelection']</xpath>           		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="daySelectionCurrentDay"> 
+        	<properties>   
+          		<xpath>//*[@class='dropDownMenu daySelection']//span</xpath>           		
+        	</properties> 
+     </TestObject>
+	 
+	 <TestObject name="hourList"> 
+        	<properties>   
+          		<xpath>//*[@class='hourList']</xpath>           		
+        	</properties> 
+     </TestObject>
+	 
+	 <TestObject name="currentHourTimeZone"> 
+        	<properties>   
+          		<xpath>//*[@class='hourList']//*[@class="current"]//*[contains(text(),'&lt;tzone&gt;')]</xpath>           		
+        	</properties> 
+     </TestObject>
+	  
+	<TestObject name="channelFinder"> 
+        	<properties>   
+          		<xpath>//*[@id='channelFinderPostalCode']</xpath>           		
+        	</properties> 
+     </TestObject>
+	 
+	  <TestObject name="timeZoneSelection"> 
+        	<properties>   
+          		<xpath>//*[@class='dropDownMenu timeZoneSelection']</xpath>           		
+        	</properties> 
+     </TestObject>
+	  <TestObject name="qvcCurrentShow"> 
+        	<properties>  
+				<xpath>(//*[@class="show-col-1 currentShow"]//*[@class="show"]//h3)[1]</xpath>  
+          		<xpath>//*[@data-channelcode="QVC"]//*[@class="show-col-1 currentShow"]//h3</xpath>          		
+        	</properties> 
+     </TestObject>
+	   <TestObject name="timeZone"> 
+        	<properties>   
+          		<xpath>//*[@data-shortname='&lt;timeZoneName&gt;']</xpath>          		
+        	</properties> 
+     </TestObject>
+	   <TestObject name="selectedTimeZone"> 
+        	<properties>   
+          		<xpath>//*[@class="dropDownMenu timeZoneSelection"]//span</xpath>          		
+        	</properties> 
+     </TestObject>
+	  <TestObject name="channelTab"> 
+        	<properties>   
+          		<xpath>//*[@data-channelname='&lt;channel&gt;']</xpath>          		
+        	</properties> 
+     </TestObject>
+	 
+	   <TestObject name="arrowPrev"> 
+        	<properties>   
+          		<xpath>//*[@class='cssNavArrow prev ']</xpath>          		
+        	</properties> 
+     </TestObject>
+	  <TestObject name="arrowNext"> 
+        	<properties>   
+          		<xpath>//*[@class='cssNavArrow next ']</xpath>          		
+        	</properties> 
+     </TestObject>	 
+	  <TestObject name="upperWeekSelection"> 
+        	<properties>   
+          		<xpath>//*[@class='col-tn-12 programView']/*[@class='row weekSelection'][1]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 
+	   <TestObject name="lowerWeekSelection"> 
+        	<properties>   
+          		<xpath>//*[@class='col-tn-12 programView']/*[@class='row weekSelection'][2]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="showList"> 
+        	<properties>   
+          		<xpath>//*[@class='row showList']</xpath>          		
+        	</properties> 
+     </TestObject>
+	  <TestObject name="dateSelection"> 
+        	<properties>   
+          		<xpath>//*[@class="dropDownMenu daySelection"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="displayedDay"> 
+        	<properties>   
+          		<xpath>//*[@class="dropDownMenu daySelection"]//span</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="todaySelection"> 
+        	<properties>   
+          		<xpath>//*[@class="dropDownMenu daySelection"]//span[contains(text(),'Today')]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="date"> 
+        	<properties>   
+          		<xpath>//*[@class="dropDownMenu daySelection"]//li['&lt;index&gt;']</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="selectedDay"> 
+        	<properties>   
+          		<xpath>//*[@class="dropDownMenu daySelection"]//*[@class="selected"]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="2AMShowName"> 
+        	<properties>   
+          		<xpath>//*[@data-range="#2#"]//h3</xpath>          		
+        	</properties> 
+     </TestObject>
+	 
+	 <TestObject name="playLiveButton"> 
+        	<properties>   
+          		<xpath>//*[@data-channelcode='&lt;channel&gt;']//*[@class='btn btn-primary play live hidden-tn']</xpath>          		
+        	</properties> 
+     </TestObject>
+	 
+	 <TestObject name="currentShow"> 
+        	<properties>   
+          		<xpath>//*[@data-channelcode='&lt;channel&gt;']//*[@class='show-col-1 currentShow']</xpath>          		
+        	</properties> 
+     </TestObject>
+	 
+	 <TestObject name="currentShowTitle"> 
+        	<properties>   
+          		<xpath>//*[@data-channelcode='&lt;channel&gt;']//*[@class='btn btn-primary play live hidden-tn']/preceding-sibling::*[1]//h3</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="previousShowTitle"> 
+        	<properties>   
+          		<xpath>//*[@data-channelcode='&lt;channel&gt;']//*[@class='show-col-1 currentShow']/preceding-sibling::*[1]//h3</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="previous2ShowTitle"> 
+        	<properties>   
+          		<xpath>//*[@data-channelcode='&lt;channel&gt;']//*[@class='show-col-1 currentShow']/preceding-sibling::*[2]//h3</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="nextShowTitle"> 
+        	<properties>   
+          		<xpath>//*[@data-channelcode='&lt;channel&gt;']//*[@class='show-col-1 currentShow']/following-sibling::*[1]//h3</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="next2ShowsTitle"> 
+        	<properties>   
+          		<xpath>//*[@data-channelcode='&lt;channel&gt;']//*[@class='show-col-1 currentShow']/following-sibling::*[2]//h3</xpath>          		
+        	</properties> 
+     </TestObject>
+	  <TestObject name="currentShowMoreInfo"> 
+        	<properties>   
+          		<xpath>//*[@data-channelcode='&lt;channel&gt;']//*[@class='btn btn-primary play live hidden-tn']/preceding-sibling::*[1]/a</xpath>          		
+        	</properties> 
+     </TestObject>
+	 
+	  <TestObject name="currentShowHostImg"> 
+        	<properties>   
+          		<xpath>//*[@data-channelcode='&lt;channel&gt;']//*[@class='btn btn-primary play live hidden-tn']/preceding-sibling::*[2]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="previousHourList"> 
+        	<properties>   
+          		<xpath>//*[@class="hourList"]//*[@class="current"]/preceding-sibling::*[1]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="previous2HoursList"> 
+        	<properties>   
+          		<xpath>//*[@class="hourList"]//*[@class="current"]/preceding-sibling::*[2]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="nextHourList"> 
+        	<properties>   
+          		<xpath>//*[@class="hourList"]//*[@class="current"]/following-sibling::*[1]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="next2HoursList"> 
+        	<properties>   
+          		<xpath>//*[@class="hourList"]//*[@class="current"]/following-sibling::*[2]</xpath>          		
+        	</properties> 
+     </TestObject>
+	 
+	 
+	 <TestObject name="homepageImg"> 
+        	<properties>   
+          		<xpath>//*[@class='container breadcrumbs bg-white']//*[@href='http://qa3.qvc.com']</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="firstChannelName"> 
+        	<properties>   
+          		<xpath>//*[@class='channelList']//*[@class='programGuideDailyChannel'][1]//div</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="secondChannelName"> 
+        	<properties>   
+          		<xpath>//*[@class='channelList']//*[@class='programGuideDailyChannel'][2]//div</xpath>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="thirdChannelName"> 
+        	<properties>   
+          		<xpath>//*[@class='channelList']//*[@class='programGuideDailyChannel'][3]//div</xpath>          		
+        	</properties> 
+     </TestObject>
+	 
+	 <TestObject name="channelFinderBtn"> 
+        	<properties>   
+          		<xpath>//*[@class="channelFinderSearchForm"]//*[@class='form-group']/button</xpath>
+				<xpath>//*[@class="channelFinderSearchForm"]//*[@class='form-group has-error']/button</xpath>
+				<xpath>//*[@class="channelFinderSearchForm"]//*[@class='form-group has-success']/button</xpath>     				
+        	</properties> 
+     </TestObject>
+	 <TestObject name="postalCodeErrMsg"> 
+        	<properties>   
+          		<id>channelFinderPostalCode-error</id>       		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="channelFinderResultLayout"> 
+        	<properties>   
+          		<xpath>//*[@class='channelFinderResults']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="channelFinderResultHeader">
+        	<properties>   
+          		<xpath>//*[@class='channelFinderResults']/h2</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="channelDropDownMenuInFinderResult"> 
+        	<properties>   
+          		<xpath>//*[@class='dropDownMenuWrapper']//*[@class="dropDownMenu"]</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="QVCChannelInFinderResult"> 
+        	<properties>   
+          		<xpath>//*[@class='dropDownMenuWrapper']//*[@data-channelcode="QVC"]</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="2CHChannelInFinderResult"> 
+        	<properties>   
+          		<xpath>//*[@class='dropDownMenuWrapper']//*[@data-channelcode="2CH"]</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="beautyIQChannelInFinderResult"> 
+        	<properties>   
+          		<xpath>//*[@class='dropDownMenuWrapper']//*[@data-channelcode="STA"]</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="QVCChannelSelectedInFinderResult"> 
+        	<properties>   
+          		<xpath>//*[@class='dropDownMenuWrapper']//*[@data-channelcode="QVC" and @class="selected"]</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="2CHChannelSelectedInFinderResult"> 
+        	<properties>   
+          		<xpath>//*[@class='dropDownMenuWrapper']//*[@data-channelcode="2CH" and @class="selected"]</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="beautyIQChannelSelectedInFinderResult"> 
+        	<properties>   
+          		<xpath>//*[@class='dropDownMenuWrapper']//*[@data-channelcode="STA" and @class="selected"]</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="zipCodeInFinderResult"> 
+        	<properties>   
+          		<xpath>//*[@class='zip']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="channelContentInFinderResult"> 
+        	<properties>   
+          		<xpath>//*[@class='table-condensed']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="okBtnInFinderResult"> 
+        	<properties>   
+          		<xpath>//*[@class="channelFinderResults"]//*[@class='btn btn-primary']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="closeIconInFinderResult"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-item fancybox-close']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 
+	 <TestObject name="moreInfoLinkOfCurrentShow"> 
+        	<properties>   
+          		<xpath>//*[@data-channelcode='&lt;channel&gt;']//*[@class='show-col-1 currentShow']//*[@class='more']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="moreInfoLinkOfShowOver"> 
+        	<properties>   
+          		<xpath>//*[@data-channelcode='&lt;channel&gt;']//*[@class='show-col-1 currentShow']/preceding-sibling::*[1]//*[@class='more']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="moreInfoLinkOfShowComing"> 
+        	<properties>   
+          		<xpath>//*[@data-channelcode='&lt;channel&gt;']//*[@class='show-col-1 currentShow']/following-sibling::*[1]//*[@class='more']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="onTheShowTitle"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='showProducts']//h4</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="onTheShowCarousel"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='showProductCarousel']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="firstProductImgOfOnTheShowCarousel"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='carouselItem col-sm-2'][1]//*[@class='productImg productBadge bis']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="watchShowBtn"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='btn btn-primary play live']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="watchShowVideo"> 
+        	<properties>   
+          		<xpath>//*[@id="qvcuslive"]</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="playVideoBtn"> 
+        	<properties>   
+          		<xpath>//*[@class="vjs-big-play-button"]</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="pauseVideoBtn"> 
+        	<properties>   
+          		<xpath>//*[@class="vjs-play-control vjs-control vjs-button vjs-playing"]</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="upcomingShowsTitle"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[.='Upcoming Shows']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="upcomingShowDate"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class="col-xs-12 col-sm-4 col-md-3 showReminder"]//span[1]</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="upcomingShowTime"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class="col-xs-12 col-sm-4 col-md-3 showReminder"]//span[2]</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="setReminderBtn"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='btn btn-tertiary setReminderBtn reminderLink rm1']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="hostImg"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='hostImg avatar']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="showTitle"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='showInfo']//h4</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="showDate"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='hidden-tn hidden-xs']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="showStartTime"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='time stime']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="showEndTime"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='time etime']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="showTimeZone"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='dropDownMenu timeZoneSelection']//span</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="firstTimeZone"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='dropDownMenu timeZoneSelection']//li[1]//a</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="secondTimeZone"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='dropDownMenu timeZoneSelection']//li[2]//a</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="thirdTimeZone"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='dropDownMenu timeZoneSelection']//li[3]//a</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="fourthTimeZone"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='dropDownMenu timeZoneSelection']//li[4]//a</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="showDesc"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-wrap fancybox-desktop fancybox-type-html tv-show-info fancybox-opened']//*[@class='row showDesc']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="closeMoreInfoBtn"> 
+        	<properties>   
+          		<xpath>//*[@class='fancybox-item fancybox-close']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="lessInfoLink"> 
+        	<properties>   
+          		<xpath>//*[@class='more open']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="currentTimeZone"> 
+        	<properties>   
+          		<xpath>//*[@class="text-center col-tn-12 col-xs-6"]//*[@class="dropDownMenu timeZoneSelection"]//span</xpath>    		
+        	</properties> 
+     </TestObject>
+	 
+	  <TestObject name="searchProgramGuideFiled"> 
+        	<properties>   
+          		<xpath>//*[@name='searchTerm' and @placeholder='Search the Program Guide']</xpath>    		
+        	</properties> 
+     </TestObject>
+	   <TestObject name="searchButton"> 
+        	<properties>   
+          		<xpath>//*[@type='button' and @aria-label='Search']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 
+	  <TestObject name="searchResults"> 
+        	<properties>   
+          		<xpath>//*[@class='resultsViewWrapper']//h3</xpath>    		
+        	</properties> 
+     </TestObject>
+	 	  <TestObject name="searchResultsQVCTab"> 
+        	<properties>   
+          		<xpath>//*[@aria-controls='results-QVC']</xpath>    		
+        	</properties> 
+     </TestObject>
+	
+	 	  <TestObject name="searchResultsQVC2Tab"> 
+        	<properties>   
+          		<xpath>//*[@aria-controls='results-2CH']</xpath>    		
+        	</properties> 
+     </TestObject>
+	
+	 <TestObject name="searchResultsQVC3Tab"> 
+        	<properties>   
+          		<xpath>//*[@aria-controls='results-STA']</xpath>    		
+        	</properties> 
+     </TestObject>
+	  	  
+	<TestObject name="previousShows"> 
+        	<properties>   
+          		<xpath>//*[@class='resultblock prev']</xpath>    		
+        	</properties> 
+     </TestObject>
+	 
+	 <TestObject name="upcomingShows"> 
+        	<properties>   
+          		<xpath>//*[@class='resultblock upcom']</xpath>    		
+        	</properties> 
+     </TestObject>
+	  <TestObject name="closeResultButton"> 
+        	<properties>   
+          		<xpath>//*[@class='cssCloseBtn closeResults']</xpath>    		
+        	</properties> 
+     </TestObject>
+</Page>

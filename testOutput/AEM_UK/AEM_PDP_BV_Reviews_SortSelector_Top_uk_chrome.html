@@ -1,0 +1,277 @@
+<html>
+<head>
+<title>TestNG:  AEM_PDP_BV_Reviews_SortSelector_Top_uk_chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AEM_PDP_BV_Reviews_SortSelector_Top_uk_chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 11 00:45:38 EST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>94 seconds (94288 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qvc.selenium.plugin.TestCase.runTestCase()'><b>runTestCase</b><br>Test class: com.qvc.selenium.plugin.TestCase (AEM_PDP_BV_Reviews_SortSelector_Top_uk_chrome)<br/>
+<a href="#Output-376150568" onClick='toggleBox("Output-376150568", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-376150568" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-376150568">
+<div class=stepevent.level.toString()>Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Go to URL qa.qvc.com
+ Test module &quot;GotoUrl&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}] with data {wait=2}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 5 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Search regular product
+ Test module &quot;ByProductNum&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=214898}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Search&quot; button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 14 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the top reviews sort selector
+ Test module &quot;VerifyReviewSortSeletorInTop&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class=&quot;breadcrumb pageBreadcrumb&quot;]}] with data {text=Product Detail}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review module display
+ Running action WaitUntilObjectExist on reviewsSortAndPageNav [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the top sort review selector exist
+ Running action VerifyExist on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the first review tilte before sort by &quot;Date - Newest First&quot;
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {storeas=FirstReviewTitle}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Sort review by &quot;Date - Newest First&quot;
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}] with data {text=Date - Newest First}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the first review tilte when sort  by &quot;Date - Newest First&quot;
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {storeas=FirstReviewTitle}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Sort review by &quot;Date - Oldest First&quot;
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}] with data {text=Date - Oldest First}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the order of the review had changed by &quot;Date - Oldest First&quot; so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {text=test contributeer}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the first review tilte when sort  by &quot;Date - Oldest First&quot;
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {storeas=FirstReviewTitle}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Sort review by &quot;Date - Newest First&quot;
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}] with data {text=Date - Newest First}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the order of the review had changed by &quot;Date - Newest First&quot; so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {text=Review Title Test}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Sort review by &quot;Rating - High to Low&quot;
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}] with data {text=Rating - High to Low}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the first review tilte when sort  by &quot;Rating - High to Low&quot;
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {storeas=FirstReviewTitle}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Sort review by &quot;Rating - Low to High &quot;
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}] with data {text=Rating - Low to High}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the order of the review had changed by &quot;Rating - Low to High &quot; so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {text=Review Title Test4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the first review tilte when sort  by &quot;Rating - Low to High &quot;
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {storeas=FirstReviewTitle}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Sort review by &quot;Rating - High to Low&quot;
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}] with data {text=Rating - High to Low}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the order of the review had changed by &quot;Rating - High to Low&quot; so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {text=Review Title Test9}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Sort review by &quot;Helpfulness - High to Low&quot;
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}] with data {text=Helpfulness - High to Low}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the first review tilte when sort  by &quot;Helpfulness - High to Low&quot;
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {storeas=FirstReviewTitle}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Sort review by &quot;Helpfulness - Low to High&quot;
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}] with data {text=Helpfulness - Low to High}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the order of the review had changed by &quot;Helpfulness - Low to High&quot; so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {text=Review Title Test6}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the first review tilte when sort  by &quot;Helpfulness - Low to High&quot;
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {storeas=FirstReviewTitle}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Sort review by &quot;Helpfulness - High to Low&quot;
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}] with data {text=Helpfulness - High to Low}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the order of the review had changed by &quot;Helpfulness - High to Low&quot; so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {text=Review Title Test4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Sort review by &quot;Length - Long to Short&quot;
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}] with data {text=Length - Long to Short}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the first review tilte when sort  by &quot;Length - Long to Short&quot;
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {storeas=FirstReviewTitle}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Sort review by &quot;Length - Short to Long&quot;
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}] with data {text=Length - Short to Long}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the order of the review had changed by &quot;Length - Short to Long&quot; so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {text=Review Title Test22}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the first review tilte when sort  by &quot;Length - Short to Long&quot;
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {storeas=FirstReviewTitle}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Sort review by &quot;Length - Long to Short&quot;
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}] with data {text=Length - Long to Short}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the order of the review had changed by &quot;Length - Long to Short&quot; so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {text=test contributeer}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the first review tilte before sort by &quot;Top Contributors First&quot;
+ Running action Text on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {storeas=FirstReviewTitle}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Sort review by &quot;Top Contributors First&quot;
+ Running action Select on reviewsSortSelectorInTop [{xpath=//*[@id='BVRRContainer']//*[@id='BVRRDisplayContentFooterID'][1]//select[@id=&quot;BVRRDisplayContentSelectBVFrameID&quot;]}] with data {text=Top Contributors First}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the review title exist
+ Running action WaitUntilObjectExist on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the order of the review had changed by &quot;Top Contributors First&quot; so the first review tilte had changed too
+ Running action NotContainsText on firstReviewTitle [{xpath=//*[@id='BVRRContainer']//*[@id=&quot;BVRRDisplayContentBodyID&quot;]/div[1]//*[@class=&quot;BVRRValue BVRRReviewTitle&quot;]}] with data {text=Review Title Test22}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 1 min, 12 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Report file generated: c:\seleniumframeworkplugin\testOutput\16\DetailReport\Pass_AEM_PDP_BV_Reviews_SortSelector_Top_uk_chrome.html
+</div><br/><br/>
+</div>
+</td>
+<td></td>
+<td>94</td>
+<td>com.qvc.selenium.plugin.TestCase@1c69d655</td></tr>
+</table><p>
+</body>
+</html>

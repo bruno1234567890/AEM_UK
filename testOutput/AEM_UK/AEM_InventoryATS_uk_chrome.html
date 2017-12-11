@@ -1,0 +1,199 @@
+<html>
+<head>
+<title>TestNG:  AEM_InventoryATS_uk_chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AEM_InventoryATS_uk_chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 11 00:41:03 EST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>71 seconds (71558 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qvc.selenium.plugin.TestCase.runTestCase()'><b>runTestCase</b><br>Test class: com.qvc.selenium.plugin.TestCase (AEM_InventoryATS_uk_chrome)<br/>
+<a href="#Output-1589230978" onClick='toggleBox("Output-1589230978", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1589230978" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1589230978">
+<div class=stepevent.level.toString()>Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Go to URL &quot;qa.qvc.com&quot;
+ Test module &quot;GotoUrl&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}] with data {wait=2}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 6 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Search regular product
+ Test module &quot;ByProductNum&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229454}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Search&quot; button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 17 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the instock message
+ Test module &quot;VerifyInStockSelected&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class=&quot;breadcrumb pageBreadcrumb&quot;]}] with data {text=Product Detail}
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats=&quot;Y&quot;]//*[@class=&quot;swatchBox selectOption&quot;][1]}, {xpath=//*[@class=&quot;buyBoxSelect buyBoxSelectColor&quot;]//*[@class=&quot;swatchBox selectOption&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class=&quot;selectColor&quot; and @ats=&quot;Y&quot;][1]}, {xpath=//*[@ats=&quot;Y&quot;][1]/*[@class=&quot;swatchBox selectColor&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have in stock size
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class=&quot;selectSize&quot; and @ats=&quot;Y&quot;][1]}, {xpath=//*[@ats=&quot;Y&quot;][1]/*[@class=&quot;swatchBox selectSize&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify in stocked displayed when hover  over the swatch for the in stock option
+ Running action VerifyExist on inStockedSelected [{xpath=//*[@class=&quot;status instock&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify in stocked displayed when hover  over the swatch for the in stock option
+ Running action ContainsText on inStockedSelected [{xpath=//*[@class=&quot;status instock&quot;]}] with data {text=In Stock}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 16 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Search regular product
+ Test module &quot;ByProductNum&quot;&quot; with data: &quot;{productnum=149204}&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=149204}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Search&quot; button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 13 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the instock message
+ Test module &quot;VerifyInStockSelected&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class=&quot;breadcrumb pageBreadcrumb&quot;]}] with data {text=Product Detail}
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats=&quot;Y&quot;]//*[@class=&quot;swatchBox selectOption&quot;][1]}, {xpath=//*[@class=&quot;buyBoxSelect buyBoxSelectColor&quot;]//*[@class=&quot;swatchBox selectOption&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class=&quot;selectColor&quot; and @ats=&quot;Y&quot;][1]}, {xpath=//*[@ats=&quot;Y&quot;][1]/*[@class=&quot;swatchBox selectColor&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Select the 1st available color
+ Running action Click on FirstAvailableColor [{xpath=//*[@class=&quot;selectColor&quot; and @ats=&quot;Y&quot;][1]}, {xpath=//*[@ats=&quot;Y&quot;][1]/*[@class=&quot;swatchBox selectColor&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have in stock size
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class=&quot;selectSize&quot; and @ats=&quot;Y&quot;][1]}, {xpath=//*[@ats=&quot;Y&quot;][1]/*[@class=&quot;swatchBox selectSize&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click the swatch for the in stock option
+ Running action Click on FirstAvailableSize [{xpath=//*[@class=&quot;selectSize&quot; and @ats=&quot;Y&quot;][1]}, {xpath=//*[@ats=&quot;Y&quot;][1]/*[@class=&quot;swatchBox selectSize&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Running action WaitUntilObjectExist on FirstAvailableSize [{xpath=//*[@class=&quot;selectSize&quot; and @ats=&quot;Y&quot;][1]}, {xpath=//*[@ats=&quot;Y&quot;][1]/*[@class=&quot;swatchBox selectSize&quot;]}] with data {wait=5}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify in stocked displayed when hover  over the swatch for the in stock option
+ Running action VerifyExist on inStockedSelected [{xpath=//*[@class=&quot;status instock&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify in stocked displayed when hover  over the swatch for the in stock option
+ Running action ContainsText on inStockedSelected [{xpath=//*[@class=&quot;status instock&quot;]}] with data {text=In Stock}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 13 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Report file generated: c:\seleniumframeworkplugin\testOutput\16\DetailReport\Pass_AEM_InventoryATS_uk_chrome.html
+</div><br/><br/>
+</div>
+</td>
+<td></td>
+<td>71</td>
+<td>com.qvc.selenium.plugin.TestCase@16b9670e</td></tr>
+</table><p>
+</body>
+</html>

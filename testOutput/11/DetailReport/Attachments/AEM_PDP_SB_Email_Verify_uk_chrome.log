@@ -1,0 +1,93 @@
+2017-12-05 21:10:17.658 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:10:18.587 [INFO] : [TestNG-method=runTestCase-1] Open browser and go to qa.qvc.com
+ Test module "GotoUrl"
+2017-12-05 21:10:18.588 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:10:20.847 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:10:22.351 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:10:22.529 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:10:23.356 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-05 21:10:23.365 [INFO] : [TestNG-method=runTestCase-1] Search product
+ Test module "ByProductNum"
+2017-12-05 21:10:23.366 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:10:27.911 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229454}
+2017-12-05 21:10:28.517 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:10:31.799 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:10:37.168 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 13 sec
+2017-12-05 21:10:37.263 [INFO] : [TestNG-method=runTestCase-1] Verify the all information of email to a friend
+ Test module "VerifyEmailToAFriend"
+2017-12-05 21:10:37.268 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:10:37.456 [INFO] : [TestNG-method=runTestCase-1] Verify the "Share this Product" area existed.
+ Running action VerifyExist on shareThisProductArea [{xpath=//*[@id='pageContent']//*[@class="col-tn-12 col-md-6 socialShare"]}]
+2017-12-05 21:10:37.601 [INFO] : [TestNG-method=runTestCase-1] Click on the "Eamil" button
+ Running action Click on emailBtn [{class=btnEMailAFriend fancybox fancybox.iframe}, {xpath=//*[@class="btnEMailAFriend fancybox fancybox.iframe"]}]
+2017-12-05 21:10:39.404 [INFO] : [TestNG-method=runTestCase-1] Verify the "Email" pop up window which is diaplayed.
+ Running action VerifyExist on framePopUpWindow [{class=fancybox-skin}]
+2017-12-05 21:10:39.570 [INFO] : [TestNG-method=runTestCase-1] Switch to frame - email option.
+ Running action Frame on newFrame [{class=fancybox-iframe}] with data {frameaction=switchto}
+2017-12-05 21:10:39.732 [INFO] : [TestNG-method=runTestCase-1] Verify the email title: Email to a Friend
+ Running action ContainsText on emailTitle [{xpath=//*[@id="divEmailToAFriend"]/h1}] with data {text=Email to a friend}
+2017-12-05 21:10:39.913 [INFO] : [TestNG-method=runTestCase-1] Verify the "Recipient's Email:" existed.
+ Running action ContainsText on recipientEmailContext [{id=lblRecipientEmail}] with data {text=Recipient's email:}
+2017-12-05 21:10:40.072 [INFO] : [TestNG-method=runTestCase-1] Verify the textbox of "Recipient's Email" existed.
+ Running action VerifyExist on recipientEmailTextbox [{id=txtRecipientEmail}]
+2017-12-05 21:10:40.200 [INFO] : [TestNG-method=runTestCase-1] Verify the "This e-mail address will only be used for sending your current message." existed.
+ Running action ContainsText on emailWarningMsg [{xpath=//*[@id='divFormButtons']/span}] with data {text=This email address will only be used for sending your current message.}
+2017-12-05 21:10:40.380 [INFO] : [TestNG-method=runTestCase-1] Verify the "Recipient's First Name:" existed.
+ Running action ContainsText on recipientFirstNameContext [{id=lblRecipientFirstName}] with data {text=Recipient's First Name:}
+2017-12-05 21:10:40.700 [INFO] : [TestNG-method=runTestCase-1] Verify the textbox of "Recipient's First Name"  existed.
+ Running action VerifyExist on recipientFirstNameTextbox [{id=txtRecipientFirstName}]
+2017-12-05 21:10:40.817 [INFO] : [TestNG-method=runTestCase-1] Verify the "Recipient's Last Name:" existed.
+ Running action ContainsText on recipientLastNameContext [{id=lblRecipientLastName}] with data {text=Recipient's surname:}
+2017-12-05 21:10:40.995 [INFO] : [TestNG-method=runTestCase-1] verify the textbox of "Recipient's Last Name:" existed.
+ Running action VerifyExist on recipientLastNameTextbox [{id=txtRecipientLastName}]
+2017-12-05 21:10:41.118 [INFO] : [TestNG-method=runTestCase-1] Verify the "Sender's Email Address:" existed.
+ Running action ContainsText on senderEmailAddressContext [{id=lblSenderEmail}] with data {text=Sender's Email:}
+2017-12-05 21:10:41.267 [INFO] : [TestNG-method=runTestCase-1] Verify the textbox of "Sender's Email Address" existed.
+ Running action VerifyExist on senderEmailAddressTextbox [{id=txtSenderEmail}]
+2017-12-05 21:10:41.382 [INFO] : [TestNG-method=runTestCase-1] Verify the "Sender's First Name:" existed.
+ Running action ContainsText on senderFirstNameContext [{id=lblSenderFirstName}] with data {text=Sender's First Name:}
+2017-12-05 21:10:41.742 [INFO] : [TestNG-method=runTestCase-1] Verify the textbox of "Sender's First Name" existed
+ Running action VerifyExist on senderFirstNameTextbox [{id=txtSenderFirstName}]
+2017-12-05 21:10:41.890 [INFO] : [TestNG-method=runTestCase-1] Verify the "Sender's Last Name:" existed.
+ Running action ContainsText on senderLastNameContext [{id=lblSenderLastName}] with data {text=Sender's surname:}
+2017-12-05 21:10:42.075 [INFO] : [TestNG-method=runTestCase-1] Verify the textbox of "Sender's Last Name" existed
+ Running action VerifyExist on senderLastNameTextbox [{id=txtSenderLastName}]
+2017-12-05 21:10:42.247 [INFO] : [TestNG-method=runTestCase-1] Verify the "Short Message:" existed.
+ Running action ContainsText on shortMsgContext [{id=lblShortMessage}] with data {text=Short Message:}
+2017-12-05 21:10:42.444 [INFO] : [TestNG-method=runTestCase-1] Verify the textbox of "Short Message:" existed
+ Running action VerifyExist on shortMsgTextbox [{id=taShortMessage}]
+2017-12-05 21:10:42.577 [INFO] : [TestNG-method=runTestCase-1] Verify the "Please double-check the information you've provided for accuracy. Then, click on the "Submit" button below." existed.
+ Running action ContainsText on warningMsg [{class=indentedInstructions}] with data {text=Please double-check the information you've provided then click the Submit button below.}
+2017-12-05 21:10:42.745 [INFO] : [TestNG-method=runTestCase-1] Verify the "Required Fields" existed.
+ Running action ContainsText on requiredFieldsContext [{id=frmEmailFriend}] with data {text=Required Fields}
+2017-12-05 21:10:42.961 [INFO] : [TestNG-method=runTestCase-1] Click on the "SUBMIT" button.
+ Running action Click on submitBtn [{id=btnSubmit}]
+2017-12-05 21:10:43.295 [INFO] : [TestNG-method=runTestCase-1] Verify the "We're sorry. Some of the information you entered needs to be modified. Please try again." existed.
+ Running action ContainsText on errMsgTitle [{id=errConsole}] with data {text=Sorry - we're missing the information highlighted below. If you have any questions, call freephone 0800 51 41 31 or click the Contact Us link at the bottom of the page for assistance.}
+2017-12-05 21:10:43.474 [INFO] : [TestNG-method=runTestCase-1] Verify the messag "Email Address is a required field." of  "Recipient's Email" existed.
+ Running action ContainsText on recipientEmailAddresswarningMsg [{id=errRecipientEmail}] with data {text=You must enter an email address in the field}
+2017-12-05 21:10:43.619 [INFO] : [TestNG-method=runTestCase-1] Verify the message "First Name cannot be left blank" of "Sender's First Name" existed.
+ Running action ContainsText on recipientFirstNameWarningMsg [{id=errRecipientFirstName}] with data {text=First name cannot be left blank}
+2017-12-05 21:10:43.789 [INFO] : [TestNG-method=runTestCase-1] Verify the message "Last Name cannot be left blank" of "Sender's Last Name" existed.
+ Running action ContainsText on recipientLastNameWarningMsg [{id=errRecipientLastName}] with data {text=Last name cannot be left blank}
+2017-12-05 21:10:43.956 [INFO] : [TestNG-method=runTestCase-1] Verify the message "Email Address is a required field." of "Sender's Email Address"  existed.
+ Running action ContainsText on senderEmailAddresswarningMsg [{id=errSenderEmail}] with data {text=You must enter an email address in the field}
+2017-12-05 21:10:44.118 [INFO] : [TestNG-method=runTestCase-1] Verify the message "First Name cannot be left blank" of "Sender's First Name" existed.
+ Running action ContainsText on senderFirstNameWarningMsg [{id=errSenderFirstName}] with data {text=First name cannot be left blank}
+2017-12-05 21:10:44.271 [INFO] : [TestNG-method=runTestCase-1] Verify the message "Last Name cannot be left blank" of "Sender's Last Name" existed.
+ Running action ContainsText on senderLastNameWarningMsg [{id=errSenderLastName}] with data {text=Last name cannot be left blank}
+2017-12-05 21:10:44.434 [INFO] : [TestNG-method=runTestCase-1] Swith back
+ Running action Frame on newFrame [{class=fancybox-iframe}] with data {frameaction=switchback}
+2017-12-05 21:10:44.446 [INFO] : [TestNG-method=runTestCase-1] Click on the "Close" button to close the pop up window.
+ Running action Click on frameCloseBtn [{class=fancybox-item fancybox-close}, {xpath=//*[@class="fancybox-item fancybox-close"]}]
+2017-12-05 21:10:46.046 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 8 sec
+2017-12-05 21:10:46.332 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_PDP_SB_Email_Verify_uk_chrome.html

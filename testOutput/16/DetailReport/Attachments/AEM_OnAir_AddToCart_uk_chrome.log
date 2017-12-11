@@ -1,0 +1,46 @@
+2017-12-11 00:47:43.756 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-11 00:47:44.873 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-11 00:47:44.874 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-11 00:47:47.863 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-11 00:47:49.672 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-11 00:47:49.825 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-11 00:47:50.500 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-11 00:47:50.553 [INFO] : [TestNG-method=runTestCase-1] Verify click IOA "Add to Cart" nav to shopping cart
+ Test module "IOA_AddtoCart"
+2017-12-11 00:47:50.554 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-11 00:47:51.075 [INFO] : [TestNG-method=runTestCase-1] Verify the on air module exist
+ Running action VerifyExist on onAirModule [{xpath=//*[@data-module-type="ON_AIR"]}]
+2017-12-11 00:47:51.286 [INFO] : [TestNG-method=runTestCase-1] If have add to cart button on homepage
+ Running action CheckForElements on addToBasketIOABtn [{xpath=//*[@data-module-type='ON_AIR']//div[@class='onAirProdBtn']//a[contains(text(),'Add to Basket')]}]
+2017-12-11 00:47:51.405 [INFO] : [TestNG-method=runTestCase-1] "View More" not exist when have "add to cart"
+ Running action VerifyNotExist on viewMoreBtn [{xpath=//*[@class='shopBtn']//*[@class='btn btn-primary']}]
+2017-12-11 00:47:51.449 [INFO] : [TestNG-method=runTestCase-1] Click add to cart button of item on air
+ Running action Click on addToBasketIOABtn [{xpath=//*[@data-module-type='ON_AIR']//div[@class='onAirProdBtn']//a[contains(text(),'Add to Basket')]}]
+2017-12-11 00:47:52.889 [INFO] : [TestNG-method=runTestCase-1] If the item is waitlist
+ Running action CheckForElements on yesBtn [{xpath=//input[@class='primaryButton' and @value='Yes']}, {xpath=//*[@value='Yes']}]
+2017-12-11 00:47:58.721 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on firstAvailableSize [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectSize") and contains(@style,'active')][1]}]
+2017-12-11 00:47:59.307 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available size
+ Running action Click on firstAvailableSize [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectSize") and contains(@style,'active')][1]}]
+2017-12-11 00:48:00.007 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on firstAvailableColor [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectColor") and contains(@style,'active')][1]}]
+2017-12-11 00:48:00.381 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available color
+ Running action Click on firstAvailableColor [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectColor") and contains(@style,'active')][1]}]
+2017-12-11 00:48:01.085 [INFO] : [TestNG-method=runTestCase-1] If have continue button
+ Running action CheckForElements on continueBtn [{xpath=//*[@id='divButtons']//*[@value='CONTINUE']}]
+2017-12-11 00:48:01.234 [INFO] : [TestNG-method=runTestCase-1] Click continue button on make your selection page
+ Running action Click on continueBtn [{xpath=//*[@id='divButtons']//*[@value='CONTINUE']}]
+2017-12-11 00:48:08.489 [INFO] : [TestNG-method=runTestCase-1] Wait until shopping cart page displayed
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-11 00:48:08.611 [INFO] : [TestNG-method=runTestCase-1] Verify we are at shopping cart page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Shopping basket}
+2017-12-11 00:48:08.691 [INFO] : [TestNG-method=runTestCase-1] If have view more button
+ Running action CheckForElements on viewMoreBtn [{xpath=//*[@class='shopBtn']//*[@class='btn btn-primary']}]
+2017-12-11 00:48:14.344 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 23 sec
+2017-12-11 00:48:14.661 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\16\DetailReport\Pass_AEM_OnAir_AddToCart_uk_chrome.html

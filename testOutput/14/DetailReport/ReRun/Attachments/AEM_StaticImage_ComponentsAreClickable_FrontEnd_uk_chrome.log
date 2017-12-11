@@ -1,0 +1,32 @@
+2017-12-10 22:01:22.023 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 22:01:23.081 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvcuk.com"
+ Test module "GotoUrl"
+2017-12-10 22:01:23.081 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-10 22:01:27.819 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 22:01:29.380 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 22:01:29.548 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 22:01:30.148 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-10 22:01:30.179 [INFO] : [TestNG-method=runTestCase-1] Verify that the large static image is displayed on home  page and linking to related page
+ Test module "VerifyLargeStaticImgModule"
+2017-12-10 22:01:30.179 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on BackToHomePage [{xpath=//img[@title='QVC']}, {id=pageMasthead}, {id=divMastheadLogo}, {id=mastheadLogo}, {linkText=Home}]
+2017-12-10 22:01:30.348 [INFO] : [TestNG-method=runTestCase-1] Verify the large static image is displayed
+ Running action VerifyExist on largeStaticImage [{xpath=//*[@class='visible-dt cq-dd-largeDisplayImage']}]
+2017-12-10 22:01:30.510 [INFO] : [TestNG-method=runTestCase-1] Click the large static image
+ Running action Click on largeStaticImage [{xpath=//*[@class='visible-dt cq-dd-largeDisplayImage']}]
+2017-12-10 22:02:06.296 [INFO] : [TestNG-method=runTestCase-1] Verify the "Home" breadcrumb is displayed
+ Running action VerifyExist on homeBreadcrumb [{id=breadCrumbs}]
+2017-12-10 22:02:06.449 [INFO] : [TestNG-method=runTestCase-1] If have category
+ Running action CheckForElements on categoryLabel [{xpath=//*[@id='divNavFacetCategory']//h3}]
+2017-12-10 22:02:06.597 [INFO] : [TestNG-method=runTestCase-1] Verify the "Category" label is displayed
+ Running action ContainsText on categoryLabel [{xpath=//*[@id='divNavFacetCategory']//h3}] with data {text=Category}
+2017-12-10 22:02:06.733 [INFO] : [TestNG-method=runTestCase-1] If have page title
+ Running action CheckForElements on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-10 22:02:06.881 [INFO] : [TestNG-method=runTestCase-1] Verify the page title is displayed
+ Running action VerifyExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-10 22:02:06.980 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 36 sec
+2017-12-10 22:02:07.266 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\ReRun\Pass_AEM_StaticImage_ComponentsAreClickable_FrontEnd_uk_chrome.html

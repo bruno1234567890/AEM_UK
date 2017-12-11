@@ -1,0 +1,313 @@
+2017-12-05 21:06:44.687 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:06:45.688 [INFO] : [TestNG-method=runTestCase-1] Go to url qa.qvc.com
+ Test module "GotoUrl"
+2017-12-05 21:06:45.689 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:06:47.875 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:06:49.396 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:06:49.566 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:06:50.417 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-05 21:06:50.427 [INFO] : [TestNG-method=runTestCase-1] Search a product that has not question
+ Test module "ByProductNum"
+2017-12-05 21:06:50.429 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:06:55.058 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=831348}
+2017-12-05 21:06:55.804 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:06:59.805 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:07:05.331 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-05 21:07:05.332 [INFO] : [TestNG-method=runTestCase-1] Click "Be the first to ask a question" link
+ Test module "ClickBeTheFirstToAskAQuestion"
+2017-12-05 21:07:05.333 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:07:05.528 [INFO] : [TestNG-method=runTestCase-1] Verify "Community Q&A" container is shown
+ Running action VerifyExist on communityQandASection [{id=pdCommunityQA}]
+2017-12-05 21:07:05.682 [INFO] : [TestNG-method=runTestCase-1] Verify the container contains text "Customer Q&A"
+ Running action ContainsText on communityQandASection [{id=pdCommunityQA}] with data {text=Customer Q&A}
+2017-12-05 21:07:05.805 [INFO] : [TestNG-method=runTestCase-1] Click "Be the first to ask a question" link
+ Running action Click on beTheFistToAskAQuestionLink [{xpath=//*[@id="BVQASummaryBoxAskFirstQuestionID"]/a}]
+2017-12-05 21:07:06.054 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-05 21:07:06.055 [INFO] : [TestNG-method=runTestCase-1] Login by email
+ Test module "CreateNewAccount"
+2017-12-05 21:07:06.056 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on signInHeader [{id=divPageTitle}] with data {wait=10}
+2017-12-05 21:07:16.196 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Sign In" page
+ Running action ContainsText on signInHeader [{id=divPageTitle}] with data {text=Sign In}
+2017-12-05 21:07:16.323 [INFO] : [TestNG-method=runTestCase-1] Click "Sign up" button on "Sign in" page
+ Running action Click on signUpBtn [{id=btnSignUp}, {name=Signup Button}]
+2017-12-05 21:07:18.635 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-05 21:07:18.747 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:07:24.125 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Create a QVC account" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Create a QVC account}
+2017-12-05 21:07:24.237 [INFO] : [TestNG-method=runTestCase-1] Input email address
+ Running action SendKeys on emailAddressTextbox [{id=txtEmailAddress}] with data {text=a20171205090724@qvc.com}
+2017-12-05 21:07:24.644 [INFO] : [TestNG-method=runTestCase-1] Input email address again
+ Running action SendKeys on confEmailWebEdit [{id=txtEmailAddressConf}] with data {text=a20171205090724@qvc.com}
+2017-12-05 21:07:25.083 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on passwordTxt [{id=lblPassword}]
+2017-12-05 21:07:25.196 [INFO] : [TestNG-method=runTestCase-1] Input password
+ Running action SendKeys on passwordTextbox [{id=txtPassword}] with data {text=Qvctester1}
+2017-12-05 21:07:25.509 [INFO] : [TestNG-method=runTestCase-1] Confirm password
+ Running action SendKeys on confirmPasswordTextbox [{id=txtVerifyPassword}] with data {text=Qvctester1}
+2017-12-05 21:07:25.927 [INFO] : [TestNG-method=runTestCase-1] Select the security question
+ Running action Select on securityQuestionList [{id=txtSecQuestion1}] with data {text=Where were you born?}
+2017-12-05 21:07:26.594 [INFO] : [TestNG-method=runTestCase-1] Enter the answer
+ Running action SendKeys on securityAnswerTextbox [{id=txtSecAnswer1}] with data {text=1988}
+2017-12-05 21:07:26.913 [INFO] : [TestNG-method=runTestCase-1] Input first name
+ Running action SendKeys on firstNameWebEdit [{id=txtFirstName}] with data {text=SeleniumFirstName}
+2017-12-05 21:07:27.312 [INFO] : [TestNG-method=runTestCase-1] Input last name
+ Running action SendKeys on lastNameWebEdit [{id=txtLastName}] with data {text=SeleniumLastName}
+2017-12-05 21:07:27.722 [INFO] : [TestNG-method=runTestCase-1] Input house number
+ Running action SendKeys on houseNumWebEdit [{id=txtAddress1}] with data {text=485}
+2017-12-05 21:07:27.988 [INFO] : [TestNG-method=runTestCase-1] Input street name
+ Running action SendKeys on addressWebEdit [{id=txtAddress2}] with data {text=Pavilion 9 Byland Way}
+2017-12-05 21:07:28.447 [INFO] : [TestNG-method=runTestCase-1] Input city
+ Running action SendKeys on cityWebEdit [{id=txtCity}] with data {text=Billingham}
+2017-12-05 21:07:28.773 [INFO] : [TestNG-method=runTestCase-1] Input Zip code
+ Running action SendKeys on zipCodeWebEdit [{id=txtZipPostalCode}] with data {text=TS23 4EB}
+2017-12-05 21:07:29.081 [INFO] : [TestNG-method=runTestCase-1] Input evening phone number
+ Running action SendKeys on phoneWebEdit [{id=txtphone1}] with data {text=3333 333 3333}
+2017-12-05 21:07:29.425 [INFO] : [TestNG-method=runTestCase-1] Input birthday date
+ Running action SendKeys on dateOfBirthWebEdit [{id=txtDateOfBirth}] with data {text=01/02/1988}
+2017-12-05 21:07:29.719 [INFO] : [TestNG-method=runTestCase-1] Input pin
+ Running action SendKeys on pinWebEdit [{id=txtPin}] with data {text=9818}
+2017-12-05 21:07:29.975 [INFO] : [TestNG-method=runTestCase-1] Click "Sign Up" button
+ Running action Click on signUpBtn [{xpath=//*[@id='btnContinue'and @value='Sign Up']}]
+2017-12-05 21:07:32.748 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-05 21:07:32.866 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Request completed" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Request completed}
+2017-12-05 21:07:32.981 [INFO] : [TestNG-method=runTestCase-1] Click "Return To QVC UK Homepage" button
+ Running action Click on returnToHomepageBtn [{id=btnTakeMeShopping}]
+2017-12-05 21:07:34.878 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:07:35.927 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at home page
+ Running action VerifyExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:07:36.774 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 30 sec
+2017-12-05 21:07:36.781 [INFO] : [TestNG-method=runTestCase-1] Search a product that has not question
+ Test module "ByProductNum"
+2017-12-05 21:07:36.782 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:07:41.354 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=831348}
+2017-12-05 21:07:42.049 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:07:45.655 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:07:51.053 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-05 21:07:51.053 [INFO] : [TestNG-method=runTestCase-1] Click "Be the first to ask a question" link
+ Test module "ClickBeTheFirstToAskAQuestion"
+2017-12-05 21:07:51.053 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Product Detail" page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:07:51.226 [INFO] : [TestNG-method=runTestCase-1] Verify "Community Q&A" container is shown
+ Running action VerifyExist on communityQandASection [{id=pdCommunityQA}]
+2017-12-05 21:07:51.356 [INFO] : [TestNG-method=runTestCase-1] Verify the container contains text "Customer Q&A"
+ Running action ContainsText on communityQandASection [{id=pdCommunityQA}] with data {text=Customer Q&A}
+2017-12-05 21:07:51.464 [INFO] : [TestNG-method=runTestCase-1] Click "Be the first to ask a question" link
+ Running action Click on beTheFistToAskAQuestionLink [{xpath=//*[@id="BVQASummaryBoxAskFirstQuestionID"]/a}]
+2017-12-05 21:07:51.718 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-05 21:07:51.719 [INFO] : [TestNG-method=runTestCase-1] Type information and click on the Preview button
+ Test module "TypeTextAndClickPreviewBtn"" with data: "{askaquestiontext=Ask a question test, nicknametitletext=Choose a nickname, recommendproduct=Yes, shoppingrange=1-2 years, emailaddress=test@qvc.com, addadditionaltext=This is a text information in the add additional details text box, citytext=China, perfectgift=Mums, yourage=25-34}"
+2017-12-05 21:07:51.720 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Ask a question" page
+ Running action ContainsText on pageHeader [{id=divPageTitle}] with data {text=Ask a question}
+2017-12-05 21:07:54.225 [INFO] : [TestNG-method=runTestCase-1] Type information in the textbox of "Ask a question"
+ Running action SendKeys on askAQuestionTextbox [{id=BVQAFieldTextQuestionSummaryID}] with data {text=Ask a question test}
+2017-12-05 21:07:54.643 [INFO] : [TestNG-method=runTestCase-1] Type information in the textbox of  "Add Additional Details"
+ Running action SendKeys on addAdditionalDetailsTextbox [{id=BVQAFieldTextAreaQuestionDetailsID}] with data {text=This is a text information in the add additional details text box}
+2017-12-05 21:07:55.293 [INFO] : [TestNG-method=runTestCase-1] Verify if the nickname need to be typed and verify the "Choose a nickname" existed
+ Running action CheckForElements on chooseANicknameTitle [{xpath=//div[@class='BVQAFieldHeader' and contains(text(),'Choose a nickname')]}]
+2017-12-05 21:07:55.418 [INFO] : [TestNG-method=runTestCase-1] Type a nickname in the textbox
+ Running action SendKeys on nicknameTextbox [{id=BVQAFieldTextQuestionUsernicknameID}, {id=BVRRFieldTextReviewUsernicknameID}] with data {text=a20171205090755qvcPas}
+2017-12-05 21:07:55.875 [INFO] : [TestNG-method=runTestCase-1] Save the nickname
+ Running action Text on nicknameTextbox [{id=BVQAFieldTextQuestionUsernicknameID}, {id=BVRRFieldTextReviewUsernicknameID}] with data {storeas=NickName}
+2017-12-05 21:07:55.992 [INFO] : [TestNG-method=runTestCase-1] Verify if the nickname need to be typed and verify the "Your nickname" existed
+ Running action CheckForElements on yourNicknameTitle [{xpath=//div[@class='BVQAFieldHeader' and contains(text(),'Your nickname')]}]
+2017-12-05 21:08:01.245 [INFO] : [TestNG-method=runTestCase-1] Select ture in the  checkbox of " Please send me an email when my question is posted"
+ Running action SendKeys on cityTextbox [{xpath=//*[@class="BVQAFieldMain"]//*[@id="BVQAFieldTextQuestionUserlocationID"]}] with data {text=China}
+2017-12-05 21:08:01.531 [INFO] : [TestNG-method=runTestCase-1] Type a email address in the text box of "Email"
+ Running action SendKeys on emailTextbox [{xpath=//*[@id="BVQAQuestionUserEmailAddressFieldID"]//*[@id="BVQAFieldTextQuestionUseremailID"]}] with data {text=test@qvc.com}
+2017-12-05 21:08:01.936 [INFO] : [TestNG-method=runTestCase-1] Select a age in the "Your Age" option
+ Running action Select on yourAgeOption [{id=BVQAFieldSelectQuestionContextualDataFieldAgeID}] with data {text=25-34}
+2017-12-05 21:08:02.400 [INFO] : [TestNG-method=runTestCase-1] Verify the "And how long have you been shopping with QVC?" existed
+ Running action Text on howLongShoppingContext [{xpath=//*[@id="ContextualDataFieldHowLongShopping"]//*[@class="BVQAFieldHeader"]}] with data {storeas=HowLongShoppingText}
+2017-12-05 21:08:02.540 [INFO] : [TestNG-method=runTestCase-1] Select a year in the  "And how long have you been shopping with QVC?" option
+ Running action Select on howLongShoppingOption [{xpath=//*[@id="ContextualDataFieldHowLongShopping"]//*[@id="BVQAFieldSelectQuestionContextualDataFieldHowLongShoppingID"]}] with data {text=1-2 years}
+2017-12-05 21:08:03.023 [INFO] : [TestNG-method=runTestCase-1] Store the "Would you recommend this product as a gift?"
+ Running action Text on recommendProductContext [{xpath=//*[@id="ContextualDataFieldWouldRecommend"]//*[@class="BVQAFieldHeader"]}] with data {storeas=RecommendProductText}
+2017-12-05 21:08:03.172 [INFO] : [TestNG-method=runTestCase-1] Select a value in the  "Would you recommend this product as a gift?" option
+ Running action Select on recommendProductOption [{xpath=//*[@id="ContextualDataFieldWouldRecommend"]//*[@id="BVQAFieldSelectQuestionContextualDataFieldWouldRecommendID"]}] with data {text=Yes}
+2017-12-05 21:08:03.607 [INFO] : [TestNG-method=runTestCase-1] Store the "Who would this be a perfect gift for?"
+ Running action Text on perfectGiftContext [{xpath=//*[@id="ContextualDataFieldPerfectGiftFor"]//*[@class="BVQAFieldHeader"]}] with data {storeas=PerfectGiftText}
+2017-12-05 21:08:03.754 [INFO] : [TestNG-method=runTestCase-1] Select a value in the  "Who would this be a perfect gift for?" option
+ Running action Select on perfectGiftOption [{xpath=//*[@id="ContextualDataFieldPerfectGiftFor"]//*[@id="BVQAFieldSelectQuestionContextualDataFieldPerfectGiftForID"]}] with data {text=Mums}
+2017-12-05 21:08:04.234 [INFO] : [TestNG-method=runTestCase-1] Store the "Please send me an email when my question is posted."
+ Running action Text on questionPostedSendemailContext [{xpath=//*[@id="BVQAQuestionSendEmailAlertsID"]//*[@class="BVQAFieldFollowingText"]}] with data {storeas=QuestionPosted}
+2017-12-05 21:08:04.389 [INFO] : [TestNG-method=runTestCase-1] Save the check box of "Please send me an email when my question is answered."
+ Running action Text on questionAnsweredSendemailContext [{xpath=//*[@id="BVQAQuestionSendEmailAlertWhenAnsweredID"]//*[@class="BVQAFieldFollowingText"]}] with data {storeas=QuestionAnswered}
+2017-12-05 21:08:04.542 [INFO] : [TestNG-method=runTestCase-1] Select ture in the checkbox of "I accept these Terms of Use"
+ Running action Click on acceptTermCheckbox [{xpath=//*[@id='BVQAFieldCheckboxQuestionAgreedToTermsAndConditionsID']}, {id=BVQAFieldCheckboxQuestionAgreedToTermsAndConditionsID}]
+2017-12-05 21:08:04.773 [INFO] : [TestNG-method=runTestCase-1] Click on the "Preview" button
+ Running action Click on previewBtn [{id=BVQAPreviewQuestionButtonID}]
+2017-12-05 21:08:05.342 [INFO] : [TestNG-method=runTestCase-1] Verify the "I accept these Terms of Use." is set true
+ Running action CheckForElements on termsErrTitle [{xpath=//*[@id='BVQAQuestionAgreedToTermsAndConditionsID']/*[@class="BVQAError BVQAErrorText BVQAFieldErrorMessage"]}]
+2017-12-05 21:08:10.793 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 19 sec
+2017-12-05 21:08:10.793 [INFO] : [TestNG-method=runTestCase-1] Verify the information
+ Test module "VerifyInformation"" with data: "{askaquestiontext=Ask a question test, recommendproduct=Yes, shoppingrange=1-2 years, emailaddress=test@qvc.com, addadditionaltext=This is a text information in the add additional details text box, citytext=China, perfectgift=Mums, yourage=25-34}"
+2017-12-05 21:08:10.793 [INFO] : [TestNG-method=runTestCase-1] Verify we are at the "Preview your Question" page
+ Running action ContainsText on divHomepage [{id=divPageTitle}] with data {text=Preview your Question}
+2017-12-05 21:08:11.186 [INFO] : [TestNG-method=runTestCase-1] Verify the ask a question context
+ Running action ContainsText on askQuestionContext [{xpath=//*[@class="BVQAQuestionSummary"]}] with data {text=Ask a question test}
+2017-12-05 21:08:11.593 [INFO] : [TestNG-method=runTestCase-1] Verify the nick name
+ Running action ContainsText on nickName [{xpath=//*[@id='BVQAQuestionOverallSummaryID']//*[@class="BVQANickname"]}] with data {text=a20171205090755qvcPas}
+2017-12-05 21:08:11.771 [INFO] : [TestNG-method=runTestCase-1] Verify the city name
+ Running action ContainsText on cityName [{xpath=//*[@id='BVQAQuestionOverallSummaryID']//*[@class="BVQALocation"]}] with data {text=China}
+2017-12-05 21:08:11.939 [INFO] : [TestNG-method=runTestCase-1] Verify the "Add Additional Details"
+ Running action ContainsText on addAdditionalDetails [{xpath=//*[@id='BVQAQuestionOverallSummaryID']/*[@class="BVQAContentText BVQAQuestionDetails"]}] with data {text=This is a text information in the add additional details text box}
+2017-12-05 21:08:12.121 [INFO] : [TestNG-method=runTestCase-1] Verify the "age" existed
+ Running action ContainsText on ageContext [{xpath=//*[@id='BVQAQuestionOverallSummaryID']//*[@class="BVQALabel BVQAContextDataValuePrefix BVQAContextDataValueagePrefix"]}] with data {text=Age}
+2017-12-05 21:08:12.309 [INFO] : [TestNG-method=runTestCase-1] Verify the age range existed
+ Running action ContainsText on ageRange [{xpath=//*[@id='BVQAQuestionOverallSummaryID']//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValueage"]}] with data {text=25-34}
+2017-12-05 21:08:12.481 [INFO] : [TestNG-method=runTestCase-1] Verify the "How long have you been shopping with QVC?" existed
+ Running action ContainsText on howLongContext [{xpath=//*[@class="BVQALabel BVQAContextDataValuePrefix BVQAContextDataValuehowLongShoppingPrefix"]}] with data {text=How long have you been shopping with QVC?}
+2017-12-05 21:08:12.679 [INFO] : [TestNG-method=runTestCase-1] Verify the shopping range existed
+ Running action ContainsText on shoppingRange [{xpath=//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValuehowLongShopping"]}] with data {text=1-2 years}
+2017-12-05 21:08:12.863 [INFO] : [TestNG-method=runTestCase-1] Verify the "Would you recommend this product as a gift?" existed
+ Running action ContainsText on recommendProductContext [{xpath=//*[@class="BVQALabel BVQAContextDataValuePrefix BVQAContextDataValuewouldRecommendPrefix"]}] with data {text=Would you recommend this product as a gift?}
+2017-12-05 21:08:13.026 [INFO] : [TestNG-method=runTestCase-1] Verify the answer of "Would you recommend this product as a gift?" existed
+ Running action ContainsText on recommendProductAnswer [{xpath=//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValuewouldRecommend"]}] with data {text=Yes}
+2017-12-05 21:08:13.208 [INFO] : [TestNG-method=runTestCase-1] Verify the "Who would this be a perfect gift for?" existed
+ Running action ContainsText on perfectGiftContext [{xpath=//*[@class="BVQALabel BVQAContextDataValuePrefix BVQAContextDataValueperfectGiftForPrefix"]}] with data {text=Who would this be a perfect gift for?}
+2017-12-05 21:08:13.364 [INFO] : [TestNG-method=runTestCase-1] Verify the answer of "Who would this be a perfect gift for?" existed
+ Running action ContainsText on perfectGiftAnswer [{xpath=//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValueperfectGiftFor"]}] with data {text=Mums}
+2017-12-05 21:08:13.538 [INFO] : [TestNG-method=runTestCase-1] Verify the checkbox of "Please send me an email when my question is posted" is set ture
+ Running action VerifyExist on sendMeEmailCheckboxTure [{xpath=//*[@class="BVQAFieldMain"]/*[@checked="checked" and @id="BVQAFieldCheckboxQuestionUseremailalertsID"]}]
+2017-12-05 21:08:13.642 [INFO] : [TestNG-method=runTestCase-1] Verify the "Please send me an email when my question is posted." existed
+ Running action ContainsText on sendPostedContext [{xpath=//*[@id='BVQAQuestionSendEmailAlertsID']//*[@class="BVQAFieldFollowingText"]}] with data {text=Please send me an email when my question is posted.}
+2017-12-05 21:08:13.790 [INFO] : [TestNG-method=runTestCase-1] Verify the "Please send me an email when my question is answered." existed
+ Running action ContainsText on sendAnswerContext [{xpath=//*[@id='BVQAQuestionSendEmailAlertWhenAnsweredID']//*[@class="BVQAFieldFollowingText"]}] with data {text=Please send me an email when my question is answered.}
+2017-12-05 21:08:13.933 [INFO] : [TestNG-method=runTestCase-1] Verify the "Please send me an email when my question is answered" is set ture
+ Running action VerifyExist on sendAnswerCheckboxTure [{xpath=//*[@id='BVQAFieldCheckboxQuestionSendemailonanswerID' and @checked="checked"]}]
+2017-12-05 21:08:14.060 [INFO] : [TestNG-method=runTestCase-1] Verify the "Notifications will be sent to " existed
+ Running action ContainsText on notificationsContext [{xpath=//*[@id="BVQAQuestionPreviewNotificationID"]}] with data {text=Notifications will be sent to}
+2017-12-05 21:08:14.229 [INFO] : [TestNG-method=runTestCase-1] Verify the  email address
+ Running action ContainsText on emailAddress [{xpath=//*[@id="BVQAQuestionPreviewNotificationID"]/*[@class="BVQAEmailAddress"]}] with data {text=test@qvc.com}
+2017-12-05 21:08:14.397 [INFO] : [TestNG-method=runTestCase-1] Verify the "I accept these " existed
+ Running action ContainsText on acceptContext [{xpath=//*[@id='BVQAQuestionAgreedToTermsAndConditionsID']//*[@class="BVQAFieldFollowingText"]}] with data {text=I accept these}
+2017-12-05 21:08:14.558 [INFO] : [TestNG-method=runTestCase-1] Verify the "Terms Of Use" link existed
+ Running action VerifyExist on termsOfUseLink [{linkText=Terms of Use}]
+2017-12-05 21:08:14.852 [INFO] : [TestNG-method=runTestCase-1] Verify the "Questions and answers are typically posted within 72 hours, pending approval" existed
+ Running action ContainsText on approvalWarningMsg [{id=BVQAQuestionPostDelayDisclaimerID}] with data {text=Questions and answers are typically posted within 72 hours, pending approval}
+2017-12-05 21:08:15.025 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-05 21:08:15.026 [INFO] : [TestNG-method=runTestCase-1] Click on the "Edit"  button
+ Test module "ClickEditBtn"
+2017-12-05 21:08:15.027 [INFO] : [TestNG-method=runTestCase-1] Verify we are at the "Preview your Question" page
+ Running action ContainsText on divHomepage [{id=divPageTitle}] with data {text=Preview your Question}
+2017-12-05 21:08:15.134 [INFO] : [TestNG-method=runTestCase-1] Click on the "Edit" button
+ Running action Click on editBtn [{id=BVQAEditQuestionButtonID}]
+2017-12-05 21:08:15.695 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Ask a question" page
+ Running action ContainsText on pageHeader [{id=divPageTitle}] with data {text=Ask a question}
+2017-12-05 21:08:15.822 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-05 21:08:15.839 [INFO] : [TestNG-method=runTestCase-1] Edit the information in the "Ask A Question" page
+ Test module "TypeTextAndClickPreviewBtn"" with data: "{askaquestiontext=EDIT-Ask a question test, nicknametitletext=Choose a nickname, recommendproduct=No, shoppingrange=2-5 years, emailaddress=test@123qvc.com, addadditionaltext=EDIT-This is a text information in the add additional details text box, citytext=EDIT-China, perfectgift=Teachers, yourage=35-44}"
+2017-12-05 21:08:15.840 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "Ask a question" page
+ Running action ContainsText on pageHeader [{id=divPageTitle}] with data {text=Ask a question}
+2017-12-05 21:08:15.943 [INFO] : [TestNG-method=runTestCase-1] Type information in the textbox of "Ask a question"
+ Running action SendKeys on askAQuestionTextbox [{id=BVQAFieldTextQuestionSummaryID}] with data {text=EDIT-Ask a question test}
+2017-12-05 21:08:16.326 [INFO] : [TestNG-method=runTestCase-1] Type information in the textbox of  "Add Additional Details"
+ Running action SendKeys on addAdditionalDetailsTextbox [{id=BVQAFieldTextAreaQuestionDetailsID}] with data {text=EDIT-This is a text information in the add additional details text box}
+2017-12-05 21:08:16.858 [INFO] : [TestNG-method=runTestCase-1] Verify if the nickname need to be typed and verify the "Choose a nickname" existed
+ Running action CheckForElements on chooseANicknameTitle [{xpath=//div[@class='BVQAFieldHeader' and contains(text(),'Choose a nickname')]}]
+2017-12-05 21:08:16.980 [INFO] : [TestNG-method=runTestCase-1] Type a nickname in the textbox
+ Running action SendKeys on nicknameTextbox [{id=BVQAFieldTextQuestionUsernicknameID}, {id=BVRRFieldTextReviewUsernicknameID}] with data {text=a20171205090816qvcPas}
+2017-12-05 21:08:17.367 [INFO] : [TestNG-method=runTestCase-1] Save the nickname
+ Running action Text on nicknameTextbox [{id=BVQAFieldTextQuestionUsernicknameID}, {id=BVRRFieldTextReviewUsernicknameID}] with data {storeas=NickName}
+2017-12-05 21:08:17.493 [INFO] : [TestNG-method=runTestCase-1] Verify if the nickname need to be typed and verify the "Your nickname" existed
+ Running action CheckForElements on yourNicknameTitle [{xpath=//div[@class='BVQAFieldHeader' and contains(text(),'Your nickname')]}]
+2017-12-05 21:08:23.166 [INFO] : [TestNG-method=runTestCase-1] Select ture in the  checkbox of " Please send me an email when my question is posted"
+ Running action SendKeys on cityTextbox [{xpath=//*[@class="BVQAFieldMain"]//*[@id="BVQAFieldTextQuestionUserlocationID"]}] with data {text=EDIT-China}
+2017-12-05 21:08:23.538 [INFO] : [TestNG-method=runTestCase-1] Type a email address in the text box of "Email"
+ Running action SendKeys on emailTextbox [{xpath=//*[@id="BVQAQuestionUserEmailAddressFieldID"]//*[@id="BVQAFieldTextQuestionUseremailID"]}] with data {text=test@123qvc.com}
+2017-12-05 21:08:23.895 [INFO] : [TestNG-method=runTestCase-1] Select a age in the "Your Age" option
+ Running action Select on yourAgeOption [{id=BVQAFieldSelectQuestionContextualDataFieldAgeID}] with data {text=35-44}
+2017-12-05 21:08:24.434 [INFO] : [TestNG-method=runTestCase-1] Verify the "And how long have you been shopping with QVC?" existed
+ Running action Text on howLongShoppingContext [{xpath=//*[@id="ContextualDataFieldHowLongShopping"]//*[@class="BVQAFieldHeader"]}] with data {storeas=HowLongShoppingText}
+2017-12-05 21:08:24.584 [INFO] : [TestNG-method=runTestCase-1] Select a year in the  "And how long have you been shopping with QVC?" option
+ Running action Select on howLongShoppingOption [{xpath=//*[@id="ContextualDataFieldHowLongShopping"]//*[@id="BVQAFieldSelectQuestionContextualDataFieldHowLongShoppingID"]}] with data {text=2-5 years}
+2017-12-05 21:08:25.082 [INFO] : [TestNG-method=runTestCase-1] Store the "Would you recommend this product as a gift?"
+ Running action Text on recommendProductContext [{xpath=//*[@id="ContextualDataFieldWouldRecommend"]//*[@class="BVQAFieldHeader"]}] with data {storeas=RecommendProductText}
+2017-12-05 21:08:25.223 [INFO] : [TestNG-method=runTestCase-1] Select a value in the  "Would you recommend this product as a gift?" option
+ Running action Select on recommendProductOption [{xpath=//*[@id="ContextualDataFieldWouldRecommend"]//*[@id="BVQAFieldSelectQuestionContextualDataFieldWouldRecommendID"]}] with data {text=No}
+2017-12-05 21:08:25.681 [INFO] : [TestNG-method=runTestCase-1] Store the "Who would this be a perfect gift for?"
+ Running action Text on perfectGiftContext [{xpath=//*[@id="ContextualDataFieldPerfectGiftFor"]//*[@class="BVQAFieldHeader"]}] with data {storeas=PerfectGiftText}
+2017-12-05 21:08:25.844 [INFO] : [TestNG-method=runTestCase-1] Select a value in the  "Who would this be a perfect gift for?" option
+ Running action Select on perfectGiftOption [{xpath=//*[@id="ContextualDataFieldPerfectGiftFor"]//*[@id="BVQAFieldSelectQuestionContextualDataFieldPerfectGiftForID"]}] with data {text=Teachers}
+2017-12-05 21:08:26.855 [INFO] : [TestNG-method=runTestCase-1] Store the "Please send me an email when my question is posted."
+ Running action Text on questionPostedSendemailContext [{xpath=//*[@id="BVQAQuestionSendEmailAlertsID"]//*[@class="BVQAFieldFollowingText"]}] with data {storeas=QuestionPosted}
+2017-12-05 21:08:27.007 [INFO] : [TestNG-method=runTestCase-1] Save the check box of "Please send me an email when my question is answered."
+ Running action Text on questionAnsweredSendemailContext [{xpath=//*[@id="BVQAQuestionSendEmailAlertWhenAnsweredID"]//*[@class="BVQAFieldFollowingText"]}] with data {storeas=QuestionAnswered}
+2017-12-05 21:08:27.179 [INFO] : [TestNG-method=runTestCase-1] Select ture in the checkbox of "I accept these Terms of Use"
+ Running action Click on acceptTermCheckbox [{xpath=//*[@id='BVQAFieldCheckboxQuestionAgreedToTermsAndConditionsID']}, {id=BVQAFieldCheckboxQuestionAgreedToTermsAndConditionsID}]
+2017-12-05 21:08:27.540 [INFO] : [TestNG-method=runTestCase-1] Click on the "Preview" button
+ Running action Click on previewBtn [{id=BVQAPreviewQuestionButtonID}]
+2017-12-05 21:08:28.164 [INFO] : [TestNG-method=runTestCase-1] Verify the "I accept these Terms of Use." is set true
+ Running action CheckForElements on termsErrTitle [{xpath=//*[@id='BVQAQuestionAgreedToTermsAndConditionsID']/*[@class="BVQAError BVQAErrorText BVQAFieldErrorMessage"]}]
+2017-12-05 21:08:28.289 [INFO] : [TestNG-method=runTestCase-1] Select ture in the checkbox of "I accept these Terms of Use"
+ Running action Click on acceptTermCheckbox [{xpath=//*[@id='BVQAFieldCheckboxQuestionAgreedToTermsAndConditionsID']}, {id=BVQAFieldCheckboxQuestionAgreedToTermsAndConditionsID}]
+2017-12-05 21:08:28.499 [INFO] : [TestNG-method=runTestCase-1] Click on the "Preview" button
+ Running action Click on previewBtn [{id=BVQAPreviewQuestionButtonID}]
+2017-12-05 21:08:28.988 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 13 sec
+2017-12-05 21:08:28.989 [INFO] : [TestNG-method=runTestCase-1] Verify the edited information and click on the "Submit" button
+ Test module "VerifyInformation"" with data: "{askaquestiontext=EDIT-Ask a question test, recommendproduct=No, shoppingrange=2-5 years, emailaddress=test@123qvc.com, addadditionaltext=EDIT-This is a text information in the add additional details text box, citytext=EDIT-China, perfectgift=Teachers, yourage=35-44}"
+2017-12-05 21:08:28.990 [INFO] : [TestNG-method=runTestCase-1] Verify we are at the "Preview your Question" page
+ Running action ContainsText on divHomepage [{id=divPageTitle}] with data {text=Preview your Question}
+2017-12-05 21:08:29.137 [INFO] : [TestNG-method=runTestCase-1] Verify the ask a question context
+ Running action ContainsText on askQuestionContext [{xpath=//*[@class="BVQAQuestionSummary"]}] with data {text=EDIT-Ask a question test}
+2017-12-05 21:08:29.281 [INFO] : [TestNG-method=runTestCase-1] Verify the nick name
+ Running action ContainsText on nickName [{xpath=//*[@id='BVQAQuestionOverallSummaryID']//*[@class="BVQANickname"]}] with data {text=a20171205090816qvcPas}
+2017-12-05 21:08:29.416 [INFO] : [TestNG-method=runTestCase-1] Verify the city name
+ Running action ContainsText on cityName [{xpath=//*[@id='BVQAQuestionOverallSummaryID']//*[@class="BVQALocation"]}] with data {text=EDIT-China}
+2017-12-05 21:08:29.550 [INFO] : [TestNG-method=runTestCase-1] Verify the "Add Additional Details"
+ Running action ContainsText on addAdditionalDetails [{xpath=//*[@id='BVQAQuestionOverallSummaryID']/*[@class="BVQAContentText BVQAQuestionDetails"]}] with data {text=EDIT-This is a text information in the add additional details text box}
+2017-12-05 21:08:29.687 [INFO] : [TestNG-method=runTestCase-1] Verify the "age" existed
+ Running action ContainsText on ageContext [{xpath=//*[@id='BVQAQuestionOverallSummaryID']//*[@class="BVQALabel BVQAContextDataValuePrefix BVQAContextDataValueagePrefix"]}] with data {text=Age}
+2017-12-05 21:08:29.815 [INFO] : [TestNG-method=runTestCase-1] Verify the age range existed
+ Running action ContainsText on ageRange [{xpath=//*[@id='BVQAQuestionOverallSummaryID']//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValueage"]}] with data {text=35-44}
+2017-12-05 21:08:29.966 [INFO] : [TestNG-method=runTestCase-1] Verify the "How long have you been shopping with QVC?" existed
+ Running action ContainsText on howLongContext [{xpath=//*[@class="BVQALabel BVQAContextDataValuePrefix BVQAContextDataValuehowLongShoppingPrefix"]}] with data {text=How long have you been shopping with QVC?}
+2017-12-05 21:08:30.095 [INFO] : [TestNG-method=runTestCase-1] Verify the shopping range existed
+ Running action ContainsText on shoppingRange [{xpath=//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValuehowLongShopping"]}] with data {text=2-5 years}
+2017-12-05 21:08:30.238 [INFO] : [TestNG-method=runTestCase-1] Verify the "Would you recommend this product as a gift?" existed
+ Running action ContainsText on recommendProductContext [{xpath=//*[@class="BVQALabel BVQAContextDataValuePrefix BVQAContextDataValuewouldRecommendPrefix"]}] with data {text=Would you recommend this product as a gift?}
+2017-12-05 21:08:36.699 [INFO] : [TestNG-method=runTestCase-1] Verify the answer of "Would you recommend this product as a gift?" existed
+ Running action ContainsText on recommendProductAnswer [{xpath=//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValuewouldRecommend"]}] with data {text=No}
+2017-12-05 21:08:36.875 [INFO] : [TestNG-method=runTestCase-1] Verify the "Who would this be a perfect gift for?" existed
+ Running action ContainsText on perfectGiftContext [{xpath=//*[@class="BVQALabel BVQAContextDataValuePrefix BVQAContextDataValueperfectGiftForPrefix"]}] with data {text=Who would this be a perfect gift for?}
+2017-12-05 21:08:37.018 [INFO] : [TestNG-method=runTestCase-1] Verify the answer of "Who would this be a perfect gift for?" existed
+ Running action ContainsText on perfectGiftAnswer [{xpath=//*[@class="BVQAValue BVQAContextDataValue BVQAContextDataValueperfectGiftFor"]}] with data {text=Teachers}
+2017-12-05 21:08:37.183 [INFO] : [TestNG-method=runTestCase-1] Verify the checkbox of "Please send me an email when my question is posted" is set ture
+ Running action VerifyExist on sendMeEmailCheckboxTure [{xpath=//*[@class="BVQAFieldMain"]/*[@checked="checked" and @id="BVQAFieldCheckboxQuestionUseremailalertsID"]}]
+2017-12-05 21:08:37.309 [INFO] : [TestNG-method=runTestCase-1] Verify the "Please send me an email when my question is posted." existed
+ Running action ContainsText on sendPostedContext [{xpath=//*[@id='BVQAQuestionSendEmailAlertsID']//*[@class="BVQAFieldFollowingText"]}] with data {text=Please send me an email when my question is posted.}
+2017-12-05 21:08:37.485 [INFO] : [TestNG-method=runTestCase-1] Verify the "Please send me an email when my question is answered." existed
+ Running action ContainsText on sendAnswerContext [{xpath=//*[@id='BVQAQuestionSendEmailAlertWhenAnsweredID']//*[@class="BVQAFieldFollowingText"]}] with data {text=Please send me an email when my question is answered.}
+2017-12-05 21:08:37.679 [INFO] : [TestNG-method=runTestCase-1] Verify the "Please send me an email when my question is answered" is set ture
+ Running action VerifyExist on sendAnswerCheckboxTure [{xpath=//*[@id='BVQAFieldCheckboxQuestionSendemailonanswerID' and @checked="checked"]}]
+2017-12-05 21:08:37.825 [INFO] : [TestNG-method=runTestCase-1] Verify the "Notifications will be sent to " existed
+ Running action ContainsText on notificationsContext [{xpath=//*[@id="BVQAQuestionPreviewNotificationID"]}] with data {text=Notifications will be sent to}
+2017-12-05 21:08:37.989 [INFO] : [TestNG-method=runTestCase-1] Verify the  email address
+ Running action ContainsText on emailAddress [{xpath=//*[@id="BVQAQuestionPreviewNotificationID"]/*[@class="BVQAEmailAddress"]}] with data {text=test@123qvc.com}
+2017-12-05 21:08:38.171 [INFO] : [TestNG-method=runTestCase-1] Verify the "I accept these " existed
+ Running action ContainsText on acceptContext [{xpath=//*[@id='BVQAQuestionAgreedToTermsAndConditionsID']//*[@class="BVQAFieldFollowingText"]}] with data {text=I accept these}
+2017-12-05 21:08:38.362 [INFO] : [TestNG-method=runTestCase-1] Verify the "Terms Of Use" link existed
+ Running action VerifyExist on termsOfUseLink [{linkText=Terms of Use}]
+2017-12-05 21:08:38.559 [INFO] : [TestNG-method=runTestCase-1] Verify the "Questions and answers are typically posted within 72 hours, pending approval" existed
+ Running action ContainsText on approvalWarningMsg [{id=BVQAQuestionPostDelayDisclaimerID}] with data {text=Questions and answers are typically posted within 72 hours, pending approval}
+2017-12-05 21:08:38.745 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 9 sec
+2017-12-05 21:08:39.078 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_PDP_BV_Q&A_BeTheFirstToAskQuestion_NewAccount_Edit_uk_chrome.html

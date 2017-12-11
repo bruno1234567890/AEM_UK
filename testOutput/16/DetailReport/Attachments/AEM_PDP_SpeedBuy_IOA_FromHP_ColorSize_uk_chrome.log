@@ -1,0 +1,71 @@
+2017-12-11 00:46:59.279 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-11 00:47:00.214 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvcuk.com
+ Test module "GotoUrl"
+2017-12-11 00:47:00.214 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-11 00:47:02.388 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-11 00:47:03.874 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-11 00:47:04.028 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-11 00:47:04.853 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-11 00:47:04.911 [INFO] : [TestNG-method=runTestCase-1] Navigate to Item On Air area on home page and choose channel "BEAUTY"
+ Test module "IOA_SwitchToSingleChannel"" with data: "{channelname=BEAUTY}"
+2017-12-11 00:47:04.912 [INFO] : [TestNG-method=runTestCase-1] Wait until "OnAirModule" is displayed
+ Running action WaitUntilObjectExist on onAirModule [{xpath=//*[@data-module-type="ON_AIR"]}] with data {wait=2}
+2017-12-11 00:47:07.097 [INFO] : [TestNG-method=runTestCase-1] Verify "WATCH NOW" link is displayed
+ Running action VerifyExist on watchNowLink [{xpath=//*[@class='onAirWatch col-tn-12 col-xs-6']//a}]
+2017-12-11 00:47:07.233 [INFO] : [TestNG-method=runTestCase-1] Mouseover the "Channel Menu" of items recently on air
+ Running action MouseEvent on OnAirChanelMenu [{css=.channelMenu span}] with data {mouseaction=mouseover}
+2017-12-11 00:47:07.416 [INFO] : [TestNG-method=runTestCase-1] Verify if we are at current channel
+ Running action CheckForElements on iOAChannelName [{xpath=//*[@data-module-type="ON_AIR"]//li[text()="<ChannelName>"]}] with data {channelname=BEAUTY}
+2017-12-11 00:47:07.540 [INFO] : [TestNG-method=runTestCase-1] Select a channel
+ Running action Click on iOAChannelName [{xpath=//*[@data-module-type="ON_AIR"]//li[text()="<ChannelName>"]}] with data {channelname=BEAUTY}
+2017-12-11 00:47:08.889 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on watchNowLink [{xpath=//*[@class='onAirWatch col-tn-12 col-xs-6']//a}] with data {wait=3}
+2017-12-11 00:47:11.975 [INFO] : [TestNG-method=runTestCase-1] Verify channel switch to specific channel
+ Running action ContainsText on OnAirChanelMenu [{css=.channelMenu span}] with data {text=BEAUTY}
+2017-12-11 00:47:12.081 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-11 00:47:12.083 [INFO] : [TestNG-method=runTestCase-1] Click speed buy button in IOA area
+ Test module "IOA_ClickSpeedBuy"
+2017-12-11 00:47:12.084 [INFO] : [TestNG-method=runTestCase-1] Verify the On Air  product existed
+ Running action VerifyExist on onAirArea [{xpath=//*[@data-module-type="ON_AIR"][1]//*[@class="row"]//*[@class="onAirProdInfo"]//*[@class="row"]}]
+2017-12-11 00:47:12.208 [INFO] : [TestNG-method=runTestCase-1] Save the product description
+ Running action Text on onAirDesc [{xpath=//*[@data-module-type='ON_AIR']//div[@class='onAirProdInfo']//*[contains(@class,'productDesc')]}] with data {storeas=ProductDesc}
+2017-12-11 00:47:12.341 [INFO] : [TestNG-method=runTestCase-1] Click speed buy button of item on air
+ Running action Click on speedBuyBtn [{xpath=//div[@class='onAirProdBtn']//a[text()='Speed Buy ']}]
+2017-12-11 00:47:14.115 [INFO] : [TestNG-method=runTestCase-1] If the item is waitlist
+ Running action CheckForElements on yesBtn [{xpath=//input[@class='primaryButton' and @value='Yes']}, {xpath=//*[@value='Yes']}]
+2017-12-11 00:47:19.295 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-11 00:47:19.389 [INFO] : [TestNG-method=runTestCase-1] Choose color and size displayed on Make your selection page and click continue button
+ Test module "VerifyStyleItem"" with data: "{pagetitle=Make Your Selection}"
+2017-12-11 00:47:19.392 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at correct page: Make your selection
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Make Your Selection}
+2017-12-11 00:47:19.559 [INFO] : [TestNG-method=runTestCase-1] Verify the item name is corrected
+ Running action ContainsText on productDesc [{xpath=//*[@id='divProductDetailDescriptionSelection']/h1}, {xpath=//*[@class="pdShortDesc"]//h1}, {xpath=//*[@id='frmProductDetail']//h1[@class='fn']}] with data {text=Liz Earle Skin Repair Duo}
+2017-12-11 00:47:19.741 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on firstAvailableColor [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectColor") and contains(@style,'active')][1]}]
+2017-12-11 00:47:20.237 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available color
+ Running action Click on firstAvailableColor [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectColor") and contains(@style,'active')][1]}]
+2017-12-11 00:47:20.848 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on firstAvailableSize [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]//*[@ats="Y"][1]}, {xpath=//*[contains(@class,"selectSize") and contains(@style,'active')][1]}]
+2017-12-11 00:47:26.431 [INFO] : [TestNG-method=runTestCase-1] Click continue button on make your selection page
+ Running action Click on continueBtn [{xpath=//*[@id='divButtons']//*[@value='CONTINUE']}]
+2017-12-11 00:47:30.526 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 11 sec
+2017-12-11 00:47:30.537 [INFO] : [TestNG-method=runTestCase-1] Verify that we're on page Speed Buy One-Step Verification
+ Test module "VerifySpeedBuyPage"
+2017-12-11 00:47:30.540 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on speedBuyHeader [{id=divPageTitle}] with data {wait=5}
+2017-12-11 00:47:35.655 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at "SpeedBuy" page
+ Running action ContainsText on speedBuyHeader [{id=divPageTitle}] with data {text=Speed Buy One-Step Verification}
+2017-12-11 00:47:35.765 [INFO] : [TestNG-method=runTestCase-1] Verify that email address field exist
+ Running action VerifyExist on emailAddressLabel [{id=lblEmailAddress}]
+2017-12-11 00:47:35.880 [INFO] : [TestNG-method=runTestCase-1] Verify that password field exist
+ Running action VerifyExist on passWordLabel [{id=lblPassword}]
+2017-12-11 00:47:35.999 [INFO] : [TestNG-method=runTestCase-1] Verify review check box exists
+ Running action VerifyExist on ReviewCheckBox [{id=cbReviewOrderTotal}]
+2017-12-11 00:47:36.115 [INFO] : [TestNG-method=runTestCase-1] Verify review text
+ Running action ContainsText on ReviewText [{id=lblReviewOrderTotal}] with data {text=I would like to review my order total (with P&P included) or edit my order / delivery and payment details before I submit it.}
+2017-12-11 00:47:36.278 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-11 00:47:36.579 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\16\DetailReport\Pass_AEM_PDP_SpeedBuy_IOA_FromHP_ColorSize_uk_chrome.html

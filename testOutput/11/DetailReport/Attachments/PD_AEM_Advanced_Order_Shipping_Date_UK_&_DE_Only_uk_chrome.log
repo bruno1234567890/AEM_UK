@@ -1,0 +1,41 @@
+2017-12-05 21:05:04.235 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:05:05.335 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvc.de"
+ Test module "GotoUrl"
+2017-12-05 21:05:05.336 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:05:07.746 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:05:09.214 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:05:09.407 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:05:10.183 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 4 sec
+2017-12-05 21:05:10.192 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "ByProductNum"
+2017-12-05 21:05:10.193 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:05:14.755 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=759677}
+2017-12-05 21:05:15.504 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:05:20.192 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:05:25.879 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 15 sec
+2017-12-05 21:05:25.879 [INFO] : [TestNG-method=runTestCase-1] Verify the label of advance item
+ Test module "VerifyAOLable"
+2017-12-05 21:05:25.880 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 21:05:26.042 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableAOColorOption [{xpath=//*[@class="selectOption" and @ats="A"][1]}, {xpath=//*[@ats="A"][1]/*[@class="swatchBox selectOption"]}]
+2017-12-05 21:05:31.379 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableAOColor [{xpath=//*[@class="selectColor" and @ats="A"][1]}, {xpath=//*[@ats="A"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-05 21:05:32.011 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available Advance item color
+ Running action Click on FirstAvailableAOColor [{xpath=//*[@class="selectColor" and @ats="A"][1]}, {xpath=//*[@ats="A"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-05 21:05:32.589 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on FirstAvailableAOSize [{xpath=//*[@class="selectSize" and @ats="A"][1]}, {xpath=//*[@ats="A"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-05 21:05:37.612 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on AdvanceOrderStatusLabel [{xpath=//*[@class="status advancedOrder"]}]
+2017-12-05 21:05:37.767 [INFO] : [TestNG-method=runTestCase-1] Verify the label of Advance item label
+ Running action ContainsText on AdvanceOrderStatusLabel [{xpath=//*[@class="status advancedOrder"]}] with data {text=This item is available through Advanced Order. It will be shipped the week commencing}
+2017-12-05 21:05:38.063 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 12 sec
+2017-12-05 21:05:38.364 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_PD_AEM_Advanced_Order_Shipping_Date_UK_&_DE_Only_uk_chrome.html

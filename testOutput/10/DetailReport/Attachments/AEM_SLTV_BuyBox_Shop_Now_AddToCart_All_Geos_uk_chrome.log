@@ -1,0 +1,271 @@
+2017-12-05 05:48:56.074 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 05:48:59.819 [INFO] : [TestNG-method=runTestCase-1] Navigate to qa.qvcuk.com
+ Test module "GotoUrl"
+2017-12-05 05:49:00.022 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 05:49:03.786 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 05:49:05.469 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 05:49:05.661 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 05:49:06.414 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-05 05:49:06.475 [INFO] : [TestNG-method=runTestCase-1] Navigate to watch tv live
+ Test module "NavToWatchTVLive"
+2017-12-05 05:49:06.481 [INFO] : [TestNG-method=runTestCase-1] Hover the "Shop QVC TV" menu
+ Running action MouseEvent on ShopQVCTVlink [{xpath=//*[@class="shopQVCTV"]/a[@aria-label="Shop QVC TV"]}, {xpath=//div[@id="mastTierTwo"]//a[text()="Shop QVC TV"]}] with data {mouseaction=mouseover}
+2017-12-05 05:49:07.127 [INFO] : [TestNG-method=runTestCase-1] Click "Watch QVC TV" link
+ Running action Click on watchQVCTVLink [{xpath=//*[@class="shopTVDropDown"]//*[@title="Watch QVC TV"]}, {xpath=//*[@class="qvctv visible-desktop"]//a[text()="Watch QVC TV"]}]
+2017-12-05 05:49:17.238 [INFO] : [TestNG-method=runTestCase-1] Wait until the object show up to make sure we are switch to correct page
+ Running action WaitUntilObjectExist on TVHeader [{class=active}]
+2017-12-05 05:49:17.452 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at live channel page
+ Running action ContainsText on TVHeader [{class=active}] with data {text=QVC UK – Watch Live}
+2017-12-05 05:49:17.579 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 11 sec
+2017-12-05 05:49:17.626 [INFO] : [TestNG-method=runTestCase-1] Verify the elements in the buy box in the live channel
+ Test module "VerifyBuyBoxElements"
+2017-12-05 05:49:17.628 [INFO] : [TestNG-method=runTestCase-1] Verify the buy box layer exist
+ Running action VerifyExist on buyBoxLayerIOA [{id=qProdOverlay}]
+2017-12-05 05:49:17.791 [INFO] : [TestNG-method=runTestCase-1] Verify the product name of the buy box exist
+ Running action VerifyExist on IOAProductName [{xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}]
+2017-12-05 05:49:17.934 [INFO] : [TestNG-method=runTestCase-1] Store the product name
+ Running action Text on IOAProductName [{xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}] with data {storeas=ProductName}
+2017-12-05 05:49:18.054 [INFO] : [TestNG-method=runTestCase-1] Check whether the QVC price exist
+ Running action CheckForElements on IOAQVCPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="qvcPrice"]}]
+2017-12-05 05:49:18.216 [INFO] : [TestNG-method=runTestCase-1] Verify the QVC price exist
+ Running action VerifyExist on IOAQVCPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="qvcPrice"]}]
+2017-12-05 05:49:18.371 [INFO] : [TestNG-method=runTestCase-1] Check whether the strikeout price exist
+ Running action CheckForElements on IOAPriceStrikeOut [{xpath=//*[@id="qProdOverlay"]//*[@class="price strikeout"]}]
+2017-12-05 05:49:24.078 [INFO] : [TestNG-method=runTestCase-1] Check whether the feature price exist
+ Running action CheckForElements on IOAFeaturePrice [{xpath=//*[@id="qProdOverlay"]//*[@class="featuredPrice"]}]
+2017-12-05 05:49:29.849 [INFO] : [TestNG-method=runTestCase-1] Check whether the retail price cost exist
+ Running action CheckForElements on IOARetailPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="rvPrice"]}]
+2017-12-05 05:49:35.434 [INFO] : [TestNG-method=runTestCase-1] Check whether the shipping cost exist
+ Running action CheckForElements on IOAShippingCost [{xpath=//*[@id="qProdOverlay"]//*[@class="shPrice freeSH"]/..//label}]
+2017-12-05 05:49:35.606 [INFO] : [TestNG-method=runTestCase-1] Verify the shipping cost exist
+ Running action VerifyExist on IOAShippingCost [{xpath=//*[@id="qProdOverlay"]//*[@class="shPrice freeSH"]/..//label}]
+2017-12-05 05:49:35.805 [INFO] : [TestNG-method=runTestCase-1] Check whether the easy pay info exist
+ Running action CheckForElements on IOAEasyPayInfo [{xpath=//*[@id="qProdOverlay"]//*[@class="easyPayInfo"]}]
+2017-12-05 05:49:41.506 [INFO] : [TestNG-method=runTestCase-1] Check whether the rating data exist
+ Running action CheckForElements on IOARating [{xpath=//*[@id="qProdOverlay"]//*[@class="productRatings"]}]
+2017-12-05 05:49:47.030 [INFO] : [TestNG-method=runTestCase-1] Verify the shop now button exist
+ Running action WaitUntilObjectExist on IOAShopNowBtn [{xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-default"]}, {xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-primary"]}]
+2017-12-05 05:49:47.657 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 30 sec
+2017-12-05 05:49:47.658 [INFO] : [TestNG-method=runTestCase-1] Select beauty channel
+ Test module "SelectBeautyChannel"
+2017-12-05 05:49:47.659 [INFO] : [TestNG-method=runTestCase-1] Verify the channel selector exist
+ Running action VerifyExist on channelSelector [{id=ssmplive_html5_api}]
+2017-12-05 05:49:47.800 [INFO] : [TestNG-method=runTestCase-1] Verify the "Beauty Channel" exist
+ Running action ContainsText on beautyChannelLink [{xpath=//*[@id="liveTvChannelMenu"]//a[@data-channelname="BEAUTY"]}] with data {text=BEAUTY}
+2017-12-05 05:49:47.993 [INFO] : [TestNG-method=runTestCase-1] Select the "Beauty Channel"
+ Running action Click on beautyChannelLink [{xpath=//*[@id="liveTvChannelMenu"]//a[@data-channelname="BEAUTY"]}]
+2017-12-05 05:49:48.226 [INFO] : [TestNG-method=runTestCase-1] Wait until object exist
+ Running action WaitUntilObjectExist on IROACarouselItem1th [{xpath=//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][1]}] with data {wait=3}
+2017-12-05 05:50:11.608 [INFO] : [TestNG-method=runTestCase-1] Verify the "Beauty Channel"  is active
+ Running action ContainsText on activeState [{xpath=//*[@id="liveTvChannelMenu"]//*[@class="btn btn-default activeChannel"]}] with data {text=BEAUTY}
+2017-12-05 05:50:11.762 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 24 sec
+2017-12-05 05:50:11.763 [INFO] : [TestNG-method=runTestCase-1] Verify the elements in the buy box in the beauty channel
+ Test module "VerifyBuyBoxElements"
+2017-12-05 05:50:11.764 [INFO] : [TestNG-method=runTestCase-1] Verify the buy box layer exist
+ Running action VerifyExist on buyBoxLayerIOA [{id=qProdOverlay}]
+2017-12-05 05:50:11.933 [INFO] : [TestNG-method=runTestCase-1] Verify the product name of the buy box exist
+ Running action VerifyExist on IOAProductName [{xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}]
+2017-12-05 05:50:12.062 [INFO] : [TestNG-method=runTestCase-1] Store the product name
+ Running action Text on IOAProductName [{xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}] with data {storeas=ProductName}
+2017-12-05 05:50:12.202 [INFO] : [TestNG-method=runTestCase-1] Check whether the QVC price exist
+ Running action CheckForElements on IOAQVCPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="qvcPrice"]}]
+2017-12-05 05:50:12.333 [INFO] : [TestNG-method=runTestCase-1] Verify the QVC price exist
+ Running action VerifyExist on IOAQVCPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="qvcPrice"]}]
+2017-12-05 05:50:12.411 [INFO] : [TestNG-method=runTestCase-1] Check whether the strikeout price exist
+ Running action CheckForElements on IOAPriceStrikeOut [{xpath=//*[@id="qProdOverlay"]//*[@class="price strikeout"]}]
+2017-12-05 05:50:12.544 [INFO] : [TestNG-method=runTestCase-1] Verify the strikeout price exist
+ Running action VerifyExist on IOAPriceStrikeOut [{xpath=//*[@id="qProdOverlay"]//*[@class="price strikeout"]}]
+2017-12-05 05:50:12.610 [INFO] : [TestNG-method=runTestCase-1] Check whether the feature price exist
+ Running action CheckForElements on IOAFeaturePrice [{xpath=//*[@id="qProdOverlay"]//*[@class="featuredPrice"]}]
+2017-12-05 05:50:12.784 [INFO] : [TestNG-method=runTestCase-1] Verify the feature price exist
+ Running action VerifyExist on IOAFeaturePrice [{xpath=//*[@id="qProdOverlay"]//*[@class="featuredPrice"]}]
+2017-12-05 05:50:12.874 [INFO] : [TestNG-method=runTestCase-1] Check whether the retail price cost exist
+ Running action CheckForElements on IOARetailPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="rvPrice"]}]
+2017-12-05 05:50:18.441 [INFO] : [TestNG-method=runTestCase-1] Check whether the shipping cost exist
+ Running action CheckForElements on IOAShippingCost [{xpath=//*[@id="qProdOverlay"]//*[@class="shPrice freeSH"]/..//label}]
+2017-12-05 05:50:18.603 [INFO] : [TestNG-method=runTestCase-1] Verify the shipping cost exist
+ Running action VerifyExist on IOAShippingCost [{xpath=//*[@id="qProdOverlay"]//*[@class="shPrice freeSH"]/..//label}]
+2017-12-05 05:50:18.683 [INFO] : [TestNG-method=runTestCase-1] Check whether the easy pay info exist
+ Running action CheckForElements on IOAEasyPayInfo [{xpath=//*[@id="qProdOverlay"]//*[@class="easyPayInfo"]}]
+2017-12-05 05:50:24.144 [INFO] : [TestNG-method=runTestCase-1] Check whether the rating data exist
+ Running action CheckForElements on IOARating [{xpath=//*[@id="qProdOverlay"]//*[@class="productRatings"]}]
+2017-12-05 05:50:29.783 [INFO] : [TestNG-method=runTestCase-1] Verify the shop now button exist
+ Running action WaitUntilObjectExist on IOAShopNowBtn [{xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-default"]}, {xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-primary"]}]
+2017-12-05 05:50:30.320 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 18 sec
+2017-12-05 05:50:30.321 [INFO] : [TestNG-method=runTestCase-1] Select style channel
+ Test module "SelectStyleChannel"
+2017-12-05 05:50:30.322 [INFO] : [TestNG-method=runTestCase-1] Verify the channel selector exist
+ Running action VerifyExist on channelSelector [{id=ssmplive_html5_api}]
+2017-12-05 05:50:30.455 [INFO] : [TestNG-method=runTestCase-1] Verify the "STYLE Channel" exist
+ Running action ContainsText on styleChannelLink [{xpath=//*[@id="liveTvChannelMenu"]//a[@data-channelname="STYLE"]}] with data {text=STYLE}
+2017-12-05 05:50:30.641 [INFO] : [TestNG-method=runTestCase-1] Select the "STYLE Channel"
+ Running action Click on styleChannelLink [{xpath=//*[@id="liveTvChannelMenu"]//a[@data-channelname="STYLE"]}]
+2017-12-05 05:50:30.895 [INFO] : [TestNG-method=runTestCase-1] Wait until object exist
+ Running action WaitUntilObjectExist on IROACarouselItem1th [{xpath=//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][1]}] with data {wait=3}
+2017-12-05 05:50:38.208 [INFO] : [TestNG-method=runTestCase-1] Verify the "STYLE Channel"  is active
+ Running action ContainsText on activeState [{xpath=//*[@id="liveTvChannelMenu"]//*[@class="btn btn-default activeChannel"]}] with data {text=STYLE}
+2017-12-05 05:50:38.369 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 8 sec
+2017-12-05 05:50:38.371 [INFO] : [TestNG-method=runTestCase-1] Verify the elements in the buy box in the style channel
+ Test module "VerifyBuyBoxElements"
+2017-12-05 05:50:38.371 [INFO] : [TestNG-method=runTestCase-1] Verify the buy box layer exist
+ Running action VerifyExist on buyBoxLayerIOA [{id=qProdOverlay}]
+2017-12-05 05:50:38.522 [INFO] : [TestNG-method=runTestCase-1] Verify the product name of the buy box exist
+ Running action VerifyExist on IOAProductName [{xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}]
+2017-12-05 05:50:38.629 [INFO] : [TestNG-method=runTestCase-1] Store the product name
+ Running action Text on IOAProductName [{xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}] with data {storeas=ProductName}
+2017-12-05 05:50:38.709 [INFO] : [TestNG-method=runTestCase-1] Check whether the QVC price exist
+ Running action CheckForElements on IOAQVCPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="qvcPrice"]}]
+2017-12-05 05:50:38.853 [INFO] : [TestNG-method=runTestCase-1] Verify the QVC price exist
+ Running action VerifyExist on IOAQVCPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="qvcPrice"]}]
+2017-12-05 05:50:38.925 [INFO] : [TestNG-method=runTestCase-1] Check whether the strikeout price exist
+ Running action CheckForElements on IOAPriceStrikeOut [{xpath=//*[@id="qProdOverlay"]//*[@class="price strikeout"]}]
+2017-12-05 05:50:39.055 [INFO] : [TestNG-method=runTestCase-1] Verify the strikeout price exist
+ Running action VerifyExist on IOAPriceStrikeOut [{xpath=//*[@id="qProdOverlay"]//*[@class="price strikeout"]}]
+2017-12-05 05:50:39.128 [INFO] : [TestNG-method=runTestCase-1] Check whether the feature price exist
+ Running action CheckForElements on IOAFeaturePrice [{xpath=//*[@id="qProdOverlay"]//*[@class="featuredPrice"]}]
+2017-12-05 05:50:39.259 [INFO] : [TestNG-method=runTestCase-1] Verify the feature price exist
+ Running action VerifyExist on IOAFeaturePrice [{xpath=//*[@id="qProdOverlay"]//*[@class="featuredPrice"]}]
+2017-12-05 05:50:39.316 [INFO] : [TestNG-method=runTestCase-1] Check whether the retail price cost exist
+ Running action CheckForElements on IOARetailPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="rvPrice"]}]
+2017-12-05 05:50:44.905 [INFO] : [TestNG-method=runTestCase-1] Check whether the shipping cost exist
+ Running action CheckForElements on IOAShippingCost [{xpath=//*[@id="qProdOverlay"]//*[@class="shPrice freeSH"]/..//label}]
+2017-12-05 05:50:45.043 [INFO] : [TestNG-method=runTestCase-1] Verify the shipping cost exist
+ Running action VerifyExist on IOAShippingCost [{xpath=//*[@id="qProdOverlay"]//*[@class="shPrice freeSH"]/..//label}]
+2017-12-05 05:50:45.124 [INFO] : [TestNG-method=runTestCase-1] Check whether the easy pay info exist
+ Running action CheckForElements on IOAEasyPayInfo [{xpath=//*[@id="qProdOverlay"]//*[@class="easyPayInfo"]}]
+2017-12-05 05:50:50.728 [INFO] : [TestNG-method=runTestCase-1] Check whether the rating data exist
+ Running action CheckForElements on IOARating [{xpath=//*[@id="qProdOverlay"]//*[@class="productRatings"]}]
+2017-12-05 05:50:50.875 [INFO] : [TestNG-method=runTestCase-1] Verify the rating data exist
+ Running action VerifyExist on IOARating [{xpath=//*[@id="qProdOverlay"]//*[@class="productRatings"]}]
+2017-12-05 05:50:50.950 [INFO] : [TestNG-method=runTestCase-1] Verify the shop now button exist
+ Running action WaitUntilObjectExist on IOAShopNowBtn [{xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-default"]}, {xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-primary"]}]
+2017-12-05 05:50:51.513 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 13 sec
+2017-12-05 05:50:51.514 [INFO] : [TestNG-method=runTestCase-1] Select extra channel
+ Test module "SelectExtraChannel"
+2017-12-05 05:50:51.516 [INFO] : [TestNG-method=runTestCase-1] Verify the channel selector exist
+ Running action VerifyExist on channelSelector [{id=ssmplive_html5_api}]
+2017-12-05 05:50:51.643 [INFO] : [TestNG-method=runTestCase-1] Verify the "CHRISTMAS Channel" exist
+ Running action ContainsText on christmasChannelLink [{xpath=//*[@id="liveTvChannelMenu"]//a[@data-channelname="CHRISTMAS"]}] with data {text=CHRISTMAS}
+2017-12-05 05:50:51.832 [INFO] : [TestNG-method=runTestCase-1] Select the "CHRISTMAS Channel"
+ Running action Click on christmasChannelLink [{xpath=//*[@id="liveTvChannelMenu"]//a[@data-channelname="CHRISTMAS"]}]
+2017-12-05 05:50:52.055 [INFO] : [TestNG-method=runTestCase-1] Wait until object exist
+ Running action WaitUntilObjectExist on IROACarouselItem1th [{xpath=//*[@class="shopLiveTvIroaItem col-tn-6 col-xs-6 col-sm-4 col-md-3"][1]}] with data {wait=3}
+2017-12-05 05:51:07.963 [INFO] : [TestNG-method=runTestCase-1] Verify the "CHRISTMAS Channel"  is active
+ Running action ContainsText on activeState [{xpath=//*[@id="liveTvChannelMenu"]//*[@class="btn btn-default activeChannel"]}] with data {text=CHRISTMAS}
+2017-12-05 05:51:08.125 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 16 sec
+2017-12-05 05:51:08.126 [INFO] : [TestNG-method=runTestCase-1] Verify the elements in the buy box in the extra channel
+ Test module "VerifyBuyBoxElements"
+2017-12-05 05:51:08.127 [INFO] : [TestNG-method=runTestCase-1] Verify the buy box layer exist
+ Running action VerifyExist on buyBoxLayerIOA [{id=qProdOverlay}]
+2017-12-05 05:51:08.309 [INFO] : [TestNG-method=runTestCase-1] Verify the product name of the buy box exist
+ Running action VerifyExist on IOAProductName [{xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}]
+2017-12-05 05:51:08.469 [INFO] : [TestNG-method=runTestCase-1] Store the product name
+ Running action Text on IOAProductName [{xpath=//*[@id="qProdOverlay"]//*[@class="productDesc"]}] with data {storeas=ProductName}
+2017-12-05 05:51:08.588 [INFO] : [TestNG-method=runTestCase-1] Check whether the QVC price exist
+ Running action CheckForElements on IOAQVCPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="qvcPrice"]}]
+2017-12-05 05:51:08.731 [INFO] : [TestNG-method=runTestCase-1] Verify the QVC price exist
+ Running action VerifyExist on IOAQVCPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="qvcPrice"]}]
+2017-12-05 05:51:08.807 [INFO] : [TestNG-method=runTestCase-1] Check whether the strikeout price exist
+ Running action CheckForElements on IOAPriceStrikeOut [{xpath=//*[@id="qProdOverlay"]//*[@class="price strikeout"]}]
+2017-12-05 05:51:14.333 [INFO] : [TestNG-method=runTestCase-1] Check whether the feature price exist
+ Running action CheckForElements on IOAFeaturePrice [{xpath=//*[@id="qProdOverlay"]//*[@class="featuredPrice"]}]
+2017-12-05 05:51:19.975 [INFO] : [TestNG-method=runTestCase-1] Check whether the retail price cost exist
+ Running action CheckForElements on IOARetailPrice [{xpath=//*[@id="qProdOverlay"]//*[@class="rvPrice"]}]
+2017-12-05 05:51:25.639 [INFO] : [TestNG-method=runTestCase-1] Check whether the shipping cost exist
+ Running action CheckForElements on IOAShippingCost [{xpath=//*[@id="qProdOverlay"]//*[@class="shPrice freeSH"]/..//label}]
+2017-12-05 05:51:25.774 [INFO] : [TestNG-method=runTestCase-1] Verify the shipping cost exist
+ Running action VerifyExist on IOAShippingCost [{xpath=//*[@id="qProdOverlay"]//*[@class="shPrice freeSH"]/..//label}]
+2017-12-05 05:51:25.858 [INFO] : [TestNG-method=runTestCase-1] Check whether the easy pay info exist
+ Running action CheckForElements on IOAEasyPayInfo [{xpath=//*[@id="qProdOverlay"]//*[@class="easyPayInfo"]}]
+2017-12-05 05:51:31.474 [INFO] : [TestNG-method=runTestCase-1] Check whether the rating data exist
+ Running action CheckForElements on IOARating [{xpath=//*[@id="qProdOverlay"]//*[@class="productRatings"]}]
+2017-12-05 05:51:31.618 [INFO] : [TestNG-method=runTestCase-1] Verify the rating data exist
+ Running action VerifyExist on IOARating [{xpath=//*[@id="qProdOverlay"]//*[@class="productRatings"]}]
+2017-12-05 05:51:31.702 [INFO] : [TestNG-method=runTestCase-1] Verify the shop now button exist
+ Running action WaitUntilObjectExist on IOAShopNowBtn [{xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-default"]}, {xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-primary"]}]
+2017-12-05 05:51:32.289 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 24 sec
+2017-12-05 05:51:32.290 [INFO] : [TestNG-method=runTestCase-1] Click show now button
+ Test module "BuyIOA"
+2017-12-05 05:51:32.291 [INFO] : [TestNG-method=runTestCase-1] Click the shop now button in the buy box layer to add the product
+ Running action Click on IOAShopNowBtn [{xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-default"]}, {xpath=//*[@id="qProdOverlay"]//*[@class="btn btn-primary"]}]
+2017-12-05 05:51:32.955 [INFO] : [TestNG-method=runTestCase-1] Swith to new browser
+ Running action Browser with data {action=SwitchToNewBrowser}
+2017-12-05 05:51:32.992 [INFO] : [TestNG-method=runTestCase-1] Switch to new browser, windowHandle - CDwindow-f690962f-fd49-48c8-a135-b7f62433c11d
+2017-12-05 05:51:32.994 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-05 05:51:35.363 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 05:51:35.634 [INFO] : [TestNG-method=runTestCase-1] Verify the product is the one we had chosen
+ Running action ContainsText on productTitleText [{xpath=//*[@class='pdShortDesc']//h1}] with data {text=Ronni Nicole 'O So Slim' Border Print Maxi Dress with Embellishment}
+2017-12-05 05:51:35.826 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 3 sec
+2017-12-05 05:51:35.827 [INFO] : [TestNG-method=runTestCase-1] Add item to cart
+ Test module "AddToCart"
+2017-12-05 05:51:35.828 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-05 05:51:35.948 [INFO] : [TestNG-method=runTestCase-1] Get the product number
+ Running action Text on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {storeas=productNumPD}
+2017-12-05 05:51:36.089 [INFO] : [TestNG-method=runTestCase-1] Get the product price
+ Running action Text on qVCRegularPrice [{xpath=//*[@class="price"]}, {xpath=//*[@class="price priceSm"]}, {xpath=//*[@class="productDetailPrice  price"]}, {xpath=//*[contains(@class,"productDetailPrice")][1]}] with data {storeas=productPrice}
+2017-12-05 05:51:36.236 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-05 05:51:36.372 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available color
+ Running action Click on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-05 05:51:36.579 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-05 05:51:41.763 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-05 05:51:42.252 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available size
+ Running action Click on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-05 05:51:42.896 [INFO] : [TestNG-method=runTestCase-1] SELECT quantity
+ Running action SendKeys on productQtyInputBox [{css=.productQuantity}] with data {text=<Qty>}
+2017-12-05 05:51:43.232 [INFO] : [TestNG-method=runTestCase-1] Click "Add to Basket"
+ Running action Click on addToCartbtn [{class=btnAddToCart}]
+2017-12-05 05:51:46.948 [INFO] : [TestNG-method=runTestCase-1] If the item is waitlist
+ Running action CheckForElements on waitlistConfirmation [{xpath=//span[text()='Waitlist confirmation']}]
+2017-12-05 05:51:52.234 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 16 sec
+2017-12-05 05:51:52.353 [INFO] : [TestNG-method=runTestCase-1] Basic check out
+ Test module "CheckOut"
+2017-12-05 05:51:52.362 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Shopping basket" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Shopping basket}
+2017-12-05 05:51:52.535 [INFO] : [TestNG-method=runTestCase-1] Click "Checkout"
+ Running action Click on checkoutBtn [{xpath=//*[@class="divProductButtons"]//*[@value="Checkout"][1]}]
+2017-12-05 05:51:55.226 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 2 sec
+2017-12-05 05:51:55.262 [INFO] : [TestNG-method=runTestCase-1] Login by email
+ Test module "ByEmail"
+2017-12-05 05:51:55.266 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on signInHeader [{id=divPageTitle}] with data {wait=10}
+2017-12-05 05:52:05.377 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Sign In" page
+ Running action ContainsText on signInHeader [{id=divPageTitle}] with data {text=Sign In}
+2017-12-05 05:52:05.491 [INFO] : [TestNG-method=runTestCase-1] Input email address
+ Running action SendKeys on emailAddressTextbox [{id=txtEmailAddress}, {name=logonId}] with data {text=a2016080601@qvc.com}
+2017-12-05 05:52:05.853 [INFO] : [TestNG-method=runTestCase-1] Input password
+ Running action SendKeys on passwordTextbox [{id=txtPassword}, {name=logonPassword}] with data {text=Qvctester1}
+2017-12-05 05:52:06.158 [INFO] : [TestNG-method=runTestCase-1] Click "Sign in"
+ Running action Click on loginBtn [{id=btnSignIn}]
+2017-12-05 05:52:09.866 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-05 05:52:09.954 [INFO] : [TestNG-method=runTestCase-1] Use current address
+ Test module "UseCurrent"
+2017-12-05 05:52:10.022 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Ship-To Address" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Delivery address}
+2017-12-05 05:52:10.268 [ERROR] : [TestNG-method=runTestCase-1] Verification Failed. Expect text was not found: Delivery address, actual text: Submit order
+2017-12-05 05:52:10.486 [INFO] : [TestNG-method=runTestCase-1] Click "Contine"
+ Running action Click on continuebtn [{id=btnContinueAddressBook}]
+2017-12-05 05:52:20.945 [INFO] : [TestNG-method=runTestCase-1] Locator was: {id=btnContinueAddressBook}
+2017-12-05 05:52:20.945 [ERROR] : [TestNG-method=runTestCase-1] Exception: no such element: Unable to locate element: {"method":"id","selector":"btnContinueAddressBook"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 4.4.0-96-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'wchpilsgrid04', ip: '167.140.56.169', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-96-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57), userDataDir=/tmp/.org.chromium.Chromium.2AGc1Q}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: ed755fec6613d522ef7ccc5e3125fe47
+*** Element info: {Using=id, value=btnContinueAddressBook}
+Command duration or timeout: 305 milliseconds
+2017-12-05 05:52:20.946 [ERROR] : [TestNG-method=runTestCase-1] 1: PERFORM-Click : Click "Contine"
+2017-12-05 05:52:21.498 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\10\DetailReport\Fail_AEM_SLTV_BuyBox_Shop_Now_AddToCart_All_Geos_uk_chrome.html

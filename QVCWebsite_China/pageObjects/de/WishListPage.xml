@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="WishListPage" include="MastheadMain">
+
+	<TestObject name="pleaseNoteMessage">
+		<Properties>
+			<css>p.phone-hidden</css>
+			<id>divWishList</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemNumber">
+		<Properties>
+			<xpath>//*[@class='divItemNumber'][1]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="removeBtn">
+		<Properties>
+			<xpath>//*[@class='divProductButtons']/a[1]</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="ColorSizeOption">
+		<Properties>
+			<xpath>//*[@class='productOption'][1]</xpath>
+		</Properties>
+	</TestObject>
+</Page>

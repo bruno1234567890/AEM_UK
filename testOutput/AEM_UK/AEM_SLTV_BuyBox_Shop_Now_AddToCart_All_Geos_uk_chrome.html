@@ -1,0 +1,308 @@
+<html>
+<head>
+<title>TestNG:  AEM_SLTV_BuyBox_Shop_Now_AddToCart_All_Geos_uk_chrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AEM_SLTV_BuyBox_Shop_Now_AddToCart_All_Geos_uk_chrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 11 00:50:16 EST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>33 seconds (33377 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qvc.selenium.plugin.TestCase.runTestCase()'><b>runTestCase</b><br>Test class: com.qvc.selenium.plugin.TestCase (AEM_SLTV_BuyBox_Shop_Now_AddToCart_All_Geos_uk_chrome)<br/>
+<a href="#Output-801828599" onClick='toggleBox("Output-801828599", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-801828599" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-801828599">
+<div class=stepevent.level.toString()>Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Navigate to qa.qvcuk.com
+ Test module &quot;GotoUrl&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+</div><br/><br/>
+<div class=stepevent.level.toString()>If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}] with data {wait=2}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id=&quot;alert-cookie-info-bar&quot;]//button[@class=&quot;close&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 5 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Navigate to watch tv live
+ Test module &quot;NavToWatchTVLive&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Hover the &quot;Shop QVC TV&quot; menu
+ Running action MouseEvent on ShopQVCTVlink [{xpath=//*[@class=&quot;shopQVCTV&quot;]/a[@aria-label=&quot;Shop QVC TV&quot;]}, {xpath=//div[@id=&quot;mastTierTwo&quot;]//a[text()=&quot;Shop QVC TV&quot;]}] with data {mouseaction=mouseover}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Click &quot;Watch QVC TV&quot; link
+ Running action Click on watchQVCTVLink [{xpath=//*[@class=&quot;shopTVDropDown&quot;]//*[@title=&quot;Watch QVC TV&quot;]}, {xpath=//*[@class=&quot;qvctv visible-desktop&quot;]//a[text()=&quot;Watch QVC TV&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Wait until the object show up to make sure we are switch to correct page
+ Running action WaitUntilObjectExist on TVHeader [{class=active}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify that we are at live channel page
+ Running action ContainsText on TVHeader [{class=active}] with data {text=QVC UK – Watch Live}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Function Elapsed Time 0 min, 2 sec
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the elements in the buy box in the live channel
+ Test module &quot;VerifyBuyBoxElements&quot;
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the buy box layer exist
+ Running action VerifyExist on buyBoxLayerIOA [{id=qProdOverlay}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Object not displayed, reload the object - buyBoxLayerIOA
+</div><br/><br/>
+<div class=stepevent.level.toString()>Object not displayed, reload the object - buyBoxLayerIOA
+</div><br/><br/>
+<div class=stepevent.level.toString()>Object not displayed, reload the object - buyBoxLayerIOA
+</div><br/><br/>
+<div class=stepevent.level.toString()>Object not displayed, reload the object - buyBoxLayerIOA
+</div><br/><br/>
+<div class=stepevent.level.toString()>Object not displayed, reload the object - buyBoxLayerIOA
+</div><br/><br/>
+<div class=stepevent.level.toString()>Locator was: {xpath=//*[@id=&quot;qProdOverlay&quot;]//*[@class=&quot;productDesc&quot;]}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Verify the product name of the buy box exist
+ Running action VerifyExist on IOAProductName [{xpath=//*[@id=&quot;qProdOverlay&quot;]//*[@class=&quot;productDesc&quot;]}]
+</div><br/><br/>
+<div class=stepevent.level.toString()>Locator was: {xpath=//*[@id=&quot;qProdOverlay&quot;]//*[@class=&quot;productDesc&quot;]}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Store the product name
+ Running action Text on IOAProductName [{xpath=//*[@id=&quot;qProdOverlay&quot;]//*[@class=&quot;productDesc&quot;]}] with data {storeas=ProductName}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Locator was: {xpath=//*[@id=&quot;qProdOverlay&quot;]//*[@class=&quot;productDesc&quot;]}
+</div><br/><br/>
+<div class=stepevent.level.toString()>Report file generated: c:\seleniumframeworkplugin\testOutput\16\DetailReport\ReRun\Fail_AEM_SLTV_BuyBox_Shop_Now_AddToCart_All_Geos_uk_chrome.html
+</div><br/><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;qProdOverlay&quot;]//*[@class=&quot;productDesc&quot;]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 4.4.0-96-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;wchpilsgrid03&apos;, ip: &apos;167.140.56.160&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-96-generic&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57), userDataDir=/tmp/.org.chromium.Chromium.lyOQZC}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: c4e27d7a16f322dc38ba113eeb0e820b
+*** Element info: {Using=xpath, value=//*[@id=&quot;qProdOverlay&quot;]//*[@class=&quot;productDesc&quot;]}
+Command duration or timeout: 429 milliseconds
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at com.qvc.selenium.data.PageObject.findElement(PageObject.java:166)
+	at com.qvc.selenium.data.PageObject.getWebElement(PageObject.java:210)
+	at com.qvc.selenium.actions.BaseAction.getWebElement(BaseAction.java:154)
+	at com.qvc.selenium.actions.BaseAction.getWebElement(BaseAction.java:140)
+	at com.qvc.selenium.actions.TextStoreAction.runAction(TextStoreAction.java:27)
+	at com.qvc.selenium.steps.TestStep.run(TestStep.java:217)
+	at com.qvc.selenium.plugin.TestModule.runTestFlow(TestModule.java:92)
+	at com.qvc.selenium.plugin.TestModule.runTestFlow(TestModule.java:62)
+	at com.qvc.selenium.steps.FunctionTestStep.run(FunctionTestStep.java:85)
+	at com.qvc.selenium.plugin.TestModule.runTestFlow(TestModule.java:92)
+	at com.qvc.selenium.plugin.TestCase.runTestCase(TestCase.java:92)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:141)
+	... 25 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;qProdOverlay&quot;]//*[@class=&quot;productDesc&quot;]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 4.4.0-96-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;wchpilsgrid03&apos;, ip: &apos;167.140.56.160&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-96-generic&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57), userDataDir=/tmp/.org.chromium.Chromium.lyOQZC}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: c4e27d7a16f322dc38ba113eeb0e820b
+*** Element info: {Using=xpath, value=//*[@id=&quot;qProdOverlay&quot;]//*[@class=&quot;productDesc&quot;]}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;QUFT12011&apos;, ip: &apos;10.14.18.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy6.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:33)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace801828599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace801828599'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;qProdOverlay&quot;]//*[@class=&quot;productDesc&quot;]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 4.4.0-96-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;wchpilsgrid03&apos;, ip: &apos;167.140.56.160&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-96-generic&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57), userDataDir=/tmp/.org.chromium.Chromium.lyOQZC}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: c4e27d7a16f322dc38ba113eeb0e820b
+*** Element info: {Using=xpath, value=//*[@id=&quot;qProdOverlay&quot;]//*[@class=&quot;productDesc&quot;]}
+Command duration or timeout: 429 milliseconds
+	at sun.reflect.GeneratedConstructorAccessor68.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at com.qvc.selenium.data.PageObject.findElement(PageObject.java:166)
+	at com.qvc.selenium.data.PageObject.getWebElement(PageObject.java:210)
+	at com.qvc.selenium.actions.BaseAction.getWebElement(BaseAction.java:154)
+	at com.qvc.selenium.actions.BaseAction.getWebElement(BaseAction.java:140)
+	at com.qvc.selenium.actions.TextStoreAction.runAction(TextStoreAction.java:27)
+	at com.qvc.selenium.steps.TestStep.run(TestStep.java:217)
+	at com.qvc.selenium.plugin.TestModule.runTestFlow(TestModule.java:92)
+	at com.qvc.selenium.plugin.TestModule.runTestFlow(TestModule.java:62)
+	at com.qvc.selenium.steps.FunctionTestStep.run(FunctionTestStep.java:85)
+	at com.qvc.selenium.plugin.TestModule.runTestFlow(TestModule.java:92)
+	at com.qvc.selenium.plugin.TestCase.runTestCase(TestCase.java:92)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:141)
+	... 25 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;qProdOverlay&quot;]//*[@class=&quot;productDesc&quot;]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 4.4.0-96-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;wchpilsgrid03&apos;, ip: &apos;167.140.56.160&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-96-generic&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57), userDataDir=/tmp/.org.chromium.Chromium.lyOQZC}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: c4e27d7a16f322dc38ba113eeb0e820b
+*** Element info: {Using=xpath, value=//*[@id=&quot;qProdOverlay&quot;]//*[@class=&quot;productDesc&quot;]}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;QUFT12011&apos;, ip: &apos;10.14.18.72&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy6.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:33)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	... 1 more
+</pre></div></td>
+<td>33</td>
+<td>com.qvc.selenium.plugin.TestCase@6d5705f2</td></tr>
+</table><p>
+</body>
+</html>

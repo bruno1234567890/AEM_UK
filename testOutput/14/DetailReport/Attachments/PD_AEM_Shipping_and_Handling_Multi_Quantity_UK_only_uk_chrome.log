@@ -1,0 +1,157 @@
+2017-12-10 21:52:44.661 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:52:45.673 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvcuk.com"
+ Test module "GotoUrl"
+2017-12-10 21:52:45.674 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:52:48.456 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:52:50.103 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:52:50.309 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:52:51.257 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-10 21:52:51.258 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "ByProductNum"
+2017-12-10 21:52:51.259 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:52:55.826 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=589523}
+2017-12-10 21:52:56.592 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:53:00.400 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:53:06.170 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 21:53:06.282 [INFO] : [TestNG-method=runTestCase-1] Verify the Muti-quantity shipping discount message
+ Test module "VerifyMultiQuantityDiscount"
+2017-12-10 21:53:06.283 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {wait=5}
+2017-12-10 21:53:11.421 [INFO] : [TestNG-method=runTestCase-1] Verify the text of MQD message displays
+ Running action VerifyExist on buyMoreSaveMoveText [{xpath=//*[@class="col-tn-12 col-xs-6 buyBoxQuantityInfo"]}]
+2017-12-10 21:53:11.555 [INFO] : [TestNG-method=runTestCase-1] Verify the text of MQD message
+ Running action ContainsText on buyMoreSaveMoveText [{xpath=//*[@class="col-tn-12 col-xs-6 buyBoxQuantityInfo"]}] with data {text=Half price P&P on every additional item.}
+2017-12-10 21:53:11.678 [INFO] : [TestNG-method=runTestCase-1] Verify the link of offer detail
+ Running action VerifyExist on buyMoreSaveMoveOfferLink [{xpath=//*[@class="col-tn-12 col-xs-6 buyBoxQuantityInfo"]//*[@class="arrow fancybox fancybox.ajax"]}]
+2017-12-10 21:53:11.825 [INFO] : [TestNG-method=runTestCase-1] Click the link of offer detail
+ Running action Click on buyMoreSaveMoveOfferLink [{xpath=//*[@class="col-tn-12 col-xs-6 buyBoxQuantityInfo"]//*[@class="arrow fancybox fancybox.ajax"]}]
+2017-12-10 21:53:12.712 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on popupText [{xpath=//*[@class="fancybox-skin"]//*[contains(@class,"rich-text-editor")]}] with data {wait=5}
+2017-12-10 21:53:17.891 [INFO] : [TestNG-method=runTestCase-1] Verfiy the popup text contain "buy more save more"
+ Running action ContainsText on popupText [{xpath=//*[@class="fancybox-skin"]//*[contains(@class,"rich-text-editor")]}] with data {text=Buy More}
+2017-12-10 21:53:18.072 [INFO] : [TestNG-method=runTestCase-1] Close the popup window
+ Running action Click on popupClose [{xpath=//*[@class="fancybox-item fancybox-close"]}]
+2017-12-10 21:53:18.377 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 12 sec
+2017-12-10 21:53:18.430 [INFO] : [TestNG-method=runTestCase-1] Add the product to cart
+ Test module "AddToCart"
+2017-12-10 21:53:18.431 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:53:18.710 [INFO] : [TestNG-method=runTestCase-1] Get the product number
+ Running action Text on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {storeas=productNumPD}
+2017-12-10 21:53:18.856 [INFO] : [TestNG-method=runTestCase-1] Get the product price
+ Running action Text on qVCRegularPrice [{xpath=//*[@class="price"]}, {xpath=//*[@class="price priceSm"]}, {xpath=//*[@class="productDetailPrice  price"]}, {xpath=//*[contains(@class,"productDetailPrice")][1]}] with data {storeas=productPrice}
+2017-12-10 21:53:19.021 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-10 21:53:24.590 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 21:53:30.351 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 21:53:36.133 [INFO] : [TestNG-method=runTestCase-1] SELECT quantity
+ Running action SendKeys on productQtyInputBox [{css=.productQuantity}] with data {text=1}
+2017-12-10 21:53:36.450 [INFO] : [TestNG-method=runTestCase-1] Click "Add to Basket"
+ Running action Click on addToCartbtn [{class=btnAddToCart}]
+2017-12-10 21:53:40.281 [INFO] : [TestNG-method=runTestCase-1] If the item is waitlist
+ Running action CheckForElements on waitlistConfirmation [{xpath=//span[text()='Waitlist confirmation']}]
+2017-12-10 21:53:46.463 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 28 sec
+2017-12-10 21:53:46.471 [INFO] : [TestNG-method=runTestCase-1] Search product again
+ Test module "ByProductNum"
+2017-12-10 21:53:46.472 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:53:51.030 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=589523}
+2017-12-10 21:53:51.685 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:53:54.977 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:54:00.707 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 21:54:00.747 [INFO] : [TestNG-method=runTestCase-1] Add the product to cart
+ Test module "AddToCart"
+2017-12-10 21:54:00.752 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:54:01.327 [INFO] : [TestNG-method=runTestCase-1] Get the product number
+ Running action Text on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {storeas=productNumPD}
+2017-12-10 21:54:01.528 [INFO] : [TestNG-method=runTestCase-1] Get the product price
+ Running action Text on qVCRegularPrice [{xpath=//*[@class="price"]}, {xpath=//*[@class="price priceSm"]}, {xpath=//*[@class="productDetailPrice  price"]}, {xpath=//*[contains(@class,"productDetailPrice")][1]}] with data {storeas=productPrice}
+2017-12-10 21:54:01.730 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-10 21:54:07.681 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 21:54:13.219 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 21:54:18.951 [INFO] : [TestNG-method=runTestCase-1] SELECT quantity
+ Running action SendKeys on productQtyInputBox [{css=.productQuantity}] with data {text=1}
+2017-12-10 21:54:19.283 [INFO] : [TestNG-method=runTestCase-1] Click "Add to Basket"
+ Running action Click on addToCartbtn [{class=btnAddToCart}]
+2017-12-10 21:54:21.306 [INFO] : [TestNG-method=runTestCase-1] If the item is waitlist
+ Running action CheckForElements on waitlistConfirmation [{xpath=//span[text()='Waitlist confirmation']}]
+2017-12-10 21:54:27.183 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 26 sec
+2017-12-10 21:54:27.183 [INFO] : [TestNG-method=runTestCase-1] Confirm add duplicate item
+ Test module "ClickYes"
+2017-12-10 21:54:27.183 [INFO] : [TestNG-method=runTestCase-1] Wait until the title display
+ Running action WaitUntilObjectExist on Header [{id=divPageTitle}]
+2017-12-10 21:54:27.335 [INFO] : [TestNG-method=runTestCase-1] Verify we are in duplicate item comfirm page
+ Running action ContainsText on Header [{id=divPageTitle}] with data {text=Duplicate item}
+2017-12-10 21:54:27.498 [INFO] : [TestNG-method=runTestCase-1] Click yes
+ Running action Click on btnYes [{xpath=//*[@class='primaryButton']}]
+2017-12-10 21:54:30.250 [INFO] : [TestNG-method=runTestCase-1] Wait until the title display
+ Running action WaitUntilObjectExist on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}]
+2017-12-10 21:54:30.444 [INFO] : [TestNG-method=runTestCase-1] Verify we are Shopping basket
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Shopping basket}
+2017-12-10 21:54:30.596 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 3 sec
+2017-12-10 21:54:30.622 [INFO] : [TestNG-method=runTestCase-1] Verify the Muti-quantity shipping discount message
+ Test module "VerifyMultiQuantityDiscount"
+2017-12-10 21:54:30.624 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Product Detail" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Shopping basket}
+2017-12-10 21:54:30.766 [INFO] : [TestNG-method=runTestCase-1] Running action VerifyExist on MultiQuantityShippingDiscount [{xpath=//div[@class='divProduct']//td[@class='tdCurrency'][2]}]
+2017-12-10 21:54:30.919 [INFO] : [TestNG-method=runTestCase-1] Running action ContainsText on MultiQuantityShippingDiscount [{xpath=//div[@class='divProduct']//td[@class='tdCurrency'][2]}] with data {text=saved}
+2017-12-10 21:54:31.067 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:54:31.067 [INFO] : [TestNG-method=runTestCase-1] Click "Check Out"
+ Test module "CheckOut"
+2017-12-10 21:54:31.067 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Shopping basket" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Shopping basket}
+2017-12-10 21:54:31.235 [INFO] : [TestNG-method=runTestCase-1] Click "Checkout"
+ Running action Click on checkoutBtn [{xpath=//*[@class="divProductButtons"]//*[@value="Checkout"][1]}]
+2017-12-10 21:54:34.750 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 3 sec
+2017-12-10 21:54:34.750 [INFO] : [TestNG-method=runTestCase-1] Sign in
+ Test module "ByEmail"
+2017-12-10 21:54:34.750 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exist
+ Running action WaitUntilObjectExist on signInHeader [{id=divPageTitle}] with data {wait=10}
+2017-12-10 21:54:44.890 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Sign In" page
+ Running action ContainsText on signInHeader [{id=divPageTitle}] with data {text=Sign In}
+2017-12-10 21:54:45.026 [INFO] : [TestNG-method=runTestCase-1] Input email address
+ Running action SendKeys on emailAddressTextbox [{id=txtEmailAddress}, {name=logonId}] with data {text=a123456lt@qvc.com}
+2017-12-10 21:54:45.408 [INFO] : [TestNG-method=runTestCase-1] Input password
+ Running action SendKeys on passwordTextbox [{id=txtPassword}, {name=logonPassword}] with data {text=Aa123456}
+2017-12-10 21:54:45.797 [INFO] : [TestNG-method=runTestCase-1] Click "Sign in"
+ Running action Click on loginBtn [{id=btnSignIn}]
+2017-12-10 21:54:49.597 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 21:54:49.612 [INFO] : [TestNG-method=runTestCase-1] Use default address
+ Test module "UseCurrent"
+2017-12-10 21:54:49.612 [INFO] : [TestNG-method=runTestCase-1] Veify we are at "Ship-To Address" page
+ Running action ContainsText on pageTitle [{id=divPageTitle}, {xpath=//*[@id='divPageTitle']/h1}, {xpath=//*[@class='breadcrumb pageBreadcrumb']}] with data {text=Delivery address}
+2017-12-10 21:54:49.902 [ERROR] : [TestNG-method=runTestCase-1] Verification Failed. Expect text was not found: Delivery address, actual text: Submit order
+2017-12-10 21:54:50.166 [INFO] : [TestNG-method=runTestCase-1] Click "Contine"
+ Running action Click on continuebtn [{id=btnContinueAddressBook}]
+2017-12-10 21:55:00.349 [INFO] : [TestNG-method=runTestCase-1] Locator was: {id=btnContinueAddressBook}
+2017-12-10 21:55:00.349 [ERROR] : [TestNG-method=runTestCase-1] Exception: no such element: Unable to locate element: {"method":"id","selector":"btnContinueAddressBook"}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57),platform=Linux 4.4.0-96-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 19 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'wchpilsgrid03', ip: '167.140.56.160', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-96-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477691 (6ee44a7247c639c0703f291d320bdf05c1531b57), userDataDir=/tmp/.org.chromium.Chromium.MPTJ2K}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=59.0.3071.115, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 846a3e656e3cc5e11de4242e136059b4
+*** Element info: {Using=id, value=btnContinueAddressBook}
+Command duration or timeout: 482 milliseconds
+2017-12-10 21:55:00.349 [ERROR] : [TestNG-method=runTestCase-1] 1: PERFORM-Click : Click "Contine"
+2017-12-10 21:55:01.062 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\14\DetailReport\Fail_PD_AEM_Shipping_and_Handling_Multi_Quantity_UK_only_uk_chrome.html

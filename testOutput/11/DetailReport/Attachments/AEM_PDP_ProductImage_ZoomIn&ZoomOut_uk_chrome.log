@@ -1,0 +1,39 @@
+2017-12-05 21:09:51.548 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:09:52.525 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-05 21:09:52.528 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:09:57.187 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:09:57.343 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:09:57.614 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:09:58.510 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 5 sec
+2017-12-05 21:09:58.516 [INFO] : [TestNG-method=runTestCase-1] Search a product with On Air Presenatation Video, Bonus video
+ Test module "ByProductNum"
+2017-12-05 21:09:58.517 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:10:03.193 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=229451}
+2017-12-05 21:10:03.638 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:10:09.041 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:10:14.965 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 16 sec
+2017-12-05 21:10:15.053 [INFO] : [TestNG-method=runTestCase-1] Verify that product image can be zoom in and zoom out
+ Test module "VerifyImageZoomIn&ZoomOut"
+2017-12-05 21:10:15.054 [INFO] : [TestNG-method=runTestCase-1] Wait until object exists to make sure we are at correct page: "Product Detail" page
+ Running action WaitUntilObjectExist on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-05 21:10:15.211 [INFO] : [TestNG-method=runTestCase-1] Verify that we are at  correct product number's "Product Detail" page
+ Running action ContainsText on productNumbertxt [{xpath=//*[@class='itemNo']}] with data {text=229451}
+2017-12-05 21:10:15.328 [INFO] : [TestNG-method=runTestCase-1] Click the product image
+ Running action Click on productPhoto [{id=s7Flyout}]
+2017-12-05 21:10:15.623 [INFO] : [TestNG-method=runTestCase-1] Verify that product image is in zoom out state
+ Running action VerifyExist on zoomOutImage [{xpath=//div[@class='s7highlight']}]
+2017-12-05 21:10:15.767 [INFO] : [TestNG-method=runTestCase-1] Move mouse out of product image
+ Running action Click on productNumbertxt [{xpath=//*[@class='itemNo']}]
+2017-12-05 21:10:16.115 [INFO] : [TestNG-method=runTestCase-1] Verify that product image is not in zoom out state
+ Running action VerifyNotExist on zoomOutImage [{xpath=//div[@class='s7highlight']}]
+2017-12-05 21:10:16.169 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 1 sec
+2017-12-05 21:10:16.445 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_PDP_ProductImage_ZoomIn&ZoomOut_uk_chrome.html

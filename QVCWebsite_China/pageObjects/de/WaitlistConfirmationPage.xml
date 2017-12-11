@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="WaitlistConfirmationPage" include="MastheadMain">
+
+	<TestObject name="pageTitle">
+		<Properties>
+			<id>divPageTitle</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="yesBtn">
+		<Properties>
+			<xpath>//*[@value='Ja']</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="noBtn">
+		<Properties>
+			<xpath>//input[@value='Nein']</xpath>
+		</Properties>
+	</TestObject>
+</Page>

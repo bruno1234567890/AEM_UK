@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page name="MastheadMain" >
+	<TestObject name="pageTitle">
+		<Properties>
+		    <id>divPageTitle</id>
+			<xpath>//*[@id='divPageTitle']/h1</xpath>
+			<xpath>//*[@class='breadcrumb pageBreadcrumb']</xpath>
+		</Properties>
+	</TestObject>	
+	<TestObject name="cookiesBarCloseBtn"> 
+        	<properties>   
+          		<xpath>//*[@id="alert-cookie-info-bar"]//button[@class="close"]</xpath>          		
+        	</properties> 
+      	</TestObject>
+	<TestObject name="breadcrumbs"> 
+        	<properties>   
+          		<id>breadCrumbs</id>          		
+        	</properties> 
+     </TestObject>
+	 <TestObject name="PageBreadCrumbs"> 
+        	<properties> 	
+				<id>breadCrumbs</id>
+          		<xpath>//*[@class='breadcrumb pageBreadcrumb']</xpath>          		
+        	</properties> 
+     </TestObject>
+		
+	<TestObject name="downTimeErrMsg">
+		<Properties>
+			<css>.errDowntime</css>
+		</Properties>
+	</TestObject>
+	<TestObject name="helloFirstNameTxt">
+		<Properties>
+			<css>#divSignIn .signInGreeting</css>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="searchForm">
+		<Properties>
+			<id>frmMastheadSearch</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="searchBox">
+		<Properties>
+			<id>searchBoxField</id>
+			<id>txtMastheadSearch</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="goBtn">
+		<Properties>
+			<id>btnMastheadSearch</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="signArea">
+		<Properties>
+			<id>divSignIn</id>
+			<id>customer</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="myAccountLink">
+		<Properties>
+			<linkText>My account</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="orderStatusLink">
+		<Properties>
+			<id>linkOrderStatus</id>
+			<linkText>Order status</linkText>
+		</Properties>
+	</TestObject>	
+	<TestObject name="wishListLink">
+		<Properties>
+			<id>linkWishList</id>
+			<linkText>Wish list</linkText>	
+		</Properties>
+	</TestObject>
+	<TestObject name="ContractLink">
+		<Properties>
+			<id>linkKontakt</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="QVCinTVLink">
+		<Properties>
+			<id>linkQVCTV</id>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="signInArea">
+			<Properties>
+			<xpath>//*[@class="acctGreeting acctUnAuth"]</xpath>
+			<xpath>//*[@class="acctGreeting acctAuth"]</xpath>	
+			<xpath>(//*[contains(text(),"Hello")])[1]</xpath>
+			<xpath>//*[@id="customer"]//a[contains(text(),"Sign out")]</xpath>
+			</Properties>
+	</TestObject>
+	
+	<TestObject name="signInLink">
+			<Properties>
+			<xpath>//*[@class="acctGreeting acctUnAuth"]//p[1]</xpath>
+			<linkText>Sign in or register</linkText>	
+			</Properties>
+	</TestObject>
+	<TestObject name="signOutLink">
+		<Properties>
+			<linkText>Sign out</linkText>
+			<xpath>(//a[@title='Sign out'])[1]</xpath>
+			<xpath>//div[@class='acctGreeting acctAuth']//a[@title='Sign out']</xpath>
+			<xpath>//*[@class="menuIconCell myAccountMenu"]//a[@data-link-tag="SIGNOUT"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="cartLink">
+		<Properties>
+			<id>ancCart</id>
+			<id>shoppingCart</id>
+			<xpath>//div[@class='cartIcon']/span</xpath>
+			<xpath>//div[@class='cartIcon']</xpath>
+		</Properties>
+	</TestObject>
+	
+	<TestObject name="cartNumberLink">
+		<Properties>
+			<class>cartNumber</class>
+		</Properties>
+	</TestObject>
+	<TestObject name="shopByCategory">
+		<Properties>
+			<id>shopByMenu</id>
+			<id>menuProd</id>
+			<id>nav</id>
+		</Properties>
+	</TestObject>	
+	<TestObject name="shopQVCTVMenu">
+		<Properties>
+			<linkText>Shop QVC TV</linkText>
+			<id>metaNaviQVCTV</id>
+		</Properties>
+	</TestObject>
+	<TestObject name="itemOnAirLink">
+		<Properties>
+			<linkText>Recent on-air items</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="TvProgramGuide">
+		<Properties>
+			<linkText>TV guide</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="watchQVCTVLink">
+		<Properties>
+			<xpath>//*[@class="shopTVDropDown"]//*[@title="Watch QVC TV"]</xpath>
+			<xpath>//*[@class="qvctv visible-desktop"]//a[text()="Watch QVC TV"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="fashionLink">
+		<Properties>
+			<linkText>Fashion</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="Accessories">
+		<Properties>
+			<linkText>Accessories</linkText>
+			<xpath>//*[@id="nav"]//*[text()="Accessories"]</xpath>
+		</Properties>
+	</TestObject>
+	<TestObject name="dressesLink">
+		<Properties>
+			<linkText>Dresses</linkText>
+		</Properties>
+	</TestObject>
+	<TestObject name="ckShipToAddressStepLink">
+		<Properties>
+			<id>liCheckoutStep1</id>
+		</Properties>
+	</TestObject>
+	
+</Page>

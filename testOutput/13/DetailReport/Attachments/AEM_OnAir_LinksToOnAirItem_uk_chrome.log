@@ -1,0 +1,36 @@
+2017-12-10 21:46:39.449 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:46:40.433 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-10 21:46:40.433 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-10 21:46:43.951 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:46:45.864 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:46:46.017 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:46:46.650 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-10 21:46:46.728 [INFO] : [TestNG-method=runTestCase-1] Verify click IOA links to the PDP IOA page
+ Test module "LinksToOnAirItem"
+2017-12-10 21:46:46.728 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:46:47.318 [INFO] : [TestNG-method=runTestCase-1] Verify the on air module exist
+ Running action VerifyExist on onAirModule [{xpath=//*[@data-module-type="ON_AIR"]}]
+2017-12-10 21:46:47.549 [INFO] : [TestNG-method=runTestCase-1] Click image of "Item on air"
+ Running action Click on itemOnAirImg [{xpath=//*[@data-module-type='ON_AIR']//div[@class='onAirProdInfo']//*[contains(@class,'productImg')]}]
+2017-12-10 21:46:51.586 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:46:51.765 [INFO] : [TestNG-method=runTestCase-1] Verify we are at OnAir product detail page
+ Running action VerifyExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:46:51.933 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-10 21:46:53.233 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on watchNowLink [{xpath=//*[@class='onAirWatch col-tn-12 col-xs-6']//a}]
+2017-12-10 21:46:53.502 [INFO] : [TestNG-method=runTestCase-1] Click desc of "Item on air"
+ Running action Click on onAirDesc [{xpath=//*[@data-module-type='ON_AIR']//div[@class='onAirProdInfo']//*[contains(@class,'productDesc')]}]
+2017-12-10 21:46:56.681 [INFO] : [TestNG-method=runTestCase-1] Wait until product detail page display
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}]
+2017-12-10 21:46:56.819 [INFO] : [TestNG-method=runTestCase-1] Verify we are at OnAir product detail page
+ Running action VerifyExist on itemOnAirHeader [{xpath=//*[@class='prodBadge']}, {xpath=//*[@class='itemOnAir']}]
+2017-12-10 21:46:56.963 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 10 sec
+2017-12-10 21:46:57.321 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_OnAir_LinksToOnAirItem_uk_chrome.html

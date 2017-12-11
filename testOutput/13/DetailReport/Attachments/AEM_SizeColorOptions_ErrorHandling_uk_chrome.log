@@ -1,0 +1,316 @@
+2017-12-10 21:39:35.005 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-10 21:39:38.199 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvcuk.com"
+ Test module "GotoUrl"
+2017-12-10 21:39:38.200 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-10 21:39:43.082 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-10 21:39:44.879 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:39:45.095 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-10 21:39:45.941 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-10 21:39:45.942 [INFO] : [TestNG-method=runTestCase-1] Search a product with both color and size option
+ Test module "ByProductNum"
+2017-12-10 21:39:45.943 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:39:50.622 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=148738}
+2017-12-10 21:39:51.358 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:39:57.763 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:40:03.437 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 17 sec
+2017-12-10 21:40:03.437 [INFO] : [TestNG-method=runTestCase-1] Verify color and size text displayed
+ Test module "VerifyColorSizeText"
+2017-12-10 21:40:03.437 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {wait=5}
+2017-12-10 21:40:08.688 [INFO] : [TestNG-method=runTestCase-1] Verify that the "Select colour" label is displayed
+ Running action VerifyExist on colorText [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]}]
+2017-12-10 21:40:08.871 [INFO] : [TestNG-method=runTestCase-1] Verify that the "Select colour" text is displayed
+ Running action ContainsText on colorText [{xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]}] with data {text=Select colour}
+2017-12-10 21:40:09.072 [INFO] : [TestNG-method=runTestCase-1] Verify that the "Select size" label is displayed
+ Running action VerifyExist on sizeText [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]}]
+2017-12-10 21:40:09.271 [INFO] : [TestNG-method=runTestCase-1] Verify that the "Select size" text is displayed
+ Running action ContainsText on sizeText [{xpath=//*[@class="buyBoxSelect buyBoxSelectSize"]}] with data {text=Select size}
+2017-12-10 21:40:09.489 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-10 21:40:09.629 [INFO] : [TestNG-method=runTestCase-1] Verify  the error message displayed when customer forget to select size_speed buy
+ Test module "VerifyErrMsgWithoutSize_SB"" with data: "{verify1=Please select a size}"
+2017-12-10 21:40:09.629 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:40:09.786 [INFO] : [TestNG-method=runTestCase-1] Verify speed buy button display with "SPEED BUY" text
+ Running action ContainsText on speedBuyBtn [{class=btnSpeedBuy}] with data {text=SPEED BUY}
+2017-12-10 21:40:09.987 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-10 21:40:15.634 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 21:40:16.149 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available color
+ Running action Click on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 21:40:16.722 [INFO] : [TestNG-method=runTestCase-1] Click speed buy button
+ Running action Click on speedBuyBtn [{class=btnSpeedBuy}]
+2017-12-10 21:40:17.149 [INFO] : [TestNG-method=runTestCase-1] Verify the error message about color doesn't display
+ Running action VerifyNotExist on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}]
+2017-12-10 21:40:17.319 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size
+ Running action VerifyExist on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}]
+2017-12-10 21:40:17.587 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size
+ Running action ContainsText on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}] with data {text=Please select a size}
+2017-12-10 21:40:17.734 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 8 sec
+2017-12-10 21:40:17.734 [INFO] : [TestNG-method=runTestCase-1] Running action Browser with data {action=refresh}
+2017-12-10 21:40:21.779 [INFO] : [TestNG-method=runTestCase-1] Verify the error message displayed when customer forget to select size_add to cart
+ Test module "VerifyErrMsgWithoutSize_ATC"" with data: "{verify1=Please select a size}"
+2017-12-10 21:40:21.779 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:40:22.073 [INFO] : [TestNG-method=runTestCase-1] Verify add to cart button display with "ADD TO CART"
+ Running action ContainsText on addToCartbtn [{class=btnAddToCart}] with data {text=ADD TO BASKET}
+2017-12-10 21:40:22.278 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-10 21:40:28.153 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 21:40:28.689 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available color
+ Running action Click on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 21:40:29.361 [INFO] : [TestNG-method=runTestCase-1] Click add to cart button
+ Running action Click on addToCartbtn [{class=btnAddToCart}]
+2017-12-10 21:40:29.652 [INFO] : [TestNG-method=runTestCase-1] Verify the error message about color doesn't display
+ Running action VerifyNotExist on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}]
+2017-12-10 21:40:29.787 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size
+ Running action VerifyExist on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}]
+2017-12-10 21:40:29.984 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size
+ Running action ContainsText on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}] with data {text=Please select a size}
+2017-12-10 21:40:30.119 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 8 sec
+2017-12-10 21:40:30.119 [INFO] : [TestNG-method=runTestCase-1] Running action Browser with data {action=refresh}
+2017-12-10 21:40:32.987 [INFO] : [TestNG-method=runTestCase-1] Verify the error message displayed when customer forget to select size_add to wishlist
+ Test module "VerifyErrMsgWithoutSize_ATW"" with data: "{verify1=Please select a size}"
+2017-12-10 21:40:32.987 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:40:33.534 [INFO] : [TestNG-method=runTestCase-1] Verify add to wish list button display with "ADD TO WISH LIST" text
+ Running action ContainsText on addToWishListBtn [{class=btnAddToWishList}] with data {text=ADD TO WISH LIST}
+2017-12-10 21:40:33.849 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-10 21:40:39.751 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 21:40:40.348 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available color
+ Running action Click on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 21:40:41.064 [INFO] : [TestNG-method=runTestCase-1] Click add to wish list button
+ Running action Click on addToWishListBtn [{class=btnAddToWishList}]
+2017-12-10 21:40:41.341 [INFO] : [TestNG-method=runTestCase-1] Verify the error message about color doesn't display
+ Running action VerifynotExist on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}]
+2017-12-10 21:40:41.450 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size
+ Running action VerifyExist on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}]
+2017-12-10 21:40:41.671 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size
+ Running action ContainsText on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}] with data {text=Please select a size}
+2017-12-10 21:40:41.789 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 8 sec
+2017-12-10 21:40:41.789 [INFO] : [TestNG-method=runTestCase-1] Running action Browser with data {action=refresh}
+2017-12-10 21:40:45.538 [INFO] : [TestNG-method=runTestCase-1] Verify the error message displayed when customer forget to select color_speed buy
+ Test module "VerifyErrMsgWithoutColor_SB"" with data: "{verify1=Please select a colour}"
+2017-12-10 21:40:45.553 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:40:45.757 [INFO] : [TestNG-method=runTestCase-1] Verify speed buy button display with "SPEED BUY" text
+ Running action ContainsText on speedBuyBtn [{class=btnSpeedBuy}] with data {text=SPEED BUY}
+2017-12-10 21:40:46.020 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 21:40:46.619 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available size
+ Running action Click on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 21:40:47.251 [INFO] : [TestNG-method=runTestCase-1] Click "Speed Buy" button
+ Running action Click on speedBuyBtn [{class=btnSpeedBuy}]
+2017-12-10 21:40:47.503 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select color
+ Running action VerifyExist on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}]
+2017-12-10 21:40:47.699 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select color
+ Running action ContainsText on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}] with data {text=Please select a colour}
+2017-12-10 21:40:47.821 [INFO] : [TestNG-method=runTestCase-1] Verify the error message about size not display
+ Running action VerifyNotExist on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}]
+2017-12-10 21:40:47.916 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 2 sec
+2017-12-10 21:40:47.931 [INFO] : [TestNG-method=runTestCase-1] Running action Browser with data {action=refresh}
+2017-12-10 21:40:51.210 [INFO] : [TestNG-method=runTestCase-1] Verify the error message displayed when customer forget to select color_add to cart
+ Test module "VerifyErrMsgWithoutColor_ATC"" with data: "{verify1=Please select a colour}"
+2017-12-10 21:40:51.214 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:40:51.464 [INFO] : [TestNG-method=runTestCase-1] Verify add to cart button display with "ADD TO CART"
+ Running action ContainsText on addToCartbtn [{class=btnAddToCart}] with data {text=ADD TO BASKET}
+2017-12-10 21:40:51.654 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 21:40:52.371 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available color
+ Running action Click on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 21:40:53.051 [INFO] : [TestNG-method=runTestCase-1] Click add to cart button
+ Running action Click on addToCartbtn [{class=btnAddToCart}]
+2017-12-10 21:40:53.319 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select color
+ Running action VerifyExist on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}]
+2017-12-10 21:40:53.497 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select color
+ Running action ContainsText on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}] with data {text=Please select a colour}
+2017-12-10 21:40:53.653 [INFO] : [TestNG-method=runTestCase-1] Verify the error message about size not displayed
+ Running action VerifyNotExist on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}]
+2017-12-10 21:40:53.749 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 2 sec
+2017-12-10 21:40:53.749 [INFO] : [TestNG-method=runTestCase-1] Running action Browser with data {action=refresh}
+2017-12-10 21:40:56.733 [INFO] : [TestNG-method=runTestCase-1] Verify the error message displayed when customer forget to select color_add to wishlist
+ Test module "VerifyErrMsgWithoutColor_ATW"" with data: "{verify1=Please select a colour}"
+2017-12-10 21:40:56.733 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:40:57.119 [INFO] : [TestNG-method=runTestCase-1] Verify Add to Wish list button display with "ADD TO WISH LIST" text
+ Running action ContainsText on addToWishListBtn [{class=btnAddToWishList}] with data {text=ADD TO WISH LIST}
+2017-12-10 21:40:57.449 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 21:40:58.003 [INFO] : [TestNG-method=runTestCase-1] Select the 1st available size
+ Running action Click on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 21:40:58.718 [INFO] : [TestNG-method=runTestCase-1] Click add to wish list button
+ Running action Click on addToWishListBtn [{class=btnAddToWishList}]
+2017-12-10 21:40:59.002 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select color
+ Running action VerifyExist on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}]
+2017-12-10 21:40:59.234 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select color
+ Running action ContainsText on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}] with data {text=Please select a colour}
+2017-12-10 21:40:59.349 [INFO] : [TestNG-method=runTestCase-1] Verify the error message about size does't display
+ Running action VerifyNotExist on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}]
+2017-12-10 21:40:59.451 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 2 sec
+2017-12-10 21:40:59.453 [INFO] : [TestNG-method=runTestCase-1] Search a single Product_color only
+ Test module "ByProductNum"" with data: "{productnum=589886}"
+2017-12-10 21:40:59.454 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:41:04.004 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=589886}
+2017-12-10 21:41:04.833 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:41:07.933 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:41:13.757 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 21:41:13.848 [INFO] : [TestNG-method=runTestCase-1] Verify the error message displayed when customer forget to select color_speed buy
+ Test module "VerifyErrMsgWithoutColor_SB"
+2017-12-10 21:41:13.853 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:41:14.049 [INFO] : [TestNG-method=runTestCase-1] Verify speed buy button display with "SPEED BUY" text
+ Running action ContainsText on speedBuyBtn [{class=btnSpeedBuy}] with data {text=SPEED BUY}
+2017-12-10 21:41:14.252 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 21:41:20.187 [INFO] : [TestNG-method=runTestCase-1] Click "Speed Buy" button
+ Running action Click on speedBuyBtn [{class=btnSpeedBuy}]
+2017-12-10 21:41:20.389 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select color
+ Running action VerifyExist on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}]
+2017-12-10 21:41:20.534 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select color
+ Running action ContainsText on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}] with data {text=Please select an option:}
+2017-12-10 21:41:20.689 [INFO] : [TestNG-method=runTestCase-1] Verify the error message about size not display
+ Running action VerifyNotExist on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}]
+2017-12-10 21:41:20.736 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-10 21:41:20.736 [INFO] : [TestNG-method=runTestCase-1] Running action Browser with data {action=refresh}
+2017-12-10 21:41:23.668 [INFO] : [TestNG-method=runTestCase-1] Verify the error message displayed when customer forget to select color_add to cart
+ Test module "VerifyErrMsgWithoutColor_ATC"
+2017-12-10 21:41:23.669 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:41:24.333 [INFO] : [TestNG-method=runTestCase-1] Verify add to cart button display with "ADD TO CART"
+ Running action ContainsText on addToCartbtn [{class=btnAddToCart}] with data {text=ADD TO BASKET}
+2017-12-10 21:41:24.534 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 21:41:30.057 [INFO] : [TestNG-method=runTestCase-1] Click add to cart button
+ Running action Click on addToCartbtn [{class=btnAddToCart}]
+2017-12-10 21:41:30.335 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select color
+ Running action VerifyExist on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}]
+2017-12-10 21:41:30.467 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select color
+ Running action ContainsText on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}] with data {text=Please select an option:}
+2017-12-10 21:41:30.634 [INFO] : [TestNG-method=runTestCase-1] Verify the error message about size not displayed
+ Running action VerifyNotExist on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}]
+2017-12-10 21:41:30.770 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-10 21:41:30.771 [INFO] : [TestNG-method=runTestCase-1] Running action Browser with data {action=refresh}
+2017-12-10 21:41:33.502 [INFO] : [TestNG-method=runTestCase-1] Verify the error message displayed when customer forget to select color_add to wishlist
+ Test module "VerifyErrMsgWithoutColor_ATW"
+2017-12-10 21:41:33.502 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:41:33.995 [INFO] : [TestNG-method=runTestCase-1] Verify Add to Wish list button display with "ADD TO WISH LIST" text
+ Running action ContainsText on addToWishListBtn [{class=btnAddToWishList}] with data {text=ADD TO WISH LIST}
+2017-12-10 21:41:34.250 [INFO] : [TestNG-method=runTestCase-1] If have instock size
+ Running action CheckForElements on FirstAvailableSize [{xpath=//*[@class="selectSize" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectSize"]}]
+2017-12-10 21:41:40.170 [INFO] : [TestNG-method=runTestCase-1] Click add to wish list button
+ Running action Click on addToWishListBtn [{class=btnAddToWishList}]
+2017-12-10 21:41:40.434 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select color
+ Running action VerifyExist on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}]
+2017-12-10 21:41:40.587 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select color
+ Running action ContainsText on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}] with data {text=Please select an option:}
+2017-12-10 21:41:40.750 [INFO] : [TestNG-method=runTestCase-1] Verify the error message about size does't display
+ Running action VerifyNotExist on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}]
+2017-12-10 21:41:40.802 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-10 21:41:40.802 [INFO] : [TestNG-method=runTestCase-1] Search a single Product_size only
+ Test module "ByProductNum"" with data: "{productnum=699775}"
+2017-12-10 21:41:40.802 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:41:45.502 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=699775}
+2017-12-10 21:41:46.458 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:41:49.350 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:41:55.486 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 14 sec
+2017-12-10 21:41:55.580 [INFO] : [TestNG-method=runTestCase-1] Verify the error message displayed when customer forget to select size_speed buy
+ Test module "VerifyErrMsgWithoutSize_SB"" with data: "{verify1=Please select an option}"
+2017-12-10 21:41:55.580 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:41:55.755 [INFO] : [TestNG-method=runTestCase-1] Verify speed buy button display with "SPEED BUY" text
+ Running action ContainsText on speedBuyBtn [{class=btnSpeedBuy}] with data {text=SPEED BUY}
+2017-12-10 21:41:55.952 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-10 21:42:01.904 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 21:42:07.450 [INFO] : [TestNG-method=runTestCase-1] Click speed buy button
+ Running action Click on speedBuyBtn [{class=btnSpeedBuy}]
+2017-12-10 21:42:07.733 [INFO] : [TestNG-method=runTestCase-1] Verify the error message about color doesn't display
+ Running action VerifyNotExist on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}]
+2017-12-10 21:42:07.818 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size
+ Running action VerifyExist on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}]
+2017-12-10 21:42:07.987 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size
+ Running action ContainsText on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}] with data {text=Please select an option}
+2017-12-10 21:42:08.186 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 12 sec
+2017-12-10 21:42:08.186 [INFO] : [TestNG-method=runTestCase-1] Running action Browser with data {action=refresh}
+2017-12-10 21:42:11.302 [INFO] : [TestNG-method=runTestCase-1] Verify the error message displayed when customer forget to select size_add to cart
+ Test module "VerifyErrMsgWithoutSize_ATC"" with data: "{verify1=Please select an option}"
+2017-12-10 21:42:11.303 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:42:11.452 [INFO] : [TestNG-method=runTestCase-1] Verify add to cart button display with "ADD TO CART"
+ Running action ContainsText on addToCartbtn [{class=btnAddToCart}] with data {text=ADD TO BASKET}
+2017-12-10 21:42:11.687 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-10 21:42:17.687 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 21:42:23.365 [INFO] : [TestNG-method=runTestCase-1] Click add to cart button
+ Running action Click on addToCartbtn [{class=btnAddToCart}]
+2017-12-10 21:42:23.618 [INFO] : [TestNG-method=runTestCase-1] Verify the error message about color doesn't display
+ Running action VerifyNotExist on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}]
+2017-12-10 21:42:23.748 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size
+ Running action VerifyExist on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}]
+2017-12-10 21:42:23.886 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size
+ Running action ContainsText on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}] with data {text=Please select an option}
+2017-12-10 21:42:24.034 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 12 sec
+2017-12-10 21:42:24.034 [INFO] : [TestNG-method=runTestCase-1] Running action Browser with data {action=refresh}
+2017-12-10 21:42:26.804 [INFO] : [TestNG-method=runTestCase-1] Verify the error message displayed when customer forget to select size_add to wishlist
+ Test module "VerifyErrMsgWithoutSize_ATW"" with data: "{verify1=Please select an option}"
+2017-12-10 21:42:26.804 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:42:27.165 [INFO] : [TestNG-method=runTestCase-1] Verify add to wish list button display with "ADD TO WISH LIST" text
+ Running action ContainsText on addToWishListBtn [{class=btnAddToWishList}] with data {text=ADD TO WISH LIST}
+2017-12-10 21:42:27.371 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-10 21:42:32.988 [INFO] : [TestNG-method=runTestCase-1] If have instock color
+ Running action CheckForElements on FirstAvailableColor [{xpath=//*[@class="selectColor" and @ats="Y"][1]}, {xpath=//*[@ats="Y"][1]/*[@class="swatchBox selectColor"]}]
+2017-12-10 21:42:38.603 [INFO] : [TestNG-method=runTestCase-1] Click add to wish list button
+ Running action Click on addToWishListBtn [{class=btnAddToWishList}]
+2017-12-10 21:42:38.950 [INFO] : [TestNG-method=runTestCase-1] Verify the error message about color doesn't display
+ Running action VerifynotExist on errMsgWithoutSelectColor [{xpath=//*[@class="err errSelectColor"]}]
+2017-12-10 21:42:39.002 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size
+ Running action VerifyExist on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}]
+2017-12-10 21:42:39.170 [INFO] : [TestNG-method=runTestCase-1] Verify the error message display when customer doesn't select size
+ Running action ContainsText on errMsgWithoutSelectSize [{xpath=//*[@class="err errSelectSize"]}] with data {text=Please select an option}
+2017-12-10 21:42:39.333 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 12 sec
+2017-12-10 21:42:39.348 [INFO] : [TestNG-method=runTestCase-1] Search a product with swatch that is not available
+ Test module "ByProductNum"" with data: "{productnum=149449}"
+2017-12-10 21:42:39.348 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-10 21:42:43.905 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=149449}
+2017-12-10 21:42:44.618 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-10 21:42:47.402 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-10 21:42:52.948 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 13 sec
+2017-12-10 21:42:53.019 [INFO] : [TestNG-method=runTestCase-1] Verify text displayed when a product has an unavailable swatch image
+ Test module "VerifyAvailableColorOption"
+2017-12-10 21:42:53.034 [INFO] : [TestNG-method=runTestCase-1] Verify we are at Product Detail page
+ Running action ContainsText on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {text=Product Detail}
+2017-12-10 21:42:53.263 [INFO] : [TestNG-method=runTestCase-1] Verify available color option exists
+ Running action VerifyExist on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}]
+2017-12-10 21:42:53.418 [INFO] : [TestNG-method=runTestCase-1] Verify text displayed when a item has unavailable swatch color/image
+ Running action ContainsText on FirstAvailableColorOption [{xpath=//*[@ats="Y"]//*[@class="swatchBox selectOption"][1]}, {xpath=//*[@class="buyBoxSelect buyBoxSelectColor"]//*[@class="swatchBox selectOption"]}] with data {text=GOLD LEOPARD}
+2017-12-10 21:42:53.564 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 0 sec
+2017-12-10 21:42:53.917 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\13\DetailReport\Pass_AEM_SizeColorOptions_ErrorHandling_uk_chrome.html

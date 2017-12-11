@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Failed suite [AEM_UK]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qvc.selenium.reporting.QVCReporter"/>
+  </listeners>
+  <test name="AEM_PDP_AutoDelivery_VerifyADPlan_uk_chrome(failed)" parallel="tests">
+    <parameter name="testPackage" value="QVCWebsite_China"/>
+    <parameter name="env" value="QA"/>
+    <parameter name="appPath" value="QVC_UK_WEB"/>
+    <parameter name="deviceName" value="Browser"/>
+    <parameter name="platform" value="linux"/>
+    <parameter name="ui" value="uk"/>
+    <parameter name="grid" value="qloud"/>
+    <parameter name="platformVersion" value="linux"/>
+    <parameter name="client" value="chrome"/>
+    <parameter name="iteration" value=""/>
+    <parameter name="platformName" value="linux"/>
+    <parameter name="suiteName" value="AEM_PDP_UK"/>
+    <parameter name="testName" value="AEM_PDP_AutoDelivery_VerifyADPlan_uk_chrome"/>
+    <classes>
+      <class name="com.qvc.selenium.plugin.TestCase">
+        <methods>
+          <include name="setupSummaryReport"/>
+          <include name="runTestCase"/>
+          <include name="createSummaryReport"/>
+        </methods>
+      </class> <!-- com.qvc.selenium.plugin.TestCase -->
+    </classes>
+  </test> <!-- AEM_PDP_AutoDelivery_VerifyADPlan_uk_chrome(failed) -->
+  <test name="AEM_SLTV_Via_IROA_BuyBox_Elements_All_Geos_uk_chrome(failed)" parallel="tests">
+    <parameter name="testPackage" value="QVCWebsite_China"/>
+    <parameter name="env" value="QA"/>
+    <parameter name="appPath" value="QVC_UK_WEB"/>
+    <parameter name="deviceName" value="Browser"/>
+    <parameter name="platform" value="linux"/>
+    <parameter name="ui" value="uk"/>
+    <parameter name="grid" value="qloud"/>
+    <parameter name="platformVersion" value="linux"/>
+    <parameter name="client" value="chrome"/>
+    <parameter name="iteration" value=""/>
+    <parameter name="platformName" value="linux"/>
+    <parameter name="suiteName" value="AEM_Shop_Live_TV_UK"/>
+    <parameter name="testName" value="AEM_SLTV_Via_IROA_BuyBox_Elements_All_Geos_uk_chrome"/>
+    <classes>
+      <class name="com.qvc.selenium.plugin.TestCase">
+        <methods>
+          <include name="setupSummaryReport"/>
+          <include name="runTestCase"/>
+          <include name="createSummaryReport"/>
+        </methods>
+      </class> <!-- com.qvc.selenium.plugin.TestCase -->
+    </classes>
+  </test> <!-- AEM_SLTV_Via_IROA_BuyBox_Elements_All_Geos_uk_chrome(failed) -->
+  <test name="AEM_SLTV_BuyBox_Shop_Now_Speedbuy_All_Geos_uk_chrome(failed)" parallel="tests">
+    <parameter name="testPackage" value="QVCWebsite_China"/>
+    <parameter name="env" value="QA"/>
+    <parameter name="appPath" value="QVC_UK_WEB"/>
+    <parameter name="deviceName" value="Browser"/>
+    <parameter name="platform" value="linux"/>
+    <parameter name="ui" value="uk"/>
+    <parameter name="grid" value="qloud"/>
+    <parameter name="platformVersion" value="linux"/>
+    <parameter name="client" value="chrome"/>
+    <parameter name="iteration" value=""/>
+    <parameter name="platformName" value="linux"/>
+    <parameter name="suiteName" value="AEM_Shop_Live_TV_UK"/>
+    <parameter name="testName" value="AEM_SLTV_BuyBox_Shop_Now_Speedbuy_All_Geos_uk_chrome"/>
+    <classes>
+      <class name="com.qvc.selenium.plugin.TestCase">
+        <methods>
+          <include name="setupSummaryReport"/>
+          <include name="runTestCase"/>
+          <include name="createSummaryReport"/>
+        </methods>
+      </class> <!-- com.qvc.selenium.plugin.TestCase -->
+    </classes>
+  </test> <!-- AEM_SLTV_BuyBox_Shop_Now_Speedbuy_All_Geos_uk_chrome(failed) -->
+  <test name="AEM_SLTV_BuyBox_Shop_Now_AddToCart_All_Geos_uk_chrome(failed)" parallel="tests">
+    <parameter name="testPackage" value="QVCWebsite_China"/>
+    <parameter name="env" value="QA"/>
+    <parameter name="appPath" value="QVC_UK_WEB"/>
+    <parameter name="deviceName" value="Browser"/>
+    <parameter name="platform" value="linux"/>
+    <parameter name="ui" value="uk"/>
+    <parameter name="grid" value="qloud"/>
+    <parameter name="platformVersion" value="linux"/>
+    <parameter name="client" value="chrome"/>
+    <parameter name="iteration" value=""/>
+    <parameter name="platformName" value="linux"/>
+    <parameter name="suiteName" value="AEM_Shop_Live_TV_UK"/>
+    <parameter name="testName" value="AEM_SLTV_BuyBox_Shop_Now_AddToCart_All_Geos_uk_chrome"/>
+    <classes>
+      <class name="com.qvc.selenium.plugin.TestCase">
+        <methods>
+          <include name="setupSummaryReport"/>
+          <include name="runTestCase"/>
+          <include name="createSummaryReport"/>
+        </methods>
+      </class> <!-- com.qvc.selenium.plugin.TestCase -->
+    </classes>
+  </test> <!-- AEM_SLTV_BuyBox_Shop_Now_AddToCart_All_Geos_uk_chrome(failed) -->
+  <test name="AEM_SLTV_IROA_Carousel_UK&amp;DE_uk_chrome(failed)" parallel="tests">
+    <parameter name="testPackage" value="QVCWebsite_China"/>
+    <parameter name="env" value="QA"/>
+    <parameter name="appPath" value="QVC_UK_WEB"/>
+    <parameter name="deviceName" value="Browser"/>
+    <parameter name="platform" value="linux"/>
+    <parameter name="ui" value="uk"/>
+    <parameter name="grid" value="qloud"/>
+    <parameter name="platformVersion" value="linux"/>
+    <parameter name="client" value="chrome"/>
+    <parameter name="iteration" value=""/>
+    <parameter name="platformName" value="linux"/>
+    <parameter name="suiteName" value="AEM_Shop_Live_TV_UK"/>
+    <parameter name="testName" value="AEM_SLTV_IROA_Carousel_UK&amp;DE_uk_chrome"/>
+    <classes>
+      <class name="com.qvc.selenium.plugin.TestCase">
+        <methods>
+          <include name="setupSummaryReport"/>
+          <include name="runTestCase"/>
+          <include name="createSummaryReport"/>
+        </methods>
+      </class> <!-- com.qvc.selenium.plugin.TestCase -->
+    </classes>
+  </test> <!-- AEM_SLTV_IROA_Carousel_UK&DE_uk_chrome(failed) -->
+  <test name="PD_AEM_Shipping_and_Handling_Multi_Quantity_UK_only_uk_chrome(failed)" parallel="tests">
+    <parameter name="testPackage" value="QVCWebsite_China"/>
+    <parameter name="env" value="QA"/>
+    <parameter name="appPath" value="QVC_UK_WEB"/>
+    <parameter name="deviceName" value="Browser"/>
+    <parameter name="platform" value="linux"/>
+    <parameter name="ui" value="uk"/>
+    <parameter name="grid" value="qloud"/>
+    <parameter name="platformVersion" value="linux"/>
+    <parameter name="client" value="chrome"/>
+    <parameter name="iteration" value=""/>
+    <parameter name="platformName" value="linux"/>
+    <parameter name="suiteName" value="AEM_PDP_UK"/>
+    <parameter name="testName" value="PD_AEM_Shipping_and_Handling_Multi_Quantity_UK_only_uk_chrome"/>
+    <classes>
+      <class name="com.qvc.selenium.plugin.TestCase">
+        <methods>
+          <include name="setupSummaryReport"/>
+          <include name="runTestCase"/>
+          <include name="createSummaryReport"/>
+        </methods>
+      </class> <!-- com.qvc.selenium.plugin.TestCase -->
+    </classes>
+  </test> <!-- PD_AEM_Shipping_and_Handling_Multi_Quantity_UK_only_uk_chrome(failed) -->
+</suite> <!-- Failed suite [AEM_UK] -->

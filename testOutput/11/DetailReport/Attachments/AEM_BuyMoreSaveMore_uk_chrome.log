@@ -1,0 +1,45 @@
+2017-12-05 21:04:23.164 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:04:26.043 [INFO] : [TestNG-method=runTestCase-1] Go to URL "qa.qvcuk.com"
+ Test module "GotoUrl"
+2017-12-05 21:04:26.109 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com}
+2017-12-05 21:04:30.474 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:04:32.184 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:04:32.391 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:04:33.159 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 7 sec
+2017-12-05 21:04:33.160 [INFO] : [TestNG-method=runTestCase-1] Search regular product
+ Test module "ByProductNum"
+2017-12-05 21:04:33.161 [INFO] : [TestNG-method=runTestCase-1] Wait until the search bar display
+ Running action WaitUntilObjectExist on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {wait=4}
+2017-12-05 21:04:37.754 [INFO] : [TestNG-method=runTestCase-1] Enter item number
+ Running action SendKeys on searchBox [{id=searchBoxField}, {id=txtMastheadSearch}] with data {text=223153}
+2017-12-05 21:04:38.523 [INFO] : [TestNG-method=runTestCase-1] Click "Search" button
+ Running action Click on goBtn [{id=btnMastheadSearch}]
+2017-12-05 21:04:46.265 [INFO] : [TestNG-method=runTestCase-1] Close the cookies bar
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:04:52.014 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 18 sec
+2017-12-05 21:04:52.016 [INFO] : [TestNG-method=runTestCase-1] Verify that "Buy more save more" item options
+ Test module "VerifyBuyMoreSaveMoreText"
+2017-12-05 21:04:52.017 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on productDetailHeader [{xpath=//*[@class="breadcrumb pageBreadcrumb"]}] with data {wait=5}
+2017-12-05 21:04:57.138 [INFO] : [TestNG-method=runTestCase-1] Verify the text of MQD message displays
+ Running action VerifyExist on buyMoreSaveMoveText [{xpath=//*[@class="col-tn-12 col-xs-6 buyBoxQuantityInfo"]}]
+2017-12-05 21:04:57.248 [INFO] : [TestNG-method=runTestCase-1] Verify the text of MQD message
+ Running action ContainsText on buyMoreSaveMoveText [{xpath=//*[@class="col-tn-12 col-xs-6 buyBoxQuantityInfo"]}] with data {text=Buy more and save}
+2017-12-05 21:04:57.363 [INFO] : [TestNG-method=runTestCase-1] Verify the text of MQD message
+ Running action ContainsText on buyMoreSaveMoveText [{xpath=//*[@class="col-tn-12 col-xs-6 buyBoxQuantityInfo"]}] with data {text=and half price P&P on every additional item}
+2017-12-05 21:04:57.471 [INFO] : [TestNG-method=runTestCase-1] Verify the link of offer detail
+ Running action VerifyExist on buyMoreSaveMoveOfferLink [{xpath=//*[@class="col-tn-12 col-xs-6 buyBoxQuantityInfo"]//*[@class="arrow fancybox fancybox.ajax"]}]
+2017-12-05 21:04:57.704 [INFO] : [TestNG-method=runTestCase-1] Click the link of offer detail
+ Running action Click on buyMoreSaveMoveOfferLink [{xpath=//*[@class="col-tn-12 col-xs-6 buyBoxQuantityInfo"]//*[@class="arrow fancybox fancybox.ajax"]}]
+2017-12-05 21:04:58.294 [INFO] : [TestNG-method=runTestCase-1] Wait until the object exists
+ Running action WaitUntilObjectExist on popupText [{xpath=//*[@class="fancybox-skin"]//*[contains(@class,"rich-text-editor")]}] with data {wait=5}
+2017-12-05 21:05:03.447 [INFO] : [TestNG-method=runTestCase-1] Verfy the popup text contains "buy more save more"
+ Running action ContainsText on popupText [{xpath=//*[@class="fancybox-skin"]//*[contains(@class,"rich-text-editor")]}] with data {text=Buy More}
+2017-12-05 21:05:03.554 [INFO] : [TestNG-method=runTestCase-1] Close the popup window
+ Running action Click on popupClose [{xpath=//*[@class="fancybox-item fancybox-close"]}]
+2017-12-05 21:05:03.797 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 11 sec
+2017-12-05 21:05:04.185 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_BuyMoreSaveMore_uk_chrome.html

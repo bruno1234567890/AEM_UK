@@ -1,0 +1,90 @@
+2017-12-05 21:11:46.280 [INFO] : [TestNG-method=runTestCase-1] Creating driver http://qloud:4444/wd/hub Capabilities [{proxy=Proxy(manual, ftp=wchwe21.qvc.com:80, http=wchwe21.qvc.com:80, ssl=wchwe21.qvc.com:80), honorSystemProxy=true, browserName=chrome, version=, platform=LINUX}]
+2017-12-05 21:11:47.483 [INFO] : [TestNG-method=runTestCase-1] Go to URL qa.qvc.com
+ Test module "GotoUrl"
+2017-12-05 21:11:47.484 [INFO] : [TestNG-method=runTestCase-1] Nav to QVC
+ Running action GoToUrl with data {url=http://qa.qvcuk.com/content/qvc-commerce-uk/en/homepage/chinateam/hptest.html}
+2017-12-05 21:11:51.389 [INFO] : [TestNG-method=runTestCase-1] If have popup window
+ Running action CheckForElements on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}] with data {wait=2}
+2017-12-05 21:11:53.109 [INFO] : [TestNG-method=runTestCase-1] Close it
+ Running action Click on cookiesBarCloseBtn [{xpath=//*[@id="alert-cookie-info-bar"]//button[@class="close"]}]
+2017-12-05 21:11:53.312 [INFO] : [TestNG-method=runTestCase-1] Wait util the object show up to make sure we switch to correct page
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:11:53.960 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 6 sec
+2017-12-05 21:11:53.961 [INFO] : [TestNG-method=runTestCase-1] Verify that user can be navigated to the correct page after click each image/button
+ Test module "Lifestyle_Clickable"
+2017-12-05 21:11:53.962 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:11:54.474 [INFO] : [TestNG-method=runTestCase-1] Verify header text "LifeStyle Carousel Module" displayed
+ Running action ContainsText on lifestyleHeader [{xpath=//*[@data-module-type='LIFESTYLE_CAROUSEL']//h2}] with data {text=LifeStyle Carousel}
+2017-12-05 21:11:54.654 [INFO] : [TestNG-method=runTestCase-1] Click "Shop late night special"
+ Running action Click on lifestyleShopBtn [{xpath=//*[@data-module-type='LIFESTYLE_CAROUSEL']//a[contains(text(), 'Shop')]}]
+2017-12-05 21:11:58.762 [INFO] : [TestNG-method=runTestCase-1] Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+2017-12-05 21:12:02.188 [INFO] : [TestNG-method=runTestCase-1] Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class="active"]/h1}, {xpath=//*[@id="divPageTitle"]//h1}] with data {storeas=category}
+2017-12-05 21:12:02.985 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-05 21:12:04.853 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:05.529 [INFO] : [TestNG-method=runTestCase-1] Click 1st image of "Lifestyle Carousel Module"
+ Running action Click on lifestyleImg [{xpath=(//*[@data-module-type='LIFESTYLE_CAROUSEL']//div[@class='productImg'])[<index>]}] with data {index=1}
+2017-12-05 21:12:06.967 [INFO] : [TestNG-method=runTestCase-1] Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+2017-12-05 21:12:08.824 [INFO] : [TestNG-method=runTestCase-1] Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class="active"]/h1}, {xpath=//*[@id="divPageTitle"]//h1}] with data {storeas=category}
+2017-12-05 21:12:09.488 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-05 21:12:10.711 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:11.416 [INFO] : [TestNG-method=runTestCase-1] Click 2nd image of "Lifestyle Carousel Module"
+ Running action Click on lifestyleImg [{xpath=(//*[@data-module-type='LIFESTYLE_CAROUSEL']//div[@class='productImg'])[<index>]}] with data {index=2}
+2017-12-05 21:12:12.815 [INFO] : [TestNG-method=runTestCase-1] Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+2017-12-05 21:12:14.526 [INFO] : [TestNG-method=runTestCase-1] Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class="active"]/h1}, {xpath=//*[@id="divPageTitle"]//h1}] with data {storeas=category}
+2017-12-05 21:12:15.245 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-05 21:12:16.365 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:17.151 [INFO] : [TestNG-method=runTestCase-1] Click 3rd image of "Lifestyle Carousel Module"
+ Running action Click on lifestyleImg [{xpath=(//*[@data-module-type='LIFESTYLE_CAROUSEL']//div[@class='productImg'])[<index>]}] with data {index=3}
+2017-12-05 21:12:19.232 [INFO] : [TestNG-method=runTestCase-1] Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+2017-12-05 21:12:21.791 [INFO] : [TestNG-method=runTestCase-1] Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class="active"]/h1}, {xpath=//*[@id="divPageTitle"]//h1}] with data {storeas=category}
+2017-12-05 21:12:22.438 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-05 21:12:23.746 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:24.491 [INFO] : [TestNG-method=runTestCase-1] Click 4th image of "Lifestyle Carousel Module"
+ Running action Click on lifestyleImg [{xpath=(//*[@data-module-type='LIFESTYLE_CAROUSEL']//div[@class='productImg'])[<index>]}] with data {index=4}
+2017-12-05 21:12:25.811 [INFO] : [TestNG-method=runTestCase-1] Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+2017-12-05 21:12:27.379 [INFO] : [TestNG-method=runTestCase-1] Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class="active"]/h1}, {xpath=//*[@id="divPageTitle"]//h1}] with data {storeas=category}
+2017-12-05 21:12:28.066 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-05 21:12:29.140 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:29.685 [INFO] : [TestNG-method=runTestCase-1] Click 5th image of "Lifestyle Carousel Module"
+ Running action Click on lifestyleImg [{xpath=(//*[@data-module-type='LIFESTYLE_CAROUSEL']//div[@class='productImg'])[<index>]}] with data {index=5}
+2017-12-05 21:12:30.954 [INFO] : [TestNG-method=runTestCase-1] Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+2017-12-05 21:12:32.541 [INFO] : [TestNG-method=runTestCase-1] Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class="active"]/h1}, {xpath=//*[@id="divPageTitle"]//h1}] with data {storeas=category}
+2017-12-05 21:12:33.100 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-05 21:12:34.196 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:34.791 [INFO] : [TestNG-method=runTestCase-1] Click 6th image of "Lifestyle Carousel Module"
+ Running action Click on lifestyleImg [{xpath=(//*[@data-module-type='LIFESTYLE_CAROUSEL']//div[@class='productImg'])[<index>]}] with data {index=6}
+2017-12-05 21:12:36.055 [INFO] : [TestNG-method=runTestCase-1] Wait until product list page display
+ Running action WaitUntilObjectExist on productListModule [{xpath=//*[@data-component-type='PRODUCT_LISTING_LIST']}, {id=frmProductList}]
+2017-12-05 21:12:38.373 [INFO] : [TestNG-method=runTestCase-1] Output the category we navigate to
+ Running action Text on productListHeader [{xpath=//*[@class="active"]/h1}, {xpath=//*[@id="divPageTitle"]//h1}] with data {storeas=category}
+2017-12-05 21:12:39.102 [INFO] : [TestNG-method=runTestCase-1] Return to home page
+ Running action Browser with data {action=back}
+2017-12-05 21:12:40.411 [INFO] : [TestNG-method=runTestCase-1] Wait until homepage display
+ Running action WaitUntilObjectExist on divHomepage [{id=pageContent}, {xpath=//*[@id='pageContent']}]
+2017-12-05 21:12:40.988 [INFO] : [TestNG-method=runTestCase-1] Function Elapsed Time 0 min, 47 sec
+2017-12-05 21:12:41.354 [INFO] : [TestNG-method=runTestCase-1] Report file generated: c:\seleniumframeworkplugin\testOutput\11\DetailReport\Pass_AEM_LifestyleCarouselModule_ComponentsAreClickable_uk_chrome.html
